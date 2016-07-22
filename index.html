@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA World Wind SDKs</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="NASA World Wind Software Development Kits (SDKs)">
+        <meta name="author" content="Bruce Schubert">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico"/>
+
+        <!-- Oracle's Alta theme provides the main styling -->
+        <link rel="stylesheet" href="css/libs/oj/v2.0.2/alta/oj-alta-min.css" type="text/css"/>
+
+        <!-- Font Awesome provides the icons -->
+        <link rel="stylesheet" href="css/libs/fa/font-awesome.min.css" type="text/css"/>
+
+        <!-- Custom application specific styling -->
+        <link rel="stylesheet" href="css/override.css" type="text/css"/>
+
+        <!-- RequireJS configuration file -->
+        <script data-main="js/main" src="js/libs/require/require.js"></script>
+    </head>    
+
+    <body>
+        <!-- This script is a template for rendering navigation items shared between "nav bar" and "nav drawer" -->
+        <script type="text/html" id="navTemplate">
+            <!--Load the name and icon from data binding-->
+        <li><a href="#">
+                <span data-bind="css: $data['iconClass']"></span>
+                <!--Using Knockout containerless control flow for the name-->
+                <!-- ko text: $data['name'] --> <!--/ko-->
+            </a></li>
+    </script>
+
+    <!--See http://www.oracle.com/webfolder/technetwork/jet/stylingdoc.html#web-->
+
+    <!--
+    The globalBody is bound to the RootViewModel.
+    -->
+    <div id="globalBody" class="oj-web-applayout-offcanvas-wrapper oj-offcanvas-outer-wrapper">
+        <div class="oj-offcanvas-inner-wrapper">
+
+            <!--
+            This off-canvas section is used when the browser is resized to a medium
+            or smaller media query size. It moves the App Navigation into a drawer
+            -->
+            <div id="offcanvas" class="oj-contrast-marker oj-web-applayout-offcanvas oj-offcanvas-start"
+                 data-bind="ojModule: {viewName: 'NavDrawer'}">
+            </div>
+
+
+            <div class="oj-web-applayout-scrollable-wrapper">
+                <div class="oj-web-applayout-scrollable oj-web-applayout-page">
+                    <!--
+                    Header section which contains the Global Branding, Global Navigation,
+                    and Application Navigation code.
+                    -->
+                    <header role="banner" class="oj-web-applayout-header"
+                            data-bind="ojModule: 'Header'">
+                    </header>
+                    <!-- 
+                    This is where your main page content will be loaded 
+                    -->
+                    <div class="oj-web-applayout-content oj-web-applayout-max-width">
+                        <!--
+                        The "mainContent" div content is dynamically set to the 
+                        router's current module
+                        -->
+                        <div id="mainContent" class="oj-flex" 
+                             data-bind="ojModule: router.moduleConfig">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

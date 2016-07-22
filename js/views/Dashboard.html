@@ -1,0 +1,31 @@
+<!--
+Home module
+-->
+<div>
+<!--    <div class="oj-sm-12" style="background: url('images/wwhorizon940x198.png') no-repeat; height: 400px">
+    </div>-->
+    <img src="images/wwhorizon940x198.png"/>
+</div>
+<div id="masonryLayout" class="oj-flex oj-sm-12" data-bind="ojComponent: {component: 'ojMasonryLayout'}">
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">About NASA World Wind</div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1>GitHub Repositories</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: webSdkUrl }">Web SDK</a></li>
+            <li><a data-bind="attr: {href: androidSdkUrl }">Android SDK</a></li>
+            <li><a data-bind="attr: {href: javaSdkUrl }">Java SDK</a></li>
+        </ul>
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-1x2 home-tile">
+        <h1>Releases</h1>
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-1x2 home-tile">Developer Guides</div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x1 home-tile">
+        <h1>Examples</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: 'http://explorer.worldwind.earth'}">World Wind Explorer</a></li>
+            <li><a data-bind="attr: {href: 'http://worldwindserver.net/webworldwind/apps/Explorer.html'}">Explorer (lightweight)</a></li>
+        </ul>    
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x1 home-tile">Frameworks</div>
+</div>

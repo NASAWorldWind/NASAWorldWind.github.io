@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Copyright (C) 2016 United States Government as represented by the Administrator of the
+${licensePrefix}National Aeronautics and Space Administration. All Rights Reserved.
+<#if licenseLast??>
+${licenseLast}
+</#if>
