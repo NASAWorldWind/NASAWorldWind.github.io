@@ -92,8 +92,15 @@ require([
     function RootViewModel() {
         var self = this,
                 smQuery = oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY),
-                mdQuery = oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.MD_UP),
+                mdQuery = oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.MD_ONLY),
+                lgQuery = oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.LG_UP),
                 navData = [], i, numStates, state, icon;
+
+        // Create Knockout observable media queries to implement responsive behaviors
+        self.smScreen = oj.ResponsiveKnockoutUtils.createMediaQueryObservable(smQuery);
+        self.mdScreen = oj.ResponsiveKnockoutUtils.createMediaQueryObservable(mdQuery);
+        self.lgScreen = oj.ResponsiveKnockoutUtils.createMediaQueryObservable(lgQuery);
+
 
         /**
          * A reference to the root router for the view.
@@ -109,11 +116,6 @@ require([
             navData.push({name: state.label, id: state.id, iconClass: icon.iconClass});
         }
         self.navDataSource = new oj.ArrayTableDataSource(navData, {idAttribute: 'id'});
-
-
-        // Create Knockout observable media queries to implement responsive behaviors
-        self.smScreen = oj.ResponsiveKnockoutUtils.createMediaQueryObservable(smQuery);
-        self.mdScreen = oj.ResponsiveKnockoutUtils.createMediaQueryObservable(mdQuery);
 
         /**
          * Toggles the maim menu between the "nav bar" and and the "nav drawer" styles.

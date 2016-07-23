@@ -12,7 +12,8 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
     var childRouter = oj.Router.rootInstance.createChildRouter('androidTopics', 'android');
     
     childRouter.configure({
-        'quickStart': {label: 'Quick Start', value: "AndroidQuickStart", isDefault: true},
+        'overview': {label: 'Overview', value: "AndroidOverview", isDefault: true},
+        'quickStart': {label: 'Get Started', value: "AndroidQuickStart"},
         'guide': {label: 'Developers Guide', value: "AndroidDevGuide"},
         'api': {label: 'API Documentation', value: 'AndroidApi'},
         'examples': {label: 'Examples', value: "AndroidExamples"}
@@ -22,7 +23,7 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
     /**
      * The view model for the Android SDK content view template
      */
-    function AndroidContentViewModel() {
+    function Android() {
         var self = this;
         /**
          * The child router is bound to the view's ojNavigationList menu.
@@ -46,5 +47,5 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
             }
         };        
     }
-    return AndroidContentViewModel;
+    return Android;
 });

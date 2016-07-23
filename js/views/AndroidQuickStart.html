@@ -3,31 +3,33 @@ Copyright (C) 2016 United States Government as represented by the Administrator 
 National Aeronautics and Space Administration. All Rights Reserved.
 -->
 
-<h1>Quick Start</h1>
+<h1>Get Started</h1>
 <div class="oj-flex oj-flex-item-pad oj-sm-12 " >
     <!--
     Create a vertical navigation menu for this page at along the left edge.
     The contents of the page will be loaded dynamically based on the
     selected navigation menu item.
     -->
-    <div class="oj-lg-2 oj-flex-item" data-bind="ojComponent:{
+    <div class="oj-sm-4 oj-md-3 oj-lg-2 oj-flex-item" data-bind="ojComponent:{
         component: 'ojNavigationList',
         drillMode: 'none',
-        selection: navListSelection,
-        optionChange: onNavListOptionChange,
+        data: dataSource,
+        item: { template: 'android-quickstart-template' },
+        optionChange: optionChange,
+        selection: selectedItem,
         navigationLevel: 'page',
         edge: 'start'}" >
-        <!--Create menu items for each router state-->
-        <ul id="foreachMenu" data-bind="foreach: router.states">
-            <li data-bind="attr: {id: id}">
-                <a data-bind="text: label, click: go"></a>
-            </li>
-        </ul>
     </div>
     <!--
     Bind the contents to the navigation menu selection
     -->
-    <div id="android-quickstart-content" class="oj-lg-10"
-         data-bind="ojModule: router.moduleConfig">
+    <div id="android-quickstart-content" class="oj-sm-8 oj-md-9 oj-lg-10 oj-flex-item"
+         data-bind="ojModule: selectedModule">
     </div>
 </div>
+<script type="text/html" id="android-quickstart-template">
+    <li data-bind="attr:{ idx : $data['id']}, css:{'oj-disabled' : $data['disabled']=='true'}">
+        <a href="#" data-bind="text: $data['label']">
+        </a>
+    </li>
+</script>

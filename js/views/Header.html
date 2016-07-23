@@ -37,6 +37,7 @@ ALL RIGHTS RESERVED
                 optionChange: $parent.navChange, 
                 navigationLevel: 'application',
                 item: {template: 'navTemplate'},
+                display: $parent.lgScreen() ? 'all' : 'icons',
                 data: $parent.navDataSource,
                 selection: $parent.router.stateId(), 
                 edge: 'top'}"
@@ -57,8 +58,8 @@ ALL RIGHTS RESERVED
                     data-bind="ojComponent: {
                     component: 'ojButton',
                     label: 'More Info',
-                    display: smScreen() ? 'icons' : 'all',
-                    icons: smScreen() ? {start: 'oj-icon demo-avatar-icon', end: null} : {end: null},
+                    display: $parent.smScreen() ? 'icons' : 'all',
+                    icons: $parent.smScreen() ? {start: 'oj-icon demo-avatar-icon', end: null} : {end: null},
                     chroming: 'half', menu: '#menu1'}">
             </button>
             <ul id='menu1' data-bind="ojComponent: {component: 'ojMenu', select: menuItemSelect}" style="display:none">

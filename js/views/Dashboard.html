@@ -7,9 +7,11 @@ Home module
     <img src="images/wwhorizon940x198.png"/>
 </div>
 <div id="masonryLayout" class="oj-flex oj-sm-12" data-bind="ojComponent: {component: 'ojMasonryLayout'}">
-    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">About NASA World Wind</div>
     <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
-        <h1>GitHub Repositories</h1>
+        <h1 class="oj-header-border">World Wind Android</h1>
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1 class="oj-header-border">GitHub Repositories</h1>
         <ul data-bind="ojComponent: {component: 'ojListView'}">
             <li><a data-bind="attr: {href: webSdkUrl }">Web SDK</a></li>
             <li><a data-bind="attr: {href: androidSdkUrl }">Android SDK</a></li>
@@ -25,6 +27,22 @@ Home module
         <ul data-bind="ojComponent: {component: 'ojListView'}">
             <li><a data-bind="attr: {href: 'http://explorer.worldwind.earth'}">World Wind Explorer</a></li>
             <li><a data-bind="attr: {href: 'http://worldwindserver.net/webworldwind/apps/Explorer.html'}">Explorer (lightweight)</a></li>
+        </ul>    
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x1 home-tile">
+        <h1>Archive</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: 'http://goworldwind.org'}">goworldwind.org</a></li>
+            <li><a data-bind="attr: {href: 'http://webworldwind.org'}">webworldwind.org</a></li>
+        </ul>    
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1>Support</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: 'http://forum.worldwindcentral.com/forum.php'}">Forum</a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WorldWindAndroid/issues'}">WorldWindAndroid Issues</a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WorldWindJava/issues'}">WorldWindJava Issues</a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WebWorldWind/issues'}">WebWorldWind Issues</a></li>
         </ul>    
     </div>
     <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x1 home-tile">Frameworks</div>
