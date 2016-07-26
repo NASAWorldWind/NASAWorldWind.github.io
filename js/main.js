@@ -72,8 +72,8 @@ require([
     router.configure({
         'home': {label: 'Home', value: 'Home', isDefault: true},
         'dashboard': {label: 'Dashboard', value: 'Dashboard'},
-        'web': {label: 'Web', value: 'Web'},
         'android': {label: 'Android', value: 'Android'},
+        'web': {label: 'Web', value: 'Web'},
         'java': {label: 'Java', value: 'Java'},
         'research': {label: 'Research', value: 'Research'}
     });
@@ -81,8 +81,8 @@ require([
     routerStateIcons = {
         'home': {iconClass: 'fa fa-home fa-lg oj-navigationlist-item-icon'},
         'dashboard': {iconClass: 'fa fa-dashboard fa-lg oj-navigationlist-item-icon'},
-        'web': {iconClass: 'fa fa-globe fa-lg oj-navigationlist-item-icon'},
         'android': {iconClass: 'fa fa-android fa-lg oj-navigationlist-item-icon'},
+        'web': {iconClass: 'fa fa-globe fa-lg oj-navigationlist-item-icon'},
         'java': {iconClass: 'fa fa-coffee fa-lg oj-navigationlist-item-icon'},
         'research': {iconClass: 'fa fa-rocket fa-lg oj-navigationlist-item-icon'}};
 
