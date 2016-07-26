@@ -12,10 +12,10 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
     var childRouter = oj.Router.rootInstance.createChildRouter('javaTopics', 'java');
     
     childRouter.configure({
-        'quickStart': {label: 'Quick Start', value: "JavaQuickStart", isDefault: true},
-        'guide': {label: 'Developers Guide', value: "JavaDevGuide"},
-        'api': {label: 'API Documentation', value: 'JavaApi'},
-        'examples': {label: 'Examples', value: "JavaExamples"}
+        //'quickStart': {label: 'Quick Start', value: "JavaQuickStart", isDefault: true},
+        'guide': {label: 'Developers Guide', value: "JavaDevGuide", isDefault: true},
+        'api': {label: 'API Documentation', value: 'JavaApi'}
+        //'examples': {label: 'Examples', value: "JavaExamples"}
     });
     childRouter.go();
     
