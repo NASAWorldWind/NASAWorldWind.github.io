@@ -3,9 +3,10 @@
     Author     : Bruce Schubert
 */
 .branding-icon {
-    width:48px;
-    height:48px;
+    width: 48px;
+    height: 48px;
 }
+
 .branding-icon:before {
     content: url("images/nasa-logo_48.png");
     display: inline;
@@ -29,17 +30,28 @@ Overriding foundation css starts here
     font-size: 34px;
     margin: 21px 0px 0px 0px;
 }
+
 .headerContent h6.demo-h6 {
     line-height: 23px;
     font-size: 14px;
     margin: 21px 0px 0px 0px;
     height: 136px;
 }
+
 h2.demo-h2 {
     color: #4d7064;
     font-size: 36px;
     line-height: 26px;
     padding: 50px 0px 30px 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+h3.demo-h3 {
+    color: #4d7064;
+    font-size: 24px;
+    line-height: 26px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     margin: 0px;
 }
@@ -50,39 +62,47 @@ h1.demo-h1, h2.demo-h2, h3.demo-h3, h4.demo-h4, h5.demo-h5, h6.demo-h6 {
     text-rendering: optimizelegibility;
 }
 
-    .jumboBtnCont {
-        margin: 0px 0px 14px 0px;
-        display: inline-block;
-    }
-    .jumboBtnCont.sfull, .jumboBtnCont.sfull .jetBtn, .jumboBtnCont.shalf .jetBtn {
-        width: 100%;
-        padding: 0px;
-    }
-    .jumboBtnCont.shalf { width: 49%; }
-    .jetBtnExp {
-        background: transparent;
-        color: #000000;
-        border: none;
-        font-size: 12px;
-        line-height: 21px;
-        padding: 0px;
-        clear: both;
-        width: 100%;
-    }
-    .jumboBtnCont.sfull, .jumboBtnCont.sfull .jetBtn, .jumboBtnCont.shalf .jetBtn {
-        width: 100%;
-        padding: 0px;
-    }
-    .jetBtnExp {
-        background: transparent;
-        color: #000000;
-        border: none;
-        font-size: 12px;
-        line-height: 21px;
-        padding: 0px;
-        clear: both;
-        width: 100%;
-    }
+.jumboBtnCont {
+    margin: 0px 0px 14px 0px;
+    display: inline-block;
+}
+
+.jumboBtnCont.sfull, .jumboBtnCont.sfull .jetBtn, .jumboBtnCont.shalf .jetBtn {
+    width: 100%;
+    padding: 0px;
+}
+
+.jumboBtnCont.shalf {
+    width: 49%;
+}
+
+.jetBtnExp {
+    background: transparent;
+    color: #000000;
+    border: none;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 0px;
+    clear: both;
+    width: 100%;
+}
+
+.jumboBtnCont.sfull, .jumboBtnCont.sfull .jetBtn, .jumboBtnCont.shalf .jetBtn {
+    width: 100%;
+    padding: 0px;
+}
+
+.jetBtnExp {
+    background: transparent;
+    color: #000000;
+    border: none;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 0px;
+    clear: both;
+    width: 100%;
+}
+
 a.jetBtn, a.jetBtnExp, a.jetBtn:hover {
     background: linear-gradient(#0470c9 0%, #0571cd 50%, #0479d8 100%);
     border-radius: 2px;
@@ -95,6 +115,7 @@ a.jetBtn, a.jetBtnExp, a.jetBtn:hover {
     text-align: center;
     text-decoration: none;
 }
+
 a.jetBtnExp {
     background: transparent;
     color: #ffffff;
@@ -105,6 +126,7 @@ a.jetBtnExp {
     clear: both;
     width: 100%;
 }
+
 .justifiedCol {
     max-width: 1080px;
     width: auto;
@@ -140,6 +162,7 @@ p.demo-code {
     position: relative;
     font-family: HelvNeue;
 }
+
 .headerContent h6.demo-h6 {
     color: #212121;
     font-size: 16px;
@@ -152,31 +175,38 @@ p.demo-code {
     opacity: 1.0;
     /*	max-height: 64px;*/
 }
+
 /* Adds padding between logo and application name */
 html:not([dir="rtl"]) .branding-icon {
     padding-right: 4px;
 }
+
 html[dir="rtl"] .branding-icon {
     padding-left: 4px;
 }
+
 .home-tile {
     font-weight: bold;
 }
+
 .home-scroll-container {
     overflow: auto;
 }
+
 .demo-avatar-icon {
-    width:24px;
-    height:24px;
+    width: 24px;
+    height: 24px;
 }
+
 .demo-avatar-icon:before {
-    content:url("images/avatar_24px.png")
+    content: url("images/avatar_24px.png")
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .demo-avatar-icon:before{
-        content:url("images/avatar_24px_2x.png");
-        -webkit-transform:translate(-25%, -25%) scale(0.5);transform:translate(-25%, -25%) scale(0.5)
+    .demo-avatar-icon:before {
+        content: url("images/avatar_24px_2x.png");
+        -webkit-transform: translate(-25%, -25%) scale(0.5);
+        transform: translate(-25%, -25%) scale(0.5)
     }
 }
 
