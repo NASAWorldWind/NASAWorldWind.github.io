@@ -26,16 +26,9 @@ Overriding foundation css starts here
     /*src: url(HelveticaNeue-Thin.otf);*/
 }
 
-.headerContent h1.home-h1 {
-    font-size: 34px;
+h1.home-h1 {
+    font-size: 36px;
     margin: 21px 0px 0px 0px;
-}
-
-.headerContent h6.home-h6 {
-    line-height: 23px;
-    font-size: 14px;
-    margin: 21px 0px 0px 0px;
-    height: 136px;
 }
 
 h2.home-h2 {
@@ -67,6 +60,25 @@ h1.home-h1, h2.home-h2, h3.home-h3, h4.home-h4, h5.home-h5, h6.home-h6 {
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizelegibility;
+}
+
+.headerContent h1.home-h1 {
+    width: 100%;
+    margin: 68px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #2e3432;
+    line-height: 36px;
+    position: relative;
+}
+
+.headerContent h6.home-h6 {
+    color: #212121;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0px 0px 0px;
 }
 
 .jumboBtnCont {
@@ -155,26 +167,6 @@ p.demo-code {
     margin-right: 20px;
     padding: 10px;
     font-family: monospace;
-}
-
-.headerContent h1.home-h1 {
-    width: 100%;
-    margin: 68px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    font-size: 51px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    color: #2e3432;
-    line-height: 36px;
-    position: relative;
-    font-family: HelvNeue;
-}
-
-.headerContent h6.home-h6 {
-    color: #212121;
-    font-size: 16px;
-    line-height: 30px;
-    margin: 20px 0px 0px 0px;
 }
 
 .oj-web-applayout-header {
