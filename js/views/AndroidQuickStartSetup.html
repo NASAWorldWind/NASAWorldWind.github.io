@@ -1,14 +1,48 @@
-<!--
-Copyright (C) 2016 United States Government as represented by the Administrator of the
-National Aeronautics and Space Administration. All Rights Reserved.
--->
-
 <div class="oj-panel">
-
     <h1 class="oj-header-border">Setup</h1>
+    <p><em>Copied from old Android page</em></p>
+    <p><strong>TODO: update content</strong></p>
+    <p>Follow the instructions below to set up an Android development environment for use with World Wind Android. See the <a href="http://developer.android.com/sdk/installing.html" target="_blank">Android SDK Installation Guide</a> for details not covered by these instructions.</p>
+    <h3>Install the Android SDK</h3>
+    <ol>
+        <li>Install <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">JDK 6</a> or later.</li>
+        <li>Install the <a href="http://developer.android.com/sdk/index.html" target="_blank">Android SDK Starter Package</a>.
+            <ul>
+                <li>On Mac OS X and Linux, download and extract the .zip or .tgz file to a folder on your hard drive.</li>
+                <li>On Windows, run the standalone installer.</li>
+                <li>The following steps refer to the extracted or installed folder as android-sdk.</li>
+            </ul>
+        </li>
+        <li>Add the folders android-sdk/platform-tools and android-sdk/tools to your PATH environment variable.</li>
+        <li>Install Android SDK Platform Android 3.1</li>
+        <ul>
+            <li>On Mac OS X and Linux: open a terminal, then run the following command:
+                <pre class="brush: plain; title: ; notranslate" title="">android</pre>
+            </li>
+            <li>On Windows: Open the Start Menu, select Android SDK Tools, then select SDK Manager.</li>
+            <li>Select Available Packages, expand Android Repository, then check the following packages: Android SDK Platform-tools, SDK Platform Android 3.1 API 12, Samples for SDK API 12.</li>
+            </li>
+            <li>Click Install Selected.</li>
+        </ul>
+    </ol>
+    <h3>Prepare Your Android Device</h3>
+    <p>Follow the instructions on <a title="Setting up a Device for Deployment" href="http://developer.android.com/guide/developing/device.html#setting-up" target="_blank">Setting up a Device for Deployment</a>.</p>
+    <h3>Prepare Your IDE</h3>
+    <p><strong>IntelliJ IDEA</strong><br />
+        Enable the Android Support plugin in the Plugins page of the Settings dialog box, then follow the instructions for <a title="Developing Android applications in IntelliJ IDEA" href="http://wiki.jetbrains.net/intellij/Developing_Android_applications_in_IntelliJ_IDEA" target="_blank">Developing Android applications in IntelliJ IDEA</a>.</p>
+    <p><strong>Eclipse</strong><br />
+        Follow the instructions for <a title="Managing Projects from Eclipse with ADT" href="http://developer.android.com/guide/developing/projects/projects-eclipse.html" target="_blank">Managing Projects from Eclipse with ADT</a>.</p>
+    <h3>Troubleshooting</h3>
+    <p><strong>Problem: Running your Android App results in the log message: Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]</strong>.</p>
+    <p>This message indicates that you are attempting to install an application that already exists, but with a different keystore. Uninstalling the existing application resolves this issue. If you&#8217;re unable to uninstall the application, see the stackoverflow.com question <a href="http://stackoverflow.com/questions/3185444/how-to-deal-with-install-parse-failed-inconsistent-certificates-without-uninstall" target="_blank">How to deal with INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES without uninstallation</a>.</p>
+    <p><strong>Problem: Running the Android SDK installer for Windows results in the error &#8220;Java SE development Kit (JDK) not found&#8221;, when a JDK is installed.</strong></p>
+    <p>This is a bug in the installer. Click Back then click Next.</p>
+    <h3>Learning About the Android Platform</h3>
+    <ul>
+        <li>Familiarize yourself with the <a href="http://developer.android.com/" target="_blank">Android Developer&#8217;s Site</a>.</li>
+        <li>Read &#8220;What is Android&#8221; and &#8220;Application Fundamentals&#8221; in the <a href="http://developer.android.com/guide/" target="_blank">Android Developer&#8217;s Guide</a>.</li>
+        <li>Create a bookmark to the <a href="http://developer.android.com/reference/packages.html" target="_blank">Android API Docs</a>.</li>
+    </ul>
+</div>
 
-    <p>First name: <input data-bind="value: firstName" /></p>
-    <p>Last name: <input data-bind="value: lastName" /></p>
-
-    <h2>Hello, <span data-bind="text: fullName"> </span>!</h2>
 </div>

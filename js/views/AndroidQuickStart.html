@@ -1,35 +1,64 @@
-<!--
-Copyright (C) 2016 United States Government as represented by the Administrator of the
-National Aeronautics and Space Administration. All Rights Reserved.
--->
-
 <h1>Get Started</h1>
-<div class="oj-flex oj-flex-item-pad oj-sm-12 " >
-    <!--
-    Create a vertical navigation menu for this page at along the left edge.
-    The contents of the page will be loaded dynamically based on the
-    selected navigation menu item.
-    -->
+<div class="oj-flex oj-flex-item-pad oj-sm-12 ">
     <div class="oj-sm-4 oj-md-3 oj-lg-2 oj-flex-item" data-bind="ojComponent:{
-        component: 'ojNavigationList',
-        drillMode: 'none',
-        data: dataSource,
-        item: { template: 'android-quickstart-template' },
-        optionChange: optionChange,
-        selection: selectedItem,
-        navigationLevel: 'page',
-        edge: 'start'}" >
+                        component: 'ojNavigationList',
+                        drillMode: 'collapsible',
+                        item: {selectable: itemOnly},
+                        selection: selectedItem}">
+        <ul>
+            <li id="AndroidQuickStartOverview">
+                <a href="#">Overview</a>
+            </li>
+            <li id="AndroidQuickStartSetup">
+                <a href="#">Setup</a>
+            </li>
+            <li id="AndroidQuickStartBuild">
+                <a href="#">Build</a>
+            </li>
+            <li id="AndroidQuickStartRun">
+                <a href="#">Run</a>
+            </li>
+            <li id="tutorials">
+                <a href="#">Tutorials</a>
+                <ul>
+                    <li id="AndroidTutorialBasicGlobe">
+                        <a href="#">Basic Globe</a>
+                    </li>
+                    <li id="AndroidTutorialWmsLayer">
+                        <a href="#">WMS Layer</a>
+                    </li>
+                    <li id="AndroidTutorialSurfaceImage">
+                        <a href="#">Surface Image</a>
+                    </li>
+                    <li id="AndroidTutorialCameraView">
+                        <a href="#">Camera View</a>
+                    </li>
+                    <li id="AndroidTutorialLookAtView">
+                        <a href="#">Look At View</a>
+                    </li>
+                    <li id="AndroidTutorialNavigatorEvents">
+                        <a href="#">Navigator Events</a>
+                    </li>
+                    <li id="AndroidTutorialPlacemarkPicking">
+                        <a href="#">Placemark Picking</a>
+                    </li>
+                    <li id="AndroidTutorialPlacemarks">
+                        <a href="#">Placemarks</a>
+                    </li>
+                    <li id="AndroidTutorialCameraControls">
+                        <a href="#">Camera Controls</a>
+                    </li>
+                    <li id="AndroidTutorialShowTessellation">
+                        <a href="#">Show Tessellation</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <!--
     Bind the contents to the navigation menu selection
     -->
     <div id="android-quickstart-content" class="oj-sm-8 oj-md-9 oj-lg-10 oj-flex-item"
-         data-bind="ojModule: selectedModule">
+         data-bind="ojModule: selectedItem">
     </div>
 </div>
-<script type="text/html" id="android-quickstart-template">
-    <li data-bind="attr:{ idx : $data['id']}, css:{'oj-disabled' : $data['disabled']=='true'}">
-        <a href="#" data-bind="text: $data['label']">
-        </a>
-    </li>
-</script>

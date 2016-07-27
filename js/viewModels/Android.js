@@ -9,11 +9,10 @@
 define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
 ], function (oj, ko) {
     // Create a child router named 'androidTopics' for the 'android' routerState
-    var childRouter = oj.Router.rootInstance.createChildRouter('androidTopics', 'android');
+    var childRouter = oj.Router.rootInstance.createChildRouter('androidtopic', 'android');
     
     childRouter.configure({
-        'overview': {label: 'Overview', value: "AndroidOverview", isDefault: true},
-        'quickStart': {label: 'Get Started', value: "AndroidQuickStart"},
+        'getstarted': {label: 'Get Started', value: "AndroidQuickStart", isDefault: true},
         'guide': {label: 'Developers Guide', value: "AndroidDevGuide"},
         'api': {label: 'API Documentation', value: 'AndroidApi'},
         'examples': {label: 'Examples', value: "AndroidExamples"}
