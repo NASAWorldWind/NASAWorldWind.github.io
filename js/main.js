@@ -21,6 +21,11 @@ requirejs.config({
             }
     //endinjector
     ,
+    packages: [{
+        name: "codemirror",
+        location: "libs/codemirror-5.17.0",
+        main: "lib/codemirror"
+    }],
     // Shim configurations for modules that do not expose AMD
     shim: {
         'jquery': {
