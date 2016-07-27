@@ -9,7 +9,7 @@
 define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
 ], function (oj, ko) {
     // Create a child router named 'javaTopics' for the 'java' routerState
-    var childRouter = oj.Router.rootInstance.createChildRouter('javaTopics', 'java');
+    var childRouter = oj.Router.rootInstance.createChildRouter('javatopic', 'java');
     
     childRouter.configure({
         //'quickStart': {label: 'Quick Start', value: "JavaQuickStart", isDefault: true},

@@ -9,7 +9,7 @@
 define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
 ], function (oj, ko) {
     // Create a child router named 'webTopics' for the 'web' routerState
-    var childRouter = oj.Router.rootInstance.createChildRouter('webTopics', 'web');
+    var childRouter = oj.Router.rootInstance.createChildRouter('webtopic', 'web');
     
     childRouter.configure({
         //'quickStart': {label: 'Quick Start', value: "WebQuickStart", isDefault: true},

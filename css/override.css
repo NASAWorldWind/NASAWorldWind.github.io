@@ -23,22 +23,22 @@ Overriding foundation css starts here
 */
 @font-face {
     font-family: HelvNeue;
-    src: url(HelveticaNeue-Thin.otf);
+    /*src: url(HelveticaNeue-Thin.otf);*/
 }
 
-.headerContent h1.demo-h1 {
+.headerContent h1.home-h1 {
     font-size: 34px;
     margin: 21px 0px 0px 0px;
 }
 
-.headerContent h6.demo-h6 {
+.headerContent h6.home-h6 {
     line-height: 23px;
     font-size: 14px;
     margin: 21px 0px 0px 0px;
     height: 136px;
 }
 
-h2.demo-h2 {
+h2.home-h2 {
     color: #4d7064;
     font-size: 36px;
     line-height: 26px;
@@ -47,7 +47,7 @@ h2.demo-h2 {
     margin: 0px;
 }
 
-h3.demo-h3 {
+h3.home-h3 {
     color: #4d7064;
     font-size: 24px;
     line-height: 26px;
@@ -56,7 +56,14 @@ h3.demo-h3 {
     margin: 0px;
 }
 
-h1.demo-h1, h2.demo-h2, h3.demo-h3, h4.demo-h4, h5.demo-h5, h6.demo-h6 {
+h3.dash-h3 {
+    /*font-size: 24px;*/
+    /*line-height: 26px;*/
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+
+h1.home-h1, h2.home-h2, h3.home-h3, h4.home-h4, h5.home-h5, h6.home-h6 {
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizelegibility;
@@ -135,7 +142,7 @@ a.jetBtnExp {
     overflow: hidden;
 }
 
-p.demo-ptag, center.demo-center {
+p.home-ptag, center.home-center {
     color: #454545;
     font-size: 15px;
     line-height: 33px;
@@ -150,7 +157,7 @@ p.demo-code {
     font-family: monospace;
 }
 
-.headerContent h1.demo-h1 {
+.headerContent h1.home-h1 {
     width: 100%;
     margin: 68px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -163,7 +170,7 @@ p.demo-code {
     font-family: HelvNeue;
 }
 
-.headerContent h6.demo-h6 {
+.headerContent h6.home-h6 {
     color: #212121;
     font-size: 16px;
     line-height: 30px;
