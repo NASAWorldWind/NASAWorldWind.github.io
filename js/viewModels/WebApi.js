@@ -17,7 +17,7 @@ define(['ojs/ojcore', 'knockout'
         /**
          * URL to API documentation
          */
-        self.url = "http://worldwindserver.net/webworldwind/api-doc/";
+        self.url = "assets/web/api-doc/";
     }
 
     return WebApiContentViewModel;

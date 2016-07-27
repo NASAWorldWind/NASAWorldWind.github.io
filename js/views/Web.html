@@ -5,34 +5,31 @@ National Aeronautics and Space Administration. All Rights Reserved.
 <div class="oj-flex oj-flex-items-pad oj-sm-12" style="background: activecaption" >
     <h1 class="oj-flex-item">Web World Wind SDK</h1>
 </div>
-<div style="width: 100%; height:calc(100vh - 120px)">
-    <iframe src="https://webworldwind.org" height="100%" width="100%"></iframe>
-</div>
 
-<!--<div class="oj-flex oj-sm-12 " >-->
-    <!--&lt;!&ndash;-->
-    <!--Create a navigation menu for this page at along the top edge.-->
-    <!--The contents of the page will be loaded dynamically based on the -->
-    <!--router states bound to the menu items.-->
-    <!--&ndash;&gt;-->
-    <!--<div class="oj-flex-item" data-bind="ojComponent:{-->
-        <!--component: 'ojNavigationList',-->
-        <!--drillMode: 'none',-->
-        <!--selection: navListSelection,-->
-        <!--optionChange: onNavListOptionChange,-->
-        <!--navigationLevel: 'page',-->
-        <!--edge: 'top'}" >-->
-        <!--&lt;!&ndash;Create menu items for each router state&ndash;&gt;-->
-        <!--<ul id="foreachMenu" data-bind="foreach: router.states">-->
-            <!--<li data-bind="attr: {id: id}">-->
-                <!--<a data-bind="text: label, click: go"></a>-->
-            <!--</li>-->
-        <!--</ul>-->
-    <!--</div>-->
-<!--</div>-->
-<!--&lt;!&ndash;-->
-<!--Bind the contents to the current router state.-->
-<!--&ndash;&gt;-->
-<!--<div id="web-sdk-content" class="oj-flex oj-sm-12"-->
-     <!--data-bind="ojModule: router.moduleConfig">-->
-<!--</div>-->
+<div class="oj-flex oj-sm-12 " >
+    <!--
+    Create a navigation menu for this page at along the top edge.
+    The contents of the page will be loaded dynamically based on the
+    router states bound to the menu items.
+    -->
+    <div class="oj-flex-item" data-bind="ojComponent:{
+        component: 'ojNavigationList',
+        drillMode: 'none',
+        selection: navListSelection,
+        optionChange: onNavListOptionChange,
+        navigationLevel: 'page',
+        edge: 'top'}" >
+        <!--Create menu items for each router state-->
+        <ul id="foreachMenu" data-bind="foreach: router.states">
+            <li data-bind="attr: {id: id}">
+                <a data-bind="text: label, click: go"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--
+Bind the contents to the current router state.
+-->
+<div id="web-sdk-content" class="oj-flex oj-sm-12"
+     data-bind="ojModule: router.moduleConfig">
+</div>

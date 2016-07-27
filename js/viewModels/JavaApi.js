@@ -13,8 +13,7 @@ define(['ojs/ojcore', 'knockout'
      */
     function JavaApiContentViewModel() {
         var self = this;
-
-        self.apiUrl = "http://builds.worldwind.arc.nasa.gov/worldwind-releases/daily/docs/api/index.html";
+        self.url = "assets/java/api-doc/";
     }
     
     return JavaApiContentViewModel;

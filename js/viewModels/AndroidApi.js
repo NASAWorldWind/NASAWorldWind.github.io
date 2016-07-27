@@ -17,7 +17,7 @@ define(['ojs/ojcore', 'knockout'
         /**
          * URL to API documentation
          */
-        self.url = "https://worldwindserver.net/android/latest/doc/";
+        self.url = "assets/android/api-doc/";
     }
 
     return AndroidApiContentViewModel;
