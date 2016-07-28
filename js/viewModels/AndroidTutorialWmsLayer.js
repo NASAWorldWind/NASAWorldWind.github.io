@@ -19,7 +19,8 @@ define(['ojs/ojcore', 'knockout', 'codemirror',
                 lineNumbers: true,
                 matchBrackets: true,
                 mode: "text/x-java",
-                readOnly: true
+                readOnly: true,
+                theme: 'android'
             });
         };
 

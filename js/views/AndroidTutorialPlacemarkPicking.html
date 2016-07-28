@@ -1,23 +1,20 @@
-<!--
-Copyright (C) 2016 United States Government as represented by the Administrator of the
-National Aeronautics and Space Administration. All Rights Reserved.
--->
-<h1>Placemarks Picking Tutorial</h1>
-<p>
-    Demonstrates how to pick and highlight Placemarks.
-</p>
-<p>
-    Tapping a placemark will toggle its highlighted state.
-</p>
+<div class="oj-panel">
+    <h1>Placemarks Picking Tutorial</h1>
+    <p>
+        Demonstrates how to pick and highlight Placemarks.
+    </p>
+    <p>
+        Tapping a placemark will toggle its highlighted state.
+    </p>
 
-<h2>Example</h2>
-<h3>PlacemarksPickingFragment.java</h3>
-<p>
-    The PlacemarksPickingFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
-    Here we create a add a RenderableLayer with four Placemarks to the globe. We also override with default
-    WorldWindowController with a PickNavigateController inner class to respond to touch events on the Placemarks.
-</p>
-<div style="border-top: 1px solid black; border-bottom: 1px solid black;">
+    <h2>Example</h2>
+    <h3>PlacemarksPickingFragment.java</h3>
+    <p>
+        The PlacemarksPickingFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
+        Here we create a add a RenderableLayer with four Placemarks to the globe. We also override with default
+        WorldWindowController with a PickNavigateController inner class to respond to touch events on the Placemarks.
+    </p>
+    <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
     <textarea id="java-code">
 package gov.nasa.worldwindx;
 ...
@@ -175,5 +172,5 @@ public class PlacemarksPickingFragment extends BasicGlobeFragment {
 }
 
     </textarea>
+    </div>
 </div>
-

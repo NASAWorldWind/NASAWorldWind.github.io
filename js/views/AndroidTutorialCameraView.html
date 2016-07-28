@@ -1,23 +1,21 @@
-<!--
-Copyright (C) 2016 United States Government as represented by the Administrator of the
-National Aeronautics and Space Administration. All Rights Reserved.
--->
-<h1>Camera View Tutorial</h1>
-<p>
-    Demonstrates how to use a Camera to view a position. It shows how to configure the WorldWindow's camera to point a
-    particular direction from a specific position. This example also shows how to compute great circle distance and
-    azimuth between two positions.
-</p>
-<p>
-    This example simulates a view from an aircraft above Oxnard, CA looking at the Point Mugu Naval Air Station.
-</p>
-<h2>Example</h2>
-<h3>CameraViewFragment.java</h3>
-<p>
-    The CameraViewFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
-    Here we position the Navigator's camera at an aircraft's location and point the camera at a nearby airport.
-</p>
-<div style="border-top: 1px solid black; border-bottom: 1px solid black;">
+<div class="oj-panel">
+    <h1>Camera View Tutorial</h1>
+    <p>
+        Demonstrates how to use a Camera to view a position. It shows how to configure the WorldWindow's camera to point
+        a
+        particular direction from a specific position. This example also shows how to compute great circle distance and
+        azimuth between two positions.
+    </p>
+    <p>
+        This example simulates a view from an aircraft above Oxnard, CA looking at the Point Mugu Naval Air Station.
+    </p>
+    <h2>Example</h2>
+    <h3>CameraViewFragment.java</h3>
+    <p>
+        The CameraViewFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
+        Here we position the Navigator's camera at an aircraft's location and point the camera at a nearby airport.
+    </p>
+    <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
     <textarea id="java-code">
 package gov.nasa.worldwindx;
 ...
@@ -63,4 +61,5 @@ public class CameraViewFragment extends BasicGlobeFragment {
 }
 
     </textarea>
+    </div>
 </div>

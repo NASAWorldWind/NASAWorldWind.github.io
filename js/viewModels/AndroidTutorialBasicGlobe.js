@@ -12,25 +12,33 @@ define(['ojs/ojcore', 'knockout', 'codemirror',
 ], function (oj, ko, CodeMirror) {
 
     function AndroidTutorialBasicGlobe(params) {
-        var self = this;
+        var self = this,
+            javaSnippet,
+            javaCode,
+            xmlCode;
 
+        // Update the DOM elements "after" the DOM is attached to this view model
         self.handleAttached = function () {
-            var snippet = CodeMirror.fromTextArea(document.getElementById("java-snippet"), {
+            javaSnippet = CodeMirror.fromTextArea(document.getElementById("java-snippet"), {
                 mode: "text/x-java",
-                readOnly: true
+                readOnly: true,
+                theme: 'android'
             });
-            var editor = CodeMirror.fromTextArea(document.getElementById("java-code"), {
+            javaCode = CodeMirror.fromTextArea(document.getElementById("java-code"), {
                 lineNumbers: true,
                 matchBrackets: true,
                 mode: "text/x-java",
-                readOnly: true
+                readOnly: true,
+                theme: 'android'
             });
-            CodeMirror.fromTextArea(document.getElementById("xml-code"), {
+            xmlCode = CodeMirror.fromTextArea(document.getElementById("xml-code"), {
                 lineNumbers: true,
                 matchBrackets: true,
                 mode: "application/xml",
-                readOnly: true
+                readOnly: true,
+                theme: 'android'
             });
+
         };
 
     }

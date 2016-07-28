@@ -209,3 +209,39 @@ html[dir="rtl"] .branding-icon {
     }
 }
 
+
+.CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    font-family: monospace;
+    font-size: 14px;
+    height: auto;
+    color: black;
+}
+
+.cm-s-android .cm-keyword {color: #000080; font-weight: bold}
+.cm-s-android .cm-atom {color: #219;}
+.cm-s-android .cm-number {color: #164;}
+.cm-s-android .cm-def {color: #00f;}
+.cm-s-android .cm-variable,
+.cm-s-android .cm-punctuation,
+.cm-s-android .cm-property,
+.cm-s-android .cm-operator {}
+.cm-s-android .cm-variable-2 {color: #05a;}
+.cm-s-android .cm-variable-3 {color: #085;}
+.cm-s-android .cm-comment {color: #808080; font-style: italic;}
+.cm-s-android .cm-string {color: #008000;}
+.cm-s-android .cm-string-2 {color: #f50;}
+.cm-s-android .cm-meta {color: #808000;}
+.cm-s-android .cm-qualifier {color: #555;}
+.cm-s-android .cm-builtin {color: #30a;}
+.cm-s-android .cm-bracket {color: #997;}
+.cm-s-android .cm-tag {color: #170;}
+.cm-s-android .cm-attribute {color: #00c;}
+.cm-s-android .cm-hr {color: #999;}
+.cm-s-android .cm-link {color: #00c;}
+
+.cm-s-android .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.cm-s-android .CodeMirror-activeline-background { background: #e8f2ff; }
+.cm-s-android .CodeMirror-matchingbracket { outline:1px solid grey; color:black !important; }
