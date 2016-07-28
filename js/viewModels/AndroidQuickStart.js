@@ -8,6 +8,19 @@
  */
 define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojnavigationlist'
 ], function (oj, ko) {
+
+    // Some starter/seed code to implement a child router so the pages can be bookmarked and for back/prev navigation
+    //var parentRouter = oj.Router.rootInstance.getChildRouter('androidtopic'),
+    //    childRouter = parentRouter.createChildRouter('getstarted', 'androidtopic');
+    //
+    //childRouter.configure({
+    //    'overview': {label: 'Overview', value: "AndroidQuickStartOverview", isDefault: true},
+    //    'setup': {label: 'Setup', value: "AndroidQuickStartSetup"},
+    //    'build': {label: 'Build', value: 'AndroidQuickStartBuild'},
+    //    'run': {label: 'Run', value: 'AndroidQuickStartRun'},
+    //    'tutorials': {label: 'Tutorials', value: "AndroidExamples"}
+    //});
+
     /**
      * The view model for the Android SDK content view template
      */
@@ -21,6 +34,12 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojnavigationlist'
         this.selectedItem.subscribe(function (newItem) {
             AndroidQuickStart.lastSelectedItem = newItem;
         });
+
+
+        this.showModule = function(module) {
+            self.selectedItem(module);
+            //childRouter.go('/android/getstarted/run')
+        }
     }
     AndroidQuickStart.lastSelectedItem = "AndroidQuickStartOverview";
 

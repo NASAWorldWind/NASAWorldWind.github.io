@@ -40,8 +40,7 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
          */
         self.onNavListOptionChange = function (event, data) {
             if (data['option'] === 'selection') {
-                // make the new selection the default
-//                self.router.defaultStateId = data['value'];
+                // make the new selection the default state
                 self.router.defaultStateId = self.navListSelection();
             }
         };        

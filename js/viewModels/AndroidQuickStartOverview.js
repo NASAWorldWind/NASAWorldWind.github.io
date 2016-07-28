@@ -11,11 +11,9 @@ define(['ojs/ojcore', 'knockout'
     /**
      * The view model for the Android examples view template
      */
-    function AndroidOverview() {
+    function AndroidQuickStartOverview() {
         var self = this;
-
-
     }
     
-    return AndroidOverview;
+    return AndroidQuickStartOverview;
 });
