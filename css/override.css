@@ -221,7 +221,7 @@ html[dir="rtl"] .branding-icon {
 .cm-s-android .cm-keyword {color: #000080; font-weight: bold}
 .cm-s-android .cm-atom {color: #219;}
 .cm-s-android .cm-number {color: #164;}
-.cm-s-android .cm-def {color: #00f;}
+.cm-s-android .cm-def {color: black}
 .cm-s-android .cm-variable,
 .cm-s-android .cm-punctuation,
 .cm-s-android .cm-property,
