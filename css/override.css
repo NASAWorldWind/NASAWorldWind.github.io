@@ -209,6 +209,9 @@ html[dir="rtl"] .branding-icon {
     }
 }
 
+div.section-header {
+    background-color: #98b3d1;
+}
 
 .CodeMirror {
     /* Set height, width, borders, and global font properties here */
