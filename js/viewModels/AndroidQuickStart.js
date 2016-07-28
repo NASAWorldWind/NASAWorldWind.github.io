@@ -6,8 +6,8 @@
 /**
  * AndroidQuickStart module
  */
-define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojnavigationlist'
-], function (oj, ko) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlist'
+], function (oj, ko, $) {
 
     // Some starter/seed code to implement a child router so the pages can be bookmarked and for back/prev navigation
     //var parentRouter = oj.Router.rootInstance.getChildRouter('androidtopic'),
@@ -33,14 +33,21 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojnavigationlist'
         this.selectedItem = ko.observable(AndroidQuickStart.lastSelectedItem);
         this.selectedItem.subscribe(function (newItem) {
             AndroidQuickStart.lastSelectedItem = newItem;
+            // Ensure the parent list item is expanded
+            // Get the parent <ul> and then the parent <li>
+            var $parent = $("#" + newItem).parent().parent();
+            if ($parent.length) {
+                $("#android-getstarted-menu").ojNavigationList("expand", $parent.attr("id"));
+            }
         });
 
 
-        this.showModule = function(module) {
+        this.showModule = function (module) {
             self.selectedItem(module);
             //childRouter.go('/android/getstarted/run')
         }
     }
+
     AndroidQuickStart.lastSelectedItem = "AndroidQuickStartOverview";
 
     return AndroidQuickStart;
