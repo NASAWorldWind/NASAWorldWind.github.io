@@ -4,22 +4,22 @@
          data-bind="ojComponent:{
             component: 'ojNavigationList',
             drillMode: 'collapsible',
-            item: {selectable: itemOnly},
+            item: {selectable: isLeaf},
             selection: selectedItem}">
         <ul>
-            <li id="AndroidQuickStartOverview">
+            <li id="overview">
                 <a href="#">Overview</a>
             </li>
             <li id="setup">
                 <a href="#">Setup</a>
                 <ul>
-                    <li id="AndroidQuickStartInstall">
+                    <li id="install">
                         <a href="#">Install</a>
                     </li>
-                    <li id="AndroidQuickStartBuild">
+                    <li id="build">
                         <a href="#">Build</a>
                     </li>
-                    <li id="AndroidQuickStartRun">
+                    <li id="run">
                         <a href="#">Run</a>
                     </li>
                 </ul>
@@ -27,34 +27,34 @@
             <li id="tutorials">
                 <a href="#">Tutorials</a>
                 <ul>
-                    <li id="AndroidTutorialBasicGlobe">
+                    <li id="basicglobe">
                         <a href="#">Basic Globe</a>
                     </li>
-                    <li id="AndroidTutorialWmsLayer">
+                    <li id="wmslayer">
                         <a href="#">WMS Layer</a>
                     </li>
-                    <li id="AndroidTutorialSurfaceImage">
+                    <li id="surfaceimage">
                         <a href="#">Surface Image</a>
                     </li>
-                    <li id="AndroidTutorialCameraView">
+                    <li id="cameraview">
                         <a href="#">Camera View</a>
                     </li>
-                    <li id="AndroidTutorialLookAtView">
+                    <li id="lookatview">
                         <a href="#">Look At View</a>
                     </li>
-                    <li id="AndroidTutorialNavigatorEvents">
+                    <li id="navigatorevents">
                         <a href="#">Navigator Events</a>
                     </li>
-                    <li id="AndroidTutorialPlacemarkPicking">
-                        <a href="#">Placemark Picking</a>
-                    </li>
-                    <li id="AndroidTutorialPlacemarks">
+                    <li id="placemarks">
                         <a href="#">Placemarks</a>
                     </li>
-                    <li id="AndroidTutorialCameraControls">
+                    <li id="placemarkpicking">
+                        <a href="#">Placemark Picking</a>
+                    </li>
+                    <li id="cameracontrols">
                         <a href="#">Camera Controls</a>
                     </li>
-                    <li id="AndroidTutorialShowTessellation">
+                    <li id="showtessellation">
                         <a href="#">Show Tessellation</a>
                     </li>
                 </ul>
@@ -65,6 +65,7 @@
     Bind the contents to the navigation menu selection
     -->
     <div id="android-quickstart-content" class="oj-sm-8 oj-md-9 oj-lg-10 oj-flex-item"
-         data-bind="ojModule: selectedItem">
+         data-bind="ojModule: router.currentValue">
     </div>
+         <!-- data-bind="ojModule: selectedItem"> -->
 </div>
