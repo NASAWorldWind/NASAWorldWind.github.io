@@ -8,4 +8,63 @@
         <li>Running unit tests</li>
         <li>Linking/including the worldwind.aar into a new project</li>
     </ul>
+    <h2>Build your first app</h2>
+    <h3>Start a new Android Studio project</h3>
+    <ul>
+        <li>Configure new project - defaults</li>
+        <li>Phone/Tablet - Minimum SDK: API 19: Android 4.4 (KitKat)</li>
+        <li>Empty Activity: MainActivity</li>
+    </ul>
+    <h3>Run</h3>
+    <p>Verify the example runs...
+    <ul>
+        <li>If Reqd:Create new emulator</li>
+        <ul>   
+            <li>Select hardware device: Default Nexus 5x</li>
+            <li>Select and download a System Image: Default: Marshmallow (wait for download to complete)</li>
+            <li>Configure Android Virtual Device (AVD)</li>
+        </ul>
+        <li>Select an Available Emulator -> Press OK</li>
+    </ul>
+    Add WorldWind
+    <ul>
+
+        <li><a href="http://worldwindserver.net/android/latest/worldwind.aar">Download WorldWind Library (worldwind.aar)</a></li>
+        <li>Add a new Module to your project</li>
+        <li>Select Import .JAR/.AAR Package</li>
+        <li>Filename: Browse to downloaded .AAR</li>
+        <li>Subproject name: worldwind</li>
+        <li>Add dependency to worldwind</li>
+        <li>Open app Module Settings... > Dependencies > [+] Module dependency > worldwind > OK</li>
+    </ul>
+
+    Edit two files:
+    
+    activity_main.xml
+        Replace the text view with this FrameView
+        
+            <!--WorldWindow Globe panel-->
+    <FrameLayout
+        android:id="@+id/globe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"></FrameLayout>
+
+        
+    MainActivity.java
+    
+        Add these lines to MainActivity.java
+        
+        // Create a World Window (a GLSurfaceView)...
+        WorldWindow wwd = new WorldWindow(getApplicationContext());
+        // ... and add some map layers
+        wwd.getLayers().addLayer(new BackgroundLayer());
+        wwd.getLayers().addLayer(new BlueMarbleLandsatLayer());
+        // Add the WorldWindow view object to the layout that was reserved for the globe.
+        FrameLayout globeLayout = (FrameLayout) findViewById(R.id.globe);
+        globeLayout.addView(wwd);
+    
+    
 </div>
