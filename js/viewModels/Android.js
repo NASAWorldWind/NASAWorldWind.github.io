@@ -8,7 +8,7 @@
  */
 define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
 ], function (oj, ko) {
-    // Create a child router named 'androidTopics' for the 'android' routerState
+    // Create a child router named 'androidtopic' for the 'android' routerState
     var childRouter = oj.Router.rootInstance.createChildRouter('androidtopic', 'android');
     
     childRouter.configure({
@@ -17,7 +17,8 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
         'api': {label: 'API Documentation', value: 'AndroidApi'},
         'examples': {label: 'Examples', value: "AndroidExamples"}
     });
-    childRouter.go();
+    oj.Router.sync();
+    //childRouter.go();
     
     /**
      * The view model for the Android SDK content view template
@@ -28,6 +29,8 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
          * The child router is bound to the view's ojNavigationList menu.
          */
         self.router = childRouter;
+        
+        self.githubUrl = "https://NASAWorldWind/WorldWindAndroid";
         
         /**
          * Sets the selected item in the ojNavigationList menu.
