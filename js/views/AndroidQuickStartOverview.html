@@ -1,49 +1,53 @@
 <div class="oj-panel">
-    <h1 class="oj-header-border">Overview</h1>
-    <div>
-        <p> World Wind Android is a 3D virtual globe API for Android. You can use it to
-            provide a geographic context, complete with terrain, for visualizing geographic
-            or geo-located information.</p>
-        <p> World Wind Android provides high-resolution terrain
-            and imagery, retrieved from remote servers automatically as needed. You can
-            also provide your own terrain and imagery. World Wind Android additionally
-            provides a rich collection of shapes that you can use to represent information
-            on the globe or in space.</p>
-        <ul>
-            <li>The <a title="Setup" href="#"
-                       data-bind="click: $parent.selectedItem.bind($data, 'install')">Setup</a>
-                section gets you up and running with World Wind Android as quick as possible.
-                <ul>
-                    <li><a title="Install" href="#"
-                           data-bind="click: $parent.selectedItem.bind($data, 'install')">Install</a>
-                        shows you how to install and configure the Android development environment.
-                    </li>
-                    <li><a title="Build" href="#"
-                           data-bind="click: $parent.selectedItem.bind($data, 'build')">Build</a>
-                        shows you to build the World Wind Android SDK and how to add the library to an Android
-                        application.
-                    </li>
-                    <li><a title="Run" href="#"
-                           data-bind="click: $parent.selectedItem.bind($data, 'run')">Run</a>
-                        demonstrates how deploy and run your Android application on a device or emulator.
-                    </li>
-                </ul>
-            </li>
-
-            <li><a title="Tutorials" href="#"
-                   data-bind="click: $parent.selectedItem.bind($data, 'basicglobe')">Tutorials</a>
-                provides examples and core concepts for developing World Wind Android applications.
-            </li>
-        </ul>
-        
-        <h2>Important Links</h2>
-        <ul>
-            <li>TODO: GitHub Repository</li>
-            <li>TODO: Issue Tracker</li>
-            <li>TOOD: download tutorial app</li>
-            <li>TOOD: download examples app</li>
-            <li>TOOD: download latest .aar</li>
-        </ul>
-
-    </div>
+	<h1 class="oj-header-border">Overview</h1>
+	<div>
+		<p>World Wind Android is a 3D virtual globe API for Android. You can use 
+		it to provide a geographic context, complete with terrain, for visualizing 
+		geographic or geo-located information.</p>
+		<p>World Wind Android provides high-resolution terrain and imagery, retrieved 
+		from remote servers automatically as needed. You can also provide your own 
+		terrain and imagery. World Wind Android additionally provides a rich collection 
+		of shapes that you can use to represent information on the globe or in space.</p>
+		<h3>Setup</h3>
+		<p>The
+		<a data-bind="click: $parent.selectedItem.bind($data, 'install')" href="#" title="Setup">
+		Setup</a> section gets you up and running with World Wind Android as quick 
+		as possible.</p>
+		<ul class="oj-ul">
+			<li>
+			<a data-bind="click: $parent.selectedItem.bind($data, 'install')" href="#" title="Install">
+			Install</a> shows you how to install and configure the Android development 
+			environment. </li>
+			<li>
+			<a data-bind="click: $parent.selectedItem.bind($data, 'build')" href="#" title="Build">
+			Build</a> shows you to how to add the World Wind library to an Android 
+			application, and how build the World Wind Android SDK should you wish 
+			to customize its behavior.</li>
+			<li>
+			<a data-bind="click: $parent.selectedItem.bind($data, 'run')" href="#" title="Run">
+			Run</a> demonstrates how to deploy, run and monitor your Android application 
+			on a device or emulator. </li>
+		</ul>
+		<h3>Tutorials</h3>
+		<p>
+		<a data-bind="click: $parent.selectedItem.bind($data, 'basicglobe')" href="#" title="Tutorials">
+		Tutorials</a> provides a collection of examples that demonstrate several 
+		core concepts for developing World Wind Android applications. </p>
+		<h2>Important Links</h2>
+		<ul>
+			<li>
+			<a href="https://github.com/NASAWorldWind/WorldWindAndroid/issues" target="_blank">
+			Source code repository</a> on GitHub</li>
+			<li>
+			<a href="https://github.com/NASAWorldWind/WorldWindAndroid/issues" target="_blank">
+			Issue tracker</a> for World Wind Android</li>
+			<li>Download the
+			<a href="http://worldwindserver.net/android/latest/worldwind.aar">World 
+			Wind Library</a> (worldwind.aar)</li>
+			<li>Download the
+			<a href="http://worldwindserver.net/android/latest/worldwind-examples.apk">
+			World Wind Examples</a> app for Android devices 
+			(worldwind-examples.apk)</li>
+		</ul>
+	</div>
 </div>
