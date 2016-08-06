@@ -1,5 +1,7 @@
 <div class="oj-panel">
     <h1>WMS Layer Tutorial</h1>
+    <img src="images/wms-layer.png" class="screenshot"/>
+
     <p>
         Demonstrates how to construct a WmsLayer with a WmsLayerConfig.</p>
     <p>
@@ -12,8 +14,13 @@
         Here we create a WmsLayerConfig object to define a WMS layer configuration, and then we create a
         WmsLayer object with the config object. And, finally, we add the new layer to the WorldWindow object.
     </p>
-    <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
-    <textarea id="java-code">
+    <div style="clear: left">
+        <img src="images/wms-layer-classes.png" class="class-diagram"/>
+    </div>
+    <div class="oj-panel oj-margin" style="clear: left">
+        <h3 class="oj-header-border">WmsLayerFragment.java</h3>
+        <div>
+            <textarea id="java-code">
 public class WmsLayerFragment extends BasicGlobeFragment {
 
     /**
@@ -40,6 +47,7 @@ public class WmsLayerFragment extends BasicGlobeFragment {
         return wwd;
     }
 }
-    </textarea>
+            </textarea>
+        </div>
     </div>
 </div>

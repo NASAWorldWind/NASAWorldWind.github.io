@@ -1,5 +1,6 @@
 <div class="oj-panel">
     <h1>Camera Controls Tutorial</h1>
+    <img src="images/camera-controls.png" class="screenshot"/>
 
     <p>
         Demonstrates how to override the WorldWindowController gesture controller.
@@ -12,13 +13,13 @@
         <li>two-finger rotate rotates the camera about its own axis,</li>
         <li>three-finger tilt tilts the camera about its own axis.</li>
     </ul>
-
     <h2>Example</h2>
     <h3>CameraControlFragment.java</h3>
     <p>
         The CameraControlFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
         Here we create override the default WorldWindowController with our own CameraController inner class.
     </p>
+    <img src="images/camera-controls-classes.png" class="class-diagram"/>
     <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
     <textarea id="java-code">
 public class CameraControlFragment extends BasicGlobeFragment {

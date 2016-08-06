@@ -1,5 +1,7 @@
 <div class="oj-panel">
     <h1 class="oj-header-border">Basic Globe Tutorial</h1>
+    <div>
+    <img src="images/basic-globe.png" class="screenshot"/>
     <p>Demonstrates how to construct a WorldWindow with a few layers.</p>
     The globe uses the default navigation gestures:
     <ul>
@@ -12,7 +14,7 @@
     <p>It’s very easy to get started using World Wind Android. You simply create and configure a <b>WorldWindow</b> View
         object and add it to a layout. This can be performed in an Activity or a Fragment.
     </p>
-    <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
+    </div>
 
         <textarea id="java-snippet" rows="5">
 // Create a World Window (a GLSurfaceView)...
@@ -22,11 +24,11 @@ wwd.getLayers().addLayer(new BackgroundLayer());
 wwd.getLayers().addLayer(new BlueMarbleLandsatLayer());
         </textarea>
 
-    </div>
     <h2>Example</h2>
     <h3>BasicGlobeFragment.java</h3>
     <p>In this example, we add WorldWindow to a Fragment's layout in its <b>onCreateView()</b> callback. In our
         <b>createWorldWindow()</b> method, you can see how easy it is to create and configure a WorldWindow.</p>
+    <img src="images/basic-globe-classes.png" class="class-diagram"/>
     <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
 
         <textarea id="java-code">
