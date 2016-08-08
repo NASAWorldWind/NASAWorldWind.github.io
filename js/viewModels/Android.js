@@ -14,8 +14,7 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
     childRouter.configure({
         'getstarted': {label: 'Get Started', value: "AndroidQuickStart", isDefault: true},
         'guide': {label: 'Developers Guide', value: "AndroidDevGuide"},
-        'api': {label: 'API Documentation', value: 'AndroidApi'},
-        'examples': {label: 'Examples', value: "AndroidExamples"}
+        'api': {label: 'API Documentation', value: 'AndroidApi'}
     });
     oj.Router.sync();
     //childRouter.go();
