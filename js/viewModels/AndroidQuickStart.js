@@ -29,6 +29,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlis
         'navigatorevents': {label: 'Tutorials', value: "AndroidTutorialNavigatorEvents"},
         'placemarks': {label: 'Tutorials', value: "AndroidTutorialPlacemarks"},
         'placemarkpicking': {label: 'Tutorials', value: "AndroidTutorialPlacemarkPicking"},
+        'paths': {label: 'Tutorials', value: "AndroidTutorialPaths"},
+        'polygons': {label: 'Tutorials', value: "AndroidTutorialPolygons"},
         'cameracontrols': {label: 'Tutorials', value: "AndroidTutorialCameraControls"},
         'showtessellation': {label: 'Tutorials', value: "AndroidTutorialShowTessellation"},
         'examples': {label: 'Examples', value: "AndroidExamples"},
