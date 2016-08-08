@@ -1,26 +1,35 @@
-<div class="oj-panel">
+﻿<div class="oj-panel">
     <h1>Camera Controls Tutorial</h1>
     <img src="images/camera-controls.png" class="screenshot"/>
 
     <p>
-        Demonstrates how to override the WorldWindowController gesture controller.
+        This tutorial demonstrates how to override the <strong>WorldWindowController</strong> gesture controller 
+		to implement custom behaviors.
     </p>
     <p>
-        This advanced example uses the Navigator's setAsCamera interface in response touch event gestures.</p>
+        This advanced example uses the <strong>Navigator's</strong>
+		<strong>setAsCamera</strong> interface in response to touch event gestures.&nbsp; 
+		It overrides the default pan, zoom and rotate behavior.</p>
     <ul>
         <li>one-finger pan moves the geographic location of the camera,</li>
         <li>two-finger pinch-zoom adjusts the camera altitude,</li>
         <li>two-finger rotate rotates the camera about its own axis,</li>
         <li>three-finger tilt tilts the camera about its own axis.</li>
     </ul>
-    <h2>Example</h2>
-    <h3>CameraControlFragment.java</h3>
+    <h2 style="clear:left">Example</h2>
     <p>
-        The CameraControlFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method.
-        Here we create override the default WorldWindowController with our own CameraController inner class.
+        The <strong>CameraControlFragment </strong>class extends the 
+		<strong>BasicGlobeFragment </strong>and overrides the <strong>createWorldWindow
+		</strong>method. In <strong>createWorldWindow</strong>, we create a <strong>CameraController</strong>: a 
+		subclass of the <strong>BasicWorldWindController</strong> that processes gestures and updates
+		the view via the <strong>Navigator</strong>. The fragment sets the WorldWindow's 
+		<strong>worldWindowController </strong>property to an instance of our custom controller.
     </p>
+    <h3>Class Diagram</h3>
     <img src="images/camera-controls-classes.png" class="class-diagram"/>
     <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
+    
+    <h3>CameraControlFragment.java</h3>
     <textarea id="java-code">
 public class CameraControlFragment extends BasicGlobeFragment {
 

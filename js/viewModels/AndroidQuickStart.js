@@ -30,7 +30,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlis
         'placemarks': {label: 'Tutorials', value: "AndroidTutorialPlacemarks"},
         'placemarkpicking': {label: 'Tutorials', value: "AndroidTutorialPlacemarkPicking"},
         'cameracontrols': {label: 'Tutorials', value: "AndroidTutorialCameraControls"},
-        'showtessellation': {label: 'Tutorials', value: "AndroidTutorialShowTessellation"}
+        'showtessellation': {label: 'Tutorials', value: "AndroidTutorialShowTessellation"},
+        'examples': {label: 'Examples', value: "AndroidExamples"},
     });
     oj.Router.sync();
     

@@ -13,7 +13,8 @@
     <h2>Get Started</h2>
     <p>It’s very easy to get started using World Wind Android. You simply create and configure a <b>WorldWindow</b> View
         object and add it to a layout. This can be performed in an Activity or a Fragment.
-    </p>
+    The following snippet shows the code that creates the <strong>WorldWindow</strong> 
+	and adds some imagery to the globe.</p>
     </div>
 
         <textarea id="java-snippet" rows="5">
@@ -24,11 +25,16 @@ wwd.getLayers().addLayer(new BackgroundLayer());
 wwd.getLayers().addLayer(new BlueMarbleLandsatLayer());
         </textarea>
 
-    <h2>Example</h2>
+    <h2 style="clear:left">Example</h2>
+    <p>In this example, we add <strong>WorldWindow</strong> to a Fragment's layout in its <b>onCreateView()</b> callback.&nbsp; <b>
+	onCreateView()</b> creates the WorldWind view object and adds the view to 
+	the Fragment's <strong>FrameLayout</strong>.</p>
+    <h3>Class Diagram</h3>
+	<p>This class diagram shows the primary World Wind classes used in the 
+	Fragment.</p>
+        <img src="images/basic-globe-classes.png" class="class-diagram"/>
+
     <h3>BasicGlobeFragment.java</h3>
-    <p>In this example, we add WorldWindow to a Fragment's layout in its <b>onCreateView()</b> callback. In our
-        <b>createWorldWindow()</b> method, you can see how easy it is to create and configure a WorldWindow.</p>
-    <img src="images/basic-globe-classes.png" class="class-diagram"/>
     <div style="border-top: 1px solid black; border-bottom: 1px solid black;">
 
         <textarea id="java-code">
