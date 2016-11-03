@@ -18,6 +18,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlis
     
     childRouter.configure({
         'overview': {label: 'Overview', value: "AndroidQuickStartOverview", isDefault: true},
+        'downloads': {label: 'Downloads', value: "AndroidDownloads"},
         'install': {label: 'Setup', value: "AndroidQuickStartInstall"},
         'build': {label: 'Build', value: 'AndroidQuickStartBuild'},
         'run': {label: 'Run', value: 'AndroidQuickStartRun'},
@@ -34,6 +35,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlis
         'cameracontrols': {label: 'Tutorials', value: "AndroidTutorialCameraControls"},
         'showtessellation': {label: 'Tutorials', value: "AndroidTutorialShowTessellation"},
         'examples': {label: 'Examples', value: "AndroidExamples"},
+        'links': {label: 'Important Links', value: "AndroidLinks"},
     });
     oj.Router.sync();
     
