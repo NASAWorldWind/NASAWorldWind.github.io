@@ -29,7 +29,7 @@ define(['ojs/ojcore', 'knockout','ojs/ojrouter','ojs/ojnavigationlist'
          */
         self.router = childRouter;
         
-        self.githubUrl = "https://NASAWorldWind/WorldWindAndroid";
+        self.githubUrl = "https://github.com/NASAWorldWind/WorldWindAndroid";
         
         /**
          * Sets the selected item in the ojNavigationList menu.
