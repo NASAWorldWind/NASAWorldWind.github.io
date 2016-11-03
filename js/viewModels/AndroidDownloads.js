@@ -6,8 +6,8 @@
 /**
  * AndroidExamples module
  */
-define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojnavigationlist'
-], function (oj, ko) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojrouter', 'ojs/ojnavigationlist'
+], function (oj, ko, $) {
     /**
      * The view model for the Android Downloads content
      */
