@@ -17,7 +17,7 @@ define(['ojs/ojcore', 'knockout'
         /**
          * URL to API documentation
          */
-        self.url = "assets/android/master/api-doc/";
+        self.url = "assets/android/latest/javadoc/";
     }
 
     return AndroidApiContentViewModel;
