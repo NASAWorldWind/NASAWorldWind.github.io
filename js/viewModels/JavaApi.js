@@ -13,7 +13,7 @@ define(['ojs/ojcore', 'knockout'
      */
     function JavaApiContentViewModel() {
         var self = this;
-        self.url = "assets/java/api-doc/";
+        self.url = "assets/java/latest/javadoc/";
     }
     
     return JavaApiContentViewModel;
