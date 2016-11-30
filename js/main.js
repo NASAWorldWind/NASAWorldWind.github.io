@@ -76,11 +76,9 @@ require([
     // e.g.,  routerstate: {label: menu text, value: view model name}
     router.configure({
         'home': {label: 'Home', value: 'Home', isDefault: true},
-        'dashboard': {label: 'Dashboard', value: 'Dashboard'},
         'android': {label: 'Android', value: 'Android'},
         'java': {label: 'Java', value: 'Java'},
         'web': {label: 'Web', value: 'Web'},
-        'research': {label: 'Research', value: 'Research'}
     });
     // Create a syncronized list of icons to accompany the 
     routerStateIcons = {

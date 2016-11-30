@@ -27,9 +27,13 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojdialog',
                 // Dropdown menu states
                 self.menuItemSelect = function (event, ui) {
                     switch (ui.item.attr("id")) {
-                        // Go to the forum
+                        // Go to the NASA World Wind Research GitHub site
+                        case "research":
+                            window.open("https://github.com/NASAWorldWindResearch", "_self");
+                            break;
+                        // Go to the NASA World Wind forum
                         case "forum":
-                            window.open("http://forum.worldwindcentral.com/forum.php", "_self");
+                            window.open("http://forum.worldwindcentral.com", "_self");
                             break;
                         // Open the About Box
                         case "about":
