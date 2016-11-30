@@ -161,6 +161,14 @@ p.home-ptag, center.home-center {
     margin-left: 10px;
 }
 
+p.home-contact {
+    color: #454545;
+    font-size: 15px;
+    line-height: 33px;
+    margin-left: 10px;
+    text-align: center;
+}
+
 p.demo-code {
     line-height: 22px;
     font-size: 14px;
