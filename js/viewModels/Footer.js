@@ -14,13 +14,11 @@ define(['ojs/ojcore', 'knockout'], function (oj, ko) {
     function FooterViewModel() {
         var self = this;
         self.footerLinks = ko.observableArray([
-            new footerLink('NASA World Wind', 'mainSite', 'http://worldwind.arc.nasa.gov'),
-            new footerLink('Contact Us', 'contactUs', 'mailto:Patrick.Hogan@nasa.gov'),
-
+            new FooterLink('Contact Us', 'contactUs', 'mailto:Patrick.Hogan@nasa.gov')
         ]);
     }
 
-    function footerLink(name, id, linkTarget) {
+    function FooterLink(name, id, linkTarget) {
         this.name = name;
         this.linkId = id;
         this.linkTarget = linkTarget;
