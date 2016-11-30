@@ -80,7 +80,6 @@ gov.nasa.worldwindx.applications.worldwindow.util
 gov.nasa.worldwindx.applications.worldwindow.util.measuretool
 gov.nasa.worldwindx.examples
 gov.nasa.worldwindx.examples.analytics
-gov.nasa.worldwindx.examples.applet
 gov.nasa.worldwindx.examples.dataimport
 gov.nasa.worldwindx.examples.elevations
 gov.nasa.worldwindx.examples.kml
