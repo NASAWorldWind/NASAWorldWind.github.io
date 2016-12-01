@@ -61,10 +61,8 @@ gov.nasa.worldwind.view
 gov.nasa.worldwind.view.firstperson
 gov.nasa.worldwind.view.orbit
 gov.nasa.worldwind.wms
-gov.nasa.worldwindx.applications
 gov.nasa.worldwindx.applications.antenna
 gov.nasa.worldwindx.applications.dataimporter
-gov.nasa.worldwindx.applications.eurogeoss
 gov.nasa.worldwindx.applications.glider
 gov.nasa.worldwindx.applications.sar
 gov.nasa.worldwindx.applications.sar.actions
