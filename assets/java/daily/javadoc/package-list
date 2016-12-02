@@ -61,10 +61,8 @@ gov.nasa.worldwind.view
 gov.nasa.worldwind.view.firstperson
 gov.nasa.worldwind.view.orbit
 gov.nasa.worldwind.wms
-gov.nasa.worldwindx.applications
 gov.nasa.worldwindx.applications.antenna
 gov.nasa.worldwindx.applications.dataimporter
-gov.nasa.worldwindx.applications.eurogeoss
 gov.nasa.worldwindx.applications.glider
 gov.nasa.worldwindx.applications.sar
 gov.nasa.worldwindx.applications.sar.actions
@@ -80,7 +78,6 @@ gov.nasa.worldwindx.applications.worldwindow.util
 gov.nasa.worldwindx.applications.worldwindow.util.measuretool
 gov.nasa.worldwindx.examples
 gov.nasa.worldwindx.examples.analytics
-gov.nasa.worldwindx.examples.applet
 gov.nasa.worldwindx.examples.dataimport
 gov.nasa.worldwindx.examples.elevations
 gov.nasa.worldwindx.examples.kml
