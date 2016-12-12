@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--$Id: worldwindx.jnlp 702 2012-07-16 19:33:50Z tgaskins $-->
+<jnlp spec="1.0"
+      codebase="http://worldwind.arc.nasa.gov/java/1.4.0/webstart/"
+      href="worldwindx.jnlp">
+    <information>
+        <title>NASA World Wind Java Extensions</title>
+        <vendor>NASA</vendor>
+        <homepage href="http://worldwind.arc.nasa.gov/java"/>
+        <description>NASA World Wind Java version Extensions</description>
+        <description kind="short">NASA World Wind Planetary Visualization Software Library Extensions</description>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+
+    <resources>
+        <j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+" initial-heap-size="512m"
+              max-heap-size="512m"/>
+        <property name="sun.java2d.noddraw" value="true"/>
+        <jar href="worldwindx.jar"/>
+        <!-- Add the World Wind core webstart JNLP file as an extension of this JNLP file. All World Wind extensions
+             depend on the core World Wind library. -->
+        <extension name="worldwind" href="http://worldwind.arc.nasa.gov/java/1.4.0/webstart/worldwind.jnlp"/>
+    </resources>
+    <component-desc/>
+</jnlp>
