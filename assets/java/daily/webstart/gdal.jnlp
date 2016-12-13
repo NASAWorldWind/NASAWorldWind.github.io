@@ -5,7 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<jnlp  spec="1.0+" href="gdal.jnlp" version="v2.1.0">
+<jnlp  spec="1.0+" codebase="https://worldwind.arc.nasa.gov/java/daily/webstart/" href="gdal.jnlp" version="v2.1.0">
 
     <!--
         Provides a description of the World Wind GDAL library.

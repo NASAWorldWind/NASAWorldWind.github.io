@@ -5,7 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<jnlp spec="1.0+" href="Annotations.jnlp">
+<jnlp spec="1.0+" codebase="https://worldwind.arc.nasa.gov/java/daily/webstart/" href="Annotations.jnlp">
 
     <!--
         Provides a description of this World Wind demo application.
