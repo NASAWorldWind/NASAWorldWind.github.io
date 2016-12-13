@@ -5,7 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<jnlp spec="1.0+" codebase="https://worldwind.arc.nasa.gov/java/v2.1.0/webstart/">
+<jnlp spec="1.0+" codebase="https://worldwind.arc.nasa.gov/java/v2.1.0/webstart/" href="TacticalSymbols.jnlp">
 
     <!--
         Provides a description of this World Wind demo application.
