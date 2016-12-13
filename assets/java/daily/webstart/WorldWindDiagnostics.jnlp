@@ -5,7 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<jnlp spec="1.0+" codebase="https://nasaworldwind.github.io/assets/java/daily/webstart/">
+<jnlp spec="1.0+" codebase="https://worldwind.arc.nasa.gov/java/daily/webstart/">
 
     <!--
         Provides a description of the World Wind Diagnostics application.
