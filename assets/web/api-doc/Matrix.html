@@ -701,7 +701,8 @@
 
             
 
-            <td class="description last">The points for which to compute the axes,expressed as X0, Y0, Z0, X1, Y1, Z1, ...</td>
+            <td class="description last">The points for which to compute the axes,
+expressed as X0, Y0, Z0, X1, Y1, Z1, ...</td>
         </tr>
 
     
@@ -839,7 +840,8 @@
 <dl>
     <dt>
         <div class="param-desc">
-        If the specified points array is null, undefined or empty, or one of thespecified axes arguments is null or undefined.
+        If the specified points array is null, undefined or empty, or one of the
+specified axes arguments is null or undefined.
         </div>
     </dt>
     <dd></dd>
@@ -878,7 +880,10 @@
 
 
 <div class="description">
-    Stores this matrix's components in column-major order in a specified array.<p>The array must have space for at least 16 elements. This matrix's components are stored in the arraystarting with row 0 column 0 in index 0, row 1 column 0 in index 1, row 2 column 0 in index 2, and so on.
+    Stores this matrix's components in column-major order in a specified array.
+<p>
+The array must have space for at least 16 elements. This matrix's components are stored in the array
+starting with row 0 column 0 in index 0, row 1 column 0 in index 1, row 2 column 0 in index 2, and so on.
 </div>
 
 
@@ -936,7 +941,8 @@
 
             
 
-            <td class="description last">An array of at least 16 elements. Upon return,contains this matrix's components in column-major.</td>
+            <td class="description last">An array of at least 16 elements. Upon return,
+contains this matrix's components in column-major.</td>
         </tr>
 
     
@@ -1248,7 +1254,10 @@
 
 
 <div class="description">
-    Computes the eigenvectors of this matrix.<p>The eigenvectors are returned sorted from the most prominent vector to the least prominent vector.Each eigenvector has length equal to its corresponding eigenvalue.
+    Computes the eigenvectors of this matrix.
+<p>
+The eigenvectors are returned sorted from the most prominent vector to the least prominent vector.
+Each eigenvector has length equal to its corresponding eigenvalue.
 </div>
 
 
@@ -1506,7 +1515,8 @@
 
             
 
-            <td class="description last">The matrix to test equality with. May be null or undefined, in which case thisfunction returns false.</td>
+            <td class="description last">The matrix to test equality with. May be null or undefined, in which case this
+function returns false.</td>
         </tr>
 
     
@@ -1574,7 +1584,8 @@
 
         
 <div class="param-desc">
-    true if all components of this matrix are equal to the correspondingcomponents of the specified matrix, otherwise false.
+    true if all components of this matrix are equal to the corresponding
+components of the specified matrix, otherwise false.
 </div>
 
 
@@ -1607,7 +1618,13 @@
 
 
 <div class="description">
-    Returns this viewing matrix's eye point.<p>This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix theresults are undefined.<p>In model coordinates, a viewing matrix's eye point is the point the viewer is looking from and maps to the center ofthe screen.
+    Returns this viewing matrix's eye point.
+<p>
+This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix the
+results are undefined.
+<p>
+In model coordinates, a viewing matrix's eye point is the point the viewer is looking from and maps to the center of
+the screen.
 </div>
 
 
@@ -1789,7 +1806,10 @@
 
 
 <div class="description">
-    Returns this viewing matrix's forward vector.<p>This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix theresults are undefined.
+    Returns this viewing matrix's forward vector.
+<p>
+This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix the
+results are undefined.
 </div>
 
 
@@ -2120,7 +2140,8 @@
 
         
 <div class="param-desc">
-    The specified result argument set to the rotation angles of this matrix. The angles are indegrees.
+    The specified result argument set to the rotation angles of this matrix. The angles are in
+degrees.
 </div>
 
 
@@ -2335,7 +2356,25 @@
 
 
 <div class="description">
-    Extracts this viewing matrix's parameters given a viewing origin and a globe.<p>This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix theresults are undefined.<p>This returns a parameterization of this viewing matrix based on the specified origin and globe. The origin indicatesthe model coordinate point that the view's orientation is relative to, while the globe provides the necessary modelcoordinate context for the origin and the orientation. The origin should be either the view's eye point or a point onthe view's forward vector. The view's roll must be specified in order to disambiguate heading and roll when the view'stilt is zero.<p>The following list outlines the returned key-value pairs and their meanings:<ul><li> 'origin' - The geographic position corresponding to the origin point.</li><li> 'range' - The distance between the specified origin point and the view's eye point, in model coordinates.</li><li> 'heading' - The view's heading angle relative to the globe's north pointing tangent at the origin point, in degrees.</li><li> 'tilt' - The view's tilt angle relative to the globe's normal vector at the origin point, in degrees.</li><li> 'roll' - The view's roll relative to the globe's normal vector at the origin point, in degrees.</li></ul>
+    Extracts this viewing matrix's parameters given a viewing origin and a globe.
+<p>
+This method assumes that this matrix represents a viewing matrix. If this does not represent a viewing matrix the
+results are undefined.
+<p>
+This returns a parameterization of this viewing matrix based on the specified origin and globe. The origin indicates
+the model coordinate point that the view's orientation is relative to, while the globe provides the necessary model
+coordinate context for the origin and the orientation. The origin should be either the view's eye point or a point on
+the view's forward vector. The view's roll must be specified in order to disambiguate heading and roll when the view's
+tilt is zero.
+<p>
+The following list outlines the returned key-value pairs and their meanings:
+<ul>
+<li> 'origin' - The geographic position corresponding to the origin point.</li>
+<li> 'range' - The distance between the specified origin point and the view's eye point, in model coordinates.</li>
+<li> 'heading' - The view's heading angle relative to the globe's north pointing tangent at the origin point, in degrees.</li>
+<li> 'tilt' - The view's tilt angle relative to the globe's normal vector at the origin point, in degrees.</li>
+<li> 'roll' - The view's roll relative to the globe's normal vector at the origin point, in degrees.</li>
+</ul>
 </div>
 
 
@@ -2525,7 +2564,8 @@
 <dl>
     <dt>
         <div class="param-desc">
-        If either the specified origin or globe are null or undefined or the specifiedresult argument is null or undefined.
+        If either the specified origin or globe are null or undefined or the specified
+result argument is null or undefined.
         </div>
     </dt>
     <dd></dd>
@@ -2586,7 +2626,11 @@
 
 
 <div class="description">
-    Inverts the specified matrix and stores the result in this matrix.<p>This throws an exception if the specified matrix is singular.<p>The result of this method is undefined if this matrix is passed in as the matrix to invert.
+    Inverts the specified matrix and stores the result in this matrix.
+<p>
+This throws an exception if the specified matrix is singular.
+<p>
+The result of this method is undefined if this matrix is passed in as the matrix to invert.
 </div>
 
 
@@ -2768,7 +2812,12 @@
 
 
 <div class="description">
-    Inverts the specified matrix and stores the result in this matrix.<p>The specified matrix is assumed to represent an orthonormal transform matrix. This matrix's upper 3x3 istransposed, then its fourth column is transformed by the transposed upper 3x3 and negated.<p>The result of this method is undefined if this matrix is passed in as the matrix to invert.
+    Inverts the specified matrix and stores the result in this matrix.
+<p>
+The specified matrix is assumed to represent an orthonormal transform matrix. This matrix's upper 3x3 is
+transposed, then its fourth column is transformed by the transposed upper 3x3 and negated.
+<p>
+The result of this method is undefined if this matrix is passed in as the matrix to invert.
 </div>
 
 
@@ -2820,7 +2869,8 @@
 
             
 
-            <td class="description last">The matrix whose inverse is computed. This matrix is assumed to represent anorthonormal transform matrix.</td>
+            <td class="description last">The matrix whose inverse is computed. This matrix is assumed to represent an
+orthonormal transform matrix.</td>
         </tr>
 
     
@@ -3448,7 +3498,23 @@
 
 
 <div class="description">
-    Multiplies this matrix by a first person viewing matrix for the specified globe.<p>A first person viewing matrix places the viewer's eye at the specified eyePosition. By default the viewer is lookingstraight down at the globe's surface from the eye position, with the globe's normal vector coming out of the screenand north pointing toward the top of the screen.<p>Heading specifies the viewer's azimuth, or its angle relative to North. Heading values range from -180 degrees to 180degrees. A heading of 0 degrees looks North, 90 degrees looks East, +-180 degrees looks South, and -90 degrees looksWest.<p>Tilt specifies the viewer's angle relative to the surface. Tilt values range from -180 degrees to 180 degrees. A tiltof 0 degrees looks straight down at the globe's surface, 90 degrees looks at the horizon, and 180 degrees looksstraight up. Tilt values greater than 180 degrees cause the viewer to turn upside down, and are therefore rarely used.<p>Roll specifies the viewer's angle relative to the horizon. Roll values range from -180 degrees to 180 degrees. A rollof 0 degrees orients the viewer so that up is pointing to the top of the screen, at 90 degrees up is pointing to theright, at +-180 degrees up is pointing to the bottom, and at -90 up is pointing to the left.
+    Multiplies this matrix by a first person viewing matrix for the specified globe.
+<p>
+A first person viewing matrix places the viewer's eye at the specified eyePosition. By default the viewer is looking
+straight down at the globe's surface from the eye position, with the globe's normal vector coming out of the screen
+and north pointing toward the top of the screen.
+<p>
+Heading specifies the viewer's azimuth, or its angle relative to North. Heading values range from -180 degrees to 180
+degrees. A heading of 0 degrees looks North, 90 degrees looks East, +-180 degrees looks South, and -90 degrees looks
+West.
+<p>
+Tilt specifies the viewer's angle relative to the surface. Tilt values range from -180 degrees to 180 degrees. A tilt
+of 0 degrees looks straight down at the globe's surface, 90 degrees looks at the horizon, and 180 degrees looks
+straight up. Tilt values greater than 180 degrees cause the viewer to turn upside down, and are therefore rarely used.
+<p>
+Roll specifies the viewer's angle relative to the horizon. Roll values range from -180 degrees to 180 degrees. A roll
+of 0 degrees orients the viewer so that up is pointing to the top of the screen, at 90 degrees up is pointing to the
+right, at +-180 degrees up is pointing to the bottom, and at -90 up is pointing to the left.
 </div>
 
 
@@ -3700,7 +3766,11 @@
 
 
 <div class="description">
-    Multiplies this matrix by a local coordinate system transform for the specified globe.<p>The local coordinate system is defined such that the local origin (0, 0, 0) maps to the specified originpoint, the z axis maps to the globe's surface normal at the point, the y-axis maps to the north pointingtangent, and the x-axis maps to the east pointing tangent.
+    Multiplies this matrix by a local coordinate system transform for the specified globe.
+<p>
+The local coordinate system is defined such that the local origin (0, 0, 0) maps to the specified origin
+point, the z axis maps to the globe's surface normal at the point, the y-axis maps to the north pointing
+tangent, and the x-axis maps to the east pointing tangent.
 </div>
 
 
@@ -3883,7 +3953,27 @@
 
 
 <div class="description">
-    Multiplies this matrix by a look at viewing matrix for the specified globe.<p>A look at viewing matrix places the center of the screen at the specified lookAtPosition. By default the viewer islooking straight down at the look at position from the specified range, with the globe's normal vector coming out ofthe screen and north pointing toward the top of the screen.<p>Range specifies the distance between the look at position and the viewer's eye point. Range values may be any positivereal number. A range of 0 places the eye point at the look at point, while a positive range moves the eye point awayfrom but still looking at the look at point.<p>Heading specifies the viewer's azimuth, or its angle relative to North. Heading values range from -180 degrees to 180degrees. A heading of 0 degrees looks North, 90 degrees looks East, +-180 degrees looks South, and -90 degrees looksWest.<p>Tilt specifies the viewer's angle relative to the surface. Tilt values range from -180 degrees to 180 degrees. A tiltof 0 degrees looks straight down at the globe's surface, 90 degrees looks at the horizon, and 180 degrees looksstraight up. Tilt values greater than 180 degrees cause the viewer to turn upside down, and are therefore rarely used.<p>Roll specifies the viewer's angle relative to the horizon. Roll values range from -180 degrees to 180 degrees. A rollof 0 degrees orients the viewer so that up is pointing to the top of the screen, at 90 degrees up is pointing to theright, at +-180 degrees up is pointing to the bottom, and at -90 up is pointing to the left.
+    Multiplies this matrix by a look at viewing matrix for the specified globe.
+<p>
+A look at viewing matrix places the center of the screen at the specified lookAtPosition. By default the viewer is
+looking straight down at the look at position from the specified range, with the globe's normal vector coming out of
+the screen and north pointing toward the top of the screen.
+<p>
+Range specifies the distance between the look at position and the viewer's eye point. Range values may be any positive
+real number. A range of 0 places the eye point at the look at point, while a positive range moves the eye point away
+from but still looking at the look at point.
+<p>
+Heading specifies the viewer's azimuth, or its angle relative to North. Heading values range from -180 degrees to 180
+degrees. A heading of 0 degrees looks North, 90 degrees looks East, +-180 degrees looks South, and -90 degrees looks
+West.
+<p>
+Tilt specifies the viewer's angle relative to the surface. Tilt values range from -180 degrees to 180 degrees. A tilt
+of 0 degrees looks straight down at the globe's surface, 90 degrees looks at the horizon, and 180 degrees looks
+straight up. Tilt values greater than 180 degrees cause the viewer to turn upside down, and are therefore rarely used.
+<p>
+Roll specifies the viewer's angle relative to the horizon. Roll values range from -180 degrees to 180 degrees. A roll
+of 0 degrees orients the viewer so that up is pointing to the top of the screen, at 90 degrees up is pointing to the
+right, at +-180 degrees up is pointing to the bottom, and at -90 up is pointing to the left.
 </div>
 
 
@@ -4119,7 +4209,8 @@
 <dl>
     <dt>
         <div class="param-desc">
-        If either the specified look-at position or globe is null or undefined, or thespecified range is less than zero.
+        If either the specified look-at position or globe is null or undefined, or the
+specified range is less than zero.
         </div>
     </dt>
     <dd></dd>
@@ -4579,7 +4670,11 @@
 
 
 <div class="description">
-    Multiplies this matrix by a texture transform for the specified texture.<p>A texture image transform maps the bottom-left corner of the texture's image data to coordinate [0,0] and maps thetop-right of the texture's image data to coordinate [1,1]. This correctly handles textures whose image data hasnon-power-of-two dimensions, and correctly orients textures whose image data has its origin in the upper-left corner.
+    Multiplies this matrix by a texture transform for the specified texture.
+<p>
+A texture image transform maps the bottom-left corner of the texture's image data to coordinate [0,0] and maps the
+top-right of the texture's image data to coordinate [1,1]. This correctly handles textures whose image data has
+non-power-of-two dimensions, and correctly orients textures whose image data has its origin in the upper-left corner.
 </div>
 
 
@@ -5120,7 +5215,35 @@
 
 
 <div class="description">
-    Applies a specified depth offset to this projection matrix.<p>This method assumes that this matrix represents a projection matrix. If this does not represent a projectionmatrix the results are undefined. Projection matrices can be created by calling<a href="Matrix.html#setToPerspectiveProjection">setToPerspectiveProjection</a> or <a href="Matrix.html#setToScreenProjection">setToScreenProjection</a>.<p>The depth offset may be any real number and is typically used to draw geometry slightly closer to the user'seye in order to give those shapes visual priority over nearby or geometry. An offset of zero has no effect.An offset less than zero brings depth values closer to the eye, while an offset greater than zero pushesdepth values away from the eye.<p>Depth offset may be applied to both perspective and orthographic projection matrices. The effect on eachprojection type is outlined here:<p><strong>Perspective Projection</strong><p>The effect of depth offset on a perspective projection increases exponentially with distance from the eye.This has the effect of adjusting the offset for the loss in depth precision with geometry drawn further fromthe eye. Distant geometry requires a greater offset to differentiate itself from nearby geometry, while closegeometry does not.<p><strong>Orthographic Projection</strong><p>The effect of depth offset on an orthographic projection increases linearly with distance from the eye. Whileit is reasonable to apply a depth offset to an orthographic projection, the effect is most appropriate whenapplied to the projection used to draw the scene. For example, when an object's coordinates are projected bya perspective projection into screen coordinates then drawn using an orthographic projection, it is best toapply the offset to the original perspective projection. The method <a href="NavigatorState.html#project">NavigatorState.project</a> performs thecorrect behavior for the projection type used to draw the scene.
+    Applies a specified depth offset to this projection matrix.
+<p>
+This method assumes that this matrix represents a projection matrix. If this does not represent a projection
+matrix the results are undefined. Projection matrices can be created by calling
+<a href="Matrix.html#setToPerspectiveProjection">setToPerspectiveProjection</a> or <a href="Matrix.html#setToScreenProjection">setToScreenProjection</a>.
+<p>
+The depth offset may be any real number and is typically used to draw geometry slightly closer to the user's
+eye in order to give those shapes visual priority over nearby or geometry. An offset of zero has no effect.
+An offset less than zero brings depth values closer to the eye, while an offset greater than zero pushes
+depth values away from the eye.
+<p>
+Depth offset may be applied to both perspective and orthographic projection matrices. The effect on each
+projection type is outlined here:
+<p>
+<strong>Perspective Projection</strong>
+<p>
+The effect of depth offset on a perspective projection increases exponentially with distance from the eye.
+This has the effect of adjusting the offset for the loss in depth precision with geometry drawn further from
+the eye. Distant geometry requires a greater offset to differentiate itself from nearby geometry, while close
+geometry does not.
+<p>
+<strong>Orthographic Projection</strong>
+<p>
+The effect of depth offset on an orthographic projection increases linearly with distance from the eye. While
+it is reasonable to apply a depth offset to an orthographic projection, the effect is most appropriate when
+applied to the projection used to draw the scene. For example, when an object's coordinates are projected by
+a perspective projection into screen coordinates then drawn using an orthographic projection, it is best to
+apply the offset to the original perspective projection. The method <a href="NavigatorState.html#project">NavigatorState.project</a> performs the
+correct behavior for the projection type used to draw the scene.
 </div>
 
 
@@ -5937,7 +6060,8 @@
 
         
 <div class="param-desc">
-    This matrix with its scale components set to the specified values and all othercomponents unmodified.
+    This matrix with its scale components set to the specified values and all other
+components unmodified.
 </div>
 
 
@@ -5970,7 +6094,18 @@
 
 
 <div class="description">
-    Sets this matrix to the symmetric covariance Matrix computed from the x, y, z coordinates of a specifiedpoints array.<p/>The computed covariance matrix represents the correlation between each pair of x-, y-, and z-coordinates asthey're distributed about the point array's arithmetic mean. Its layout is as follows:<p/><code> C(x, x)  C(x, y)  C(x, z) <br/> C(x, y)  C(y, y)  C(y, z) <br/> C(x, z)  C(y, z)  C(z, z) </code><p/>C(i, j) is the covariance of coordinates i and j, where i or j are a coordinate's dispersion about its meanvalue. If any entry is zero, then there's no correlation between the two coordinates defining that entry. If thereturned matrix is diagonal, then all three coordinates are uncorrelated, and the specified point isdistributed evenly about its mean point.
+    Sets this matrix to the symmetric covariance Matrix computed from the x, y, z coordinates of a specified
+points array.
+<p/>
+The computed covariance matrix represents the correlation between each pair of x-, y-, and z-coordinates as
+they're distributed about the point array's arithmetic mean. Its layout is as follows:
+<p/>
+<code> C(x, x)  C(x, y)  C(x, z) <br/> C(x, y)  C(y, y)  C(y, z) <br/> C(x, z)  C(y, z)  C(z, z) </code>
+<p/>
+C(i, j) is the covariance of coordinates i and j, where i or j are a coordinate's dispersion about its mean
+value. If any entry is zero, then there's no correlation between the two coordinates defining that entry. If the
+returned matrix is diagonal, then all three coordinates are uncorrelated, and the specified point is
+distributed evenly about its mean point.
 </div>
 
 
@@ -6467,7 +6602,14 @@
 
 
 <div class="description">
-    Sets this matrix to a perspective projection matrix for the specified viewport dimensions and clip distances.<p>A perspective projection matrix maps points in eye coordinates into clip coordinates in a way that causesdistant objects to appear smaller, and preserves the appropriate depth information for each point. In modelcoordinates, a perspective projection is defined by frustum originating at the eye position and extendingoutward in the viewer's direction. The near distance and the far distance identify the minimum and maximumdistance, respectively, at which an object in the scene is visible. Near and far distances must be positiveand may not be equal.
+    Sets this matrix to a perspective projection matrix for the specified viewport dimensions and clip distances.
+<p>
+A perspective projection matrix maps points in eye coordinates into clip coordinates in a way that causes
+distant objects to appear smaller, and preserves the appropriate depth information for each point. In model
+coordinates, a perspective projection is defined by frustum originating at the eye position and extending
+outward in the viewer's direction. The near distance and the far distance identify the minimum and maximum
+distance, respectively, at which an object in the scene is visible. Near and far distances must be positive
+and may not be equal.
 </div>
 
 
@@ -6657,7 +6799,8 @@
 <dl>
     <dt>
         <div class="param-desc">
-        If the specified width or height is less than or equal to zero, if the near and fardistances are equal, or if either the near or far distance are less than or equal to zero.
+        If the specified width or height is less than or equal to zero, if the near and far
+distances are equal, or if either the near or far distance are less than or equal to zero.
         </div>
     </dt>
     <dd></dd>
@@ -6862,7 +7005,8 @@
 
         
 <div class="param-desc">
-    This matrix with its scale components set to those specified and all othercomponents set to that of an identity matrix.
+    This matrix with its scale components set to those specified and all other
+components set to that of an identity matrix.
 </div>
 
 
@@ -6895,7 +7039,14 @@
 
 
 <div class="description">
-    Sets this matrix to a screen projection matrix for the specified viewport dimensions.<p>A screen projection matrix is an orthographic projection that assumes that points in model coordinatesrepresent a screen point and a depth. Screen projection matrices therefore map model coordinates directlyinto screen coordinates without modification. A point's xy coordinates are interpreted as literal screencoordinates and must be in the viewport to be visible. A point's z coordinate is interpreted as a depth valuethat ranges from 0 to 1. Additionally, the screen projection matrix preserves the depth value returned by<a href="NavigatorState.html#project">NavigatorState.project</a>.
+    Sets this matrix to a screen projection matrix for the specified viewport dimensions.
+<p>
+A screen projection matrix is an orthographic projection that assumes that points in model coordinates
+represent a screen point and a depth. Screen projection matrices therefore map model coordinates directly
+into screen coordinates without modification. A point's xy coordinates are interpreted as literal screen
+coordinates and must be in the viewport to be visible. A point's z coordinate is interpreted as a depth value
+that ranges from 0 to 1. Additionally, the screen projection matrix preserves the depth value returned by
+<a href="NavigatorState.html#project">NavigatorState.project</a>.
 </div>
 
 
@@ -7244,7 +7395,8 @@
 
         
 <div class="param-desc">
-    This matrix with its translation components set to those specified and all othercomponents set to that of an identity matrix.
+    This matrix with its translation components set to those specified and all other
+components set to that of an identity matrix.
 </div>
 
 
@@ -7459,7 +7611,12 @@
 
 
 <div class="description">
-    Sets this matrix to one that flips and shifts the y-axis.<p>The resultant matrix maps Y=0 to Y=1 and Y=1 to Y=0. All existing values are overwritten. This matrix isusually used to change the coordinate origin from an upper left coordinate origin to a lower left coordinateorigin. This is typically necessary to align the coordinate system of images (top-left origin) with that ofOpenGL (bottom-left origin).
+    Sets this matrix to one that flips and shifts the y-axis.
+<p>
+The resultant matrix maps Y=0 to Y=1 and Y=1 to Y=0. All existing values are overwritten. This matrix is
+usually used to change the coordinate origin from an upper left coordinate origin to a lower left coordinate
+origin. This is typically necessary to align the coordinate system of images (top-left origin) with that of
+OpenGL (bottom-left origin).
 </div>
 
 
@@ -7729,7 +7886,8 @@
 
         
 <div class="param-desc">
-    This matrix with its translation components set to the specified values and all othercomponents unmodified.
+    This matrix with its translation components set to the specified values and all other
+components unmodified.
 </div>
 
 
@@ -7762,7 +7920,8 @@
 
 
 <div class="description">
-    Extracts and returns a new matrix whose upper 3x3 entries are identical to those of this matrix,and whose fourth row and column are 0 except for a 1 in the diagonal position.
+    Extracts and returns a new matrix whose upper 3x3 entries are identical to those of this matrix,
+and whose fourth row and column are 0 except for a 1 in the diagonal position.
 </div>
 
 
@@ -7870,13 +8029,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Angle.html">Angle</a></li><li><a href="module-ColladaUtils.html">ColladaUtils</a></li><li><a href="module-KmlElements.html">KmlElements</a></li><li><a href="module-KmlFileCache.html">KmlFileCache</a></li><li><a href="module-Logger.html">Logger</a></li><li><a href="module-NodeTransformers.html">NodeTransformers</a></li><li><a href="module-StyleResolver.html">StyleResolver</a></li><li><a href="module-WorldWind.html">WorldWind</a></li><li><a href="module-WWMath.html">WWMath</a></li><li><a href="module-WWUtil.html">WWUtil</a></li></ul><h3>Classes</h3><ul><li><a href="-_anonymous_-RefreshListener.Event.html">Event</a></li><li><a href="AbsentResourceList.html">AbsentResourceList</a></li><li><a href="AbstractError.html">AbstractError</a></li><li><a href="AbstractMesh.html">AbstractMesh</a></li><li><a href="AbstractShape.html">AbstractShape</a></li><li><a href="Annotation.html">Annotation</a></li><li><a href="AnnotationAttributes.html">AnnotationAttributes</a></li><li><a href="ArgumentError.html">ArgumentError</a></li><li><a href="AtmosphereLayer.html">AtmosphereLayer</a></li><li><a href="AtmosphereProgram.html">AtmosphereProgram</a></li><li><a href="Attribute.html">Attribute</a></li><li><a href="BasicProgram.html">BasicProgram</a></li><li><a href="BasicTextureProgram.html">BasicTextureProgram</a></li><li><a href="BasicTimeSequence.html">BasicTimeSequence</a></li><li><a href="BingAerialLayer.html">BingAerialLayer</a></li><li><a href="BingAerialWithLabelsLayer.html">BingAerialWithLabelsLayer</a></li><li><a href="BingImageryUrlBuilder.html">BingImageryUrlBuilder</a></li><li><a href="BingRoadsLayer.html">BingRoadsLayer</a></li><li><a href="BingTiledImageLayer.html">BingTiledImageLayer</a></li><li><a href="BlueMarbleLayer.html">BlueMarbleLayer</a></li><li><a href="BMNGLandsatLayer.html">BMNGLandsatLayer</a></li><li><a href="BMNGLayer.html">BMNGLayer</a></li><li><a href="BMNGOneImageLayer.html">BMNGOneImageLayer</a></li><li><a href="BoundingBox.html">BoundingBox</a></li><li><a href="ByteBuffer.html">ByteBuffer</a></li><li><a href="Change.html">Change</a></li><li><a href="ClickRecognizer.html">ClickRecognizer</a></li><li><a href="ColladaAsset.html">ColladaAsset</a></li><li><a href="ColladaImage.html">ColladaImage</a></li><li><a href="ColladaLoader.html">ColladaLoader</a></li><li><a href="ColladaMaterial.html">ColladaMaterial</a></li><li><a href="ColladaMesh.html">ColladaMesh</a></li><li><a href="ColladaNode.html">ColladaNode</a></li><li><a href="ColladaScene.html">ColladaScene</a></li><li><a href="Color.html">Color</a></li><li><a href="Compass.html">Compass</a></li><li><a href="CompassLayer.html">CompassLayer</a></li><li><a href="CoordinatesDisplayLayer.html">CoordinatesDisplayLayer</a></li><li><a href="Create.html">Create</a></li><li><a href="DateWW.html">DateWW</a></li><li><a href="DBaseFile.html">DBaseFile</a></li><li><a href="Delete.html">Delete</a></li><li><a href="DigitalGlobeTiledImageLayer.html">DigitalGlobeTiledImageLayer</a></li><li><a href="DragRecognizer.html">DragRecognizer</a></li><li><a href="DrawContext.html">DrawContext</a></li><li><a href="EarthElevationModel.html">EarthElevationModel</a></li><li><a href="ElevationImage.html">ElevationImage</a></li><li><a href="ElevationModel.html">ElevationModel</a></li><li><a href="ElevationTile.html">ElevationTile</a></li><li><a href="Font.html">Font</a></li><li><a href="FramebufferTexture.html">FramebufferTexture</a></li><li><a href="FramebufferTile.html">FramebufferTile</a></li><li><a href="FramebufferTileController.html">FramebufferTileController</a></li><li><a href="FrameStatistics.html">FrameStatistics</a></li><li><a href="FrameStatisticsLayer.html">FrameStatisticsLayer</a></li><li><a href="Frustum.html">Frustum</a></li><li><a href="GeographicMesh.html">GeographicMesh</a></li><li><a href="GeographicProjection.html">GeographicProjection</a></li><li><a href="GeographicText.html">GeographicText</a></li><li><a href="GeoJSONConstants.html">GeoJSONConstants</a></li><li><a href="GeoJSONCRS.html">GeoJSONCRS</a></li><li><a href="GeoJSONFeature.html">GeoJSONFeature</a></li><li><a href="GeoJSONFeatureCollection.html">GeoJSONFeatureCollection</a></li><li><a href="GeoJSONGeometry.html">GeoJSONGeometry</a></li><li><a href="GeoJSONGeometryCollection.html">GeoJSONGeometryCollection</a></li><li><a href="GeoJSONGeometryLineString.html">GeoJSONGeometryLineString</a></li><li><a href="GeoJSONGeometryMultiLineString.html">GeoJSONGeometryMultiLineString</a></li><li><a href="GeoJSONGeometryMultiPoint.html">GeoJSONGeometryMultiPoint</a></li><li><a href="GeoJSONGeometryMultiPolygon.html">GeoJSONGeometryMultiPolygon</a></li><li><a href="GeoJSONGeometryPoint.html">GeoJSONGeometryPoint</a></li><li><a href="GeoJSONGeometryPolygon.html">GeoJSONGeometryPolygon</a></li><li><a href="GeoJSONParser.html">GeoJSONParser</a></li><li><a href="GeoTiff.html">GeoTiff</a></li><li><a href="GeoTiffKeyEntry.html">GeoTiffKeyEntry</a></li><li><a href="GeoTiffMetadata.html">GeoTiffMetadata</a></li><li><a href="GeoTiffReader.html">GeoTiffReader</a></li><li><a href="GestureRecognizer.html">GestureRecognizer</a></li><li><a href="Globe.html">Globe</a></li><li><a href="Globe2D.html">Globe2D</a></li><li><a href="GoToAnimator.html">GoToAnimator</a></li><li><a href="GpuProgram.html">GpuProgram</a></li><li><a href="GpuResourceCache.html">GpuResourceCache</a></li><li><a href="GpuShader.html">GpuShader</a></li><li><a href="GroundProgram.html">GroundProgram</a></li><li><a href="HighlightController.html">HighlightController</a></li><li><a href="ImagePyramid.html">ImagePyramid</a></li><li><a href="ImageSource.html">ImageSource</a></li><li><a href="ImageTile.html">ImageTile</a></li><li><a href="Insets.html">Insets</a></li><li><a href="ItemIcon.html">ItemIcon</a></li><li><a href="KmlAbstractView.html">KmlAbstractView</a></li><li><a href="KmlBalloonStyle.html">KmlBalloonStyle</a></li><li><a href="KmlCamera.html">KmlCamera</a></li><li><a href="KmlColorStyle.html">KmlColorStyle</a></li><li><a href="KmlContainer.html">KmlContainer</a></li><li><a href="KmlControls.html">KmlControls</a></li><li><a href="KmlDocument.html">KmlDocument</a></li><li><a href="KmlElementsFactory.html">KmlElementsFactory</a></li><li><a href="KmlElementsFactoryCached.html">KmlElementsFactoryCached</a></li><li><a href="KmlFeature.html">KmlFeature</a></li><li><a href="KmlFile.html">KmlFile</a></li><li><a href="KmlFolder.html">KmlFolder</a></li><li><a href="KmlGeometry.html">KmlGeometry</a></li><li><a href="KmlGroundOverlay.html">KmlGroundOverlay</a></li><li><a href="KmlIcon.html">KmlIcon</a></li><li><a href="KmlIconStyle.html">KmlIconStyle</a></li><li><a href="KmlLabelStyle.html">KmlLabelStyle</a></li><li><a href="KmlLatLonAltBox.html">KmlLatLonAltBox</a></li><li><a href="KmlLatLonBox.html">KmlLatLonBox</a></li><li><a href="KmlLatLonQuad.html">KmlLatLonQuad</a></li><li><a href="KmlLinearRing.html">KmlLinearRing</a></li><li><a href="KmlLineString.html">KmlLineString</a></li><li><a href="KmlLineStyle.html">KmlLineStyle</a></li><li><a href="KmlLink.html">KmlLink</a></li><li><a href="KmlListStyle.html">KmlListStyle</a></li><li><a href="KmlLocation.html">KmlLocation</a></li><li><a href="KmlLod.html">KmlLod</a></li><li><a href="KmlLookAt.html">KmlLookAt</a></li><li><a href="KmlMultiGeometry.html">KmlMultiGeometry</a></li><li><a href="KmlMultiTrack.html">KmlMultiTrack</a></li><li><a href="KmlNetworkLink.html">KmlNetworkLink</a></li><li><a href="KmlObject.html">KmlObject</a></li><li><a href="KmlOrientation.html">KmlOrientation</a></li><li><a href="KmlOverlay.html">KmlOverlay</a></li><li><a href="KmlPhotoOverlay.html">KmlPhotoOverlay</a></li><li><a href="KmlPlacemark.html">KmlPlacemark</a></li><li><a href="KmlPoint.html">KmlPoint</a></li><li><a href="KmlPolygon.html">KmlPolygon</a></li><li><a href="KmlPolyStyle.html">KmlPolyStyle</a></li><li><a href="KmlRegion.html">KmlRegion</a></li><li><a href="KmlScreenOverlay.html">KmlScreenOverlay</a></li><li><a href="KmlStyle.html">KmlStyle</a></li><li><a href="KmlStyleMap.html">KmlStyleMap</a></li><li><a href="KmlStyleSelector.html">KmlStyleSelector</a></li><li><a href="KmlSubStyle.html">KmlSubStyle</a></li><li><a href="KmlTimePrimitive.html">KmlTimePrimitive</a></li><li><a href="KmlTimeSpan.html">KmlTimeSpan</a></li><li><a href="KmlTimeStamp.html">KmlTimeStamp</a></li><li><a href="KmlTour.html">KmlTour</a></li><li><a href="KmlTrack.html">KmlTrack</a></li><li><a href="KmlTreeVisibility.html">KmlTreeVisibility</a></li><li><a href="LandsatRestLayer.html">LandsatRestLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Level.html">Level</a></li><li><a href="LevelRowColumnUrlBuilder.html">LevelRowColumnUrlBuilder</a></li><li><a href="libtess.ActiveRegion.html">ActiveRegion</a></li><li><a href="libtess.CachedVertex.html">CachedVertex</a></li><li><a href="libtess.Dict.html">Dict</a></li><li><a href="libtess.DictNode.html">DictNode</a></li><li><a href="libtess.GluFace.html">GluFace</a></li><li><a href="libtess.GluHalfEdge.html">GluHalfEdge</a></li><li><a href="libtess.GluMesh.html">GluMesh</a></li><li><a href="libtess.GluTesselator.html">GluTesselator</a></li><li><a href="libtess.GluVertex.html">GluVertex</a></li><li><a href="libtess.PQHandleElem.html">PQHandleElem</a></li><li><a href="libtess.PQNode.html">PQNode</a></li><li><a href="libtess.PriorityQ.html">PriorityQ</a></li><li><a href="libtess.PriorityQHeap.html">PriorityQHeap</a></li><li><a href="Line.html">Line</a></li><li><a href="Location.html">Location</a></li><li><a href="LookAtNavigator.html">LookAtNavigator</a></li><li><a href="Matrix.html">Matrix</a></li><li><a href="Matrix3.html">Matrix3</a></li><li><a href="MemoryCache.html">MemoryCache</a></li><li><a href="MemoryCacheListener.html">MemoryCacheListener</a></li><li><a href="MercatorTiledImageLayer.html">MercatorTiledImageLayer</a></li><li><a href="Navigator.html">Navigator</a></li><li><a href="NavigatorState.html">NavigatorState</a></li><li><a href="NetworkLinkControl.html">NetworkLinkControl</a></li><li><a href="NominatimGeocoder.html">NominatimGeocoder</a></li><li><a href="NotYetImplementedError.html">NotYetImplementedError</a></li><li><a href="Offset.html">Offset</a></li><li><a href="OpenStreetMapImageLayer.html">OpenStreetMapImageLayer</a></li><li><a href="OrderedRenderable.html">OrderedRenderable</a></li><li><a href="OwsConstraint.html">OwsConstraint</a></li><li><a href="OwsLanguageString.html">OwsLanguageString</a></li><li><a href="OwsOperationsMetadata.html">OwsOperationsMetadata</a></li><li><a href="OwsServiceIdentification.html">OwsServiceIdentification</a></li><li><a href="OwsServiceProvider.html">OwsServiceProvider</a></li><li><a href="Pair.html">Pair</a></li><li><a href="PanRecognizer.html">PanRecognizer</a></li><li><a href="Path.html">Path</a></li><li><a href="PeriodicTimeSequence.html">PeriodicTimeSequence</a></li><li><a href="PickedObject.html">PickedObject</a></li><li><a href="PickedObjectList.html">PickedObjectList</a></li><li><a href="PinchRecognizer.html">PinchRecognizer</a></li><li><a href="Placemark.html">Placemark</a></li><li><a href="PlacemarkAttributes.html">PlacemarkAttributes</a></li><li><a href="Plane.html">Plane</a></li><li><a href="Polygon.html">Polygon</a></li><li><a href="Position.html">Position</a></li><li><a href="PrjFile.html">PrjFile</a></li><li><a href="ProjectionEquirectangular.html">ProjectionEquirectangular</a></li><li><a href="ProjectionGnomonic.html">ProjectionGnomonic</a></li><li><a href="ProjectionMercator.html">ProjectionMercator</a></li><li><a href="ProjectionPolarEquidistant.html">ProjectionPolarEquidistant</a></li><li><a href="ProjectionUPS.html">ProjectionUPS</a></li><li><a href="ProjectionWgs84.html">ProjectionWgs84</a></li><li><a href="Rectangle.html">Rectangle</a></li><li><a href="RefreshListener.html">RefreshListener</a></li><li><a href="RemoteFile.html">RemoteFile</a></li><li><a href="Renderable.html">Renderable</a></li><li><a href="RenderableLayer.html">RenderableLayer</a></li><li><a href="RestTiledImageLayer.html">RestTiledImageLayer</a></li><li><a href="RotationRecognizer.html">RotationRecognizer</a></li><li><a href="Scale.html">Scale</a></li><li><a href="Schema.html">Schema</a></li><li><a href="ScreenCreditController.html">ScreenCreditController</a></li><li><a href="ScreenImage.html">ScreenImage</a></li><li><a href="ScreenText.html">ScreenText</a></li><li><a href="Sector.html">Sector</a></li><li><a href="ShapeAttributes.html">ShapeAttributes</a></li><li><a href="Shapefile.html">Shapefile</a></li><li><a href="ShapefileRecord.html">ShapefileRecord</a></li><li><a href="ShapefileRecordMultiPoint.html">ShapefileRecordMultiPoint</a></li><li><a href="ShapefileRecordNull.html">ShapefileRecordNull</a></li><li><a href="ShapefileRecordPoint.html">ShapefileRecordPoint</a></li><li><a href="ShapefileRecordPolygon.html">ShapefileRecordPolygon</a></li><li><a href="ShapefileRecordPolyline.html">ShapefileRecordPolyline</a></li><li><a href="SkyProgram.html">SkyProgram</a></li><li><a href="SurfaceCircle.html">SurfaceCircle</a></li><li><a href="SurfaceEllipse.html">SurfaceEllipse</a></li><li><a href="SurfaceImage.html">SurfaceImage</a></li><li><a href="SurfacePolygon.html">SurfacePolygon</a></li><li><a href="SurfacePolyline.html">SurfacePolyline</a></li><li><a href="SurfaceRectangle.html">SurfaceRectangle</a></li><li><a href="SurfaceRenderable.html">SurfaceRenderable</a></li><li><a href="SurfaceSector.html">SurfaceSector</a></li><li><a href="SurfaceShape.html">SurfaceShape</a></li><li><a href="SurfaceShapeTile.html">SurfaceShapeTile</a></li><li><a href="SurfaceTile.html">SurfaceTile</a></li><li><a href="SurfaceTileRenderer.html">SurfaceTileRenderer</a></li><li><a href="SurfaceTileRendererProgram.html">SurfaceTileRendererProgram</a></li><li><a href="TapRecognizer.html">TapRecognizer</a></li><li><a href="TectonicPlatesLayer.html">TectonicPlatesLayer</a></li><li><a href="Terrain.html">Terrain</a></li><li><a href="TerrainTile.html">TerrainTile</a></li><li><a href="TerrainTileList.html">TerrainTileList</a></li><li><a href="Tessellator.html">Tessellator</a></li><li><a href="Text.html">Text</a></li><li><a href="TextAttributes.html">TextAttributes</a></li><li><a href="TextSupport.html">TextSupport</a></li><li><a href="Texture.html">Texture</a></li><li><a href="TextureTile.html">TextureTile</a></li><li><a href="TiffConstants.html">TiffConstants</a></li><li><a href="TiffIFDEntry.html">TiffIFDEntry</a></li><li><a href="Tile.html">Tile</a></li><li><a href="TiledImageLayer.html">TiledImageLayer</a></li><li><a href="TileFactory.html">TileFactory</a></li><li><a href="TiltRecognizer.html">TiltRecognizer</a></li><li><a href="Touch.html">Touch</a></li><li><a href="TreeKeyValueCache.html">TreeKeyValueCache</a></li><li><a href="TriangleMesh.html">TriangleMesh</a></li><li><a href="UnsupportedOperationError.html">UnsupportedOperationError</a></li><li><a href="UrlBuilder.html">UrlBuilder</a></li><li><a href="Vec2.html">Vec2</a></li><li><a href="Vec3.html">Vec3</a></li><li><a href="ViewControlsLayer.html">ViewControlsLayer</a></li><li><a href="ViewVolume.html">ViewVolume</a></li><li><a href="WMSCapabilities.html">WMSCapabilities</a></li><li><a href="WmsLayer.html">WmsLayer</a></li><li><a href="WmsLayerCapabilities.html">WmsLayerCapabilities</a></li><li><a href="WmsTimeDimensionedLayer.html">WmsTimeDimensionedLayer</a></li><li><a href="WmsUrlBuilder.html">WmsUrlBuilder</a></li><li><a href="WmtsCapabilities.html">WmtsCapabilities</a></li><li><a href="WmtsLayer.html">WmtsLayer</a></li><li><a href="WmtsLayerCapabilities.html">WmtsLayerCapabilities</a></li><li><a href="WorldWindow.html">WorldWindow</a></li><li><a href="ZeroElevationModel.html">ZeroElevationModel</a></li></ul><h3>Global</h3><ul><li><a href="global.html#catch">catch</a></li><li><a href="global.html#crs">crs</a></li><li><a href="global.html#style">style</a></li><li><a href="global.html#then">then</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Angle.html">Angle</a></li><li><a href="module-ColladaUtils.html">ColladaUtils</a></li><li><a href="module-KmlElements.html">KmlElements</a></li><li><a href="module-KmlFileCache.html">KmlFileCache</a></li><li><a href="module-Logger.html">Logger</a></li><li><a href="module-NodeTransformers.html">NodeTransformers</a></li><li><a href="module-StyleResolver.html">StyleResolver</a></li><li><a href="module-WorldWind.html">WorldWind</a></li><li><a href="module-WWMath.html">WWMath</a></li><li><a href="module-WWUtil.html">WWUtil</a></li></ul><h3>Classes</h3><ul><li><a href="-_anonymous_-RefreshListener.Event.html">Event</a></li><li><a href="AbsentResourceList.html">AbsentResourceList</a></li><li><a href="AbstractError.html">AbstractError</a></li><li><a href="AbstractMesh.html">AbstractMesh</a></li><li><a href="AbstractShape.html">AbstractShape</a></li><li><a href="Annotation.html">Annotation</a></li><li><a href="AnnotationAttributes.html">AnnotationAttributes</a></li><li><a href="ArgumentError.html">ArgumentError</a></li><li><a href="AtmosphereLayer.html">AtmosphereLayer</a></li><li><a href="AtmosphereProgram.html">AtmosphereProgram</a></li><li><a href="Attribute.html">Attribute</a></li><li><a href="BasicProgram.html">BasicProgram</a></li><li><a href="BasicTextureProgram.html">BasicTextureProgram</a></li><li><a href="BasicTimeSequence.html">BasicTimeSequence</a></li><li><a href="BingAerialLayer.html">BingAerialLayer</a></li><li><a href="BingAerialWithLabelsLayer.html">BingAerialWithLabelsLayer</a></li><li><a href="BingImageryUrlBuilder.html">BingImageryUrlBuilder</a></li><li><a href="BingRoadsLayer.html">BingRoadsLayer</a></li><li><a href="BingTiledImageLayer.html">BingTiledImageLayer</a></li><li><a href="BlueMarbleLayer.html">BlueMarbleLayer</a></li><li><a href="BMNGLandsatLayer.html">BMNGLandsatLayer</a></li><li><a href="BMNGLayer.html">BMNGLayer</a></li><li><a href="BMNGOneImageLayer.html">BMNGOneImageLayer</a></li><li><a href="BoundingBox.html">BoundingBox</a></li><li><a href="ByteBuffer.html">ByteBuffer</a></li><li><a href="Change.html">Change</a></li><li><a href="ClickRecognizer.html">ClickRecognizer</a></li><li><a href="ColladaAsset.html">ColladaAsset</a></li><li><a href="ColladaImage.html">ColladaImage</a></li><li><a href="ColladaLoader.html">ColladaLoader</a></li><li><a href="ColladaMaterial.html">ColladaMaterial</a></li><li><a href="ColladaMesh.html">ColladaMesh</a></li><li><a href="ColladaNode.html">ColladaNode</a></li><li><a href="ColladaScene.html">ColladaScene</a></li><li><a href="Color.html">Color</a></li><li><a href="Compass.html">Compass</a></li><li><a href="CompassLayer.html">CompassLayer</a></li><li><a href="CoordinatesDisplayLayer.html">CoordinatesDisplayLayer</a></li><li><a href="Create.html">Create</a></li><li><a href="DateWW.html">DateWW</a></li><li><a href="DBaseFile.html">DBaseFile</a></li><li><a href="Delete.html">Delete</a></li><li><a href="DigitalGlobeTiledImageLayer.html">DigitalGlobeTiledImageLayer</a></li><li><a href="DragRecognizer.html">DragRecognizer</a></li><li><a href="DrawContext.html">DrawContext</a></li><li><a href="EarthElevationModel.html">EarthElevationModel</a></li><li><a href="ElevationImage.html">ElevationImage</a></li><li><a href="ElevationModel.html">ElevationModel</a></li><li><a href="ElevationTile.html">ElevationTile</a></li><li><a href="Font.html">Font</a></li><li><a href="FramebufferTexture.html">FramebufferTexture</a></li><li><a href="FramebufferTile.html">FramebufferTile</a></li><li><a href="FramebufferTileController.html">FramebufferTileController</a></li><li><a href="FrameStatistics.html">FrameStatistics</a></li><li><a href="FrameStatisticsLayer.html">FrameStatisticsLayer</a></li><li><a href="Frustum.html">Frustum</a></li><li><a href="GeographicMesh.html">GeographicMesh</a></li><li><a href="GeographicProjection.html">GeographicProjection</a></li><li><a href="GeographicText.html">GeographicText</a></li><li><a href="GeoJSONConstants.html">GeoJSONConstants</a></li><li><a href="GeoJSONCRS.html">GeoJSONCRS</a></li><li><a href="GeoJSONFeature.html">GeoJSONFeature</a></li><li><a href="GeoJSONFeatureCollection.html">GeoJSONFeatureCollection</a></li><li><a href="GeoJSONGeometry.html">GeoJSONGeometry</a></li><li><a href="GeoJSONGeometryCollection.html">GeoJSONGeometryCollection</a></li><li><a href="GeoJSONGeometryLineString.html">GeoJSONGeometryLineString</a></li><li><a href="GeoJSONGeometryMultiLineString.html">GeoJSONGeometryMultiLineString</a></li><li><a href="GeoJSONGeometryMultiPoint.html">GeoJSONGeometryMultiPoint</a></li><li><a href="GeoJSONGeometryMultiPolygon.html">GeoJSONGeometryMultiPolygon</a></li><li><a href="GeoJSONGeometryPoint.html">GeoJSONGeometryPoint</a></li><li><a href="GeoJSONGeometryPolygon.html">GeoJSONGeometryPolygon</a></li><li><a href="GeoJSONParser.html">GeoJSONParser</a></li><li><a href="GeoTiff.html">GeoTiff</a></li><li><a href="GeoTiffKeyEntry.html">GeoTiffKeyEntry</a></li><li><a href="GeoTiffMetadata.html">GeoTiffMetadata</a></li><li><a href="GeoTiffReader.html">GeoTiffReader</a></li><li><a href="GestureRecognizer.html">GestureRecognizer</a></li><li><a href="Globe.html">Globe</a></li><li><a href="Globe2D.html">Globe2D</a></li><li><a href="GoToAnimator.html">GoToAnimator</a></li><li><a href="GpuProgram.html">GpuProgram</a></li><li><a href="GpuResourceCache.html">GpuResourceCache</a></li><li><a href="GpuShader.html">GpuShader</a></li><li><a href="GroundProgram.html">GroundProgram</a></li><li><a href="HighlightController.html">HighlightController</a></li><li><a href="ImagePyramid.html">ImagePyramid</a></li><li><a href="ImageSource.html">ImageSource</a></li><li><a href="ImageTile.html">ImageTile</a></li><li><a href="Insets.html">Insets</a></li><li><a href="ItemIcon.html">ItemIcon</a></li><li><a href="KmlAbstractView.html">KmlAbstractView</a></li><li><a href="KmlBalloonStyle.html">KmlBalloonStyle</a></li><li><a href="KmlCamera.html">KmlCamera</a></li><li><a href="KmlColorStyle.html">KmlColorStyle</a></li><li><a href="KmlContainer.html">KmlContainer</a></li><li><a href="KmlControls.html">KmlControls</a></li><li><a href="KmlDocument.html">KmlDocument</a></li><li><a href="KmlElementsFactory.html">KmlElementsFactory</a></li><li><a href="KmlElementsFactoryCached.html">KmlElementsFactoryCached</a></li><li><a href="KmlFeature.html">KmlFeature</a></li><li><a href="KmlFile.html">KmlFile</a></li><li><a href="KmlFolder.html">KmlFolder</a></li><li><a href="KmlGeometry.html">KmlGeometry</a></li><li><a href="KmlGroundOverlay.html">KmlGroundOverlay</a></li><li><a href="KmlIcon.html">KmlIcon</a></li><li><a href="KmlIconStyle.html">KmlIconStyle</a></li><li><a href="KmlLabelStyle.html">KmlLabelStyle</a></li><li><a href="KmlLatLonAltBox.html">KmlLatLonAltBox</a></li><li><a href="KmlLatLonBox.html">KmlLatLonBox</a></li><li><a href="KmlLatLonQuad.html">KmlLatLonQuad</a></li><li><a href="KmlLinearRing.html">KmlLinearRing</a></li><li><a href="KmlLineString.html">KmlLineString</a></li><li><a href="KmlLineStyle.html">KmlLineStyle</a></li><li><a href="KmlLink.html">KmlLink</a></li><li><a href="KmlListStyle.html">KmlListStyle</a></li><li><a href="KmlLocation.html">KmlLocation</a></li><li><a href="KmlLod.html">KmlLod</a></li><li><a href="KmlLookAt.html">KmlLookAt</a></li><li><a href="KmlMultiGeometry.html">KmlMultiGeometry</a></li><li><a href="KmlMultiTrack.html">KmlMultiTrack</a></li><li><a href="KmlNetworkLink.html">KmlNetworkLink</a></li><li><a href="KmlObject.html">KmlObject</a></li><li><a href="KmlOrientation.html">KmlOrientation</a></li><li><a href="KmlOverlay.html">KmlOverlay</a></li><li><a href="KmlPhotoOverlay.html">KmlPhotoOverlay</a></li><li><a href="KmlPlacemark.html">KmlPlacemark</a></li><li><a href="KmlPoint.html">KmlPoint</a></li><li><a href="KmlPolygon.html">KmlPolygon</a></li><li><a href="KmlPolyStyle.html">KmlPolyStyle</a></li><li><a href="KmlRegion.html">KmlRegion</a></li><li><a href="KmlScreenOverlay.html">KmlScreenOverlay</a></li><li><a href="KmlStyle.html">KmlStyle</a></li><li><a href="KmlStyleMap.html">KmlStyleMap</a></li><li><a href="KmlStyleSelector.html">KmlStyleSelector</a></li><li><a href="KmlSubStyle.html">KmlSubStyle</a></li><li><a href="KmlTimePrimitive.html">KmlTimePrimitive</a></li><li><a href="KmlTimeSpan.html">KmlTimeSpan</a></li><li><a href="KmlTimeStamp.html">KmlTimeStamp</a></li><li><a href="KmlTour.html">KmlTour</a></li><li><a href="KmlTrack.html">KmlTrack</a></li><li><a href="KmlTreeVisibility.html">KmlTreeVisibility</a></li><li><a href="LandsatRestLayer.html">LandsatRestLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Level.html">Level</a></li><li><a href="LevelRowColumnUrlBuilder.html">LevelRowColumnUrlBuilder</a></li><li><a href="libtess.ActiveRegion.html">ActiveRegion</a></li><li><a href="libtess.CachedVertex.html">CachedVertex</a></li><li><a href="libtess.Dict.html">Dict</a></li><li><a href="libtess.DictNode.html">DictNode</a></li><li><a href="libtess.GluFace.html">GluFace</a></li><li><a href="libtess.GluHalfEdge.html">GluHalfEdge</a></li><li><a href="libtess.GluMesh.html">GluMesh</a></li><li><a href="libtess.GluTesselator.html">GluTesselator</a></li><li><a href="libtess.GluVertex.html">GluVertex</a></li><li><a href="libtess.PQHandleElem.html">PQHandleElem</a></li><li><a href="libtess.PQNode.html">PQNode</a></li><li><a href="libtess.PriorityQ.html">PriorityQ</a></li><li><a href="libtess.PriorityQHeap.html">PriorityQHeap</a></li><li><a href="Line.html">Line</a></li><li><a href="Location.html">Location</a></li><li><a href="LookAtNavigator.html">LookAtNavigator</a></li><li><a href="Matrix.html">Matrix</a></li><li><a href="Matrix3.html">Matrix3</a></li><li><a href="MemoryCache.html">MemoryCache</a></li><li><a href="MemoryCacheListener.html">MemoryCacheListener</a></li><li><a href="MercatorTiledImageLayer.html">MercatorTiledImageLayer</a></li><li><a href="Navigator.html">Navigator</a></li><li><a href="NavigatorState.html">NavigatorState</a></li><li><a href="NetworkLinkControl.html">NetworkLinkControl</a></li><li><a href="NominatimGeocoder.html">NominatimGeocoder</a></li><li><a href="NotYetImplementedError.html">NotYetImplementedError</a></li><li><a href="Offset.html">Offset</a></li><li><a href="OpenStreetMapImageLayer.html">OpenStreetMapImageLayer</a></li><li><a href="OrderedRenderable.html">OrderedRenderable</a></li><li><a href="OwsConstraint.html">OwsConstraint</a></li><li><a href="OwsLanguageString.html">OwsLanguageString</a></li><li><a href="OwsOperationsMetadata.html">OwsOperationsMetadata</a></li><li><a href="OwsServiceIdentification.html">OwsServiceIdentification</a></li><li><a href="OwsServiceProvider.html">OwsServiceProvider</a></li><li><a href="Pair.html">Pair</a></li><li><a href="PanRecognizer.html">PanRecognizer</a></li><li><a href="Path.html">Path</a></li><li><a href="PeriodicTimeSequence.html">PeriodicTimeSequence</a></li><li><a href="PickedObject.html">PickedObject</a></li><li><a href="PickedObjectList.html">PickedObjectList</a></li><li><a href="PinchRecognizer.html">PinchRecognizer</a></li><li><a href="Placemark.html">Placemark</a></li><li><a href="PlacemarkAttributes.html">PlacemarkAttributes</a></li><li><a href="Plane.html">Plane</a></li><li><a href="Polygon.html">Polygon</a></li><li><a href="Position.html">Position</a></li><li><a href="PrjFile.html">PrjFile</a></li><li><a href="ProjectionEquirectangular.html">ProjectionEquirectangular</a></li><li><a href="ProjectionGnomonic.html">ProjectionGnomonic</a></li><li><a href="ProjectionMercator.html">ProjectionMercator</a></li><li><a href="ProjectionPolarEquidistant.html">ProjectionPolarEquidistant</a></li><li><a href="ProjectionUPS.html">ProjectionUPS</a></li><li><a href="ProjectionWgs84.html">ProjectionWgs84</a></li><li><a href="Rectangle.html">Rectangle</a></li><li><a href="RefreshListener.html">RefreshListener</a></li><li><a href="RemoteFile.html">RemoteFile</a></li><li><a href="Renderable.html">Renderable</a></li><li><a href="RenderableLayer.html">RenderableLayer</a></li><li><a href="RestTiledImageLayer.html">RestTiledImageLayer</a></li><li><a href="RotationRecognizer.html">RotationRecognizer</a></li><li><a href="Scale.html">Scale</a></li><li><a href="Schema.html">Schema</a></li><li><a href="ScreenCreditController.html">ScreenCreditController</a></li><li><a href="ScreenImage.html">ScreenImage</a></li><li><a href="ScreenText.html">ScreenText</a></li><li><a href="Sector.html">Sector</a></li><li><a href="ShapeAttributes.html">ShapeAttributes</a></li><li><a href="Shapefile.html">Shapefile</a></li><li><a href="ShapefileRecord.html">ShapefileRecord</a></li><li><a href="ShapefileRecordMultiPoint.html">ShapefileRecordMultiPoint</a></li><li><a href="ShapefileRecordNull.html">ShapefileRecordNull</a></li><li><a href="ShapefileRecordPoint.html">ShapefileRecordPoint</a></li><li><a href="ShapefileRecordPolygon.html">ShapefileRecordPolygon</a></li><li><a href="ShapefileRecordPolyline.html">ShapefileRecordPolyline</a></li><li><a href="SkyProgram.html">SkyProgram</a></li><li><a href="SurfaceCircle.html">SurfaceCircle</a></li><li><a href="SurfaceEllipse.html">SurfaceEllipse</a></li><li><a href="SurfaceImage.html">SurfaceImage</a></li><li><a href="SurfacePolygon.html">SurfacePolygon</a></li><li><a href="SurfacePolyline.html">SurfacePolyline</a></li><li><a href="SurfaceRectangle.html">SurfaceRectangle</a></li><li><a href="SurfaceRenderable.html">SurfaceRenderable</a></li><li><a href="SurfaceSector.html">SurfaceSector</a></li><li><a href="SurfaceShape.html">SurfaceShape</a></li><li><a href="SurfaceShapeTile.html">SurfaceShapeTile</a></li><li><a href="SurfaceTile.html">SurfaceTile</a></li><li><a href="SurfaceTileRenderer.html">SurfaceTileRenderer</a></li><li><a href="SurfaceTileRendererProgram.html">SurfaceTileRendererProgram</a></li><li><a href="TapRecognizer.html">TapRecognizer</a></li><li><a href="TectonicPlatesLayer.html">TectonicPlatesLayer</a></li><li><a href="Terrain.html">Terrain</a></li><li><a href="TerrainTile.html">TerrainTile</a></li><li><a href="TerrainTileList.html">TerrainTileList</a></li><li><a href="Tessellator.html">Tessellator</a></li><li><a href="Text.html">Text</a></li><li><a href="TextAttributes.html">TextAttributes</a></li><li><a href="TextSupport.html">TextSupport</a></li><li><a href="Texture.html">Texture</a></li><li><a href="TextureTile.html">TextureTile</a></li><li><a href="TiffConstants.html">TiffConstants</a></li><li><a href="TiffIFDEntry.html">TiffIFDEntry</a></li><li><a href="Tile.html">Tile</a></li><li><a href="TiledImageLayer.html">TiledImageLayer</a></li><li><a href="TileFactory.html">TileFactory</a></li><li><a href="TiltRecognizer.html">TiltRecognizer</a></li><li><a href="Touch.html">Touch</a></li><li><a href="TreeKeyValueCache.html">TreeKeyValueCache</a></li><li><a href="TriangleMesh.html">TriangleMesh</a></li><li><a href="UnsupportedOperationError.html">UnsupportedOperationError</a></li><li><a href="UrlBuilder.html">UrlBuilder</a></li><li><a href="Vec2.html">Vec2</a></li><li><a href="Vec3.html">Vec3</a></li><li><a href="ViewControlsLayer.html">ViewControlsLayer</a></li><li><a href="ViewVolume.html">ViewVolume</a></li><li><a href="WcsEarthElevationModel.html">WcsEarthElevationModel</a></li><li><a href="WcsTileUrlBuilder.html">WcsTileUrlBuilder</a></li><li><a href="WFSCapabilities.html">WFSCapabilities</a></li><li><a href="WMSCapabilities.html">WMSCapabilities</a></li><li><a href="WmsLayer.html">WmsLayer</a></li><li><a href="WmsLayerCapabilities.html">WmsLayerCapabilities</a></li><li><a href="WmsTimeDimensionedLayer.html">WmsTimeDimensionedLayer</a></li><li><a href="WmsUrlBuilder.html">WmsUrlBuilder</a></li><li><a href="WmtsCapabilities.html">WmtsCapabilities</a></li><li><a href="WmtsLayer.html">WmtsLayer</a></li><li><a href="WmtsLayerCapabilities.html">WmtsLayerCapabilities</a></li><li><a href="WorldWindow.html">WorldWindow</a></li><li><a href="ZeroElevationModel.html">ZeroElevationModel</a></li></ul><h3>Global</h3><ul><li><a href="global.html#catch">catch</a></li><li><a href="global.html#crs">crs</a></li><li><a href="global.html#style">style</a></li><li><a href="global.html#then">then</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Jul 25 2016 11:39:00 GMT-0700 (Pacific Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Dec 23 2016 17:37:32 GMT-0800 (PST)
 </footer>
 
 <script> prettyPrint(); </script>
