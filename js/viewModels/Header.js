@@ -33,7 +33,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojdialog',
                             break;
                         // Go to the NASA World Wind forum
                         case "forum":
-                            window.open("http://forum.worldwindcentral.com", "_self");
+                            window.open("https://forum.worldwindcentral.com", "_self");
                             break;
                         // Open the About Box
                         case "about":
