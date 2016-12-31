@@ -5,6 +5,7 @@ gov.nasa.worldwind.gesture
 gov.nasa.worldwind.globe
 gov.nasa.worldwind.layer
 gov.nasa.worldwind.ogc
+gov.nasa.worldwind.ogc.gpkg
 gov.nasa.worldwind.ogc.wms
 gov.nasa.worldwind.render
 gov.nasa.worldwind.shape
