@@ -7,6 +7,7 @@ gov.nasa.worldwind.layer
 gov.nasa.worldwind.ogc
 gov.nasa.worldwind.ogc.gpkg
 gov.nasa.worldwind.ogc.wms
+gov.nasa.worldwind.ogc.wmts
 gov.nasa.worldwind.render
 gov.nasa.worldwind.shape
 gov.nasa.worldwind.util
