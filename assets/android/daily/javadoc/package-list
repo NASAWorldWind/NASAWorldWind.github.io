@@ -1,5 +1,6 @@
 gov.nasa.worldwind
 gov.nasa.worldwind.draw
+gov.nasa.worldwind.formats.tiff
 gov.nasa.worldwind.geom
 gov.nasa.worldwind.gesture
 gov.nasa.worldwind.globe
