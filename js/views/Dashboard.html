@@ -1,0 +1,62 @@
+<!--
+Home module
+-->
+<div>
+    <!--    <div class="oj-sm-12" style="background: url('images/wwhorizon940x198.png') no-repeat; height: 400px">
+        </div>-->
+    <img src="images/wwhorizon940x198.png"/>
+</div>
+<div id="masonryLayout" class="oj-flex oj-sm-12" data-bind="ojComponent: {component: 'ojMasonryLayout'}">
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1><a data-bind="attr: {href: worldwindUrl }"><img class="manImg" src="images/github_mark.png" width="24"
+                                                            height="24" style="vertical-align: text-bottom"/></a>
+            GitHub Repositories
+        </h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li>
+                <a data-bind="attr: {href: webSdkUrl }">
+                    <h3 class="dash-h3">WebWorldWind</h3>
+                    <p class="oj-text-sm">NASA World Wind in JavaScript for HTML5</p>
+                </a>
+            </li>
+            <li>
+                <a data-bind="attr: {href: androidSdkUrl }">
+                    <h3 class="dash-h3">WorldWindAndroid</h3>
+                    <p class="oj-text-sm">NASA World Wind in Java for Android</p>
+                </a>
+            </li>
+            <li>
+                <a data-bind="attr: {href: javaSdkUrl }">
+                    <h3 class="dash-h3">WorldWindJava</h3>
+                    <p class="oj-text-sm">NASA World Wind in Java</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1><span class="fa fa-question-circle fa-lg"></span> Support</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: 'https://forum.worldwindcentral.com/forum.php'}">
+                <h3 class="dash-h3">World Wind Community Forum</h3>
+                <p class="oj-text-sm">Support for all World Wind SDKs and topics</p>
+            </a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WorldWindAndroid/issues'}"><h3
+                    class="dash-h3">Issue Tracker for Android</h3></a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WorldWindJava/issues'}"><h3
+                    class="dash-h3">Issue Tracker for Java</h3></a></li>
+            <li><a data-bind="attr: {href: 'https://github.com/NASAWorldWind/WebWorldWind/issues'}"><h3 class="dash-h3">
+                Issue Tracker for Web</h3></a></li>
+        </ul>
+    </div>
+    <div class="oj-panel oj-flex-item oj-masonrylayout-tile-2x2 home-tile">
+        <h1><span class="fa fa-gears fa-lg"></span> Examples</h1>
+        <ul data-bind="ojComponent: {component: 'ojListView'}">
+            <li><a data-bind="attr: {href: 'http://explorer.worldwind.earth'}"><h3
+                    class="dash-h3">World Wind Explorer</h3></a>
+                <p class="oj-text-sm"><a href="https://github.com/NASAWorldWindResearch/WorldWindExplorer">View this project on GitHub</a></p>
+            </li>
+            <li><a data-bind="attr: {href: 'http://worldwindserver.net/webworldwind/apps/Explorer.html'}">Explorer
+                (lightweight)</a></li>
+        </ul>
+    </div>
+</div>

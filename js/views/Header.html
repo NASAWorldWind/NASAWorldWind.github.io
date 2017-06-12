@@ -1,0 +1,103 @@
+<!--
+Copyright (c) 2016, Bruce Schubert
+ALL RIGHTS RESERVED
+-->
+<div class="oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
+    <!--
+    Off-canvas toggle button (hidden on large layouts)
+    -->
+    <div class="oj-flex-bar-start oj-md-hide">
+        <button class="oj-button-lg"
+                data-bind="click: $parent.toggleDrawer,
+                    ojComponent: {
+                        component:'ojButton', 
+                        label: 'Application Navigation',
+                        chroming: 'half', 
+                        display: 'icons', 
+                        icons: {start: 'oj-web-applayout-offcanvas-icon'}}">
+        </button>
+    </div>
+    <!--
+    Branding Icon and Title 
+    -->
+    <div class="oj-flex-bar-middle oj-sm-align-items-center">
+        <span role="img" class="oj-icon branding-icon oj-sm-only-hide" title="App Logo"></span>
+        <span class="oj-web-applayout-header-title" title="Application Name" data-bind="text:appName"></span>
+    </div>
+    <!--
+    Tools
+    -->
+    <div class="oj-flex-bar-end">
+        <!--
+        Navigation menu, populated from RootViewModel.navDataSource (see main.js)
+        -->
+        <div role="navigation" 
+             data-bind="ojComponent: {
+                component: 'ojNavigationList',
+                optionChange: $parent.navChange, 
+                navigationLevel: 'application',
+                item: {template: 'navTemplate'},
+                display: $parent.lgScreen() ? 'all' : 'icons',
+                data: $parent.navDataSource,
+                selection: $parent.router.stateId(), 
+                edge: 'top'}"
+                     class="
+                     oj-sm-only-hide 
+                     oj-navigationlist-item-dividers 
+                     oj-md-condense 
+                     oj-md-justify-content-center 
+                     oj-lg-justify-content-flex-end
+                     ">
+        </div>
+        <!--
+        Drop-down Menu
+        -->
+        <div data-bind="ojComponent: {component:'ojToolbar'}" >
+            <span class="oj-toolbar-separator oj-sm-only-hide" role="separator"></span>
+            <button id="userMenu"
+                    data-bind="ojComponent: {
+                    component: 'ojButton',
+                    label: 'More Info',
+                    display: $parent.smScreen() ? 'icons' : 'all',
+                    icons: $parent.smScreen() ? {start: 'oj-icon demo-avatar-icon', end: null} : {end: null},
+                    chroming: 'half', menu: '#menu1'}">
+            </button>
+            <ul id='menu1' data-bind="ojComponent: {component: 'ojMenu', select: menuItemSelect}" style="display:none">
+                <li id="research"><a href="#">Applications & Research</a></li>
+                <li id="forum"><a href="#">Community Forum</a></li>
+                <li id="about"><a href="#">About</a></li>
+            </ul>
+
+            <!--
+              About Box (with footer)
+            -->
+            <div style="display:none" 
+                 id="aboutDialog" 
+                 title="About NASA World Wind"
+                 data-bind="ojComponent:{
+                    component: 'ojDialog',
+                    rootAttributes: { style: 'width: 620px; max-width: 100%; height: 350px;'}}">
+
+                <div class="oj-dialog-body">
+                    <p>
+                        World Wind is a virtual globe technology providing the means to
+                        visualize, manipulate and analyze data in a real world
+                        virtual representation.
+                    </p>
+                    <p>
+                        World Wind provides the platform for any desired functionality
+                        serving spatial information management needs.
+                    </p>
+
+                </div>
+
+                <!--
+                The footer displays a collection of links at the bottom of the about box
+                -->
+                <footer class="oj-dialog-footer oj-web-applayout-footer"
+                        role="contentinfo" data-bind="ojModule: 'Footer'">
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>

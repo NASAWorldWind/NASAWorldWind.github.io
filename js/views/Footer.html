@@ -1,0 +1,17 @@
+<!--
+Copyright (c) 2016, Bruce Schubert
+ALL RIGHTS RESERVED
+-->
+<!--
+ The Footer displays navigation links on the bottom of the Header#aboutbox
+-->
+<div class="oj-web-applayout-max-width">
+    <ul>
+        <!-- ko foreach: footerLinks -->
+        <li><a data-bind="text : name, attr : {id: linkId, href : linkTarget}"></a></li>
+        <!-- /ko -->
+    </ul>
+</div>
+<div class="oj-text-secondary-color oj-text-sm oj-web-applayout-max-width">
+    Copyright © 2016 NASA. All rights reserved.
+</div>

@@ -1,0 +1,40 @@
+<div class="oj-panel" style="width: 100%;">
+    <h1 class="oj-header-border">Downloads</h1>
+    <div class="oj-flex oj-flex-items-pad">
+        <div class="oj-panel oj-margin" style="width: 400px">
+            <h3 class="oj-header-border">
+                <a data-bind="attr: {href: latestUrl, target:'_blank'}">Latest Release</a>
+            </h3>
+            <p>Looking for the current release?</p>
+            <ul>
+                <li><a data-bind="attr: {href: latestUrl, target:'_blank'}">
+                    Go to release <span data-bind="text: latestTag"></span></a>
+                </li>
+            </ul>
+            <p><span data-bind="text: latestTag"></span> is the latest 'tagged'
+                release of the World Wind Java SDK.</p>
+        </div>
+        <div class="oj-panel oj-margin" style="width: 400px">
+            <h3 class="oj-header-border">
+                <a data-bind="attr: {href: dailyUrl, target:'_blank'}">Daily Build</a>
+            </h3>
+            <p>Interested in using the latest changes?</p>
+            <ul>
+                <li><a data-bind="attr: {href: dailyUrl, target:'_blank'}">
+                    Go to <span data-bind="text: dailyTag"></span></a></li>
+            </ul>
+            <p>The daily build has not been tested to the same level as the versioned release. Please use accordingly.</p>
+        </div>
+        <div class="oj-panel oj-margin" style="width: 400px">
+            <h3 class="oj-header-border">
+                <a data-bind="attr: {href: releasesUrl, target:'_blank'}">All Releases</a>
+            </h3>
+            <p>Looking for an different release?</p>
+            <ul>
+                <li><a data-bind="attr: {href: releasesUrl, target:'_blank'}">
+                    Browse the releases</a></li>
+            </ul>
+            <p>Review the release history.</p>
+        </div>
+    </div>
+</div>

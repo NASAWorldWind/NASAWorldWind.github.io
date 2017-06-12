@@ -1,0 +1,35 @@
+<!--
+Copyright (C) 2016 United States Government as represented by the Administrator of the
+National Aeronautics and Space Administration. All Rights Reserved.
+-->
+
+<h1>Get Started</h1>
+<div class="oj-flex oj-flex-item-pad oj-sm-12 ">
+    <!--
+    Create a Navigation List menu via unordered list items.  Nesting is supported.
+    The selected item (id) will be sync'd to this module's router state.
+    -->
+    <div id="java-getstarted-menu" class="oj-sm-4 oj-md-3 oj-lg-2 oj-flex-item"
+         data-bind="ojComponent: {
+            component: 'ojNavigationList',
+            drillMode: 'none',
+            selection: selectedItem
+         }">
+        <ul>
+            <li id="overview">
+                <a href="#">Overview</a>
+            </li>
+            <li id="downloads">
+                <a href="#">Downloads</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--
+    Bind the contents of this div to the the module's router state
+    -->
+    <div id="java-getstarted-content" class="oj-sm-8 oj-md-9 oj-lg-10 oj-flex-item"
+         data-bind="ojModule: router.currentValue">
+    </div>
+
+</div>

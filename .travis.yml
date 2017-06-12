@@ -1,0 +1,24 @@
+# Directs the Travis CI build service for the World Wind Website
+# For more information see https://docs.travis-ci.com/user/customizing-the-build/
+
+# The website uses nodejs to build
+language: node_js
+
+# Ensure a nodejs version supporting ES6 is used
+node_js: "7"
+
+# Blacklist the master branch to prevent builds kicked off by travis pushes
+branches:
+  except:
+    - master
+
+# Build the website - queries Bintray and OJO APIs for latest version information
+script: npm run build
+
+deploy: # By default, travis will not invoke this step for PRs
+  provider: pages # Deploy the current directory to the master branch of the repo
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  target_branch: master
+  on:
+    branch: develop

@@ -1,0 +1,86 @@
+<h1>Get Started</h1>
+<div class="oj-flex oj-flex-item-pad oj-sm-12 ">
+    <div id="android-getstarted-menu" class="oj-sm-4 oj-md-3 oj-lg-2 oj-flex-item"
+         data-bind="ojComponent:{
+            component: 'ojNavigationList',
+            drillMode: 'collapsible',
+            item: {selectable: isLeaf},
+            selection: selectedItem}">
+        <ul>
+            <li id="overview">
+                <a href="#">Overview</a>
+            </li>
+            <li id="downloads">
+                <a href="#">Downloads</a>
+            </li>            
+            <li id="setup">
+                <a href="#">Setup</a>
+                <ul>
+                    <li id="install">
+                        <a href="#">Install</a>
+                    </li>
+                    <li id="build">
+                        <a href="#">Build</a>
+                    </li>
+                    <!--<li id="run">-->
+                        <!--<a href="#">Run</a>-->
+                    <!--</li>-->
+                </ul>
+
+            <li id="tutorials">
+                <a href="#">Tutorials</a>
+                <ul>
+                    <li id="basicglobe">
+                        <a href="#">Basic Globe</a>
+                    </li>
+                    <li id="wmslayer">
+                        <a href="#">WMS Layer</a>
+                    </li>
+                    <li id="surfaceimage">
+                        <a href="#">Surface Image</a>
+                    </li>
+                    <li id="cameraview">
+                        <a href="#">Camera View</a>
+                    </li>
+                    <li id="lookatview">
+                        <a href="#">Look At View</a>
+                    </li>
+                    <li id="navigatorevents">
+                        <a href="#">Navigator Events</a>
+                    </li>
+                    <li id="placemarks">
+                        <a href="#">Placemarks</a>
+                    </li>
+                    <li id="placemarkpicking">
+                        <a href="#">Placemark Picking</a>
+                    </li>
+                    <li id="paths">
+                        <a href="#">Paths</a>
+                    </li>
+                    <li id="polygons">
+                        <a href="#">Polygons</a>
+                    </li>
+                    <li id="cameracontrols">
+                        <a href="#">Camera Controls</a>
+                    </li>
+                    <li id="showtessellation">
+                        <a href="#">Show Tessellation</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="examples">
+                <a href="#">Examples</a>
+            </li>
+            <li id="links">
+                <a href="#">Important Links</a>
+            </li>
+        </ul>
+    </div>
+    <!--
+    Bind the contents to the navigation menu selection
+    -->
+    <div id="android-quickstart-content" class="oj-sm-8 oj-md-9 oj-lg-10 oj-flex-item"
+         data-bind="ojModule: router.currentValue">
+    </div>
+         <!-- data-bind="ojModule: selectedItem"> -->
+</div>
