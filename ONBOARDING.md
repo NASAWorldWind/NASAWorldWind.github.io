@@ -13,24 +13,19 @@ team member, and start developing code for NASA World Wind.
 ## Get Connected
 
 - [GitHub](https://github.com) account with two-factor authentication enabled
-- [Google](https://accounts.google.com/SignUpWithoutGmail) account associated with your official email address
 - [Skype](https://login.skype.com/account/signup-form) account
 - [JetBrains](https://account.jetbrains.com/login) account
-- [World Wind Forum](http://forum.worldwindcentral.com/register.php) account
+- [World Wind Forum](http://forum.worldwindcentral.com/register.php) account (NASA interns skip this step)
 ... Set Avatar to NASA logo
 ... Set User Title to 'WW Team Member'
 ... Set Biography to 'NASA WorldWind Team Member'
-- [WordPress](https://wordpress.com/start/delta-discover/user) account
 
-
-[Send a request](https://groups.google.com/forum/#!contactowner/worldwind) to get invitations to World Wind team
-resources. Include your GitHub, Google, Skype, WordPress, and Forum account names.
+[Send a request](mailto:worldwind@googlegroups.com) to get connected with the World Wind team. Include your GitHub account, Skype account, JetBrains account, and Forum account.
 
 ## Accept Invitations To
 
 - World Wind [GitHub organization](https://github.com/orgs/NASAWorldWind/people)
 - World Wind [GitHub team](https://github.com/orgs/NASAWorldWind/teams/nasa-developers)
-- World Wind mailing lists worldwind@googlegroups.com, worldwind-esa@googlegroups.com, ...
 
 ## Joining Team Meetings
 
