@@ -9,62 +9,75 @@ var https = require('https'),
     extract = require('extract-zip'),
     rimraf = require('rimraf');
 
+// The root dynamic asset path
+var assetsPath = process.cwd() + '/dynamicAssets';
+
+// Check if the root dynamic assets path exists, and delete
+if (fs.existsSync(assetsPath)) {
+    rimraf.sync(assetsPath);
+}
+
+// Create the dynamic assets directory
+fs.mkdirSync(assetsPath, 0o755);
+
+// The Android dynamic asset path
+var androidAssetsPath = assetsPath + '/android';
+
+// Create the Android assets directory
+fs.mkdirSync(androidAssetsPath, 0o755);
+
 // Update the Android Bintray version information if the version available from Bintray is different than the assets currently available
 var androidBintray = 'https://api.bintray.com/packages/nasaworldwind/maven/WorldWindAndroid/versions/_latest';
 request(androidBintray, function(err, response, body) {
     if (err) {
         console.error(err);
-        return;
+        process.exit(1);
     }
-    // Set the absolute path to the assets folder, the extract-zip module requires absolute paths
-    var assetsPath = process.cwd() + '/dynamicAssets';
-    fs.mkdirSync(assetsPath, 0o755);
-    // Add a path to Android specific assets
-    assetsPath += '/android';
-    fs.mkdirSync(assetsPath, 0o755);
     // Only update if the return is in the expected format AND there is a version difference from the stored version
     var bintrayLatestVersion = JSON.parse(body);
     if (bintrayLatestVersion.name) {
-        fs.writeFile(assetsPath + '/latestBintrayVersion.json', body, function(err) {
+        fs.writeFile(androidAssetsPath + '/latestBintrayVersion.json', body, function(err) {
             if (err) {
                 console.error(err);
+                process.exit(1);
             } else {
-                console.log('Updated the latestBintrayVersion.json file');
+                console.log('WWA - Updated the latestBintrayVersion.json file');
                 // Attempt to retrieve the javadoc.jar, unzip, and replace the current directory contents
                 let javadocUrl = 'https://jcenter.bintray.com/gov/nasa/worldwind/android/worldwind/' + bintrayLatestVersion.name
                     + '/worldwind-' + bintrayLatestVersion.name + '-javadoc.jar';
                 // If at any point this operation fails, it will exit the nodejs build in order to prevent erroneous pages deployment
-                updateJavadocs(assetsPath, javadocUrl);
+                updateJavadocs(androidAssetsPath, javadocUrl);
             }
         });
     } else {
-        console.log('Error in Bintray response: ' + body + '\n No website update...');
+        console.log('WWA - Error in Bintray response: ' + body + '\n No website update...');
         process.exit(1);
     }
 });
 
-// Awaiting OJO SNAPSHOT publishing capability
-// // Update the Android OJO version information
-// var androidOjo = 'https://oss.jfrog.org/artifactory/api/search/versions?g=gov.nasa.worldwind.android&a=worldwind&repos=oss-snapshot-local';
-// request(androidOjo, function(err, response, body) {
-//     if (err) {
-//         console.error(err);
-//         return;
-//     }
-//     var ojoLatestVersion = JSON.parse(body);
-//     // Check that the returned format is as expected
-//     if (ojoLatestVersion.results && ojoLatestVersion.results.length > 0 && ojoLatestVersion.results[0].version) {
-//         fs.writeFile('assets/android/latestOjoVersion.json', body, function(err) {
-//             if (err) {
-//                 console.error(err);
-//             } else {
-//                 console.log('WWA - Updated the Android latestOjoVersion.json file');
-//             }
-//         });
-//     } else {
-//         console.error('WWA - Unexpected OJO API response: ' + body);
-//     }
-// });
+// Update the Android OJO version information
+var androidOjo = 'https://oss.jfrog.org/artifactory/api/search/versions?g=gov.nasa.worldwind.android&a=worldwind&repos=oss-snapshot-local';
+request(androidOjo, function(err, response, body) {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    }
+    var ojoLatestVersion = JSON.parse(body);
+    // Check that the returned format is as expected
+    if (ojoLatestVersion.results && ojoLatestVersion.results.length > 0 && ojoLatestVersion.results[0].version) {
+        fs.writeFile(androidAssetsPath + '/latestOjoVersion.json', body, function(err) {
+            if (err) {
+                console.error(err);
+                process.exit(1);
+            } else {
+                console.log('WWA - Updated the Android latestOjoVersion.json file');
+            }
+        });
+    } else {
+        console.error('WWA - Unexpected OJO API response: ' + body);
+        process.exit(1);
+    }
+});
 
 // Function to update the documentation, called by the initial Bintray API request if the version is different than the stored version.
 // This function will remove any existing files in the provided path before unzipping the updated docs.
