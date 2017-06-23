@@ -1,0 +1,7 @@
+{
+    "baseURL": "https://worldwind.arc.nasa.gov/",
+    "languageCode": "en-us",
+    "title": "NASA World Wind",
+    "logFile": "hugo.log",
+    "metaDataFormat": "json"
+}

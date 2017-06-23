@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>{{ .Params.title }}</h1>
+</div>
+<hr>
+<div class="container">
+    <div class="row">            
+        <div class="col-md-2 col-centered">
+            <a href="/{{ .Params.projectSlug }}">Overview</a>
+        </div>
+        <div class="col-md-2 col-centered">
+            <a href="/{{ .Params.projectSlug }}/download/">Download/Setup</a>
+        </div>
+        <div class="col-md-2 col-centered">
+            <a href="/{{ .Params.projectSlug }}-tutorials/">Tutorials</a>
+        </div>
+        <div class="col-md-2 col-centered">
+            <a href="/{{ .Params.projectSlug }}/docs/">Docs</a>
+        </div>
+        <div class="col-md-2 col-centered">
+            <a href="/{{ .Params.projectSlug }}/examples/">Examples</a>
+        </div>
+    </div>
+</div>
+<hr>

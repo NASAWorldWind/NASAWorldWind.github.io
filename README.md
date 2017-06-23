@@ -1,5 +1,3 @@
-<img src="https://nasaworldwind.github.io/css/images/nasa-logo.svg" height="100"/>
-
 # NASAWorldWind.github.io
 
 NASA World Wind organization website
