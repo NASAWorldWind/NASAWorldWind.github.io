@@ -1,6 +1,6 @@
 {
-    "title": "{{ replace .TranslationsBaseName "-" " " | title }}"
-    "date": {{ .Date }}
+    "title": "",
+    "date": {{ .Date }},
     "draft": false,
     "layout": "project",
     "projectSlug": "web"
