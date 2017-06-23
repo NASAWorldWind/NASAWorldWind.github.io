@@ -1,0 +1,16 @@
+before_script:
+ - curl -OL "https://github.com/gohugoio/hugo/releases/download/v0.24/hugo_0.24_Linux-64bit.tar.gz"
+ - tar -xvf hugo_0.24_Linux-64bit.tar.gz -C /tmp/
+
+# Build the website - queries Bintray and OJO APIs for latest version information
+script:
+ - /tmp/hugo 
+    
+# Deploy the website - Travis does not invoke this step for pull request builds
+deploy:
+  provider: pages # Deploy the current directory to the master branch of the repo
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: ./public/
+  on:
+    branch: master
