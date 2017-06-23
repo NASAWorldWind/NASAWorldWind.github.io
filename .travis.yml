@@ -1,6 +1,6 @@
 before_script:
- - curl -OL "https://github.com/gohugoio/hugo/releases/download/v0.21/hugo_0.21_Linux-64bit.tar.gz"
- - tar -xvf hugo_0.21_Linux-64bit.tar.gz -C /tmp/
+ - curl -OL "https://github.com/gohugoio/hugo/releases/download/v0.24/hugo_0.24_Linux-64bit.tar.gz"
+ - tar -xvf hugo_0.24_Linux-64bit.tar.gz -C /tmp/
 
 # Blacklist the master branch to prevent builds kicked off by travis pushes
 branches:
