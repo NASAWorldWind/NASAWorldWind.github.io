@@ -9,4 +9,4 @@
     "projectSlug": "android"
 }
 
-This _index file indicates to Hugo that a list of content exists in this subdirectory.
+The tutorials defined here are included in a module of the World Wind Android project. Clone the latest source from GitHub and open in Android Studio. Build and deploy the ```worldwind-tutorials``` app to a device of your choosing.

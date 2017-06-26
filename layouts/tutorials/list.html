@@ -2,6 +2,7 @@
     {{ partial "project-navbar.html" . }}
     <div class="container">
         <h3>Tutorials</h3>
+        {{ .Content }}
         {{ range .Data.Pages.ByTitle.Reverse }}
             <div class="panel panel-primary">
                 <div class="panel-heading">
