@@ -1,9 +1,12 @@
 {
-    "title": "WMS Layers",
-    "date": "2017-06-23T14:33:05-04:00",
+    "title": "Web World Wind",
+    "tutorialName": "WMS Layers",
+    "shortDescription": "Utilize a Web Map Service ",
+    "imagePath": "",
+    "date": "2017-06-25T21:56:40-04:00",
     "draft": false,
     "layout": "project",
-    "projectSlug": "android"
+    "projectSlug": "web"
 }
 
 ### WMS Layers
