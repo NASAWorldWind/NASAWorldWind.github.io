@@ -1,0 +1,9 @@
+{{ define "head-title" }}
+    <title>NASA World Wind - {{ .Params.Title }}</title>
+{{ end }}
+{{ define "main-block" }}
+    {{ partial "project-navbar" . }}
+    <div class="container">
+        {{ .Content }}
+    </div>
+{{ end }}
