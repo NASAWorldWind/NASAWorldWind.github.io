@@ -23,9 +23,9 @@ Work with the WorldWind project manager to get connected with the WorldWind team
 - [Skype](https://login.skype.com/account/signup-form) account
 - [JetBrains](https://account.jetbrains.com/login) account
 - [Forum](http://forum.worldwindcentral.com/register.php) account (NASA interns skip this step)
-... Set Avatar to NASA logo
-... Set User Title to 'WW Team Member'
-... Set Biography to 'NASA WorldWind Team Member'
+  - Set Avatar to NASA logo
+  - Set User Title to 'WW Team Member'
+  - Set Biography to 'NASA WorldWind Team Member'
 
 Set your calendar for WorldWind's Skype meetings
 
