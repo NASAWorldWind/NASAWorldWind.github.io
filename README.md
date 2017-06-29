@@ -31,8 +31,6 @@ The primary goal of the website is to communicate how to use each of the World W
 |---contact
 |---<project> (overview)
     |---get-started
-        |---download
-        |---setup
     |---developer-guide
         |---concepts
         |---common-problems
