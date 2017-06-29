@@ -1,0 +1,33 @@
+{{ define "head-title" }}
+    {{ if eq .Params.mainpage true }}
+        NASA World Wind
+    {{ else }}
+        NASA World Wind - {{ .Params.Title }}
+    {{ end }}
+{{ end }}
+
+{{ define "main-block" }}
+    {{ if eq .Params.mainpage true }}
+        <!-- The home page goes here -->
+    {{ else if eq .Params.projectpage true }}
+        {{ partial "project-navbar.html" . }}
+        <div class="container">
+            {{ .Content }}
+        </div>
+    {{ else }}   
+        {{ partial "project-navbar.html" . }}
+        <div class="contianer">
+            {{ .Content }}
+            {{ range .Data.Pages.ByTitle }}
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.TutorialName }}</h3></a>
+                    </div>
+                    <div class="panel-body">
+                        {{ .Params.ShortDescription }}
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}

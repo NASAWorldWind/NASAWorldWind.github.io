@@ -4,5 +4,5 @@ date: {{ .Date }}
 draft: false
 mainpage: false
 projectpage: false
+projectslug: ""
 ---
-
