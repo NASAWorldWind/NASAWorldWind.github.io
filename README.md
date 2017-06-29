@@ -29,7 +29,7 @@ The primary goal of the website is to communicate how to use each of the World W
 / (main page)
 |---about
 |---contact
-|---<project> (overview)
+|---<project> ('android','java','web','server')
     |---get-started
     |---developer-guide
         |---concepts
