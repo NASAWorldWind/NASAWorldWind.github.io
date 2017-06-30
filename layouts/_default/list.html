@@ -1,10 +1,18 @@
 {{ define "head-title" }}
-    {{ if eq .Params.mainpage true }}
-        NASA WorldWind
-    {{ else if gt (len .Params.projectname ) 0 }}
-        {{ .Params.projectname }} - {{ .Params.title }}
+    {{ if isset .Params "mainpage" }}
+        {{ if eq .Params.mainpage true}}
+            NASA WorldWind
+        {{ else }}
+            NASA WorldWind - {{ .Params.title }}
+        {{ end }}
+    {{ else if isset .Params "projectname" }}
+        {{ if gt (len .Params.projectname) 0 }}
+            {{ .Params.projectname }} - {{ .Params.title }}
+        {{ else }}
+            NASA WorldWind - {{ .Params.title }}    
+        {{ end }}
     {{ else }}
-        NASA WorldWind - {{ .Params.Title }}
+        NASA WorldWind - {{ .Params.title }}
     {{ end }}
 {{ end }}
 
