@@ -1,0 +1,9 @@
+{{ define "head-title" }}
+    {{ .Params.projectname }} - {{ .Params.Title }}
+{{ end }}
+{{ define "main-block" }}
+    {{ partial "project-navbar" . }}
+    <div class="container">
+        {{ .Content }}
+    </div>
+{{ end }}

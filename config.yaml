@@ -1,0 +1,5 @@
+baseURL: "https://worldwind.arc.nasa.gov/"
+languageCode: "en-us"
+title: "NASA WorldWind"
+metaDataFormat: "yaml"
+cleanDestinationDir: true

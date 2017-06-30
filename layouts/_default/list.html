@@ -1,0 +1,43 @@
+{{ define "head-title" }}
+    {{ if isset .Params "mainpage" }}
+        {{ if eq .Params.mainpage true}}
+            NASA WorldWind
+        {{ else }}
+            NASA WorldWind - {{ .Params.title }}
+        {{ end }}
+    {{ else if isset .Params "projectname" }}
+        {{ if gt (len .Params.projectname) 0 }}
+            {{ .Params.projectname }} - {{ .Params.title }}
+        {{ else }}
+            NASA WorldWind - {{ .Params.title }}    
+        {{ end }}
+    {{ else }}
+        NASA WorldWind - {{ .Params.title }}
+    {{ end }}
+{{ end }}
+
+{{ define "main-block" }}
+    {{ if eq .Params.mainpage true }}
+        <!-- The home page goes here -->
+    {{ else if eq .Params.projectpage true }}
+        {{ partial "project-navbar.html" . }}
+        <div class="container">
+            {{ .Content }}
+        </div>
+    {{ else }}   
+        {{ partial "project-navbar.html" . }}
+        <div class="container">
+            {{ .Content }}
+            {{ range .Data.Pages.ByTitle }}
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
+                    </div>
+                    <div class="panel-body">
+                        {{ .Params.listdescription }}
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
