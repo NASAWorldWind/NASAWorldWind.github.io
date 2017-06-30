@@ -17,14 +17,24 @@
 {{ end }}
 
 {{ define "main-block" }}
-    {{ if eq .Params.mainpage true }}
-        <!-- The home page goes here -->
-    {{ else if eq .Params.projectpage true }}
-        {{ partial "project-navbar.html" . }}
-        <div class="container">
+    {{ if isset .Params "mainpage" }}
+        {{ if eq .Params.mainpage true}}
+            <!-- The home page goes here -->
+        {{ else }}
             {{ .Content }}
-        </div>
-    {{ else }}   
+        {{ end }}
+    {{ else if isset .Params "projectpage" }}
+        {{ if eq .Params.projectpage true }}
+            {{ partial "project-navbar.html" . }}
+            <div class="container">
+                {{ .Content }}
+            </div>
+        {{ else }}
+            <div class="container">
+                {{ .Content }}
+            </div>   
+        {{ end }}
+    {{ else }}
         {{ partial "project-navbar.html" . }}
         <div class="container">
             {{ .Content }}
