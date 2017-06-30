@@ -2,7 +2,7 @@
 
 # NASAWorldWind.github.io
 
-This repository is home to the NASA World Wind website which is hosted on GitHub Pages [https://nasaworldwind.github.io/](https://nasaworldwind.github.io/) and at [https://worldwind.arc.nasa.gov/](https://worldwind.arc.nasa.gov). The site should provide helpful information for users interested in World Wind's different projects.
+This repository is home to the NASA WorldWind website which is hosted on GitHub Pages [https://nasaworldwind.github.io/](https://nasaworldwind.github.io/) and at [https://worldwind.arc.nasa.gov/](https://worldwind.arc.nasa.gov). The site should provide helpful information for users interested in WorldWind's different projects.
 
 The site itself is generated with [Hugo](https://gohugo.io/) from the markdown and html templates found within the repository. Hugo transforms the markdown formatting to plain html and injects the content into the templates to form the final html files. Producing content in markdown provides a similar experience to creating and commenting on issues in GitHub while still providing enough formatting to facilitate communication of a topic.
 
@@ -24,7 +24,7 @@ To generate the site, simply execute `$ hugo` from the root project directory. H
 
 ## Site Structure
 
-The primary goal of the website is to communicate how to use each of the World Wind projects. The projects share a common structure detailed below:
+The primary goal of the website is to communicate how to use each of the WorldWind projects. The projects share a common structure detailed below:
 ```
 / (main page)
 |---about
@@ -94,7 +94,7 @@ layout = "project" // Overrides the "single.html" default template to include th
 
 ## Adding Content
 
-Too add content, place a markdown file in the `content` directory. Markdown files require [front matter](http://gohugo.io/content/front-matter/) and as detailed in the *Site Structure* section, specific keys are required for the World Wind website to generate properly.
+Too add content, place a markdown file in the `content` directory. Markdown files require [front matter](http://gohugo.io/content/front-matter/) and as detailed in the *Site Structure* section, specific keys are required for the WorldWind website to generate properly.
 
 Hugo uses [archetypes](http://gohugo.io/content/archetypes/) to facilitate the orderly creation of content. Archetypes are optional, there is no restriction on manually generating a markdown file in the directory structure; however, by using archetypes, the front matter, including additional key and values, will be automatically generated.
 
@@ -102,7 +102,7 @@ To use an archetype to create content, simply execute the following:
 ```
 hugo new <path to location of new content>/<markdown file name>.md
 ```
-To generate the "get-started.md" file/page in the World Wind Android project using the project structure detailed in the *Site Structure* section would look like this:
+To generate the "get-started.md" file/page in the WorldWind Android project using the project structure detailed in the *Site Structure* section would look like this:
 ```
 hugo new android/get-started.md
 ```
@@ -110,7 +110,7 @@ Notice the `content` directory is implied and not required for the `hugo new` co
 
 ## License
 
-    NASA WORLD WIND
+    NASA WorldWind
 
     Copyright (C) 2001 United States Government
     as represented by the Administrator of the
@@ -131,7 +131,7 @@ Notice the `content` directory is implied and not required for the `hugo new` co
 
     Government Agency: National Aeronautics and Space Administration (NASA)
     Government Agency Original Software Designation: ARC-15166-1
-    Government Agency Original Software Title: NASA World Wind
+    Government Agency Original Software Title: NASA WorldWind
     User Registration Requested. Please send email with your contact information to Patrick.Hogan@nasa.gov
     Government Agency Point of Contact for Original Software: Patrick.Hogan@nasa.gov
 

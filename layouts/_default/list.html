@@ -1,10 +1,10 @@
 {{ define "head-title" }}
     {{ if eq .Params.mainpage true }}
-        NASA World Wind
+        NASA WorldWind
     {{ else if gt (len .Params.projectname ) 0 }}
         {{ .Params.projectname }} - {{ .Params.title }}
     {{ else }}
-        NASA World Wind - {{ .Params.Title }}
+        NASA WorldWind - {{ .Params.Title }}
     {{ end }}
 {{ end }}
 
