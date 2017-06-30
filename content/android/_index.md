@@ -1,13 +1,14 @@
 ---
-title: "World Wind Android"
-date: 2017-06-29T12:12:54-04:00
+title: "WorldWind Android"
+date: 2017-06-30T14:40:16-04:00
 draft: false
 mainpage: false
 projectpage: true
 projectslug: "android"
+projectname: "WorldWind Android"
+listdescription: ""
 ---
 
-## Overview
+### Overview
 
-Example overview/_index.md page of a project.
-
+Some overview on the Android project...

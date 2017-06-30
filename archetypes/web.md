@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: false
 mainpage: false
 projectpage: false
-projectslug: ""
-projectname: ""
+projectslug: "web"
+projectname: "Web WorldWind"
 listdescription: ""
 ---

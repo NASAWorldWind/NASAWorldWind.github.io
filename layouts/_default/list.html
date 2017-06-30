@@ -1,6 +1,8 @@
 {{ define "head-title" }}
     {{ if eq .Params.mainpage true }}
         NASA World Wind
+    {{ else if gt (len .Params.projectname ) 0 }}
+        {{ .Params.projectname }} - {{ .Params.title }}
     {{ else }}
         NASA World Wind - {{ .Params.Title }}
     {{ end }}
@@ -16,15 +18,15 @@
         </div>
     {{ else }}   
         {{ partial "project-navbar.html" . }}
-        <div class="contianer">
+        <div class="container">
             {{ .Content }}
             {{ range .Data.Pages.ByTitle }}
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.TutorialName }}</h3></a>
+                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
                     </div>
                     <div class="panel-body">
-                        {{ .Params.ShortDescription }}
+                        {{ .Params.listdescription }}
                     </div>
                 </div>
             {{ end }}

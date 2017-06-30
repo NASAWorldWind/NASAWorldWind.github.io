@@ -53,9 +53,44 @@ Key Value | List Template Style
 --- | --- 
 `mainpage = true` | _index.md content in the main body
 `projectpage = true` | _index.md content in the main body and project header
-*neither* | _index.md content above an enumeration of child content
+*neither* | _index.md content above with an enumeration of child content
 
 Incorporating the content conditionals into the `_default/list.html` template allows the utilization of a single template. The flexibility in the templating language allows the multiple content types to be appropriately handled. Custom formating of the content is still provided by the flexibility of markdown.
+
+The key/values described above are only part of the NASA site required front matter. The additional key/value front matter pairs are described below:
+
+Key | Required? | Purpose | Example Value
+--- | --- | --- | ---
+`projectslug` | if the content is part of a project | provides the project slug when generating urls | `android`
+`projectname` | if the content is part of a project | provides nicely formatted project name for content | `WorldWind Android`
+`listdescription` | if the file will be part of a list | provides a short description in the indexed or list view | `Details how to...`
+
+To provide an example of how to use front matter when authoring content, see the example front matter portions of select markdown files in the Android project:
+
+Android Get Started page:
+```yaml
+---
+title = "Get Started"
+mainpage = false
+projectpage = true
+projectslug = "android"
+projectname = "WorldWind Android"
+listdescription = ""
+---
+```
+
+Android WMS Layer Tutorial Page:
+```yaml
+---
+title = "WMS Layer"
+mainpage = false
+projectpage = false // While this is part of a project, it is not a primary project page
+projectslug = "android"
+projectname = "WorldWind Android"
+listdescription = "Details the steps to add WMS data to the globe."
+layout = "project" // Overrides the "single.html" default template to include the project navbar
+---
+```
 
 ## Adding Content
 
