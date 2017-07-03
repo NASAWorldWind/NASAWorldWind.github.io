@@ -1,3 +1,10 @@
+.banner {
+    background-image: url("../img/banner-1400x320.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 /* 
  Styles below from: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns
  */
