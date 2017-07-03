@@ -1,0 +1,16 @@
+# Directs the Travis CI build service for Hugo based WorldWind website
+# For more information see https://docs.travis-ci.com/user/customizing-the-build/
+
+# Download Hugo and extract the system /tmp directory
+before_script:
+ - curl -OL "https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.tar.gz"
+ - tar -xvf hugo_0.24.1_Linux-64bit.tar.gz -C /tmp/
+
+# Blacklist the master branch to prevent builds kicked off by travis pushes
+branches:
+  except:
+    - master
+
+# Build the website - queries Bintray and OJO APIs for latest version information
+script:
+ - /tmp/hugo --verbose
