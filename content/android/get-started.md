@@ -12,14 +12,14 @@ layout: "project"
 
 ## Getting Started
 
-WorldWind Android is an [Android Library](https://developer.android.com/studio/projects/android-library.html) which compiles into an Android Archive (AAR) file. The AAR can be linked and used to display the 3D virtual globe within your application. The WorldWind Android AAR is compatible to API level 19, Android 4.4 (KitKat).
+WorldWind Android is an [Android Library](https://developer.android.com/studio/projects/android-library.html) which compiles into an Android Archive (AAR) file. The AAR can be linked and used to display the 3D virtual globe within your application. The WorldWind Android AAR is compatible to API level 19 (Android 4.4 KitKat).
 
-Skip to the [**Download**](#download) section to get started as quickly as possible. If you need some guidance with setting up the Android Studio IDE, the [**Setup**](#setup) section includes in-depth directions and walks through the creation of a sample project utilizing the WorldWind library.
+Skip to the [**Download**](#download) section for directions on how to add WorldWind Android to your application. If you need some guidance with setting up the Android Studio IDE, the [**Setup**](#setup) section includes in-depth directions and walks through the creation of a sample project utilizing the WorldWind library.
 
 ---
-### Download<a name="download"></a>
+### <a name="download"></a>Download
 
-For [Gradle](https://gradle.org) based projects, versioned WorldWind Android releases are hosted on [JCenter](https://bintray.com/bintray/jcenter). Grab the latest version by adding the following to your `dependencies` closure:
+For [Gradle](https://gradle.org) based projects, versioned WorldWind Android releases are hosted on [JCenter](https://bintray.com/bintray/jcenter). Grab the latest version by adding the following to the `dependencies` closure in your `build.gradle` file:
 ```groovy
 compile 'gov.nasa.worldwind.android:worldwind:{{% latestBintrayVersion url="https://api.bintray.com/packages/nasaworldwind/maven/WorldWindAndroid/versions/_latest" %}}'
 ```
@@ -39,7 +39,7 @@ Add the latest `SNAPSHOT` WorldWind Android dependency:
 compile 'gov.nasa.worldwind.android:worldwind:{{% latestOjoVersion url="https://oss.jfrog.org/artifactory/api/search/versions?g=gov.nasa.worldwind.android&a=worldwind&repos=oss-snapshot-local" %}}'
 ```
 ---
-### Setup<a name="setup"></a>
+### <a name="setup"></a>Setup
 #### Install Android Studio
 [Android Studio](https://developer.android.com/studio/index.html) is the IDE used by the WorldWind development team. It includes all the tools you need to build apps for Android. If you haven't done so already, download and install Android Studio.
 
@@ -77,7 +77,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
      - Configure Android Virtual Device (AVD)
 3. Add the WorldWind library to your project
   - If using Gradle (prefered method), follow the directions [above](#download), otherwise:
-     1. [Download](#download) the WorldWind Library for Android (worldwind.aar)
+     1. [Download](https://bintray.com/nasaworldwind/maven/WorldWindAndroid) the WorldWind Library for Android (worldwind.aar)
      2. Add a new Module to your project
          - Choose File > New Module...
          - Select Import .JAR/.AAR Package
