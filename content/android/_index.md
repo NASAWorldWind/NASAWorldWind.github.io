@@ -15,12 +15,4 @@ WorldWind Android is a 3D virtual globe API for Android. You can use it to provi
 
 WorldWind Android provides high-resolution terrain and imagery, retrieved from remote servers automatically as needed. You can also provide your own terrain and imagery. WorldWind Android additionally provides a rich collection of shapes that you can use to represent information on the globe or in space.
 
-The [Get Started](/android/get-started/) section gets you up and running with WorldWind Android as quick as possible. The section includes instructions on how to download and integrate WorldWind into your Android application.
-
-The [Developer Guide](/android/developer-guide/) section describes how to use WorldWind Android and its many features.
-
-The [Tutorials](/android/tutorials/) section walks through simplitic implementations of common WorldWind Android features.
-
-The [Examples](/android/examples/) section includes more compelling and complex examples as well as links to other projects using WorldWind Android.
-
-View the Javadocs in the [Docs](/android/docs/) section.
+The WorldWind Android client is compatible to [API level](https://source.android.com/source/build-numbers) 19 (KitKat 4.4) and up. It displays the globe via the [GLSurfaceView](https://developer.android.com/reference/android/opengl/GLSurfaceView.html). Read more about how to integrate WorldWind into your app in the [Get Started](/android/get-started/) section. See how to implement basic functionality in the [Tutorials](/android/tutorials/) and dive into more topics in the [Developer Guide](/android/developer-guide/).
