@@ -1,5 +1,5 @@
 {{ define "head-title" }}
-    {{ if eq .Params.mainpage true}}
+    {{ if eq .Params.mainpage true }}
         NASA WorldWind
     {{ else if isset .Params "projectname" }}
         {{ if gt (len .Params.projectname) 0 }}
@@ -14,7 +14,7 @@
 
 {{ define "main-block" }}
     {{ if eq .Params.mainpage true }}
-        <!-- The home page goes here -->
+        {{ partial "home.html" . }}
     {{ else if eq .Params.projectpage true }}
         {{ partial "project-navbar.html" . }}
         <div class="container">

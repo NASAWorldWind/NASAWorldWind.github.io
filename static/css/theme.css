@@ -1,3 +1,19 @@
+.banner {
+    background-image: url("../img/banner-1400x320.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+}
+
+.jumbotron h1 {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding-bottom: 200px;
+}
+
 /* 
  Styles below from: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns
  */
