@@ -12,18 +12,6 @@
     {{ end }}
 {{ end }}
 
-{{ define "head-block" }}
-    {{ if eq .Params.mainpage true }}
-        <script>
-            window.addEventListener('load', function() {
-                $(function() {
-                    $('[data-toggle="tooltip"]').tooltip()
-                });
-            });
-        </script>
-    {{ end }}
-{{ end }}
-
 {{ define "main-block" }}
     {{ if eq .Params.mainpage true }}
         {{ partial "home.html" . }}

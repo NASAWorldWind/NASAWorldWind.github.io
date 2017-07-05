@@ -2,7 +2,15 @@
     background-image: url("../img/banner-1400x320.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-color: white;
+}
+
+.jumbotron h1 {
+    color: #000;
+}
+
+body {
+    padding-bottom: 200px;
 }
 
 /* 

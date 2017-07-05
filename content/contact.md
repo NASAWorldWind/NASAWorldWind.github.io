@@ -10,21 +10,20 @@ listdescription: ""
 ---
 
 ### Contact
-If you would like to reach out to the NASA WorldWind team, please try the following:
 
 ---
-#### NASA Program Management
-
-The WorldWind project is managed from the NASA Ames center in Sunnyvale, CA. The government lead and point of contact:
+#### Administrative Contact
 
 ##### Patrick Hogan - [patrick.hogan@nasa.gov](mailto://patrick.hogan@nasa.gov)
+
+The WorldWind project is managed from the NASA Ames Research Center at Moffett Field, CA.
 
 ---
 
 #### Issue Reports and Source Code
-WorldWind uses [GitHub](https://github.com/NASAWorldWind/) for source and issue management. Please head on over to check out the latest code or report issues or requests.
+WorldWind uses [GitHub](https://github.com/NASAWorldWind/) for source and issue management.
 
 ---
 
 #### Development Community
-The [WorldWind Forum](https://forum.worldwindcentral.com/) is a great resource to learn more about the WorldWind projects. Many users are quick to help and share code snippets.
+The [WorldWind Forum](https://forum.worldwindcentral.com/) is a great resource to learn more about the WorldWind projects. Many users are quick to help and share code snippets. Members of the NASA and ESA WorldWind development teams regularly visit the forum to answer questions and help with issues.
