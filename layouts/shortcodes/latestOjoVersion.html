@@ -1,0 +1,1 @@
+{{ $url := .Get "url" }}{{ $gistJ := getJSON $url }}{{ range first 1 $gistJ.results }}{{ .version }}{{ end }}

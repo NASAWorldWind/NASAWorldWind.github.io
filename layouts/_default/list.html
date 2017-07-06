@@ -30,9 +30,23 @@
                         <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
                     </div>
                     <div class="panel-body">
-                        {{ .Params.listdescription }}
+                        {{ if isset .Params "listimage" }}
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="{{ .Permalink }}"><img class="img-responsive" src="{{ .Params.listimage }}"></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <a href="{{ .Permalink }}"><p style="color: black;">{{ .Params.listdescription }}</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ else }}
+                            <a href="{{ .Permalink }}"><p style="color: black;">{{ .Params.listdescription }}</p></a>
+                        {{ end }}
                     </div>
                 </div>
+                <hr>
             {{ end }}
         </div>
     {{ end }}
