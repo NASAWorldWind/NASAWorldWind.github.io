@@ -1,1 +1,1 @@
-{{ $url := .Get "url" }}{{ $versionInfo := getJSON $url }}{{ $versionInfo.name }}
+{{ $url := .Get "url" }}{{ $versionInfo := getJSON $url }}{{ range first 1 $versionInfo.system_ids }}{{ . }}{{ end }}:{{ $versionInfo.latest_version }}

@@ -1,60 +1,21 @@
 ---
-title: "Get Started"
-date: 2017-07-03T22:20:00-04:00
+title: "Basic World Wind App"
+date: 2017-07-06T14:01:30-04:00
 draft: false
 mainpage: false
-projectpage: true
+projectpage: false
 projectslug: "android"
 projectname: "WorldWind Android"
-listdescription: ""
+listdescription: "Describes how to setup an application to use the WorldWind Android library."
+listimage: "/img/ww-android-basic-app.png"
 layout: "project"
 ---
 
-## Getting Started
+## How to build a basic WorldWind Android 'app'
 
-WorldWind Android is an [Android Library](https://developer.android.com/studio/projects/android-library.html) which compiles into an Android Archive (AAR) file. The AAR can be linked and used to display the 3D virtual globe within your application. The WorldWind Android AAR is compatible to API level 19 (Android 4.4 KitKat).
+This tutorial sets up a project from scratch and inserts a WorldWind globe in a FrameLayout.
 
-Skip to the [**Download**](#download) section for directions on how to add WorldWind Android to your application. If you need some guidance with setting up the Android Studio IDE, the [**Setup**](#setup) section includes in-depth directions and walks through the creation of a sample project utilizing the WorldWind library.
-
----
-### <a name="download"></a>Download
-
-For [Gradle](https://gradle.org) based projects, versioned WorldWind Android releases are hosted on [JCenter](https://bintray.com/bintray/jcenter). Grab the latest version by adding the following to the `dependencies` closure in your `build.gradle` file:
-```groovy
-compile 'gov.nasa.worldwind.android:worldwind:{{% latestBintrayVersion url="https://api.bintray.com/packages/nasaworldwind/maven/WorldWindAndroid/versions/_latest" %}}'
-```
-
-To manually download the (AAR) and other artifacts (source and javadocs) visit: https://bintray.com/nasaworldwind/maven/WorldWindAndroid
-
-`SNAPSHOT` builds are available through [OJO](https://oss.jfrog.org/). Add the following repository to your Gradle project:
-```groovy
-repositories {
-    maven {
-        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-    }
-}
-```
-Add the latest `SNAPSHOT` WorldWind Android dependency:
-```groovy
-compile 'gov.nasa.worldwind.android:worldwind:{{% latestOjoVersion url="https://oss.jfrog.org/artifactory/api/search/versions?g=gov.nasa.worldwind.android&a=worldwind&repos=oss-snapshot-local" %}}'
-```
----
-### <a name="setup"></a>Setup
-#### Install Android Studio
-[Android Studio](https://developer.android.com/studio/index.html) is the IDE used by the WorldWind development team. It includes all the tools you need to build apps for Android. If you haven't done so already, download and install Android Studio.
-
-{{< button url="https://developer.android.com/studio/index.html" buttonText="Get Android Studio" >}}
-##### Installation Notes
-When you perform the installation you can choose the *Standard Setup*, which will download the required Android SDK components.
-##### Prerequisites
-Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) be installed on your computer. The installation instructions may prompt you to download and install an appropriate JDK (JDK 8 is recommended).
-#### Learning more about the Android Platform
-- Familiarize yourself with the [Android Developer's Site](http://developer.android.com/).
-- Read "[Introduction to Android](https://developer.android.com/guide/index.html)" and "[Application Fundamentals](https://developer.android.com/guide/components/fundamentals.html)" in the [Android Developer's Guide](http://developer.android.com/guide/).
-- Create a bookmark to the [Android API Docs](http://developer.android.com/reference/packages.html).
-
-#### How to build a basic WorldWind Android 'app'
-1. Create a new Android Studio Project
+### 1. Create a new Android Studio Project
   1. Select File > New > New Project... to run the ne project wizard
   2. Configure your new project:
      - You can use the default values
@@ -65,18 +26,20 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
      - Choose an Empty Activity
   5. Customize the Activity:
      - You can use the default values
-     - Activity Name: `MainActivity`
+     - Activity Name: MainActivity
      - Generate Layout File: checked
-     - Layout Name: `activity_main`
-2. Run the 'app' to verify it works
+     - Layout Name: activity_main
+
+### 2. Run the 'app' to verify it works
   1. Select Run > Run 'app'
   2. Choose an Available Emulator or Device and select OK
   3. If Required, create a new emulator to run the 'app'
      - Select hardware device: Default Nexus 5X
      - Select and download a System Image: Default: Marshmallow (wait for download to complete)
      - Configure Android Virtual Device (AVD)
-3. Add the WorldWind library to your project
-  - If using Gradle (prefered method), follow the directions [above](#download), otherwise:
+
+### 3. Add the WorldWind library to your project
+  - If using Gradle (prefered method), follow the directions in [Get Started](/android), otherwise:
      1. [Download](https://bintray.com/nasaworldwind/maven/WorldWindAndroid) the WorldWind Library for Android (worldwind.aar)
      2. Add a new Module to your project
          - Choose File > New Module...
@@ -85,10 +48,11 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
          - Subproject name: worldwind
      3. Add worldwind dependency to your 'app'
          - Open app Module Setting... > Dependencies > [+] Module dependency > worldwind > OK
-4. Add a WorldWindow globe to the MainActivity
+
+### 4. Add a WorldWindow globe to the MainActivity
     We'll make three simple changes to your 'app' to add a basic globe.
 
-    First, edit the `activity_main.xml` layout file and replace the `TextView` with the following `FrameLayout`. The `FrameLayout` is assigned the `globe` id which will be referenced in the `MainActivity`.
+    First, edit the activity_main.xml layout file and replace the TextView with the following FrameLayout. The FrameLayout is assigned the globe id which will be referenced in the MainActivity.
     ```xml
     <!--WorldWindow Globe panel-->
     <FrameLayout
@@ -99,7 +63,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"></FrameLayout>
     ```
-    Second, create an instance of a WorldWindow in MainActivity.java and attach to the `FrameLayout`. The following code snippet should be added to the MainActivity's onCreate() method.
+    Second, create an instance of a WorldWindow in MainActivity.java and attach to the FrameLayout. The following code snippet should be added to the MainActivity's onCreate() method.
     ```java
     // Create a World Window (a GLSurfaceView)...
     WorldWindow wwd = new WorldWindow(getApplicationContext());
@@ -115,7 +79,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     ```
-  - `activity_main.xml`
+  - activity_main.xml
     
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -140,7 +104,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
                 android:layout_alignParentTop="true"></FrameLayout>
     </RelativeLayout>
     ```
-  - `MainActivity.java`
+  - MainActivity.java
     
     ```java
     package com.example.myapplication;
@@ -171,7 +135,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
         }
     }
     ```
-  - `AndroidManifest.xml`
+  - AndroidManifest.xml
   
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -197,6 +161,7 @@ Android Studio requires a compatible [Java SE Development Kit (JDK)](http://www.
         </application>
     </manifest>
     ```
-5. Run the 'app' with the globe
+
+### 5. Run the 'app' with the globe
   1. Select Run > Run 'app'
   2. Choose an Available Emulator or Device and select OK
