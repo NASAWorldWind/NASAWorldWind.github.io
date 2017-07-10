@@ -10,7 +10,9 @@ listdescription: ""
 layout: "project"
 ---
 
-## Examples
+## Code Examples
+
+The full code for the examples below is available in the worlwind-examples module of the WorldWind Android project.
 
 <div class="container">
     <div class="col-md-4">
