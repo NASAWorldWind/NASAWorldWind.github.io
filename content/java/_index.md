@@ -15,6 +15,8 @@ aliases:
 
 Built on Java and OpenGL, WorldWind Java is a cross-platform virtual globe in use by thousands of organizations around the world. With support for an array of different data formats WorldWind Java provides a highly configurable visual representation of a globe for you geographic needs.
 
+---
+
 ### Run an Application Using WorldWind
 
 1. Download the latest release from the WorldWind [GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases).
@@ -38,6 +40,8 @@ java -Xmx1024m -Dsun.java2d.noddraw=true -cp MyApp.jar;worldwind.jar;worldwindx.
 ```
 
 Note: All *.dll, *.jnilib, and *.so files in the WorldWind folder must be in the same folder as MyApp.jar.
+
+---
 
 ### Deploy an Application Using Java Web Start
 
@@ -70,6 +74,8 @@ JAR files used by a Java Web Start application must be signed by a recognized au
 
 4. Deploy Your Application
 Determine a URL to host your app at, such as http://myworldwinddemo.org/. Set your JNLP file's codebase attribute to this URL, then host your JNLP file and any JAR files referenced by your JNLP at this URL. See Oracle's documentation on Rich Internet Application Deployment for more information.
+
+---
 
 ## Features
 
