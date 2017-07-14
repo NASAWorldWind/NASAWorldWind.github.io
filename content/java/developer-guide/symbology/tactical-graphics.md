@@ -9,6 +9,8 @@ projectname: "WorldWind Java"
 layout: "project"
 ---
 
+{{< fix-tables >}}
+
 ## Tactical Graphics
 
 A Tactical Graphic is a graphic defined by a symbol set. A graphic can be an icon that is drawn a geographic position, a vector graphic that is positioned using one or more control points, or a line or polygon that is styled according to the symbol set's specification. This guide covers tactical graphics belonging to the U.S. Department of Defense’s Common Warfighting Symbology set, MIL-STD-2525. Not all 2525C graphics are supported in WorldWind. See Tactical Graphic Status for a list of supported graphics.

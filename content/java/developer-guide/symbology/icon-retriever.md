@@ -9,6 +9,8 @@ projectname: "WorldWind Java"
 layout: "project"
 ---
 
+{{< fix-tables >}}
+
 ## Overview
 
 This guide shows how to use the IconRetriever interface to retrieve icons for tactical symbols. The guide is organized into in three sections:

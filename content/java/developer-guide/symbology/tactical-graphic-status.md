@@ -10,6 +10,8 @@ listdescription: "This page lists all of the tactical graphics defined in MIL-ST
 layout: "project"
 ---
 
+{{< fix-tables >}}
+
 <!--NOTE: Update the list of supported graphics in gov.nasa.worldwind.symbology.milstd2525.MilStd2525TacticalGraphicFactoryTest when this list is updated.-->
 
 This page lists all of the tactical graphics defined in <a href="https://worldwind.arc.nasa.gov/milstd2525c/Mil-STD-2525C.pdf" target="_blank" rel="noopener">MIL-STD-2525C</a>, and shows which graphics are supported in WorldWind.
