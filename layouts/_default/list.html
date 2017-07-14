@@ -37,12 +37,12 @@
                                         <a href="{{ .Permalink }}"><img class="img-responsive center-block" src="{{ .Params.listimage }}"></a>
                                     </div>
                                     <div class="col-md-7">
-                                        <a href="{{ .Permalink }}"><p style="color: black;">{{ .Params.listdescription }}</p></a>
+                                        <p>{{ .Params.listdescription }}</p>
                                     </div>
                                 </div>
                             </div>
                         {{ else }}
-                            <a href="{{ .Permalink }}"><p style="color: black;">{{ .Params.listdescription }}</p></a>
+                            <p>{{ .Params.listdescription }}</p>
                         {{ end }}
                     </div>
                 </div>
