@@ -14,13 +14,13 @@ layout: "project"
 
 A tactical symbol displays graphic and textual information about an object at a single geographic position at a particular point in time. The graphic displayed is typically a screen icon with supplemental text and graphics surrounding the icon. In general, the graphic displayed depends on the symbology set a tactical symbol belongs to. This guide covers tactical symbols belonging to the U.S. Department of Defense's Common Warfighting Symbology set, [MIL-STD-2525C](http://worldwind.arc.nasa.gov/milstd2525c/Mil-STD-2525C.pdf).
 
-<img src="/img/java/tacticalsymbols-demoicon.jpg" align="right" class="img-responsive">The tactical symbols Java Web Start demo showcases how tactical symbols appear and behave in a World Wind based application.
+<img src="/img/java/tacticalsymbols-demoicon.jpg" align="right" class="img-responsive">The tactical symbols Java Web Start demo showcases how tactical symbols appear and behave in a WorldWind based application.
 
 Run the [Tactical Symbols Demo](https://worldwind.arc.nasa.gov/java/latest/webstart/TacticalSymbols.jnlp).
 
 ### Overview
 
-This guide shows how to use World Wind tactical symbols in your application, and is organized into five sections:
+This guide shows how to use WorldWind tactical symbols in your application, and is organized into five sections:
 
 1. [Construction](#construction)
 2. [Position](#position)
@@ -46,10 +46,10 @@ TacticalSymbol symbol = new MilStd2525TacticalSymbol(&quot;SFAPMFQM------A&quot;
 RenderableLayer symbolLayer = new RenderableLayer();
 symbolLayer.addRenderable(symbol);
 
-// Add the layer to the world window's model and request that the layer redraw
-// itself. The world window draws the symbol on the globe at the specified
+// Add the layer to the WorldWindow's model and request that the layer redraw
+// itself. The WorldWindow draws the symbol on the globe at the specified
 // position. Interactions between the symbol and the cursor are returned in the
-// world window's picked object list, and reported to the world window's select
+// WorldWindow's picked object list, and reported to the WorldWindow's select
 // listeners.
 WorldWindow wwd = ... // A reference to your application's WorldWind instance.
 wwd.getModel().getLayers().add(symbolLayer);
@@ -267,7 +267,7 @@ By default, the icons displayed by TacticalSymbol and TacticalPointGraphic are d
 
 #### Local ZIP Archive
 
-1. Download the World Wind MIL-STD-2525 [Symbol Icons ZIP archive](https://worldwind.arc.nasa.gov/milstd2525c/rev1/milstd2525-symbols.zip). Place the archive in a location that is accessible to the application. The following steps refer to the archive's location as MyApp/milstd2525-symbols.zip, where MyApp is the application root folder.
+1. Download the WorldWind MIL-STD-2525 [Symbol Icons ZIP archive](https://worldwind.arc.nasa.gov/milstd2525c/rev1/milstd2525-symbols.zip). Place the archive in a location that is accessible to the application. The following steps refer to the archive's location as MyApp/milstd2525-symbols.zip, where MyApp is the application root folder.
 
 2. Configure WorldWind by adding the following entry to the worldwind.xml configuration file:
 
