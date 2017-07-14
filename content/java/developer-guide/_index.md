@@ -17,3 +17,4 @@ This guide is organized by topic, as follows:
 - [Concepts](/java/developer-guide/concepts/)
 - [Common Problems](/java/developer-guide/common-problems/)
 - [Symbology](/java/developer-guide/symbology/)
+- [2D Rendering of Custom Shapes](/java/developer-guide/2d-rendering-of-custom-shapes/)
