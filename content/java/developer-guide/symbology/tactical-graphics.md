@@ -6,6 +6,7 @@ mainpage: false
 projectpage: false
 projectslug: "java"
 projectname: "WorldWind Java"
+listdescription: "Display tactical graphic symbol sets."
 layout: "project"
 ---
 

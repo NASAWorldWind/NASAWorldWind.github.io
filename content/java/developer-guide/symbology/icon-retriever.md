@@ -6,6 +6,7 @@ mainpage: false
 projectpage: false
 projectslug: "java"
 projectname: "WorldWind Java"
+listdescription: "Describes how to use the IconRetriever interface to retrieve icons for tactical symbols."
 layout: "project"
 ---
 
