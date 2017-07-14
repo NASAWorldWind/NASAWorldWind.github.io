@@ -15,7 +15,7 @@ layout: "project"
 
 ## Build a Custom Renderable
 
-This tutorial shows how to implement a custom renderable that draws a cube centered on a geographic position. It is intended for developers familiar with OpenGL, who would like to implement a custom WorldWind Renderable. It may be helpful to follow along with the completed tutorial on [GitHub]()https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/tutorial/Cube.java.
+This tutorial shows how to implement a custom renderable that draws a cube centered on a geographic position. It is intended for developers familiar with OpenGL, who would like to implement a custom WorldWind Renderable. It may be helpful to follow along with the completed tutorial on [GitHub](https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/tutorial/Cube.java).
 
 ### Contents
 
