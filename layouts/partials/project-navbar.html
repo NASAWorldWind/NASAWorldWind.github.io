@@ -5,19 +5,21 @@
 <div class="container">
     <div class="row row-centered">            
         <div class="col-xs-6 col-centered col-max">
-            <a href="/{{ .Params.projectSlug }}/">Get Started</a>
+            <a href="/{{ .Params.projectslug }}/">Get Started</a>
         </div>
-        <!--<div class="col-xs-6 col-centered col-max">
-            <a href="/{{ .Params.projectSlug }}/developer-guide/">Developer Guide</a>
-        </div>-->
+        {{ if ne .Params.projectslug "android" }}
         <div class="col-xs-6 col-centered col-max">
-            <a href="/{{ .Params.projectSlug }}/tutorials/">Tutorials</a>
+            <a href="/{{ .Params.projectslug }}/developer-guide/">Developer Guide</a>
+        </div>
+        {{ end }}
+        <div class="col-xs-6 col-centered col-max">
+            <a href="/{{ .Params.projectslug }}/tutorials/">Tutorials</a>
         </div>
         <div class="col-xs-6 col-centered col-max">
-            <a href="/{{ .Params.projectSlug }}/examples/">Examples</a>
+            <a href="/{{ .Params.projectslug }}/examples/">Examples</a>
         </div>
         <div class="col-xs-6 col-centered col-max">
-            <a href="/{{ .Params.projectSlug }}/docs/">Docs</a>
+            <a href="/{{ .Params.projectslug }}/docs/">Docs</a>
         </div>
     </div>
 </div>
