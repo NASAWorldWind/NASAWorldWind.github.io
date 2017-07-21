@@ -39,7 +39,7 @@ Rendering the scene consists of several stages:
 2. The SceneController draws the scene in normal rendering mode. Each Renderable will either draw itself, or add an ordered renderable version of itself to the DrawContext's ordered renderable list to be rendered later.
 3. OrderedRenderables are sorted by eye distance, and then drawn back to front. We will discuss ordered rendering later in this tutorial.
 
-See the [Concepts](/java/developer-guide/concepts/) section of the Developer's Guide for more information on the architecture of WorldWind.
+See the [Concepts](/java/tutorials/concepts/) article of the Tutorial section for more information on the architecture of WorldWind.
 
 ### <a name="implementing"></a>Implementing Renderable
 

@@ -31,11 +31,9 @@ The primary goal of the website is to communicate how to use each of the WorldWi
 |---contact
 |---<project> ('android','java','web','server')
     |---get-started
-    |---developer-guide
+    |---tutorials
         |---concepts
         |---common-problems
-        |---<project specific topics>
-    |---tutorials
         |---tutorial 1
         |---tutorial ...
         |---tutorial n

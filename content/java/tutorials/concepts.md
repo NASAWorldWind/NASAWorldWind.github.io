@@ -6,6 +6,7 @@ mainpage: false
 projectpage: false
 projectslug: "java"
 projectname: "WorldWind Java"
+listdescription: "Describes the architecture of WorldWind Java."
 layout: "project"
 ---
 

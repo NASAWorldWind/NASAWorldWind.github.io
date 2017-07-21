@@ -6,6 +6,7 @@ mainpage: false
 projectpage: false
 projectslug: "java"
 projectname: "WorldWind Java"
+listdescription: "Some of the common issues users face and ways to resolve them."
 layout: "project"
 ---
 
