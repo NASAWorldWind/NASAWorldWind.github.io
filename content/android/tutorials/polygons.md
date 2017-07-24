@@ -2,13 +2,8 @@
 title: "Polygons"
 date: 2017-07-07T00:30:16-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to add Polygons to a RenderableLayer."
 listimage: "/img/ww-android-polygons.png"
-layout: "project"
 ---
 
 ## Polygons

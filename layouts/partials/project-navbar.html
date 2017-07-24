@@ -7,6 +7,11 @@
         <div class="col-xs-6 col-centered col-max">
             <a href="/{{ .Params.projectslug }}/">Get Started</a>
         </div>
+        {{ if ne .Params.projectslug "android" }}
+        <div class="col-xs-6 col-centered col-max">
+            <a href="/{{ .Params.projectslug }}/developer-guide/">Developer Guide</a>
+        </div>
+        {{ end }}
         <div class="col-xs-6 col-centered col-max">
             <a href="/{{ .Params.projectslug }}/tutorials/">Tutorials</a>
         </div>

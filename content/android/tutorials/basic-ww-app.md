@@ -2,13 +2,8 @@
 title: "Basic World Wind App"
 date: 2017-07-06T14:01:30-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Describes how to setup an application to use the WorldWind Android library."
 listimage: "/img/ww-android-basic-app.png"
-layout: "project"
 ---
 
 ## How to build a basic WorldWind Android 'app'

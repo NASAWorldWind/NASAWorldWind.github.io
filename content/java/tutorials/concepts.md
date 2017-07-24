@@ -2,12 +2,7 @@
 title: "Concepts"
 date: 2017-07-13T22:58:22-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Describes the architecture of WorldWind Java."
-layout: "project"
 ---
 
 ## Concepts

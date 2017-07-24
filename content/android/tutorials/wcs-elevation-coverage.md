@@ -2,13 +2,8 @@
 title: "WCS Elevation Coverage"
 date: 2017-07-06T23:45:17-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to add an OGC Web Coverage Service (WCS) elevation coverage."
 listimage: "/img/ww-android-wcs-elevation.png"
-layout: "project"
 ---
 
 ## WCS Elevation Coverage

@@ -1,0 +1,33 @@
+{{ define "head-title" }}
+    Web WorldWind - {{ .Params.Title }}
+{{ end }}
+
+{{ define "main-block" }}
+    <div class="container">
+        <h2>Web WorldWind</h2>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row row-centered">            
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/web/">Get Started</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/web/developer-guide/">Developer Guide</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/web/tutorials/">Tutorials</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/web/examples/">Examples</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/web/docs/">Docs</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        {{ .Content }}
+    </div>
+{{ end }}

@@ -2,13 +2,8 @@
 title: "Labels"
 date: 2017-07-07T00:33:17-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to display labels on a WorldWind globe."
 listimage: "/img/ww-android-labels.png"
-layout: "project"
 ---
 
 ## Labels

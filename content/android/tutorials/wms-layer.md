@@ -2,13 +2,8 @@
 title: "WMS Layer"
 date: 2017-07-06T23:21:29-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to construct a WmsLayer with the LayerFactory."
 listimage: "/img/ww-android-wms-layer.png"
-layout: "project"
 ---
 
 ## WMS Layer

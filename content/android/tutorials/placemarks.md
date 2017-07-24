@@ -2,13 +2,8 @@
 title: "Placemarks"
 date: 2017-07-07T00:19:26-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to add Placemarks to a RenderableLayer."
 listimage: "/img/ww-android-placemarks.png"
-layout: "project"
 ---
 
 ## Placemarks

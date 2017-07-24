@@ -2,12 +2,7 @@
 title: "Importing Data"
 date: 2017-07-14T09:37:03-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Follow these instructions to import data to the World Wind client."
-layout: "project"
 ---
 
 ## Importing Data

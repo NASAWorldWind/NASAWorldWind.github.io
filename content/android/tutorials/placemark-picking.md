@@ -2,13 +2,8 @@
 title: "Placemark Picking"
 date: 2017-07-07T00:22:32-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to pick and highlight Placemarks."
 listimage: "/img/ww-android-placemark-picking.png"
-layout: "project"
 ---
 
 ## Placemark Picking

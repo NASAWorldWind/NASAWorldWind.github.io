@@ -2,12 +2,7 @@
 title: "Tactical Graphics"
 date: 2017-07-14T00:11:33-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Display tactical graphic symbol sets."
-layout: "project"
 ---
 
 {{< fix-tables >}}

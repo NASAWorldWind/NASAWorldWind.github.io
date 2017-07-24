@@ -2,12 +2,7 @@
 title: "Common Problems"
 date: 2017-07-13T23:03:35-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Some of the common issues users face and ways to resolve them."
-layout: "project"
 ---
 
 ## Common Problems

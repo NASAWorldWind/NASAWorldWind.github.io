@@ -1,0 +1,65 @@
+{{ define "head-title" }}
+    {{ if isset .Params "uselisttemplate" }}
+        WorldWind Java
+    {{ else }}
+        WorldWind Java - {{ .Params.Title }}
+    {{ end }}
+{{ end }}
+
+{{ define "main-block" }}
+    <div class="container">
+        <h2>WorldWind Java</h2>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row row-centered">            
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/java/">Get Started</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/java/developer-guide/">Developer Guide</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/java/tutorials/">Tutorials</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/java/examples/">Examples</a>
+            </div>
+            <div class="col-xs-6 col-centered col-max">
+                <a href="/java/docs/">Docs</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        {{ .Content }}
+
+        {{ if isset .Params "uselisttemplate" }}
+
+            {{ range .Data.Pages.ByTitle }}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
+                    </div>
+                    <div class="panel-body">
+                        {{ if isset .Params "listimage" }}
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="{{ .Permalink }}"><img class="img-responsive center-block" src="{{ .Params.listimage }}"></a>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>{{ .Params.listdescription }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ else }}
+                            <p>{{ .Params.listdescription }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+                <hr>
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}

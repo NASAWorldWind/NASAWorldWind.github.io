@@ -2,11 +2,6 @@
 title: "Contact"
 date: 2017-07-03T14:28:34-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: ""
-projectname: ""
-listdescription: ""
 ---
 
 ### Contact

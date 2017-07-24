@@ -2,13 +2,6 @@
 title: "WorldWind Java"
 date: 2017-07-10T23:14:25-04:00
 draft: false
-mainpage: false
-projectpage: true
-projectslug: "java"
-projectname: "WorldWind Java"
-listdescription: ""
-aliases:
-    - /java/get-started/
 ---
 
 ## Get Started

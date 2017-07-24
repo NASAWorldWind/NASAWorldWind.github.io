@@ -2,12 +2,7 @@
 title: "2D Rendering Of Custom Shapes"
 date: 2017-07-14T09:21:33-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "This document describes how custom 3D renderables must be implemented to display correctly in 2D mode."
-layout: "project"
 ---
 
 ## 2D Rendering Of Custom Shapes
