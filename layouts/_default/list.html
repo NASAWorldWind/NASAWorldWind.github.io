@@ -3,13 +3,5 @@
 {{ end }}
 
 {{ define "main-block" }}
-
-<h1>_default/list.html</h1>
-<ul>
-{{ range .Params }}
-    <li>{{ . }}</li>
-{{ end }}
-<ul>
-
     {{ partial "home.html" . }}
 {{ end }}
