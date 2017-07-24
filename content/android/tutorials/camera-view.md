@@ -2,13 +2,8 @@
 title: "Camera View"
 date: 2017-07-07T00:03:35-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to use a Camera to view a position. It shows how to configure the WorldWindow's camera to point a particular direction from a specific position. This example also shows how to compute great circle distance and azimuth between two positions."
 listimage: "/img/ww-android-camera-view.png"
-layout: "project"
 ---
 
 ## Camera View

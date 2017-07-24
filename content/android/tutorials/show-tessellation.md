@@ -2,13 +2,8 @@
 title: "Show Tessellation"
 date: 2017-07-07T00:47:30-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates the globe's Tessellator."
 listimage: "/img/ww-android-show-tessellation.png"
-layout: "project"
 ---
 
 ## Show Tessellation

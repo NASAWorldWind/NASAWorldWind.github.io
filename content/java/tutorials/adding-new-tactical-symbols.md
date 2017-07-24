@@ -2,12 +2,7 @@
 title: "Adding New Tactical Symbols"
 date: 2017-07-14T01:02:30-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Describes how custom symbols may be created."
-layout: "project"
 ---
 
 {{< fix-tables >}}

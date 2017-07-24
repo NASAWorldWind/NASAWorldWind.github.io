@@ -2,13 +2,8 @@
 title: "Look At View"
 date: 2017-07-07T00:11:40-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to use LookAt to view a position. This example also shows how to compute great circle distance and azimuth between two positions."
 listimage: "/img/ww-android-look-at-view.png"
-layout: "project"
 ---
 
 ## Look At View

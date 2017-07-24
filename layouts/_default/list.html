@@ -1,53 +1,7 @@
 {{ define "head-title" }}
-    {{ if eq .Params.mainpage true }}
-        NASA WorldWind
-    {{ else if isset .Params "projectname" }}
-        {{ if gt (len .Params.projectname) 0 }}
-            {{ .Params.projectname }} - {{ .Params.title }}
-        {{ else }}
-            NASA WorldWind - {{ .Params.title }}    
-        {{ end }}
-    {{ else }}
-        NASA WorldWind - {{ .Params.title }}
-    {{ end }}
+    NASA WorldWind
 {{ end }}
 
 {{ define "main-block" }}
-    {{ if eq .Params.mainpage true }}
-        {{ partial "home.html" . }}
-    {{ else if eq .Params.projectpage true }}
-        {{ partial "project-navbar.html" . }}
-        <div class="container">
-            {{ .Content }}
-        </div>
-    {{ else }}   
-        {{ partial "project-navbar.html" . }}
-        <div class="container">
-            {{ .Content }}
-            {{ range .Data.Pages.ByTitle }}
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
-                    </div>
-                    <div class="panel-body">
-                        {{ if isset .Params "listimage" }}
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="{{ .Permalink }}"><img class="img-responsive center-block" src="{{ .Params.listimage }}"></a>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <p>{{ .Params.listdescription }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        {{ else }}
-                            <p>{{ .Params.listdescription }}</p>
-                        {{ end }}
-                    </div>
-                </div>
-                <hr>
-            {{ end }}
-        </div>
-    {{ end }}
+    {{ partial "home.html" . }}
 {{ end }}

@@ -2,13 +2,8 @@
 title: "WMTS Layer"
 date: 2017-07-06T23:26:43-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to display an OGC Web Map Tile Service (WMTS) layer."
 listimage: "/img/ww-android-wmts-layer.png"
-layout: "project"
 ---
 
 ## WMTS Layer

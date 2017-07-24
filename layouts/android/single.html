@@ -1,0 +1,13 @@
+{{ define "head-title" }}
+    WorldWind Android - {{ .Params.Title }}
+{{ end }}
+
+{{ define "main-block" }}
+    <div class="container">
+        <h2>WorldWind Android</h2>
+    </div>
+    {{ partial "android-navigation.html" . }}
+    <div class="container">
+        {{ .Content }}
+    </div>
+{{ end }}

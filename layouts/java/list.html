@@ -1,0 +1,21 @@
+{{ define "head-title" }}
+    {{ if isset .Params "uselisttemplate" }}
+        WorldWind Java
+    {{ else }}
+        WorldWind Java - {{ .Params.Title }}
+    {{ end }}
+{{ end }}
+
+{{ define "main-block" }}
+    <div class="container">
+        <h2>WorldWind Java</h2>
+    </div>
+    {{ partial "java-navigation.html" . }}
+    <div class="container">
+        {{ .Content }}
+
+        {{ if isset .Params "uselisttemplate" }}
+            {{ partial "panel-list.html" . }}
+        {{ end }}
+    </div>
+{{ end }}

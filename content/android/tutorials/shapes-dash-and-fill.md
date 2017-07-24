@@ -2,13 +2,8 @@
 title: "Shapes Dash and Fill"
 date: 2017-07-07T00:38:02-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to specify dashed outlines and repeating fill patterns for shapes."
 listimage: "/img/ww-android-shape-fills.png"
-layout: "project"
 ---
 
 ## Shapes Dash and Fill

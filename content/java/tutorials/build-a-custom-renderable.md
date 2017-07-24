@@ -2,13 +2,8 @@
 title: "Build A Custom Renderable"
 date: 2017-07-14T01:37:13-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "How to implement a custom renderable that draws a cube centered on a geographic position."
 listimage: "/img/java/custom-renderable.png"
-layout: "project"
 ---
 
 {{< fix-tables >}}

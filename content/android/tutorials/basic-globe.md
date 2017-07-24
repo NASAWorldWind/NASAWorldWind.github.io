@@ -2,13 +2,8 @@
 title: "Basic Globe"
 date: 2017-07-06T23:01:58-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to construct a WorldWindow with a few layers."
 listimage: "/img/ww-android-basic-globe.png"
-layout: "project"
 ---
 
 ## Basic Globe Tutorial

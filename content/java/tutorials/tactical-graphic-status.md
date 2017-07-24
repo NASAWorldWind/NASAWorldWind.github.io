@@ -2,12 +2,7 @@
 title: "Tactical Graphic Status"
 date: 2017-07-14T00:55:10-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "This page lists all of the tactical graphics defined in MIL-STD-2525C, and shows which graphics are supported in WorldWind."
-layout: "project"
 ---
 
 {{< fix-tables >}}

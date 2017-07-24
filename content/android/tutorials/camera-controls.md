@@ -2,13 +2,8 @@
 title: "Camera Controls"
 date: 2017-07-07T00:43:36-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "This tutorial demonstrates how to override the WorldWindowController gesture controller to implement custom behaviors."
 listimage: "/img/ww-android-camera-controls.png"
-layout: "project"
 ---
 
 ## Camera Controls

@@ -1,0 +1,13 @@
+{{ define "head-title" }}
+    WorldWind Java - {{ .Params.Title }}
+{{ end }}
+
+{{ define "main-block" }}
+    <div class="container">
+        <h2>WorldWind Java</h2>
+    </div>
+    {{partial "java-navigation.html" . }}
+    <div class="container">
+        {{ .Content }}
+    </div>
+{{ end }}

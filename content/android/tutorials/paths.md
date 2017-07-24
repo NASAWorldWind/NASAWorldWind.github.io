@@ -2,13 +2,8 @@
 title: "Paths"
 date: 2017-07-07T00:26:01-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "android"
-projectname: "WorldWind Android"
 listdescription: "Demonstrates how to add Paths to a RenderableLayer."
 listimage: "/img/ww-android-paths.png"
-layout: "project"
 ---
 
 ## Paths

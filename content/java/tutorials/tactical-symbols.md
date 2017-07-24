@@ -2,12 +2,7 @@
 title: "Tactical Symbols"
 date: 2017-07-13T23:25:56-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
 listdescription: "Display symbols for single-position objects."
-layout: "project"
 ---
 
 ## Tactical Symbols

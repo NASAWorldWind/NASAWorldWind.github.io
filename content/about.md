@@ -2,11 +2,6 @@
 title: "About"
 date: 2017-07-03T14:41:50-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: ""
-projectname: ""
-listdescription: ""
 ---
 
 ### About

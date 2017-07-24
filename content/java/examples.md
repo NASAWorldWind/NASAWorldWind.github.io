@@ -2,11 +2,6 @@
 title: "Examples"
 date: 2017-07-13T00:02:06-04:00
 draft: false
-mainpage: false
-projectpage: false
-projectslug: "java"
-projectname: "WorldWind Java"
-layout: "project"
 ---
 
 ## Examples
