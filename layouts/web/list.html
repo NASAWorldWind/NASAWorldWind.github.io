@@ -11,5 +11,11 @@
         <h2>Web WorldWind</h2>
     </div>
     {{ partial "web-navigation.html" . }}
-    {{ partial "panel-list.html" . }}
+    <div class="container">
+        {{ .Content }}
+
+        {{ if isset .Params "uselisttemplate" }}
+            {{ partial "panel-list.html" . }}
+        {{ end }}
+    </div>
 {{ end }}

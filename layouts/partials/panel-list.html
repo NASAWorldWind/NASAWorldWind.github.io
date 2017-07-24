@@ -1,31 +1,24 @@
-<div class="container">
-    {{ .Content }}
-
-    {{ if isset .Params "uselisttemplate" }}
-
-        {{ range .Data.Pages.ByTitle }}
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
-                </div>
-                <div class="panel-body">
-                    {{ if isset .Params "listimage" }}
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="{{ .Permalink }}"><img class="img-responsive center-block" src="{{ .Params.listimage }}"></a>
-                                </div>
-                                <div class="col-md-7">
-                                    <p>{{ .Params.listdescription }}</p>
-                                </div>
-                            </div>
+{{ range .Data.Pages.ByTitle }}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
+        </div>
+        <div class="panel-body">
+            {{ if isset .Params "listimage" }}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="{{ .Permalink }}"><img class="img-responsive center-block" src="{{ .Params.listimage }}"></a>
                         </div>
-                    {{ else }}
-                        <p>{{ .Params.listdescription }}</p>
-                    {{ end }}
+                        <div class="col-md-7">
+                            <p>{{ .Params.listdescription }}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <hr>
-        {{ end }}
-    {{ end }}
-</div>
+            {{ else }}
+                <p>{{ .Params.listdescription }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <hr>
+{{ end }}
