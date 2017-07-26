@@ -60,7 +60,7 @@ wwd.addLayer(new WorldWind.BMNGOneImageLayer());
 wwd.addLayer(new WorldWind.BingAerialWithLabelsLayer());
 ```
 
-For the full html and javascript files see the [BasicExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.html) and [BasicExample.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.js) source.
+For the full html and javascript see the [SimplestExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/SimplestExample.html) source.
 
 ---
 
