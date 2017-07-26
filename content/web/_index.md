@@ -11,11 +11,11 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 
 ## Download
 
-*The first release of Web WorldWind is imminent, please check back soon for updates to these instructions! The versioned release will be the first official release of Web WorldWind and will be available as a hosted library and through NPM.*
+*The first release of Web WorldWind is imminent, please check back soon for updates to these instructions! The versioned release will be the first official release of Web WorldWind and will be available as a hosted library and through npm.*
 
 ### Building the library
 
-Building the library requires NPM.
+Building the library requires npm.
 
 1. Clone the Web WorldWind Repository from GitHub: `git clone https://github.com/NASAWorldWind/WebWorldWind.git`
 2. Install the dependencies: `npm install`
@@ -31,7 +31,9 @@ Include the following script source on your webpage:
 <script src="http://worldwindserver.net/webworldwind/worldwind.min.js"></script>
 ```
 
-### NPM
+### npm
+
+Use npm for installation and application development with different module definitions (AMD, CommonJS, ES6) through Webpack and RequireJS.
 
 *Coming Soon...*
 
