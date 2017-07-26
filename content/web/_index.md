@@ -11,15 +11,56 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 
 ## Download
 
-*The first release of Web WorldWind is imminent, please check back soon for updates to these instructions! The versioned release will be the first official release of Web WorldWind and will be available as a hosted library and through NPM.*
+*The first release of Web WorldWind is imminent, please check back soon for updates to these instructions! The versioned release will be the first official release of Web WorldWind and will be available as a hosted library and through npm.*
 
-To add Web WorldWind to your web application:
+### Building the library
 
-1. Clone the Web WorldWind Repository from GitHub `git clone https://github.com/NASAWorldWind/WebWorldWind.git` 
-2. Build the worldwind.js and worldwind.min.js files locally using the directions in the [HowToBuildWebWW](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/HowToBuildWebWW.md) document in the repository
-3. Review the [Tutorials](/web/tutorials/) for how to integrate Web WorldWind with your webpage
+Building the library requires npm.
 
-For more information about integrating Web WorldWind with your site and for how to use its many features, please see the [Tutorials](/web/tutorials/).
+1. Clone the Web WorldWind Repository from GitHub: `git clone https://github.com/NASAWorldWind/WebWorldWind.git`
+2. Install the dependencies: `npm install`
+3. Build the worldwind.js and worldwind.min.js files: `npm run build`
+4. Add the worldwind.js or worldwind.min.js files to your websites resources
+
+### Using a hosted version
+
+*The hosted version provided below is not current with the latest improvements from the develop branch on GitHub. The URL will soon be deprecated so we urge you not to utilize it for production use. Until Web WorldWind is released, we recommend downloading the source and building the library to take advantage of the latest bug fixes.*
+
+Include the following script source on your webpage:
+```html
+<script src="http://worldwindserver.net/webworldwind/worldwind.min.js"></script>
+```
+
+### npm
+
+Use npm for installation and application development with different module definitions (AMD, CommonJS, ES6) through Webpack and RequireJS.
+
+*Coming Soon...*
+
+---
+
+## Adding Web WorldWind to a Webpage
+
+- Add a `canvas` element with unique id:
+
+```html
+<canvas id="canvasOne" width="1024" height="768">
+```
+
+- Create a WorldWindow in your websites javascript:
+
+```javascript
+var wwd = new WorldWind.WorldWindow("canvasOne");
+```
+
+- Add some layers:
+
+```javascript
+wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+wwd.addLayer(new WorldWind.BingAerialWithLabelsLayer());
+```
+
+For the full html and javascript see the [SimplestExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/SimplestExample.html) source.
 
 ---
 
