@@ -6,7 +6,7 @@ draft: false
 
 ## Releases
 
-GitHub Releases has the World Wind Java release artifacts and detailed release change logs. Information about the World Wind releases is listed here.
+[GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases) has the World Wind Java release artifacts and detailed release change logs. Information about the World Wind releases is listed here.
 
 ### World Wind Java v2.1.0, December 13, 2016
 
