@@ -76,7 +76,7 @@ public class PlacemarksPickingFragment extends BasicGlobeFragment {
 
     /**
      * This inner class is a custom WorldWindController that handles both picking and navigation via a combination of
-     * the native World Wind navigation gestures and Android gestures. This class' onTouchEvent method arbitrates
+     * the native WorldWind navigation gestures and Android gestures. This class' onTouchEvent method arbitrates
      * between pick events and globe navigation events.
      */
     public class PickNavigateController extends BasicWorldWindowController {
@@ -109,7 +109,7 @@ public class PlacemarksPickingFragment extends BasicGlobeFragment {
         });
 
         /**
-         * Delegates events to the pick handler or the native World Wind navigation handlers.
+         * Delegates events to the pick handler or the native WorldWind navigation handlers.
          */
         @Override
         public boolean onTouchEvent(MotionEvent event) {

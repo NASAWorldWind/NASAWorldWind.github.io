@@ -59,7 +59,7 @@ The example PickAllShapesInRegion.js illustrates event handling and how to regis
 
 ### Monitoring Touch Events and Gestures
 
-Rather than monitoring touch events directly, applications should use Web World Wind’s gesture recognizers. Of most use is the TapRecognizer, which recognizes tap gestures on touch screens. Below is how the GoToLocation.js example uses a tap recognizer to recognize a tap and determine a location to move to when the user taps on the globe. The tap gesture recognizer is created and the gesture handler specified in the emboldened lines:
+Rather than monitoring touch events directly, applications should use Web WorldWind’s gesture recognizers. Of most use is the TapRecognizer, which recognizes tap gestures on touch screens. Below is how the GoToLocation.js example uses a tap recognizer to recognize a tap and determine a location to move to when the user taps on the globe. The tap gesture recognizer is created and the gesture handler specified in the emboldened lines:
 
 ```javascript
 // The common gesture-handling function.

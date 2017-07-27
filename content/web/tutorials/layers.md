@@ -49,7 +49,7 @@ There are several types of layers. Each defines additional properties that you c
 
 ### Image Layers
 
-Image layers hold imagery that is drawn on the surface of the globe. This is typically global-coverage imagery but need not be. Web World Wind provides the following image layers:
+Image layers hold imagery that is drawn on the surface of the globe. This is typically global-coverage imagery but need not be. Web WorldWind provides the following image layers:
 
 - **Bing Aerial Layer** (class BingAerialLayer) — Full global coverage using high-resolution Bing satellite imagery.
 - **Bing Aerial with Labels Layer** (class BingAerialWithLabelsLayer) — Full global coverage using the same imagery as Bing Aerial Layer but with placenames and roads included.

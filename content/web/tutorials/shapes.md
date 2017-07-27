@@ -7,9 +7,9 @@ listdescription: "Description of the properties of Shapes in Web WorldWind."
 
 ## Shapes
 
-Shapes represent the information other than surface imagery that you display on the globe. Web World Wind has a rich and growing set of shapes to choose from:
+Shapes represent the information other than surface imagery that you display on the globe. Web WorldWind has a rich and growing set of shapes to choose from:
 
-- **Placemark** (class Placemark) — Displays an image with an optional label at any geographic position and altitude. You can use one of Web World Wind’s placemark images or specify your own. See the PlacemarksAndPicking example.
+- **Placemark** (class Placemark) — Displays an image with an optional label at any geographic position and altitude. You can use one of Web WorldWind’s placemark images or specify your own. See the PlacemarksAndPicking example.
 - **Path** (class Path) — Draws a connected set of lines either in space or on the ground. If extruded, draws a curtain from the line to the ground. See the Paths example.
 - **Polygon** (class Polygon) — Displays a polygon in space. The polygon may have holes. If extruded, sides connecting the polygon to the ground are drawn. See the Polygons example
 - **Surface Shapes** — Familiar shapes such as polyline, polygon, ellipse and square drawn on the terrain. The specific classes are SurfaceCircle, SurfaceEllipse, SurfaceImage, SurfacePolygon, SurfacePolyline, SurfaceRectangle and SurfaceSector. See the SurfaceShapes example
@@ -21,7 +21,7 @@ The API docs describe these shapes in detail.
 
 ### Shape Attributes
 
-All Web World Wind shapes have an associated bundle of attributes that you use to control their color and other aspects. For most shapes this is the ShapeAttributes class, but Placemark and GeographicText have their own attributes classes, PlacemarkAttributes and TextAttributes. See the API docs for those classes to learn their properties. Shapes sometimes do not use all the attributes in the associated attribute bundle. The shape’s API doc describes which attributes it does use. Here’s an example of setting Placemark attributes:
+All Web WorldWind shapes have an associated bundle of attributes that you use to control their color and other aspects. For most shapes this is the ShapeAttributes class, but Placemark and GeographicText have their own attributes classes, PlacemarkAttributes and TextAttributes. See the API docs for those classes to learn their properties. Shapes sometimes do not use all the attributes in the associated attribute bundle. The shape’s API doc describes which attributes it does use. Here’s an example of setting Placemark attributes:
 
 ```javascript
 placemark = new WorldWind.Placemark(

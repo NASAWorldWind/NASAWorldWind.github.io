@@ -12,7 +12,7 @@ listimage: "/img/ww-android-wmts-layer.png"
 
 ### WmtsLayerFragment.java
 
-The WmtsLayerFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method. Here we use World Wind's LayerFactory to display the contents of a remote OGC Web Map Tile Service (WMTS). LayerFactory asynchronously negotiates with the WMTS endpoint to configure a World Wind layer, then notifies the application when it's done.
+The WmtsLayerFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method. Here we use WorldWind's LayerFactory to display the contents of a remote OGC Web Map Tile Service (WMTS). LayerFactory asynchronously negotiates with the WMTS endpoint to configure a WorldWind layer, then notifies the application when it's done.
 
 ```java
 package gov.nasa.worldwindx;
@@ -29,7 +29,7 @@ public class WmtsLayerFragment extends BasicGlobeFragment {
         // Let the super class (BasicGlobeFragment) do the creation
         WorldWindow wwd = super.createWorldWindow();
 
-        // Create a layer factory, World Wind's general component for creating layers
+        // Create a layer factory, WorldWind's general component for creating layers
         // from complex data sources.
         LayerFactory layerFactory = new LayerFactory();
 

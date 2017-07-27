@@ -17,7 +17,7 @@ listimage: "/img/ww-android-basic-globe.png"
 
 ### Get Started
 
-It’s very easy to get started using World Wind Android. You simply create and configure a WorldWindow View object and add it to a layout. This can be performed in an Activity or a Fragment. The following snippet shows the code that creates the WorldWindow and adds some imagery to the globe.
+It’s very easy to get started using WorldWind Android. You simply create and configure a WorldWindow View object and add it to a layout. This can be performed in an Activity or a Fragment. The following snippet shows the code that creates the WorldWindow and adds some imagery to the globe.
 
 ```java
 // Create a World Window (a GLSurfaceView)...
@@ -33,7 +33,7 @@ In this example, we add WorldWindow to a Fragment's layout in its onCreateView()
 
 ### Class Diagram
 
-This class diagram shows the primary World Wind classes used in the Fragment.
+This class diagram shows the primary WorldWind classes used in the Fragment.
 
 <img src="/img/ww-android-basic-globe-class-diagram.png" class="img-responsive center-block">
 
