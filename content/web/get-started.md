@@ -14,8 +14,8 @@ It’s very easy to get started using Web World Wind. There’s nothing to downl
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>World Wind Example</title>
-    <!-- Include the Web World Wind library. -->
+    <title>WorldWind Example</title>
+    <!-- Include the Web WorldWind library. -->
     <script src="http://worldwindserver.net/webworldwind/worldwindlib.js" type="text/javascript"></script>
 </head>
 <body>
@@ -48,8 +48,8 @@ It’s very easy to get started using Web World Wind. There’s nothing to downl
 </html>
 ```
 
-This example first includes the Web World Wind library, worldwindlib.js, then creates an HTML5 canvas, then defines a script that creates the World Window and populates it with two image layers and three control layers. Click this link to see the web page it creates in a new window. The page contains an interactive 3D virtual globe. Try zooming in with your mouse wheel or on a mobile device with a pinch gesture. Drag the mouse or your finger to pan around the globe. Drag the right mouse button or your two fingers upward to tilt the globe.
+This example first includes the Web WorldWind library, worldwindlib.js, then creates an HTML5 canvas, then defines a script that creates the World Window and populates it with two image layers and three control layers. Click this link to see the web page it creates in a new window. The page contains an interactive 3D virtual globe. Try zooming in with your mouse wheel or on a mobile device with a pinch gesture. Drag the mouse or your finger to pan around the globe. Drag the right mouse button or your two fingers upward to tilt the globe.
 
-Web World Wind provides much more functionality than is available in this simple example. The Examples page illustrates much of that functionality in simple examples. The Developer’s Guide describes Web World Wind’s functionality in detail. The Deployments page explains how to deploy Web World Wind at  your own web site.
+Web WorldWind provides much more functionality than is available in this simple example. The Examples page illustrates much of that functionality in simple examples. The Developer’s Guide describes Web World Wind’s functionality in detail. The Deployments page explains how to deploy Web WorldWind at  your own web site.
 
-If you need help, see the resources listed on the Home page, especially the Web World Wind forum.
+If you need help, see the resources listed on the Home page, especially the Web WorldWind forum.

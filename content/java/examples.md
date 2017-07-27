@@ -6,7 +6,7 @@ draft: false
 
 ## Examples
 
-The World Wind API contains over 100 code examples that show how to perform all manner of tasks, from creating the most basic World Wind application to using complex, advanced functionality.
+The WorldWind API contains over 100 code examples that show how to perform all manner of tasks, from creating the most basic WorldWind application to using complex, advanced functionality.
 
 Below are brief descriptions of selected example programs.  All examples can be found in **gov.nasa.worldwindx.examples**
 
@@ -28,7 +28,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **SimplestPossibleExample** -  Demonstrates the simplest possible way to create a WorldWind application.
 
-**HelloWorldWind** -  Shows in detail how to create a basic World Wind program.
+**HelloWorldWind** -  Shows in detail how to create a basic WorldWind program.
 
 **ApplicationTemplate** -  Provides a base application framework for simple WorldWind examples.
 
@@ -64,7 +64,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 ### Data
 
-**BulkDownload** -  Illustrates how to use World Wind to retrieve data from layers and elevation models in bulk from a remote source.
+**BulkDownload** -  Illustrates how to use WorldWind to retrieve data from layers and elevation models in bulk from a remote source.
 
 **DataInstallerAp** - Provides an interactive means to install data on the client.
 
@@ -78,7 +78,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **GeoRSS** -  Illustrates how to create a shape from a GeoRSS document. This example creates two shapes from hard-coded example GeoRSS documents.
 
-**SkankortDenmark** -  Demonstrates high resolution imagery (0.2 meters per pixel) and elevation data (1.6 meters per pixel) served by the World Wind WMS, and visualized by the World Wind Java client.
+**SkankortDenmark** -  Demonstrates high resolution imagery (0.2 meters per pixel) and elevation data (1.6 meters per pixel) served by the WorldWind WMS, and visualized by the WorldWind Java client.
 
 **SurfaceImageViewer** -  Demonstrates how to open and view arbitrary surface images and elevations that have an accompanying world file.
 
@@ -92,9 +92,9 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **TerrainIntersection** -  Shows how to compute terrain intersections using the highest resolution terrain data available from a globe’s elevation model.
 
-**ContourLines** -  Illustrates how to display contour lines in World Wind on the surface terrain at a specified elevation.
+**ContourLines** -  Illustrates how to display contour lines in WorldWind on the surface terrain at a specified elevation.
 
-**BathymetryRemoval** -  Illustrates how to suppress the World Wind Globe’s bathymetry (elevations below mean sea level) by using a  BathymetryFilterElevationModel.
+**BathymetryRemoval** -  Illustrates how to suppress the WorldWind Globe’s bathymetry (elevations below mean sea level) by using a  BathymetryFilterElevationModel.
 
 **DetailHints** -  Illustrates how to control the detail of ElevationModel and TiledImageLayer using their detail hint properties.
 
@@ -104,11 +104,11 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **Shapes** -  Shows how to let the user create path and surface shapes on the globe and modify their parameters with a simple user interface.
 
-**Airspaces** -  Illustrates how to configure and display World Wind Airspace shapes.
+**Airspaces** -  Illustrates how to configure and display WorldWind Airspace shapes.
 
-**AirspaceBuilder** -  Illustrates runtime construction of 3D extruded polygons and spheres using World Wind Airspace shapes.
+**AirspaceBuilder** -  Illustrates runtime construction of 3D extruded polygons and spheres using WorldWind Airspace shapes.
 
-**ExtrudedPolygons** -  Shows how to use World Wind ExtrudedPolygons.
+**ExtrudedPolygons** -  Shows how to use WorldWind ExtrudedPolygons.
 
 **ExtrudedShapes** -  Demonstrates how to create ExtrudedPolygons with cap and side textures.
 
@@ -118,39 +118,39 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **LineBackground** -  Illustrates how to display lines that stand out from the background imagery.
 
-**Paths** -  Shows how to use the World Wind Path construct.
+**Paths** -  Shows how to use the WorldWind Path construct.
 
 **PathsWithDirection** -  Shows how to draw a Path with direction arrowheads between the points.
 
-**Polygons** -  Shows how to use World Wind Polygon shapes.
+**Polygons** -  Shows how to use WorldWind Polygon shapes.
 
 **RigidShapes** -  Demonstrates usage of the various Rigid Shapes: Ellipsoid, Box, Cylinder, Cone, Pyramid and Wedge.
 
 **RigidShapeBuilder** -  Shows how to build a tool for creating and editing 3D shapes and placing them on the globe. Possible shapes include the Rigid Shapes (Ellipsoid, Box, Cylinder, Cone, Pyramid and Wedge) as well as ExtrudedPolygon.
 
-**Ellipsoids** -  Illustrates how to use the World Wind Ellipsoid rigid shape to display an arbitrarily sized and oriented ellipsoid on the Globe.
+**Ellipsoids** -  Illustrates how to use the WorldWind Ellipsoid rigid shape to display an arbitrarily sized and oriented ellipsoid on the Globe.
 
-**Boxes** -  Illustrates how to use the World Wind Box rigid shape to display an arbitrarily sized and oriented box on the Globe.
+**Boxes** -  Illustrates how to use the WorldWind Box rigid shape to display an arbitrarily sized and oriented box on the Globe.
 
-**Cylinders** -  Illustrates how to use the World Wind Cylinder rigid shape to display an arbitrarily sized and oriented cylinder on the Globe.
+**Cylinders** -  Illustrates how to use the WorldWind Cylinder rigid shape to display an arbitrarily sized and oriented cylinder on the Globe.
 
-**Cones** -  Illustrates how to use the World Wind Cone rigid shape to display an arbitrarily sized and oriented cone on the Globe.
+**Cones** -  Illustrates how to use the WorldWind Cone rigid shape to display an arbitrarily sized and oriented cone on the Globe.
 
-**Pyramid** -  Illustrates how to use the World Wind Pyramid rigid shape to display an arbitrarily sized and oriented pyramid on the Globe.
+**Pyramid** -  Illustrates how to use the WorldWind Pyramid rigid shape to display an arbitrarily sized and oriented pyramid on the Globe.
 
-**Wedges** -  Illustrates how to use the World Wind Wedge rigid shape to display an arbitrarily sized and oriented wedge on the Globe.
+**Wedges** -  Illustrates how to use the WorldWind Wedge rigid shape to display an arbitrarily sized and oriented wedge on the Globe.
 
 **RotatedSector** -  Illustrates rotating a Sector-shaped SurfaceQuad from standard position.
 
 ### Annotations
 
-**Annotations** -  Illustrates how to use a World Wind Annotation to display on-screen information to the user in the form of a text label with an optional image.
+**Annotations** -  Illustrates how to use a WorldWind Annotation to display on-screen information to the user in the form of a text label with an optional image.
 
-**AnnotationControls** -  Illustrates how to use a World Wind Annotation with an AnnotationLayoutManager to display an Annotation with a simple embedded user interface.
+**AnnotationControls** -  Illustrates how to use a WorldWind Annotation with an AnnotationLayoutManager to display an Annotation with a simple embedded user interface.
 
-**Balloons** -  Illustrates how to use a World Wind Balloon to display on-screen information to the user in the form of a screen-aligned text balloon.
+**Balloons** -  Illustrates how to use a WorldWind Balloon to display on-screen information to the user in the form of a screen-aligned text balloon.
 
-**WebBrowserBalloons** -  Illustrates how to use World Wind browser balloons to display HTML, JavaScript, and Flash content to the user in the form of a screen-aligned balloon.
+**WebBrowserBalloons** -  Illustrates how to use WorldWind browser balloons to display HTML, JavaScript, and Flash content to the user in the form of a screen-aligned balloon.
 
 **TacticalGraphics and TacticalSymbol** - Shows examples of World Wind’s 2525C implementation.
 
@@ -166,7 +166,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **PathsWithLabels** -  Example of how to draw a path with a text annotation attached to the path.
 
-**AlarmIcons** -  Illustrates how to display an icon with an alarm state using a World Wind WWIcon.
+**AlarmIcons** -  Illustrates how to display an icon with an alarm state using a WorldWind WWIcon.
 
 **GridOfPoints** -  Uses a PointGrid to draw a grid of points on the terrain, spacing them evenly throughout a region defined by a four sided polygon.
 
@@ -190,15 +190,15 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **PickFrustum** -  Illustrates how to change the size of the pick frustum.
 
-**SplitPaneUsage** -  Illustrates how to use World Wind within a Swing JSplitPane.
+**SplitPaneUsage** -  Illustrates how to use WorldWind within a Swing JSplitPane.
 
 **TabbedPaneUsage** -  Demonstrates the use of tabbed panes.
 
 ### Network
 
-**NetworkOfflineMode** -  Shows how to detach World Wind from the network and reattach it.
+**NetworkOfflineMode** -  Shows how to detach WorldWind from the network and reattach it.
 
-**LocalDataOnly** -  Shows how to operate World Wind completely locally, drawing data only from local caches.
+**LocalDataOnly** -  Shows how to operate WorldWind completely locally, drawing data only from local caches.
 
 ### Configuration
 
@@ -206,13 +206,13 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ConfiguringGLRuntimeCapabilities** -  Illustrates how to configure World Wind’s OpenGL features using a GLRuntimeCapabilities.
 
-**CustomElevationModel** -  Illustrates how to configure World Wind with a custom ElevationModel from a configuration file.
+**CustomElevationModel** -  Illustrates how to configure WorldWind with a custom ElevationModel from a configuration file.
 
-**Stereo** -  Shows how to configure World Wind to display the globe in stereo.
+**Stereo** -  Shows how to configure WorldWind to display the globe in stereo.
 
 ### Tools
 
-**LoggingControl** -  Illustrates control and redirection of World Wind logging.
+**LoggingControl** -  Illustrates control and redirection of WorldWind logging.
 
 **WorldWindDiagnostics** -  Shows how to output extensive diagnostic information about the user’s system configuration.
 
@@ -246,10 +246,10 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **MultiFrame** -  Shows how to create two World Windows, each in its own JFrame. The World Windows share a globe and some layers.
 
-**CardLayoutUsage** -  Illustrates how to use multiple World Wind windows with a CardLayout layer manager.
+**CardLayoutUsage** -  Illustrates how to use multiple WorldWind windows with a CardLayout layer manager.
 
 **FlatAndRoundGlobes** -  Illustrates how to display round and flat globes side by side.
 
-**TabbedPaneUsage** -  Illustrates how to use multiple World Wind windows with a JTabbedPane.
+**TabbedPaneUsage** -  Illustrates how to use multiple WorldWind windows with a JTabbedPane.
 
 **ViewViewVolume** -  Illustrates how to display a globe, and in a separate window display another globe with a visualization of the view volume in the main globe window.
