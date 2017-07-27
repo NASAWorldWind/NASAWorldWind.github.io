@@ -8,51 +8,57 @@ draft: false
 
 The applications here demonstrate some of WorldWind's rich capabilities. Also see [WorldWind Europa Challenge site](http://eurochallenge.como.polimi.it/) for a collection of applications created by the WorldWind Europa Challenge teams.
 
-{{% panel title="Application Template" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/ApplicationTemplate.java" imgUrl="/img/java/applicationtemplate_01_250.jpg" %}}
+### Requirements
+
+- Up to date video card drivers
+- Oracle Java Runtime Environment (JRE) 1.7.0
+- Java and OpenGL setup can be tested using JOGL demo site.
+
+{{% panel title="Application Template" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ApplicationTemplate.jnlp" imgUrl="/img/java/applicationtemplate_01_250.jpg" %}}
 This is the most basic usage of the SDK. It displays the default globe with its default layers. It includes capabilities such as a compass and status bar that are common to most applications, and presents Earth within a star field and with an atmosphere. It requires only 6 lines of code to instantiate everything seen here.
 {{% /panel %}}
 
-{{% panel title="KML Viewer" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/kml/KMLViewer.java" imgUrl="/img/java/kmlviewer_01_250.jpg" %}}
+{{% panel title="KML Viewer" link="https://worldwind.arc.nasa.gov/java/latest/webstart/kml/KMLViewer.jnlp" imgUrl="/img/java/kmlviewer_01_250.jpg" %}}
 Demonstrates loading, displaying, and interacting with KML content in WorldWind.
 {{% /panel %}}
 
-{{% panel title="WMS Layer Manager" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/WMSLayerManager.java" imgUrl="/img/java/wmslayermanager_01_250.jpg" %}}
+{{% panel title="WMS Layer Manager" link="https://worldwind.arc.nasa.gov/java/latest/webstart/WMSLayerManager.jnlp" imgUrl="/img/java/wmslayermanager_01_250.jpg" %}}
 This example application demonstrates the SDK WMS capabilities. It features a WMS layer panel that allows you to access any WMS server and layers.
 
 To add a server, click on the + tab and enter a url. After the WMS discovery process, the list of available layers is displayed. Select one to add it to the current globe layer list. Unselect it to remove it.
 {{% /panel %}}
 
-{{% panel title="Installing Images and Elevations" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo.java" imgUrl="/img/java/rasterviewer.png" %}}
+{{% panel title="Installing Images and Elevations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/dataimport/InstallImageryAndElevationsDemo.jnlp" imgUrl="/img/java/rasterviewer.png" %}}
 The WorldWind Java Installing Imagery And Elevations Demo enables a user to install image data and elevation data from a file on the local hard drive. This data can be installed as a full pyramid of tiles or as a partial pyramid. Installing a full pyramid takes longer and consumes more space on the user's hard drive, but has the best runtime performance. Installing a partial pyramid takes less time and consumes less space on the user's hard drive, but requires that the original data not be moved or deleted.
 {{% /panel %}}
 
-{{% panel title="Export Surface Imagery and Elevations" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/ExportImageOrElevations.java" imgUrl="/img/java/exportimageorelevations_01_250.jpg" %}}
+{{% panel title="Export Surface Imagery and Elevations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ExportImageOrElevations.jnlp" imgUrl="/img/java/exportimageorelevations_01_250.jpg" %}}
 Demonstrates how to use the SectorSelector utility to save a selected region of surface imagery and elevations to a GeoTIFF file.
 {{% /panel %}}
 
-{{% panel title="Scankort Denmark Data" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/ScankortDenmark.java" imgUrl="/img/java/scankortdenmark_01_250.jpg" %}}
+{{% panel title="Scankort Denmark Data" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ScankortDenmark.jnlp" imgUrl="/img/java/scankortdenmark_01_250.jpg" %}}
 Demonstrates high resolution imagery (0.2 meters per pixel) and elevation data (1.6 meters per pixel) served by the WorldWind WMS, and visualized by the WorldWind Java client.
 {{% /panel %}}
 
-{{% panel title="Rigid Shapes" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/RigidShapes.java" imgUrl="/img/java/rigidshapes_01_250.jpg" %}}
+{{% panel title="Rigid Shapes" link="https://worldwind.arc.nasa.gov/java/latest/webstart/RigidShapes.jnlp" imgUrl="/img/java/rigidshapes_01_250.jpg" %}}
 Demonstrates visualization of common rigid shape types in WorldWind Java. Includes six rigid shape types: Box, Cone, Cylinder, Ellipsoid/Sphere, Pyramid, and Wedge.
 {{% /panel %}}
 
-{{% panel title="Extruded Shapes" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/ExtrudedShapes.java" imgUrl="/img/java/extrudedshapes_01_250.jpg" %}}
+{{% panel title="Extruded Shapes" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ExtrudedShapes.jnlp" imgUrl="/img/java/extrudedshapes_01_250.jpg" %}}
 Shows visualization of textured 3D buildings with WorldWind Java SDK Extruded Shapes.
 {{% /panel %}}
 
-{{% panel title="Surface Shapes" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/SurfaceShapes.java" imgUrl="/img/java/surfaceshapes_01_250.jpg" %}}
+{{% panel title="Surface Shapes" link="https://worldwind.arc.nasa.gov/java/latest/webstart/SurfaceShapes.jnlp" imgUrl="/img/java/surfaceshapes_01_250.jpg" %}}
 Demonstrates visualization of common terrain following shapes in WorldWind Java. Includes five surface shape types: SurfacePolyline, SurfaceQuad/SurfaceSquare, SurfaceEllipse/SurfaceCircle, SurfaceSector, and SurfacePolygon.
 {{% /panel %}}
 
-{{% panel title="Airspaces" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/Airspaces.java" imgUrl="/img/java/airspaces_01_250.jpg" %}}
+{{% panel title="Airspaces" link="https://worldwind.arc.nasa.gov/java/latest/webstart/Airspaces.jnlp" imgUrl="/img/java/airspaces_01_250.jpg" %}}
 Demonstrates the WorldWind Java controlled airspaces tookit.
 
 Airspaces feature 3D volumes controlled by geographic coordinates and upper- and lower- altitude boundaries. Airspaces optionally conform to the terrain as you move them. They demonstrate what's possible in terms of dynamic manipulation of data in 3D space.
 {{% /panel %}}
 
-{{% panel title="Analytic Surface" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/analytics/AnalyticSurface.java" imgUrl="/img/java/analyticsurface_01_250.jpg" %}}
+{{% panel title="Analytic Surface" link="https://worldwind.arc.nasa.gov/java/latest/webstart/analytics/AnalyticSurface.jnlp" imgUrl="/img/java/analyticsurface_01_250.jpg" %}}
 Demonstrates visual representation of scalar values over a grid of geographic positions. AnalyticSurface supports dynamic scalar data by providing a simple, high throughput rendering pipeline for the application.
 
 This demonstrates two unique surface types:
@@ -61,59 +67,59 @@ This demonstrates two unique surface types:
 - A static surface representing annual precipitation in Washington State, USA.
 {{% /panel %}}
 
-{{% panel title="Video On Terrain" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/VideoOnTerrain.java" imgUrl="/img/java/videoonterrain_01_250.jpg" %}}
+{{% panel title="Video On Terrain" link="https://worldwind.arc.nasa.gov/java/latest/webstart/VideoOnTerrain.jnlp" imgUrl="/img/java/videoonterrain_01_250.jpg" %}}
 Illustrates how applications can display video on the globe's surface.
 {{% /panel %}}
 
-{{% panel title="Web Browser Balloons" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/VideoOnTerrain.java" imgUrl="/img/java/webbrowserballoons_01_250.jpg" %}}
+{{% panel title="Web Browser Balloons" link="https://worldwind.arc.nasa.gov/java/latest/webstart/VideoOnTerrain.jnlp" imgUrl="/img/java/webbrowserballoons_01_250.jpg" %}}
 Demonstrates use of WorldWind browser balloons to display HTML, JavaScript, and Flash content to the user in the form of a screen-aligned balloon. There are two browser balloon types: *ScreenBrowserBalloon* which displays a balloon at a point on the screen, and *GlobeBrowserBalloon* which displays a balloon attached to a position on the Globe.
 {{% /panel %}}
 
-{{% panel title="Annotations" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/Annotations.java" imgUrl="/img/java/annotations_01_250.jpg" %}}
+{{% panel title="Annotations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/Annotations.jnlp" imgUrl="/img/java/annotations_01_250.jpg" %}}
 This example allows you to experiment with the multiple options of WorldWind Java annotation feature.
 
 Annotations are text labels with support for multiline text, simple HTML and many styling attributes such as font face, size and colors, bubble shapes and background image.
 {{% /panel %}}
 
-{{% panel title="On Screen Controls" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/AnnotationControls.java" imgUrl="/img/java/annotationcontrols_01_250.jpg" %}}
+{{% panel title="On Screen Controls" link="https://worldwind.arc.nasa.gov/java/latest/webstart/AnnotationControls.jnlp" imgUrl="/img/java/annotationcontrols_01_250.jpg" %}}
 Demonstrates the use of WorldWind annotations to create simple user interfaces embedded into the WorldWindow.
 {{% /panel %}}
 
-{{% panel title="MGRS Graticule" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/MGRSGraticule.java" imgUrl="/img/java/mgrsgraticule_01_250.jpg" %}}
+{{% panel title="MGRS Graticule" link="https://worldwind.arc.nasa.gov/java/latest/webstart/MGRSGraticule.jnlp" imgUrl="/img/java/mgrsgraticule_01_250.jpg" %}}
 Shows visualization of the Military Grid Reference System (MGRS) as a graticule overlayed on the globe's surface.
 {{% /panel %}}
 
-{{% panel title="Terrain Profilier" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/TerrainProfiler.java" imgUrl="/img/java/terrainprofiler_01_250.jpg" %}}
+{{% panel title="Terrain Profilier" link="https://worldwind.arc.nasa.gov/java/latest/webstart/TerrainProfiler.jnlp" imgUrl="/img/java/terrainprofiler_01_250.jpg" %}}
 This application shows the terrain profile layer in action with its various controls. It allows you to view a realtime section profile graph for any place on the planet, at any scale - continent, country or mountain range... just by moving the mouse.
 
 It proves particularly useful to explore the ocean floors where the bathymetry data reveals important geologic features.
 {{% /panel %}}
 
-{{% panel title="Flat World Earthquakes" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/FlatWorldEarthquakes.java" imgUrl="/img/java/flatworld_02_250.jpg" %}}
+{{% panel title="Flat World Earthquakes" link="https://worldwind.arc.nasa.gov/java/latest/webstart/FlatWorldEarthquakes.jnlp" imgUrl="/img/java/flatworld_02_250.jpg" %}}
 This example shows the latest earthquakes over a flat world projection. It allows you to see the whole globe at once while retaining the capability to zoom onto the surface and still experience 3D terrain.
 {{% /panel %}}
 
-{{% panel title="Anaglyph Stereo" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/Stereo.java" imgUrl="/img/java/anaglyphstereo_01_250.jpg" %}}
+{{% panel title="Anaglyph Stereo" link="https://worldwind.arc.nasa.gov/java/latest/webstart/Stereo.jnlp" imgUrl="/img/java/anaglyphstereo_01_250.jpg" %}}
 This is essentially the above application template but with anaglyph stereo viewing capability. It allows you to explore the world in 'real' 3D using red and cyan glasses with the red filter over the left eye.
 
 To get a comfortable experience use the slider to adjust the interocular distance.
 {{% /panel %}}
 
-{{% panel title="Multi-Window View Volume" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/multiwindow/ViewVolumeViewer.java" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
+{{% panel title="Multi-Window View Volume" link="https://worldwind.arc.nasa.gov/java/latest/webstart/multiwindow/ViewVolumeViewer.jnlp" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
 Demonstrates WorldWind Java SDK support for rendering globes in multiple application windows. WorldWind automatically shares resources wherever possible across multiple windows in a single runtime environment.
 {{% /panel %}}
 
-{{% panel title="View Tracking" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/KeepingObjectsInView.java" imgUrl="/img/java/keepingobjectsinview_01_250.jpg" %}}
+{{% panel title="View Tracking" link="https://worldwind.arc.nasa.gov/java/latest/webstart/KeepingObjectsInView.jnlp" imgUrl="/img/java/keepingobjectsinview_01_250.jpg" %}}
 Demonstrates how applications can keep a set of moving objects in view.
 {{% /panel %}}
 
-{{% panel title="Line Builder" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/LineBuilder.java" imgUrl="/img/java/linebuilder_01_250.jpg" %}}
+{{% panel title="Line Builder" link="https://worldwind.arc.nasa.gov/java/latest/webstart/LineBuilder.jnlp" imgUrl="/img/java/linebuilder_01_250.jpg" %}}
 This simple example allows you to interactively draw a path over the terrain surface.
 
 It demonstrates how an application can use and consume mouse events before they get to the default view input handler.
 {{% /panel %}}
 
-{{% panel title="Airspace Builder" link="https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/AirspaceBuilder.java" imgUrl="/img/java/airspacebuilder_01_250.jpg" %}}
+{{% panel title="Airspace Builder" link="https://worldwind.arc.nasa.gov/java/latest/webstart/AirspaceBuilder.jnlp" imgUrl="/img/java/airspacebuilder_01_250.jpg" %}}
 Demonstrates runtime construction of 3D shapes using the WorldWind Java controlled airspace shapes.
 
 - **New shape** - Click the "New shape" button. When "Auto fill new shapes" is checked a default shape is created automatically

@@ -6,7 +6,7 @@ draft: false
 
 ## Get Started
 
-Built on Java and OpenGL, WorldWind Java is a cross-platform virtual globe in use by thousands of organizations around the world. With support for an array of different data formats WorldWind Java provides a highly configurable visual representation of a globe for you geographic needs.
+WorldWind is an SDK (software development kit) that software engineers can use to build their own applications. To run a WorldWind demo application, visit the [Demos](/java/demos/) page. Follow these instructions to download, run, and deploy an application using World Wind.
 
 ---
 
