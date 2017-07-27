@@ -31,7 +31,7 @@ public class GeoPackageFragment extends BasicGlobeFragment {
         // SQLite library which operates only on files in the local Android filesystem.
         File geoPackageFile = TutorialUtil.unpackAsset(this.getContext(), "geopackage_tutorial.gpkg");
 
-        // Create a layer factory, World Wind's general component for creating layers
+        // Create a layer factory, WorldWind's general component for creating layers
         // from complex data sources.
         LayerFactory layerFactory = new LayerFactory();
 
