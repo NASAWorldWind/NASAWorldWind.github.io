@@ -54,7 +54,7 @@ var layerManger = new LayerManager(wwd);
 
 ## Basic Examples
 
-[SimplestExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/SimplestExample.js) illustrates the most basic Web WorldWind program there is. Its six lines of JavaScript code create a fully functioning WorldWindow with a globe containing terrain and high-resolution imagery. The program also creates a compass, a layer that shows the current map coordinates, and a layer with view controls. (With the exception of the vertical exaggeration control, the view controls are redundant with mouse and gesture input.)
+[SimplestExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/SimplestExample.html) illustrates the most basic Web WorldWind program there is. Its six lines of JavaScript code create a fully functioning WorldWindow with a globe containing terrain and high-resolution imagery. The program also creates a compass, a layer that shows the current map coordinates, and a layer with view controls. (With the exception of the vertical exaggeration control, the view controls are redundant with mouse and gesture input.)
 
 [BasicExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.html) and [BasicExample.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.js) define the template for most Web WorldWind examples. This example performs only the operations described above. The result is a full-featured, interactive Web WorldWind globe with layer and projection control.
 
