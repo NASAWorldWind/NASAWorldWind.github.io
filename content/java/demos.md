@@ -105,7 +105,7 @@ This is essentially the above application template but with anaglyph stereo view
 To get a comfortable experience use the slider to adjust the interocular distance.
 {{% /panel %}}
 
-{{% panel title="Multi-Window View Volume" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ViewVolumeViewer.jnlp" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
+{{% panel title="Multi-Window View Volume" link="https://worldwind.arc.nasa.gov/java/latest/webstart/MultiWindowViewVolume.jnlp" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
 Demonstrates WorldWind Java SDK support for rendering globes in multiple application windows. WorldWind automatically shares resources wherever possible across multiple windows in a single runtime environment.
 {{% /panel %}}
 

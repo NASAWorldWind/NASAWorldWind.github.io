@@ -16,7 +16,7 @@ This example adds a layer to the basic globe that shows the tessellation.
 
 The ShowTessellationFragment class extends the BasicGlobeFragment and overrides the createWorldWindow method. Here we simply add an additional ShowTessellationLayer to the globe.
 
-<img src="/img/ww-android-show-tessellation-classes" class="img-responsive center-block">
+<img src="/img/ww-android-show-tessellation-classes.png" class="img-responsive center-block">
 
 ```java
 public class ShowTessellationFragment extends BasicGlobeFragment {

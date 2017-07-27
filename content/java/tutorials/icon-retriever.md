@@ -7,7 +7,7 @@ listdescription: "Describes how to use the IconRetriever interface to retrieve i
 
 {{< fix-tables >}}
 
-## Overview
+## Icon Retriever
 
 This guide shows how to use the IconRetriever interface to retrieve icons for tactical symbols. The guide is organized into in three sections:
 
