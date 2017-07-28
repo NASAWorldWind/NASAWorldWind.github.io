@@ -56,91 +56,16 @@ The new icons should be white and black on a transparent background. WorldWind w
 
 The following table shows the all eight icons for the Movement Control Center (MCC) Theater graphic, and how the final symbol will appear when created with and without a frame. Notice that the icon for each standard identity is slightly different so that each icon matches its frame exactly. Also notice that the white pixels of the icon are converted to black when the icon is drawn on a frame, and to the standard identity color when the icon is drawn without a frame. The anticipated version of the icon is only used to create an unframed symbol. For an anticipated framed symbol the frame itself is drawn with a dashed border.
 
-<table>
-<tbody>
-<tr>
-<td></td>
-<td style="text-align: center; vertical-align: bottom;">Icon</td>
-<td style="text-align: center;">Framed
-Present</td>
-<td style="text-align: center;">Framed
-Anticipated</td>
-<td style="text-align: center; vertical-align: bottom;">Unframed</td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Friendly
-Present</td>
-<td style="text-align: center; vertical-align: middle;"><img class="alignnone size-full wp-image-1599" title="Friendly, present" src="http://nwwhelp.files.wordpress.com/2012/07/sfgpustmt.png" alt="" width="124" height="125" />
-<code>sfgpustmt------.png</code></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1601" title="Friendly, present, framed" src="http://nwwhelp.files.wordpress.com/2012/07/sfgpustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1605" title="Friendly, present, framed" src="http://nwwhelp.files.wordpress.com/2012/07/sfgaustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1603" title="Present, friendly, unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sfgpustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Friendly
-Anticipated</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1600" title="Friendly, anticipated" src="http://nwwhelp.files.wordpress.com/2012/07/sfgaustmt.png" alt="" width="125" height="125" />
-<code>sfgaustmt------.png</code></td>
-<td></td>
-<td></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1604" title="Friendly, anticipated, unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sfgaustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Neutral
-Present</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1610" title="Neutral, present" src="http://nwwhelp.files.wordpress.com/2012/07/sngpustmt.png" alt="" width="124" height="123" />
-<code>sngpustmt------.png</code></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1619" title="Neutral, Present, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/sngpustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1621" title="Neutral, Anticipated, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/sngaustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1620" title="Neutral, Present, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sngpustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Neutral
-Anticipated</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1611" title="Neutral, anticipated" src="http://nwwhelp.files.wordpress.com/2012/07/sngaustmt.png" alt="" width="125" height="123" />
-<code>sngaustmt------.png</code></td>
-<td></td>
-<td></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1622" title="Neutral, Anticipated, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sngaustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Hostile
-Present</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1612" title="Hostile, Present" src="http://nwwhelp.files.wordpress.com/2012/07/shgpustmt.png" alt="" width="125" height="124" />
-<code>shgpustmt------.png</code></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1623" title="Hostile, Present, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/shgpustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1625" title="Hostile, Anticipated, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/shgaustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1624" title="Hostile, Present, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/shgpustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Hostile
-Anticipated</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1613" title="Hostile, Anticipated" src="http://nwwhelp.files.wordpress.com/2012/07/shgaustmt.png" alt="" width="123" height="124" />
-<code>shgaustmt------.png</code></td>
-<td></td>
-<td></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1626" title="Hostile, Anticipated, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/shgaustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Unknown
-Present</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1608" title="Unknown, present" src="http://nwwhelp.files.wordpress.com/2012/07/sugpustmt.png" alt="" width="124" height="123" />
-<code>sugpustmt------.png</code></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1615" title="Unknown, Present, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/sugpustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1616" title="Unknown, Anticipated, Framed" src="http://nwwhelp.files.wordpress.com/2012/07/sugaustmt-_frame.png" alt="" width="128" height="128" /></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1617" title="Unknown, Present, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sugpustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-<tr>
-<td style="text-align: center; vertical-align: middle;">Unknown
-Anticipated</td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1609" title="Unkown, anticipated" src="http://nwwhelp.files.wordpress.com/2012/07/sugaustmt.png" alt="" width="124" height="124" />
-<code>sugaustmt------.png</code></td>
-<td></td>
-<td></td>
-<td style="text-align: center; vertical-align: top;"><img class="alignnone size-full wp-image-1618" title="Unknown, Anticipated, Unframed" src="http://nwwhelp.files.wordpress.com/2012/07/sugaustmt-_noframe.png" alt="" width="128" height="128" /></td>
-</tr>
-</tbody>
-</table>
+Name | Icon | Framed Present | Framed Anticipated | Unframed
+--- | --- | --- | --- | ---
+Friendly Present | ![sfgpustmt------.png](/img/java/sfgpustmt.png) `sfgpustmt------.png` | ![sfgpustmt-_frame.png](/img/java/sfgpustmt-_frame.png) | ![sfgaustmt-_frame.png](/img/java/sfgaustmt-_frame.png) | ![sfgpustmt-_noframe.png](/img/java/sfgpustmt-_noframe.png)
+Friendly Anticipated | ![sfgaustmt.png](/img/java/sfgaustmt.png) `sfgaustmt------.png` |  |  | ![sfgaustmt-_noframe.png](/img/java/sfgaustmt-_noframe.png)
+Neutral Present | ![sngpustmt.png](/img/java/sngpustmt.png) `sngpustmt------.png` | ![sngpustmt-_frame.png](/img/java/sngpustmt-_frame.png) |  ![sngaustmt-_frame.png](/img/java/sngaustmt-_frame.png) | ![sngpustmt-_noframe.png](/img/java/sngpustmt-_noframe.png)
+Neutral Anticipated | ![sngaustmt.png](/img/java/sngaustmt.png) `sngaustmt------.png` |  |  | ![sngaustmt-_noframe.png](/img/java/sngaustmt-_noframe.png)
+Hostile Present | ![shgpustmt.png](/img/java/shgpustmt.png) `shgpustmt------.png` | ![shgpustmt-_frame.png](/img/java/shgpustmt-_frame.png) | ![shgaustmt-_frame.png](/img/java/shgaustmt-_frame.png) | ![shgpustmt-_noframe.png](/img/java/shgpustmt-_noframe.png)
+Hostile Anticipated | ![shgaustmt.png](/img/java/shgaustmt.png) `shgaustmt------.png` |  |  | ![shgaustmt-_noframe.png](/img/java/shgaustmt-_noframe.png)
+Unknown Present | ![sugpustmt.png](/img/java/sugpustmt.png) `sugpustmt------.png` | ![sugpustmt-_frame.png](/img/java/sugpustmt-_frame.png) | ![sugaustmt-_frame.png](/img/java/sugaustmt-_frame.png) | ![sugpustmt-_noframe.png](/img/java/sugpustmt-_noframe.png)
+Unknown Anticipated | ![sugaustmt.png](/img/java/sugaustmt.png) `sugaustmt------.png` |  |  | ![sugaustmt-_noframe.png](/img/java/sugaustmt-_noframe.png)
 
 Put the icons the icons/war/ directory of the symbology zip file or local symbol directory. See Offline Use for more information on using a local symbol archive. You can create instances of the the new symbols using MilStd2525TacticalSymbol:
 
