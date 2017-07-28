@@ -18,7 +18,7 @@ The applications here demonstrate some of WorldWind's rich capabilities. Also se
 This is the most basic usage of the SDK. It displays the default globe with its default layers. It includes capabilities such as a compass and status bar that are common to most applications, and presents Earth within a star field and with an atmosphere. It requires only 6 lines of code to instantiate everything seen here.
 {{% /panel %}}
 
-{{% panel title="KML Viewer" link="https://worldwind.arc.nasa.gov/java/latest/webstart/kml/KMLViewer.jnlp" imgUrl="/img/java/kmlviewer_01_250.jpg" %}}
+{{% panel title="KML Viewer" link="https://worldwind.arc.nasa.gov/java/latest/webstart/KMLViewer.jnlp" imgUrl="/img/java/kmlviewer_01_250.jpg" %}}
 Demonstrates loading, displaying, and interacting with KML content in WorldWind.
 {{% /panel %}}
 
@@ -28,7 +28,7 @@ This example application demonstrates the SDK WMS capabilities. It features a WM
 To add a server, click on the + tab and enter a url. After the WMS discovery process, the list of available layers is displayed. Select one to add it to the current globe layer list. Unselect it to remove it.
 {{% /panel %}}
 
-{{% panel title="Installing Images and Elevations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/dataimport/InstallImageryAndElevationsDemo.jnlp" imgUrl="/img/java/rasterviewer.png" %}}
+{{% panel title="Installing Images and Elevations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/InstallImageryAndElevationsDemo.jnlp" imgUrl="/img/java/rasterviewer.png" %}}
 The WorldWind Java Installing Imagery And Elevations Demo enables a user to install image data and elevation data from a file on the local hard drive. This data can be installed as a full pyramid of tiles or as a partial pyramid. Installing a full pyramid takes longer and consumes more space on the user's hard drive, but has the best runtime performance. Installing a partial pyramid takes less time and consumes less space on the user's hard drive, but requires that the original data not be moved or deleted.
 {{% /panel %}}
 
@@ -58,7 +58,7 @@ Demonstrates the WorldWind Java controlled airspaces tookit.
 Airspaces feature 3D volumes controlled by geographic coordinates and upper- and lower- altitude boundaries. Airspaces optionally conform to the terrain as you move them. They demonstrate what's possible in terms of dynamic manipulation of data in 3D space.
 {{% /panel %}}
 
-{{% panel title="Analytic Surface" link="https://worldwind.arc.nasa.gov/java/latest/webstart/analytics/AnalyticSurface.jnlp" imgUrl="/img/java/analyticsurface_01_250.jpg" %}}
+{{% panel title="Analytic Surface" link="https://worldwind.arc.nasa.gov/java/latest/webstart/AnalyticSurface.jnlp" imgUrl="/img/java/analyticsurface_01_250.jpg" %}}
 Demonstrates visual representation of scalar values over a grid of geographic positions. AnalyticSurface supports dynamic scalar data by providing a simple, high throughput rendering pipeline for the application.
 
 This demonstrates two unique surface types:
@@ -99,13 +99,13 @@ It proves particularly useful to explore the ocean floors where the bathymetry d
 This example shows the latest earthquakes over a flat world projection. It allows you to see the whole globe at once while retaining the capability to zoom onto the surface and still experience 3D terrain.
 {{% /panel %}}
 
-{{% panel title="Anaglyph Stereo" link="https://worldwind.arc.nasa.gov/java/latest/webstart/Stereo.jnlp" imgUrl="/img/java/anaglyphstereo_01_250.jpg" %}}
+{{% panel title="Anaglyph Stereo" link="https://worldwind.arc.nasa.gov/java/latest/webstart/AnaglyphStereo.jnlp" imgUrl="/img/java/anaglyphstereo_01_250.jpg" %}}
 This is essentially the above application template but with anaglyph stereo viewing capability. It allows you to explore the world in 'real' 3D using red and cyan glasses with the red filter over the left eye.
 
 To get a comfortable experience use the slider to adjust the interocular distance.
 {{% /panel %}}
 
-{{% panel title="Multi-Window View Volume" link="https://worldwind.arc.nasa.gov/java/latest/webstart/multiwindow/ViewVolumeViewer.jnlp" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
+{{% panel title="Multi-Window View Volume" link="https://worldwind.arc.nasa.gov/java/latest/webstart/MultiWindowViewVolume.jnlp" imgUrl="/img/java/multiwindowviewvolume_01_250.jpg" %}}
 Demonstrates WorldWind Java SDK support for rendering globes in multiple application windows. WorldWind automatically shares resources wherever possible across multiple windows in a single runtime environment.
 {{% /panel %}}
 
