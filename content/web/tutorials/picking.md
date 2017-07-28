@@ -5,7 +5,7 @@ draft: false
 listdescription: "Picking capabilities and setup."
 ---
 
-### Picking
+## Picking
 
 Picking is performed by the World Window. There are four flavors of picking:
 

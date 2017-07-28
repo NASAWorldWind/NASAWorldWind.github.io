@@ -9,7 +9,7 @@ listdescription: "Notes on the fundamental WorldWind object."
 
 WorldWindow is the fundamental Web WorldWind object. It represents the presence of Web WorldWind in the web page. Almost all interactions between the app and Web WorldWind occur through a World Window.
 
-A World Window encapsulates an HTML canvas element. The app developer is responsible for creating the canvas, typically by defining a <canvas> element in static HTML. The canvas is given an ID and that ID is handed to the WorldWindow constructor to tell the World Window its drawing surface. The World Window directs all drawing to that canvas. Here’s an example of creating a World Window for a canvas whose ID is “canvasOne”:
+A World Window encapsulates an HTML canvas element. The app developer is responsible for creating the canvas, typically by defining a `<canvas>` element in static HTML. The canvas is given an ID and that ID is handed to the WorldWindow constructor to tell the World Window its drawing surface. The World Window directs all drawing to that canvas. Here’s an example of creating a World Window for a canvas whose ID is “canvasOne”:
 
 ```javascript
 var wwd = new WorldWind.WorldWindow("canvasOne");
