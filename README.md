@@ -1,4 +1,4 @@
-<img src="https://cdn.earthdata.nasa.gov/eui/latest/docs/assets/ed-logos/meatball_hover_2x.png"/>
+![NASA Meatball]("static/img/meatball_hover_2x.png")
 
 # NASAWorldWind.github.io
 
