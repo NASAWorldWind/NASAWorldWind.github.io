@@ -1,4 +1,4 @@
-![NASA Meatball](static/img/meatball_hover_2x.png)
+![NASA Meatball](static/img/nasa-logo.svg)
 
 # NASA WorldWind Team
 
