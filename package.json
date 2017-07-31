@@ -1,0 +1,19 @@
+{
+  "name": "nasaworldwind-github-io",
+  "version": "0.1.0",
+  "description": "NASA WorldWind organization website",
+  "scripts": {
+    "build": "hugo --verbose",
+    "serve": "hugo server --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NASAWorldWind/NASAWorldWind.github.io.git"
+  },
+  "author": "NASA",
+  "license": "NASA-1.3",
+  "bugs": {
+    "url": "https://github.com/NASAWorldWind/NASAWorldWind.github.io/issues"
+  },
+  "homepage": "https://github.com/NASAWorldWind/NASAWorldWind.github.io#readme"
+}
