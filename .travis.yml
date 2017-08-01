@@ -2,8 +2,8 @@
 # For more information see https://docs.travis-ci.com/user/customizing-the-build/
 
 # Use the Trusty build environment for snap package support. See the Travis CI documentation https://docs.travis-ci.com/user/installing-dependencies#Installing-Snap-Packages
-sudo: true
 dist: trusty
+sudo: required
 
 # Set up to run the JavaScript build script per the Travis CI documentation
 language: node_js
