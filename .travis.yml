@@ -1,6 +1,10 @@
 # Directs the Travis CI build service for the WorldWind organization website
 # For more information see https://docs.travis-ci.com/user/customizing-the-build/
 
+# Use the Trusty build environment for snap support. See the Travis CI documentation https://docs.travis-ci.com/user/reference/trusty/
+dist: trusty
+sudo: required
+
 # Set up to run the JavaScript build script per the Travis CI documentation
 language: node_js
 
@@ -9,7 +13,7 @@ node_js:
   - "6"
 
 # Install Hugo from a binary package. See the Travis CI documentation https://docs.travis-ci.com/user/installing-dependencies
-install:
+before_install:
   - sudo apt-get update -q
   - sudo apt-get install snapd -y
   - sudo snap install hugo
