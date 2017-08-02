@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    hugo/linux/hugo "$@"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    hugo/macos/hugo "$@"
+else
+    echo "hugow not supported on this platform: $OSTYPE"
+fi
