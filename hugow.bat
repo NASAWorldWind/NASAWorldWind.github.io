@@ -1,0 +1,1 @@
+hugo\win\hugo.exe %*
