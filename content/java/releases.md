@@ -1,5 +1,5 @@
 ---
-title: "Releases"
+title: "WorldWind Java Releases"
 date: 2017-07-27T13:47:01-05:00
 draft: false
 ---

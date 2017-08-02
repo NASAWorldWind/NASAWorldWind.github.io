@@ -1,5 +1,5 @@
 ---
-title: "Get Started"
+title: "WorldWind Java Get Started"
 date: 2017-07-27T09:50:17-05:00
 draft: false
 ---

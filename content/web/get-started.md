@@ -1,5 +1,5 @@
 ---
-title: "Get Started"
+title: "Web WorldWind Get Started"
 date: 2017-07-27T11:21:56-05:00
 draft: false
 ---

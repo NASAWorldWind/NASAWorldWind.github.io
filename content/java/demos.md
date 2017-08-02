@@ -1,5 +1,5 @@
 ---
-title: "Demos"
+title: "WorldWind Java Demos"
 date: 2017-07-13T00:02:06-04:00
 draft: false
 ---
