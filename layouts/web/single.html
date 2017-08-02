@@ -3,10 +3,7 @@
 {{ end }}
 
 {{ define "main-block" }}
-    <div class="container">
-        <h2>Web WorldWind</h2>
-    </div>
-    {{ partial "web-navigation.html" . }}
+    {{ partial "web-header.html" . }}
     <div class="container">
         {{ .Content }}
     </div>
