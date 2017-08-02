@@ -37,11 +37,11 @@ The API for picking is all on the WorldWindow object. The methods are:
 pick for normal and deep picking
 pickTerrain for terrain picking
 pickShapesInRegion for region picking
-For deep picking you set the World Window’s deepPicking property prior to calling the pick method.
+For deep picking you set the WorldWindow’s deepPicking property prior to calling the pick method.
 
 ### Pick Point and Pick Region
 
-The pick point and pick region are specified in screen coordinates, but coordinates relative to the World Window’s canvas. Those coordinates can be easily computed using the canvasCoodinates method of the WorldWindow object, as follows in this call to pick:
+The pick point and pick region are specified in screen coordinates, but coordinates relative to the WorldWindow’s canvas. Those coordinates can be easily computed using the canvasCoodinates method of the WorldWindow object, as follows in this call to pick:
 
 ```javascript
 var pickList = wwd.pick(wwd.canvasCoordinates(x, y));
