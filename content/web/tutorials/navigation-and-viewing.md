@@ -7,18 +7,18 @@ listdescription: "Positioning and orienting the view."
 
 ## Navigation and Viewing
 
-As the user interacts with the globe, panning, zooming and tilting, it’s the World Window’s Navigator that translates the user’s movements into operations on the globe. Each World Window has one navigator. That navigator is responsible for the view onto the globe. A navigator is created automatically when you create a WorldWindow.
+As the user interacts with the globe, panning, zooming and tilting, it’s the WorldWindow’s Navigator that translates the user’s movements into operations on the globe. Each WorldWindow has one navigator. That navigator is responsible for the view onto the globe. A navigator is created automatically when you create a WorldWindow.
 
 Topics on this page:
 
-- [Controlling the View from the World Window](#controlling-view)
+- [Controlling the View from the WorldWindow](#controlling-view)
 - [Controlling the Navigator](#controlling-navigator)
 - [GoTo Animator](#goto)
 - [Geocoders](#geocoders)
 
-### <a name="controlling-view"></a>Controlling the View from the World Window
+### <a name="controlling-view"></a>Controlling the View from the WorldWindow
 
-If all you want to do is move the view to a geographic location or position (a location with altitude), you can use the goTo function of WorldWindow to do that. The GoToLocation example does this. You can directly modify the properties of the World Window’s GoToAnimator to change the go-to travel time or update frequency, or to cancel a previously requested go-to request.
+If all you want to do is move the view to a geographic location or position (a location with altitude), you can use the goTo function of WorldWindow to do that. The GoToLocation example does this. You can directly modify the properties of the WorldWindow’s GoToAnimator to change the go-to travel time or update frequency, or to cancel a previously requested go-to request.
 
 ### <a name="controlling-navigator"></a>Controlling the Navigator
 
@@ -32,16 +32,16 @@ The navigator has two primary properties allowing control:
 By specifying these properties the app can move the user to any point around the globe, as in this example:
 
 ```javascript
-// Get a reference to the World Window.
+// Get a reference to the WorldWindow.
 var wwd = ...
 
 // Adjust the Navigator to place Alaska in the center of the
-// World Window.
+// WorldWindow.
 wwd.navigator.lookAtLocation.latitude = 65;
 wwd.navigator.lookAtLocation.longitude = -150;
 wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
 
-// Redraw the World Window.
+// Redraw the WorldWindow.
 wwd.redraw();
 ```
 

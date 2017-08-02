@@ -42,7 +42,7 @@ public class GeoPackageFragment extends BasicGlobeFragment {
             new LayerFactory.Callback() {
                 @Override
                 public void creationSucceeded(LayerFactory factory, Layer layer) {
-                    // Add the finished GeoPackage layer to the World Window.
+                    // Add the finished GeoPackage layer to the WorldWindow.
                     getWorldWindow().getLayers().addLayer(layer);
                     // Place the viewer directly over the GeoPackage image.
                     getWorldWindow().getNavigator().setLatitude(36.8139677556754);

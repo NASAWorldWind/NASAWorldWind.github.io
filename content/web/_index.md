@@ -8,9 +8,9 @@ draft: false
 
 Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages include Web WorldWind to provide one or more virtual globes on that page.  The European Space Agency is now partnering with NASA on development.
 
-- [Get Started](/web/get-started/) shows how to use Web World Wind
-- [Features](/web/features/) describes Web World Wind’s capabilities
-- [Examples](/web/examples/) presents Web World Wind’s example code
+- [Get Started](/web/get-started/) shows how to use Web WorldWind
+- [Features](/web/features/) describes Web WorldWind’s capabilities
+- [Examples](/web/examples/) presents Web WorldWind’s example code
 - [Common Problems](/web/tutorials/common-problems/) gives solution to typical problems
 - [Tutorials](/web/tutorials/) explains Web WorldWind in depth
 

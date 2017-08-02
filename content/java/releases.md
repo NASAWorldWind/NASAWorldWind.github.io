@@ -18,11 +18,11 @@ With the release of v2.1.0 all NASA WorldWind map services (imagery, terrain, pl
 
 2.0.0 differs from release 1.5.1 primarily in its use of JOGL 2 vs. 1.5.1’s use of JOGL 1.
 
-Note: JOGL 2 performs runtime extraction of native binaries. Some deployment situations may not allow this because it extracts the binaries to the application user’s temp directory. Runtime extraction can be avoided by following the instructions in World Wind’s README.txt file in the “New features and improvements in WorldWind Java SDK 2.0.0” section.
+Note: JOGL 2 performs runtime extraction of native binaries. Some deployment situations may not allow this because it extracts the binaries to the application user’s temp directory. Runtime extraction can be avoided by following the instructions in WorldWind’s README.txt file in the “New features and improvements in WorldWind Java SDK 2.0.0” section.
 
 ### Release 1.5.1, July 24, 2013
 
-This release is a patch for Release 1.5 that repairs a geo-referencing issue with World Wind’s DTED elevation importer. See the release’s README.txt file for a complete list of changes.
+This release is a patch for Release 1.5 that repairs a geo-referencing issue with WorldWind’s DTED elevation importer. See the release’s README.txt file for a complete list of changes.
 
 Note: The changes made for Release 1.5.1 have also been applied to the WorldWind 2.0 Current Development Release.
 
@@ -40,7 +40,7 @@ This release adds support for Mil-Std 2525C and the KML NetworkLinkControl eleme
 
 ### Release 1.2, July 19, 2011
 
-This is World Wind’s first public formal release. It’s undergone significant testing and contains important documentation that was missing from the previous “pre-alpha” daily releases. It also initiates a portal — this site — that gathers into one place all information relative to understanding and using WorldWind and its API.
+This is WorldWind’s first public formal release. It’s undergone significant testing and contains important documentation that was missing from the previous “pre-alpha” daily releases. It also initiates a portal — this site — that gathers into one place all information relative to understanding and using WorldWind and its API.
 
 This release of WorldWind operates on all platforms WorldWind has historically supported: OS X, Windows 32 & 64, Linux 32 & 64. It is expected to work on Solaris but has not been tested on that platform.
 

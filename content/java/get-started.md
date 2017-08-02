@@ -6,7 +6,7 @@ draft: false
 
 ## Get Started
 
-WorldWind is an SDK (software development kit) that software engineers can use to build their own applications. To run a WorldWind demo application, visit the [Demos](/java/demos/) page. Follow these instructions to download, run, and deploy an application using World Wind.
+WorldWind is an SDK (software development kit) that software engineers can use to build their own applications. To run a WorldWind demo application, visit the [Demos](/java/demos/) page. Follow these instructions to download, run, and deploy an application using WorldWind.
 
 ---
 

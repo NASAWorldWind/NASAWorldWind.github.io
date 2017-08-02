@@ -32,7 +32,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ApplicationTemplate** -  Provides a base application framework for simple WorldWind examples.
 
-**Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of World Wind.
+**Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of WorldWind.
 
 ### Layers
 
@@ -68,11 +68,11 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **DataInstallerAp** - Provides an interactive means to install data on the client.
 
-**Shapefiles** -  Illustrates how to import ESRI Shapefiles into World Wind.
+**Shapefiles** -  Illustrates how to import ESRI Shapefiles into WorldWind.
 
 **ExtrudedPolygonsFromShapefile** -  Shows how to load extruded shapes from Shapefiles.
 
-**VPFLayerDemo** -  Illustrates how to import data from a Vector Product Format (VPF) database into World Wind.
+**VPFLayerDemo** -  Illustrates how to import data from a Vector Product Format (VPF) database into WorldWind.
 
 **FlatWorldEartquakes** -  Demonstrates how to use the EarthFlat and FlatOrbitView to display USGS’ latest earthquakes RSS feed.
 
@@ -152,7 +152,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **WebBrowserBalloons** -  Illustrates how to use WorldWind browser balloons to display HTML, JavaScript, and Flash content to the user in the form of a screen-aligned balloon.
 
-**TacticalGraphics and TacticalSymbol** - Shows examples of World Wind’s 2525C implementation.
+**TacticalGraphics and TacticalSymbol** - Shows examples of WorldWind’s 2525C implementation.
 
 **Markers** -  Displays Markers (small shapes) in different shapes and colors.
 
@@ -204,7 +204,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **FlatWorld** -  Demonstrates how to display a flat globe instead of a round globe.
 
-**ConfiguringGLRuntimeCapabilities** -  Illustrates how to configure World Wind’s OpenGL features using a GLRuntimeCapabilities.
+**ConfiguringGLRuntimeCapabilities** -  Illustrates how to configure WorldWind’s OpenGL features using a GLRuntimeCapabilities.
 
 **CustomElevationModel** -  Illustrates how to configure WorldWind with a custom ElevationModel from a configuration file.
 
@@ -238,13 +238,13 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **MeasureToolUsage** -  Shows how to use the MeasureTool to draw a shape on the globe and measure length, area, etc.
 
-**GazeteerApp** -  Shows how to integrate a gazetteer search function into the World Window using the YahooGazetteer.
+**GazeteerApp** -  Shows how to integrate a gazetteer search function into the WorldWindow using the YahooGazetteer.
 
 **DataCacheViewer** -  Shows how to build a tool to allow the user to view and delete cached WorldWind files based on how old they are.
 
 ### Multiwindow
 
-**MultiFrame** -  Shows how to create two World Windows, each in its own JFrame. The World Windows share a globe and some layers.
+**MultiFrame** -  Shows how to create two WorldWindows, each in its own JFrame. The WorldWindows share a globe and some layers.
 
 **CardLayoutUsage** -  Illustrates how to use multiple WorldWind windows with a CardLayout layer manager.
 
