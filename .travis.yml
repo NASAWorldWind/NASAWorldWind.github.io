@@ -4,7 +4,7 @@
 # Build the site
 script:
   - source setup.sh
-  - hugo version
+  - hugo
 
 # Deploy the site to GitHub Pages after a push to the develop branch. Travis does not invoke this step for pull request builds.
 #deploy:
