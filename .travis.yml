@@ -1,15 +1,9 @@
 # Directs the Travis CI build service for the WorldWind organization website
 # For more information see https://docs.travis-ci.com/user/customizing-the-build/
 
-# Install Hugo using the snapd system. See the Travis CI documentation https://docs.travis-ci.com/user/installing-dependencies#Installing-Snap-Packages
-before_install:
-  - echo $PATH
-  - source setup.sh
-  - echo $PATH
-
 # Build the site
 script:
-  - hugo --verbose
+  - ./hugo --verbose
 
 # Deploy the site to GitHub Pages after a push to the develop branch. Travis does not invoke this step for pull request builds.
 #deploy:
