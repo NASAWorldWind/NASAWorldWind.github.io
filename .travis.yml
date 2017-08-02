@@ -3,7 +3,8 @@
 
 # Build the site
 script:
-  - ./hugo --verbose
+  - source setup.sh
+  - hugo version
 
 # Deploy the site to GitHub Pages after a push to the develop branch. Travis does not invoke this step for pull request builds.
 #deploy:
