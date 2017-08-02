@@ -7,7 +7,7 @@ listdescription: "Picking capabilities and setup."
 
 ## Picking
 
-Picking is performed by the World Window. There are four flavors of picking:
+Picking is performed by the WorldWindow. There are four flavors of picking:
 
 - Normal picking returns the visible object or terrain at a specified pick point. See PlacemarksAndPicking.js for an example.
 - Deep picking returns all objects at a specified pick point. See DeepPicking.js for an example.

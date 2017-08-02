@@ -40,7 +40,7 @@ public class WmtsLayerFragment extends BasicGlobeFragment {
             new LayerFactory.Callback() {
                 @Override
                 public void creationSucceeded(LayerFactory factory, Layer layer) {
-                    // Add the finished WMTS layer to the World Window.
+                    // Add the finished WMTS layer to the WorldWindow.
                     getWorldWindow().getLayers().addLayer(layer);
                     Log.i("gov.nasa.worldwind", "WMTS layer creation succeeded");
                 }

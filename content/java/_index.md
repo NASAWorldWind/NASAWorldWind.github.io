@@ -8,8 +8,8 @@ draft: false
 
 Looking for Web WorldWind or WorldWind Android? See https://worldwind.arc.nasa.gov.
 
-- [Get Started](/java/get-started/) shows you how to download and run World Wind
-- [Features](/java/features/) describes World Wind’s capabilities
+- [Get Started](/java/get-started/) shows you how to download and run WorldWind
+- [Features](/java/features/) describes WorldWind’s capabilities
 - [Demos](/java/demos/) showcases WorldWind applications and applets
 - [Examples](/java/examples) presents over 90 WorldWind example programs and applets
 - [Common Problems](/java/tutorials/common-problems/) gives solutions to typical programming problems

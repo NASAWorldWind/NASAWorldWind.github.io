@@ -60,7 +60,7 @@ This tutorial sets up a project from scratch and inserts a WorldWind globe in a 
     ```
     Second, create an instance of a WorldWindow in MainActivity.java and attach to the FrameLayout. The following code snippet should be added to the MainActivity's onCreate() method.
     ```java
-    // Create a World Window (a GLSurfaceView)...
+    // Create a WorldWindow (a GLSurfaceView)...
     WorldWindow wwd = new WorldWindow(getApplicationContext());
     // ... and add some map layers
     wwd.getLayers().addLayer(new BackgroundLayer());
@@ -119,7 +119,7 @@ This tutorial sets up a project from scratch and inserts a WorldWind globe in a 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            // Create a World Window (a GLSurfaceView)...
+            // Create a WorldWindow (a GLSurfaceView)...
             WorldWindow wwd = new WorldWindow(getApplicationContext());
             // ... and add some map layers
             wwd.getLayers().addLayer(new BackgroundLayer());

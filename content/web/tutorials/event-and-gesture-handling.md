@@ -7,9 +7,9 @@ listdescription: "How to manage cursor or tactile input."
 
 ## Event and Gesture Handling
 
-Applications can generally monitor and respond to JavaScript events as they normally would. But because the World Window’s navigator is monitoring mouse and touch events to enable the user to manipulate the globe, some coordination between the application’s event handling and the navigator’s event handling is necessary. Web WorldWind does not monitor keyboard events, so no coordination is necessary for those.
+Applications can generally monitor and respond to JavaScript events as they normally would. But because the WorldWindow’s navigator is monitoring mouse and touch events to enable the user to manipulate the globe, some coordination between the application’s event handling and the navigator’s event handling is necessary. Web WorldWind does not monitor keyboard events, so no coordination is necessary for those.
 
-If your application is to work on conventional and mobile devices, it should monitor both mouse events and gestures if it wants to respond to user input beyond what the World Window’s navigator already does. Web WorldWind examples such as PlacemarksAndPicking.js and GoToLocation.js do this.
+If your application is to work on conventional and mobile devices, it should monitor both mouse events and gestures if it wants to respond to user input beyond what the WorldWindow’s navigator already does. Web WorldWind examples such as PlacemarksAndPicking.js and GoToLocation.js do this.
 
 ### Monitoring Mouse Events
 
