@@ -13,6 +13,7 @@ The applications here demonstrate some of WorldWind's rich capabilities. Also se
 - Up to date video card drivers
 - Oracle Java Runtime Environment (JRE) 1.7.0
 - Java and OpenGL setup can be tested using JOGL demo site.
+<br></br>
 
 {{% panel title="Application Template" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ApplicationTemplate.jnlp" imgUrl="/img/java/applicationtemplate_01_250.jpg" %}}
 This is the most basic usage of the SDK. It displays the default globe with its default layers. It includes capabilities such as a compass and status bar that are common to most applications, and presents Earth within a star field and with an atmosphere. It requires only 6 lines of code to instantiate everything seen here.
