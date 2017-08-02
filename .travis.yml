@@ -4,7 +4,6 @@
 # Install Hugo using the snapd system. See the Travis CI documentation https://docs.travis-ci.com/user/installing-dependencies#Installing-Snap-Packages
 before_install:
   - echo $PATH
-  - hugo version
   - source setup.sh
   - echo $PATH
 
