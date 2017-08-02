@@ -4,7 +4,6 @@
 # Build the site
 script:
   - ./hugow --verbose
-  - /snap/bin/hugo --verbose
 
 # Deploy the site to GitHub Pages after a push to the develop branch. Travis does not invoke this step for pull request builds.
 deploy:
