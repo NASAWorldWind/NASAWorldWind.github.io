@@ -15,7 +15,7 @@ This page lists all of the tactical graphics defined in [MIL-STD-2525C](https://
 - [Appendix C, Meteorological and Oceanographic](#metoc)
 - [Appendix G, Emergency Management](#ems)
 
-### <a name="tacgrp"></a>Appendix B, Tactical Graphics
+## <a name="tacgrp"></a>Appendix B, Tactical Graphics
 
 Hierarchy | Description | Supported
 --- | --- | ---
@@ -471,7 +471,7 @@ TACGRP.OTH.FIX.ACU | Acoustic | Yes
 TACGRP.OTH.FIX.EM | Electro-Magnetic | Yes  
 TACGRP.OTH.FIX.EOP | Electro-Optical | Yes
 
-### <a name="metoc"></a>Appendix C, Meteorological and Oceanographic
+## <a name="metoc"></a>Appendix C, Meteorological and Oceanographic
 
 Hierarchy | Description | Supported
 --- | --- | ---
@@ -823,7 +823,7 @@ OCA.MMD.OLRGFD | Oil/gas rig field |
 OCA.MMD.PPELNE | Pipelines/pipe |   
 OCA.MMD.PLE | Pile/piling/post | Yes  
 
-### <a name="ems"></a>Appendix G, Emergency Management
+## <a name="ems"></a>Appendix G, Emergency Management
 
 Hierarchy | Description | Supported
 --- | --- | --- 

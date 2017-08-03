@@ -15,7 +15,7 @@ A Tactical Graphic is a graphic defined by a symbol set. A graphic can be an ico
 
 Run the [Tactical Graphics Demo](https://worldwind.arc.nasa.gov/java/latest/webstart/TacticalGraphics.jnlp).
 
-### Overview
+## Overview
 
 This guide shows how to use tactical graphics in your application, and is organized into in four sections:
 
@@ -24,7 +24,7 @@ This guide shows how to use tactical graphics in your application, and is organi
 3. [Modifiers](#modifiers)
 4. [Display Options](#display-options)
 
-### <a name="construction"></a>Construction
+## <a name="construction"></a>Construction
 
 Each graphic within a symbol set has a unique identifier. Tactical graphics are typically created by an instance of TacticalGraphicFactory. The factory interface defines several methods:
 
@@ -105,7 +105,7 @@ The symbol identifier (GHGAGLP----AUSX) tells the factory what type of graphic t
 
 Most graphics also support modifiers which are not part of the symbol identifier. In the example above we added a text modifier of “Alpha” to identify our phase line. These parameters can be specified using a parameter list when the TacticalGraphic is created. See Modifiers for more information on setting modifiers.
 
-### <a name="position"></a>Position
+## <a name="position"></a>Position
 
 Each tactical graphic is positioned by one or more control points. How many points are required depends on the type of graphic. A point graphic will only require one position. A more complex shape may require three or four, and a line or area may allow any number.
 
@@ -151,7 +151,7 @@ List<Position> newPositions = ... // Get updated positions
 tacticalGraphic.setPositions(newPositions);
 ```
 
-### <a name="modifiers"></a>Modifiers
+## <a name="modifiers"></a>Modifiers
 
 Text and graphic modifiers can be specified in the parameter list when a graphic is created, or using the setters on the TacticalGraphic interface after the graphic has been created.
 
@@ -201,7 +201,9 @@ graphic.setModifier(SymbologyConstants.UNIQUE_DESIGNATION, &amp;quot;Boston&amp;
 
 The set of possible modifiers depends on the symbol set. See MilStd2525TacticalGraphic for a list of modifiers supported by MIL-STD-2525C graphics.
 
-### <a name="display-options"></a>Display Options
+## <a name="display-options"></a>Display Options
+
+<br/>
 
 #### Setting Colors
 
@@ -223,6 +225,8 @@ graphic.setAttributes(attributes);
 
 TacticalGraphicAttributes is used to override a graphic's default attributes. MIL-STD-2525 determines most of a graphic's attributes through the SIDC (friendly graphics default to black, hostile graphics default to red, etc.). Any fields in the attributes bundle that are set will override the defaults specified by the symbol set, while fields left unset will not affect the defaults. This allows an application to easily override a few fields without interfering with other defaults.
 
+<br/>
+
 #### Positioning Modifiers
 
 Sometimes an application will need to reposition an information label within a graphic. By default, labels are positioned according to the templates in MIL-STD-2525, but an application is free to override these defaults using the Offset class.
@@ -240,6 +244,8 @@ Offset offset = new Offset(19d, 8d, AVKey.PIXELS, AVKey.PIXELS);
 // Apply the label position
 graphic.setLabelOffset(offset);
 ```
+
+<br/>
 
 #### Visibility of Modifiers
 

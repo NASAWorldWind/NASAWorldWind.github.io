@@ -15,7 +15,7 @@ This guide shows how to use the IconRetriever interface to retrieve icons for ta
 2. [Parameters](#parameters)
 3. [Example](#example)
 
-### <a name="usage"></a>Usage
+## <a name="usage"></a>Usage
 
 Icons in a symbol set are retrieved using an IconRetriever. The retriever's job is to take the identifier for a symbol and construct a BufferedImage that contains the icon for that symbol. An IconRetriever implementation handles icons for a specific symbol set. This guide will discuss the MilStd2525IconRetriever, which creates icons for symbols in MIL-STD-2525C.
 
@@ -35,7 +35,7 @@ The code above retrieves this image:
 
 ![TacticalSymbol from IconRetriever](/img/java/full-symbol.png)
 
-### <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Parameters
 
 Retrieval parameters are specified as key/value pairs. Each icon retriever may support different parameters. MilStd2525IconRetriever supports the following parameters to control how the symbol is constructed:
 
@@ -63,7 +63,7 @@ Icon Result | Parameters
 ![TacticalSymbol from IconRetriever](/img/java/no-frame-no-fill.png) | Frame: `off`, Fill: `off`, Icon: `on`
 ![TacticalSymbol from IconRetriever](/img/java/no-frame-no-fill-no-icon.png) | Frame: `off`, Fill: `on`, Icon: `off`
 
-### <a name="example"></a>Example
+## <a name="example"></a>Example
 
 The following code creates an instance of the Drone Aircraft graphic with no fill:
 

@@ -12,7 +12,7 @@ listimage: "/img/java/custom-renderable.png"
 
 This tutorial shows how to implement a custom renderable that draws a cube centered on a geographic position. It is intended for developers familiar with OpenGL, who would like to implement a custom WorldWind Renderable. It may be helpful to follow along with the completed tutorial on [GitHub](https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/tutorial/Cube.java).
 
-### Contents
+## Contents
 
 - [How WorldWind Draws a Scene](#how)
 - [Implementing Renderable](#implementing)
@@ -24,7 +24,7 @@ This tutorial shows how to implement a custom renderable that draws a cube cente
 - [Determining if the Cube is Visible](#visibility)
 - [Putting it all together](#together)
 
-### <a name="how"></a>How WorldWind Draws a Scene
+## <a name="how"></a>How WorldWind Draws a Scene
 
 When WorldWind renders a frame, the SceneController sets up the global drawing state, and then asks each Layer in the Model to render itself. Most WorldWind shapes implement the Renderable interface. Renderables can be placed on a RenderableLayer, and will be rendered when the layer is rendered.
 
@@ -36,7 +36,7 @@ Rendering the scene consists of several stages:
 
 See the [Concepts](/java/tutorials/concepts/) article of the Tutorial section for more information on the architecture of WorldWind.
 
-### <a name="implementing"></a>Implementing Renderable
+## <a name="implementing"></a>Implementing Renderable
 
 To draw a cube, we'll write a class that implements Renderable. This object can be added directly to a RenderableLayer.
 
@@ -62,7 +62,7 @@ class Cube implements Renderable
 }
 ```
 
-### <a name="drawstate"></a>Managing Drawing State
+## <a name="drawstate"></a>Managing Drawing State
 
 Before drawing the cube, we need to set up the OpenGL drawing state. We'll do this in a method called beginDrawing. Any state that we change from the WorldWind default must be restored after rendering the cube, or it will cause other objects to render incorrectly. DrawContext.getGL provides access to the OpenGL context that we'll use for drawing.
 
@@ -93,7 +93,7 @@ protected void endDrawing(DrawContext dc)
 }
 ```
 
-### <a name="orienting"></a>Orienting the Cube
+## <a name="orienting"></a>Orienting the Cube
 
 We need set up the OpenGL modelview matrix so that when we draw the cube, it will appear at the correct position on the globe.
 computeSurfaceOrientationAtPosition computes a transform matrix that will map the X axis to the vector tangent to the globe and pointing East. The Y axis is mapped to the vector tangent to the Globe and pointing to the North Pole. The Z axis is mapped to the globe normal at specified position.
@@ -115,7 +115,7 @@ matrix.toArray(matrixArray, 0, false);
 gl.glLoadMatrixd(matrixArray, 0);
 ```
 
-### <a name="draw"></a>Drawing the Cube
+## <a name="draw"></a>Drawing the Cube
 
 The method below that will draw a cube one unit on each side, centered on the origin. This method uses OpenGL immediate mode for simplicity, but real applications should use vertex arrays or vertex buffer objects for best performance.
 
@@ -176,7 +176,7 @@ public void render(DrawContext dc)
 
 ![Cube Oriented to the Surface](/img/java/cube-correct-orientation.png)
 
-### <a name="picking"></a>Picking
+## <a name="picking"></a>Picking
 
 We've implemented code to draw the cube during normal rendering, but we still need to handle selection, or picking. During picking, we need to draw the cube using a unique color, and tell WorldWind that if this color is under the cursor, then the cube is the selected object.
 
@@ -211,7 +211,7 @@ public void render(DrawContext dc)
 
 The image on the left shows a scene drawn in normal rendering mode. The image on the right shows the scene drawn for picking. Each object in the scene is drawn in a unique color. The SceneController looks at the color under the cursor to determine the selected object.
 
-### <a name="ordered"></a>Ordered Rendering
+## <a name="ordered"></a>Ordered Rendering
 
 Our code so far renders the cube at the correct position. However, it does not handle transparency or 2D mode correctly. Let's see what happens if we use our Cube class to draw two cubes. The red cube appears transparent, but you can't see the blue cube through the red cube. Instead you see the terrain behind the blue cube. In order to correct this problem, we need to implement the OrderedRenderable interface. An OrderedRenderable is a Renderable that can tell the SceneController how far it is from the eye point. The SceneController uses this information to draw ordered renderables in a back-to-front order, so that the objects blend correctly.
 
@@ -319,7 +319,7 @@ protected void drawOrderedRenderable(DrawContext dc, PickSupport pickCandidates)
 }
 ```
 
-### <a name="visibility"></a>Determining if the Cube is Visible
+## <a name="visibility"></a>Determining if the Cube is Visible
 
 What we've done so far is enough to draw the cube. But our implementation will draw the cube even if it is not visible in the active view. One of the most effective ways to boost performance is to not draw shapes that are not visible. We'll add some code that checks to make sure that the cube is visible in the active viewport, and that the cube will appear larger than a single pixel.
 
@@ -378,6 +378,6 @@ public void render(DrawContext dc)
 }
 ```
 
-### <a name="together"></a>Putting it all Together
+## <a name="together"></a>Putting it all Together
 
 We've seen how to draw, position, and orient a cube in WorldWind. We've also seen how to implement the cube as an OrderedRenderable, how to handle picking, and how to determine if the cube is visible. The full cube class is available in the WorldWind distribution at gov.nasa.worldwindx.examples.tutorial.Cube.

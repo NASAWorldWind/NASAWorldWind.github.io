@@ -9,11 +9,11 @@ listdescription: "This document describes how custom 3D renderables must be impl
 
 Custom shapes (Renderables) should display correctly in both 3D and 2D modes. This document describes how custom 3D renderables must be implemented to display correctly in 2D mode. It first describes the necessary background and requirements of 2D mode, then presents steps for achieving correct behavior. Before reading this document we strongly advise that you read the custom-shape tutorial and examine the example code for that tutorial.
 
-### An Important Implication of 2D Mode
+## An Important Implication of 2D Mode
 
 In 2D mode the user can view more than 360 degrees of longitude in a single frame. If the view encompasses more than 360 degrees, some geographic locations will be visible in two or more different screen locations. Renderables at those geographic locations must therefore draw themselves at two or more different places on the screen. Additionally, the anti-meridian -- the +/- 180 degree meridian -- may lie at any point on the screen. It may even lie in several different screen locations if the user's view encompasses more than 360 degrees.
 
-### How WorldWind Achieves Continuous 2D Scrolling
+## How WorldWind Achieves Continuous 2D Scrolling
 
 In 3D mode there is one globe and all Renderables in the model are rendered in a single display frame. In 2D mode there are multiple globes, each corresponding to one 180 degree x 360 degree view of the globe (with latitudes between plus and minus 90 degrees and longitudes between plus and minus 180 degrees). To achieve the effect that allows continuous scrolling, WorldWind renders several adjacent flat globes in a single display frame.
 
@@ -25,21 +25,21 @@ Renderables currently use Globe.computePointFromPosition and Globe.computePositi
 
 The number of times a Renderable is drawn is also governed by the geographic projection in effect. Some projections, such as polar projections, do not require multiple adjacent globes.
 
-### Renderables Spanning the Anti-meridian
+## Renderables Spanning the Anti-meridian
 
 In 3D mode, Renderables spanning the anti-meridian typically draw themselves by transforming their geographic locations to Cartesian points and computing their dimensions and shape in Cartesian coordinates. This works well because Cartesian coordinates are continuous at the anti-meridian, unlike geographic coordinates. In 2D mode a globe's Cartesian coordinates are not continuous at the anti-meridian.
 
 Renderables must be programmed to explicitly handle spanning the anti-meridian. Surface shapes automatically handle this case, so one method of adapting 3D Renderables is to draw them with a corresponding surface shape when in 2D mode. If that's not possible, the 3D Renderable must detect when it spans the anti-meridian, split itself accordingly and draw the split portions separately. One example of a WorldWind shape that does this is Path.
 
-### Renderables in the Air
+## Renderables in the Air
 
 Users expect when using 2D mode that any shapes in the air are displayed projected onto the the 2D globe's surface. Therefore in 2D mode Renderables should ignore the altitude component of their geographic locations and drawn themselves as though their altitude mode is effectively CLAMP_TO_GROUND.
 
-### Screen Shapes
+## Screen Shapes
 
 The above relates to only geographically defined Renderables. Screen Renderables, such as ScreenAnnotation, must not draw themselves more than once per frame, since they should appear only once on the screen.
 
-### Steps to Achieve 2D Mode Rendering
+## Steps to Achieve 2D Mode Rendering
 
 The following steps should be followed to ensure that custom Renderables display correctly in 2D mode. The draw context indicates to Renderables whether 2D mode is active. The method DrawContext.is2DGlobe indicates whether 2D mode is in effect. The method DrawContext.isContinuous2DGlobe indicates whether 2D mode is in effect and the projection requires multiple adjacent globes.
 

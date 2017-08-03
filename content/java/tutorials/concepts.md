@@ -25,14 +25,14 @@ In typical usage, applications create a globe and  layers for their data and co
 
 All the objects above can be those provided by WorldWind or those developed by  application developers. Objects implementing a particular interface may be used wherever that interface is called for.
 
-### Data Retrieval
+## Data Retrieval
 
 WorldWind works with enormous quantities of data and information, all of which exist primarily on remote data servers. Retrieval and local caching of that data is therefore a necessary and primary feature of WorldWind. As remote data is retrieved it is stored in a local disk cache and subsequently used from there. The cache has no fixed size. It can be pruned programmatically by the application. All data retrieval, even retrieval from disk, is performed on background threads.
 
-### Offline Mode
+## Offline Mode
 
 WorldWind's use of the network can be disabled by setting the offline-mode of the WorldWindow. Prior to attempting retrieval of a network resource, WorldWind checks the offline-mode and does not attempt retrieval if it's enabled.
 
-### Picking and Selection
+## Picking and Selection
 
 WorldWind can determine the displayed objects at a given screen position, typically the cursor position, in a WorldWindow. It can also determine the geographic position beneath the cursor. Both of these operations are performed automatically. The results are delivered to the application via Select events, and can also be queried from the WorldWindow.
