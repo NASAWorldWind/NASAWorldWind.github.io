@@ -8,7 +8,7 @@ draft: false
 
 The WorldWind API contains over 100 code examples that show how to perform all manner of tasks, from creating the most basic WorldWind application to using complex, advanced functionality.
 
-Below are brief descriptions of selected example programs.  All examples can be found in **gov.nasa.worldwindx.examples**
+Below are brief descriptions of selected example programs.  All examples can be found in the [WorldWind Java GitHub repository](https://github.com/NASAWorldWind/WorldWindJava/tree/develop/src/gov/nasa/worldwindx/examples).
 
 1. Basics
 2. Layers

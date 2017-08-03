@@ -19,6 +19,6 @@ Looking for Web WorldWind or WorldWind Android? See https://worldwind.arc.nasa.g
 - [GitHub](https://github.com/NASAWorldWind/WorldWindJava/) contains the most up-to-date WorldWind source code
 - [GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases/) has the WorldWind SDK releases
 - [GitHub Issues](https://github.com/NASAWorldWind/WorldWindJava/issues/) lists WorldWind bugs and issues and milestones
-- API Docs gives WorldWind details for developers
-- Forum provides help from the WorldWind community
-- Europa Challenge providing sustainable solutions for the world.
+- [API Docs](https://nasaworldwind.github.io/WorldWindJava/) gives WorldWind details for developers
+- [Forum](https://forum.worldwindcentral.com/) provides help from the WorldWind community
+- [Europa Challenge](http://eurochallenge.como.polimi.it/) providing sustainable solutions for the world.
