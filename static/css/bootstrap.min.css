@@ -3732,7 +3732,6 @@ a.btn.disabled, fieldset[disabled] a.btn {
     line-height: 1.3333333;
     border-radius: 6px;
     margin-top: 30px;
-    margin-left: 43%;
 }
 
 .btn-sm, .btn-group-sm > .btn {
