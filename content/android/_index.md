@@ -4,27 +4,16 @@ date: 2017-06-30T14:40:16-04:00
 draft: false
 ---
 
-## Get Started
+## Complete Guide to WorldWind Android Help Resources
 
-WorldWind Android provides high-resolution terrain and imagery, retrieved from remote servers automatically as needed. You can also provide your own terrain and imagery. WorldWind Android additionally provides a rich collection of shapes that you can use to represent information on the globe or in space.
+- [Get Started](/android/get-started) shows you how to incorporate WorldWind in your Android app
+- [Tutorials](/android/tutorials) explains WorldWind Android in depth
+- [Examples](/android/examples) presents WorldWind Android example activities
+- [API Docs](/android/docs) describes the Web WorldWind API details
 
-The WorldWind Android client is compatible to API level 19 (KitKat 4.4) and up. It displays the globe via the GLSurfaceView.
+## Other Important Links
 
----
-### Download
-
-Download the [latest release](https://bintray.com/nasaworldwind/maven/WorldWindAndroid/_latestVersion) or grab via Gradle:
-```groovy
-compile '{{% latestBintrayVersion url="https://api.bintray.com/packages/nasaworldwind/maven/WorldWindAndroid" %}}'
-```
-
-SNAPSHOT builds are available through [OJO](https://oss.jfrog.org/artifactory/). Add the following repository to your Gradle project:
-```groovy
-maven {
-    url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-}
-```
-Add the latest SNAPSHOT WorldWind Android dependency:
-```groovy
-compile 'gov.nasa.worldwind.android:worldwind:{{% latestOjoVersion url="https://oss.jfrog.org/artifactory/api/search/versions?g=gov.nasa.worldwind.android&a=worldwind&repos=oss-snapshot-local" %}}'
-```
+- [GitHub](https://github.com/NASAWorldWind/WorldWindAndroid/) contains the most up-to-date Web WorldWind source code
+- [GitHub Releases](https://github.com/NASAWorldWind/WorldWindAndroid/releases/) has the WorldWind SDK releases
+- [GitHub Issues](https://github.com/NASAWorldWind/WorldWindAndroid/issues/) lists WorldWind bugs and issues and milestones
+- [Forum](https://forum.worldwindcentral.com) provides help from the Web WorldWind community
