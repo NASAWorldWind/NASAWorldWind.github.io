@@ -10,7 +10,7 @@ WorldWind is an SDK (software development kit) that software engineers can use t
 
 ---
 
-### Run an Application Using WorldWind
+## Run an Application Using WorldWind
 
 1. Download the latest release from the WorldWind [GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases).
 
@@ -36,7 +36,7 @@ Note: All *.dll, *.jnilib, and *.so files in the WorldWind folder must be in the
 
 ---
 
-### Deploy an Application Using Java Web Start
+## Deploy an Application Using Java Web Start
 
 1. Create a Java Web Start Application JNLP File
 Modify the template JNLP file WorldWind/webstart/JavaWebStartTemplate.jnlp to fit your app.

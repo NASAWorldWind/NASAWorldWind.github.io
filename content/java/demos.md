@@ -8,7 +8,7 @@ draft: false
 
 The applications here demonstrate some of WorldWind's rich capabilities. Also see [WorldWind Europa Challenge site](http://eurochallenge.como.polimi.it/) for a collection of applications created by the WorldWind Europa Challenge teams.
 
-### Requirements
+## Requirements
 
 - Up to date video card drivers
 - Oracle Java Runtime Environment (JRE) 1.7.0

@@ -24,7 +24,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 12. Tools
 13. Multiwindow
 
-### Basics
+## Basics
 
 **SimplestPossibleExample** -  Demonstrates the simplest possible way to create a WorldWind application.
 
@@ -34,7 +34,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of WorldWind.
 
-### Layers
+## Layers
 
 **OnScreenLayerManager** -  Demonstrates an on-screen layer manager using LayerManagerLayer.
 
@@ -46,7 +46,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **MGRSGraticule** -  Displays the globe with a MGRS/UTM graticule
 
-### View
+## View
 
 **ViewLookAround** -  Demonstrates how to ‘look around’ a scene by controlling the view’s pitch, heading, roll and field of view, in this case by using a simple set of sliders.
 
@@ -62,7 +62,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ViewControls** -  Shows the ViewControlsLayer and allows you to adjust its size, orientation, and the available controls.
 
-### Data
+## Data
 
 **BulkDownload** -  Illustrates how to use WorldWind to retrieve data from layers and elevation models in bulk from a remote source.
 
@@ -86,7 +86,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **GetBestElevations** -  Retrieve the highest-resolution elevations available for the current elevation model, drawing them from the server if necessary.
 
-### Terrain
+## Terrain
 
 **TerrainProfiler** -  Shows the TerrainProfileLayer in action with its various controls.
 
@@ -100,7 +100,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **DimGlobeSurfac** - Illustrates how to place a layer over the terrain in order to dim it.
 
-### Shapes
+## Shapes
 
 **Shapes** -  Shows how to let the user create path and surface shapes on the globe and modify their parameters with a simple user interface.
 
@@ -142,7 +142,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **RotatedSector** -  Illustrates rotating a Sector-shaped SurfaceQuad from standard position.
 
-### Annotations
+## Annotations
 
 **Annotations** -  Illustrates how to use a WorldWind Annotation to display on-screen information to the user in the form of a text label with an optional image.
 
@@ -170,7 +170,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **GridOfPoints** -  Uses a PointGrid to draw a grid of points on the terrain, spacing them evenly throughout a region defined by a four sided polygon.
 
-### Images
+## Images
 
 **SurfaceImages** -  Demonstrates how to use the SurfaceImage class to place images on the surface of the globe.
 
@@ -182,7 +182,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ScreenImageDragging** -  Demonstrates the use of the ScreenImage class, and shows how to use it to create an image that can be dragged around the screen using the mouse.
 
-### User Interface
+## User Interface
 
 **ContextMenusOnShapes** -  Illustrates how to attach context (popup) menus to shapes.
 
@@ -194,13 +194,13 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **TabbedPaneUsage** -  Demonstrates the use of tabbed panes.
 
-### Network
+## Network
 
 **NetworkOfflineMode** -  Shows how to detach WorldWind from the network and reattach it.
 
 **LocalDataOnly** -  Shows how to operate WorldWind completely locally, drawing data only from local caches.
 
-### Configuration
+## Configuration
 
 **FlatWorld** -  Demonstrates how to display a flat globe instead of a round globe.
 
@@ -210,7 +210,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **Stereo** -  Shows how to configure WorldWind to display the globe in stereo.
 
-### Tools
+## Tools
 
 **LoggingControl** -  Illustrates control and redirection of WorldWind logging.
 
@@ -242,7 +242,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **DataCacheViewer** -  Shows how to build a tool to allow the user to view and delete cached WorldWind files based on how old they are.
 
-### Multiwindow
+## Multiwindow
 
 **MultiFrame** -  Shows how to create two WorldWindows, each in its own JFrame. The WorldWindows share a globe and some layers.
 
