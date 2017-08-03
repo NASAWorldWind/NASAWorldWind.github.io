@@ -11,8 +11,9 @@ draft: false
 - [Demos](/java/demos/) showcases WorldWind applications and applets
 - [Examples](/java/examples) presents over 90 WorldWind example programs and applets
 - [Common Problems](/java/tutorials/common-problems/) gives solutions to typical programming problems
+- [Tutorials](/java/tutorials/) explains WorldWind Java in depth
 
-## Other Important Sites
+## Other Important Links
 
 - [GitHub](https://github.com/NASAWorldWind/WorldWindJava/) contains the most up-to-date WorldWind source code
 - [GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases/) has the WorldWind SDK releases
