@@ -34,11 +34,11 @@ The WorldWindow manages the display of the virtual globe or 2D map. Apps need do
 
 Picking is also provided by the WorldWindow. See this developer’s guide’s section on [Picking](/web/tutorials/picking/) for more information.
 
-### Changing the View
+## Changing the View
 
 See the [Navigation and Viewing](/web/tutorials/navigation-and-viewing/) page to learn how to make the WorldWindow look at a different location on the globe or to otherwise modify its view.
 
-### Event Listeners
+## Event Listeners
 
 A WorldWindow manages all event handlers associated with its canvas. Rather than specifying event handlers directly on the canvas, apps should establish them on the WorldWindow so that it may coordinate event handling with its own. The call to register event handlers is the same as it would be to define event handlers anywhere:
 

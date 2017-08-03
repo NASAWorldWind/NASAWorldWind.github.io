@@ -15,7 +15,7 @@ Deploying Web WorldWind is easy. In fact, unless you want to run it from your ow
 
 To deploy Web WorldWind on your own server, copy the library worldwindlib.js and the images directory from the Web WorldWind release and place them on your web server. The images directory must be a sibling of the library, i.e., exist in the same directory. These files are included in the release zip file.
 
-### Running Locally
+## Running Locally
 
 If you do not already have a web server, you can use Python‘s built in HTTP server.
 

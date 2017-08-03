@@ -19,7 +19,7 @@ Shapes represent the information other than surface imagery that you display on 
 
 The API docs describe these shapes in detail.
 
-### Shape Attributes
+## Shape Attributes
 
 All Web WorldWind shapes have an associated bundle of attributes that you use to control their color and other aspects. For most shapes this is the ShapeAttributes class, but Placemark and GeographicText have their own attributes classes, PlacemarkAttributes and TextAttributes. See the API docs for those classes to learn their properties. Shapes sometimes do not use all the attributes in the associated attribute bundle. The shape’s API doc describes which attributes it does use. Here’s an example of setting Placemark attributes:
 
@@ -37,11 +37,11 @@ The null passed to the PlacemarkAttributes constructor indicates that default va
 
 It’s important to realize that when assigned to a shape an attributes object is not copied, so any subsequent changes to that object will take effect over those in place when the attributes were assigned to the shape. To avoid any problems because of this it’s often best to create a new attributes object for each shape. You would not do this, however, if several shapes will have the same attributes continually. In that case you could share a single attributes object among the shapes.
 
-### Highlighting and Highlight Attributes
+## Highlighting and Highlight Attributes
 
 Shapes contain two sets of attributes, one for normal display and one for highlighted display. Each shape has a boolean highlighted property that the app can specify. If the property is false, the shape’s normal attributes are used. If the property is true, the shape’s highlighted attributes are used. This provides shape highlighting by simply modifying a single flag. Normally the highlight attributes are identical to the normal attributes except for one or two properties, such as color or scale. Initially a shape’s highlight attributes are null, in which case the shape’s normal attributes are used even when the shape’s highlighted property is true.
 
-### Path Type
+## Path Type
 
 Path, Polygon and Surface Shapes have a pathType property that controls how the path or the shape’s edges are formed. There are three possible values:
 
@@ -51,7 +51,7 @@ Path, Polygon and Surface Shapes have a pathType property that controls how the 
 
 The default for all shapes is *WorldWind.GREAT_CIRCLE*.
 
-### Altitude Mode
+## Altitude Mode
 
 All shapes defined by geographic positions have an altitudeMode property that indicates the relationship of the positions’ altitudes relative to the terrain. There are three possible values:
 

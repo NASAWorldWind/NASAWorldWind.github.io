@@ -31,7 +31,7 @@ wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 wwd.redraw();
 ```
 
-### Layer Properties
+## Layer Properties
 
 Layers have the following properties:
 
@@ -47,7 +47,7 @@ See the API doc for Layer for more details.
 
 There are several types of layers. Each defines additional properties that you can use to control the layer’s behavior. See the API doc for the particular layer to discover those properties. The layer type you’re likely to use most is RenderableLayer, which you use to hold shapes. It’s described below. Apps typically create several of these.
 
-### Image Layers
+## Image Layers
 
 Image layers hold imagery that is drawn on the surface of the globe. This is typically global-coverage imagery but need not be. Web WorldWind provides the following image layers:
 
@@ -60,7 +60,7 @@ Image layers hold imagery that is drawn on the surface of the globe. This is typ
 
 You can create your own image layers using TiledImageLayer. The imagery need not span the entire globe.
 
-### Renderable Layer
+## Renderable Layer
 
 You use the RenderableLayer class when you want to display shapes. The layer can hold any number of shapes. Apps typically use renderable layers to group shapes logically. To display a shape, you simply create it using its constructor and add it to a renderable layer:
 

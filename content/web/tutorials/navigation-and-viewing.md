@@ -16,11 +16,11 @@ Topics on this page:
 - [GoTo Animator](#goto)
 - [Geocoders](#geocoders)
 
-### <a name="controlling-view"></a>Controlling the View from the WorldWindow
+## <a name="controlling-view"></a>Controlling the View from the WorldWindow
 
 If all you want to do is move the view to a geographic location or position (a location with altitude), you can use the goTo function of WorldWindow to do that. The GoToLocation example does this. You can directly modify the properties of the WorldWindow’s GoToAnimator to change the go-to travel time or update frequency, or to cancel a previously requested go-to request.
 
-### <a name="controlling-navigator"></a>Controlling the Navigator
+## <a name="controlling-navigator"></a>Controlling the Navigator
 
 Unless an app wants to change the user’s view programmatically, it never needs to interact with the navigator. But it’s certainly possible to direct the navigator from the app itself.
 
@@ -53,11 +53,11 @@ The navigator also has the following properties that the app can set:
 - tilt — The navigator’s tilt, in degrees. A value of 0 points the user straight down on the globe. A value of 90 views the horizon.
 - roll — The navigator’s angle around an imaginary line from the eye position to the look-at location. This property normally stays set to 0.
 
-### <a name="goto"></a>GoTo Animator
+## <a name="goto"></a>GoTo Animator
 
 To change the navigator smoothly, use the GoToAnimator class. You can see example usage in LayerManager.js. To  use this class you pass its goTo function either a Location or a Position. Use a Location if you want the start and end positions to have the same altitude. Use a Position if you want the end position to have a different altitude than the start position. You can change the time it takes to perform the animation via the *travelTime* property.
 
-### <a name="geocoders"></a>Geocoders
+## <a name="geocoders"></a>Geocoders
 
 Geocoders convert query strings identifying places to geographic locations and other useful information. Web WorldWind provides the NominatimGeocoder that uses Open Street Map’s Nominatim geocoder at MapQuest. An example of its usage is in LayerManager.js.
 

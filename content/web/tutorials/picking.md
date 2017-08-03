@@ -20,7 +20,7 @@ Picking is initiated by the app using the API on the WorldWindow object. It’s 
 
 Picking is fast, much faster than actually drawing the scene. But apps should invoke picking judiciously because it does require both CPU and GPU resources.
 
-### Pick Return
+## Pick Return
 
 All flavors of picking return a PickedObjectList containing an array of PickedObjects. Each PickedObject identifies the individual item that was picked. Included in that object is a reference to the picked shape and a flag indicating whether the picked object is the top-most object in the returned collection of picked objects. In the case of normal picking there will be at most one picked shape identified, and its isOnTop property will be true. In the case of deep picking there may be several picked objects, but only one will be marked as the top-most. This top-most object may be the terrain, as described below.
 
@@ -30,7 +30,7 @@ In all flavors of picking but region picking, the picked object list may contain
 
 Also included in the picked object is the parent layer of the picked shape. See the API doc for PickedObject for further details.
 
-### Picking Interface
+## Picking Interface
 
 The API for picking is all on the WorldWindow object. The methods are:
 
@@ -39,7 +39,7 @@ pickTerrain for terrain picking
 pickShapesInRegion for region picking
 For deep picking you set the WorldWindow’s deepPicking property prior to calling the pick method.
 
-### Pick Point and Pick Region
+## Pick Point and Pick Region
 
 The pick point and pick region are specified in screen coordinates, but coordinates relative to the WorldWindow’s canvas. Those coordinates can be easily computed using the canvasCoodinates method of the WorldWindow object, as follows in this call to pick:
 
