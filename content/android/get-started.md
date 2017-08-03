@@ -17,7 +17,7 @@ Compatible with Android 4.1 (Jelly Bean) and newer.
 
 Download the [latest release](https://bintray.com/nasaworldwind/maven/WorldWindAndroid/_latestVersion) or grab via Gradle:
 ```groovy
-compile '{{% latestBintrayVersion url="https://api.bintray.com/packages/nasaworldwind/maven/WorldWindAndroid" %}}'
+compile 'gov.nasa.worldwind.android:worldwind:0.6.0'
 ```
 
 ## Snapshots
