@@ -61,7 +61,6 @@ dfn {
 
 h1 {
     font-size: 2em;
-    margin-left: 30px;
 }
 
 mark {
@@ -7429,4 +7428,8 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
     height: 60px;
     width: 60px;
     float: left;
+}
+
+#bootstrap-override-h1 {
+    margin-left: 30px;
 }
