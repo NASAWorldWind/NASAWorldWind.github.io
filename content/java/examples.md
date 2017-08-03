@@ -6,6 +6,8 @@ draft: false
 
 ## Examples
 
+---
+
 The WorldWind API contains over 100 code examples that show how to perform all manner of tasks, from creating the most basic WorldWind application to using complex, advanced functionality.
 
 Below are brief descriptions of selected example programs.  All examples can be found in the [WorldWind Java GitHub repository](https://github.com/NASAWorldWind/WorldWindJava/tree/develop/src/gov/nasa/worldwindx/examples).
@@ -24,6 +26,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 12. Tools
 13. Multiwindow
 
+---
+
 ## Basics
 
 **SimplestPossibleExample** -  Demonstrates the simplest possible way to create a WorldWind application.
@@ -33,6 +37,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **ApplicationTemplate** -  Provides a base application framework for simple WorldWind examples.
 
 **Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of WorldWind.
+
+---
 
 ## Layers
 
@@ -45,6 +51,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **Graticule** -  Displays the globe with a latitude and longitude graticule (latitude and longitude grid)
 
 **MGRSGraticule** -  Displays the globe with a MGRS/UTM graticule
+
+---
 
 ## View
 
@@ -61,6 +69,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **KeepingObjectsInView** -  Demonstrates keeping a set of scene elements visible by using the utility class ExtentVisibilitySupport.
 
 **ViewControls** -  Shows the ViewControlsLayer and allows you to adjust its size, orientation, and the available controls.
+
+---
 
 ## Data
 
@@ -86,6 +96,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **GetBestElevations** -  Retrieve the highest-resolution elevations available for the current elevation model, drawing them from the server if necessary.
 
+---
+
 ## Terrain
 
 **TerrainProfiler** -  Shows the TerrainProfileLayer in action with its various controls.
@@ -99,6 +111,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **DetailHints** -  Illustrates how to control the detail of ElevationModel and TiledImageLayer using their detail hint properties.
 
 **DimGlobeSurfac** - Illustrates how to place a layer over the terrain in order to dim it.
+
+---
 
 ## Shapes
 
@@ -142,6 +156,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **RotatedSector** -  Illustrates rotating a Sector-shaped SurfaceQuad from standard position.
 
+---
+
 ## Annotations
 
 **Annotations** -  Illustrates how to use a WorldWind Annotation to display on-screen information to the user in the form of a text label with an optional image.
@@ -170,6 +186,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **GridOfPoints** -  Uses a PointGrid to draw a grid of points on the terrain, spacing them evenly throughout a region defined by a four sided polygon.
 
+---
+
 ## Images
 
 **SurfaceImages** -  Demonstrates how to use the SurfaceImage class to place images on the surface of the globe.
@@ -181,6 +199,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **VideoOnTerrain** -  Illustrates how you might show video on the globe’s surface.
 
 **ScreenImageDragging** -  Demonstrates the use of the ScreenImage class, and shows how to use it to create an image that can be dragged around the screen using the mouse.
+
+---
 
 ## User Interface
 
@@ -194,11 +214,15 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **TabbedPaneUsage** -  Demonstrates the use of tabbed panes.
 
+---
+
 ## Network
 
 **NetworkOfflineMode** -  Shows how to detach WorldWind from the network and reattach it.
 
 **LocalDataOnly** -  Shows how to operate WorldWind completely locally, drawing data only from local caches.
+
+---
 
 ## Configuration
 
@@ -209,6 +233,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **CustomElevationModel** -  Illustrates how to configure WorldWind with a custom ElevationModel from a configuration file.
 
 **Stereo** -  Shows how to configure WorldWind to display the globe in stereo.
+
+---
 
 ## Tools
 
@@ -241,6 +267,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 **GazeteerApp** -  Shows how to integrate a gazetteer search function into the WorldWindow using the YahooGazetteer.
 
 **DataCacheViewer** -  Shows how to build a tool to allow the user to view and delete cached WorldWind files based on how old they are.
+
+---
 
 ## Multiwindow
 

@@ -8,6 +8,8 @@ draft: false
 
 It’s very easy to get started using Web WorldWind. There’s nothing to download. You simply include a short script in an HTML page, as in this example:
 
+---
+
 ```html
 <!DOCTYPE html>
 <!-- This is a very simple example of using Web WorldWind. -->
@@ -47,6 +49,7 @@ It’s very easy to get started using Web WorldWind. There’s nothing to downlo
 </body>
 </html>
 ```
+---
 
 This example first includes the Web WorldWind library, worldwindlib.js, then creates an HTML5 canvas, then defines a script that creates the WorldWindow and populates it with two image layers and three control layers. Click [this link](http://worldwindserver.net/webworldwind/examples/SimplestExample.html to see the web page it creates in a new window. The page contains an interactive 3D virtual globe. Try zooming in with your mouse wheel or on a mobile device with a pinch gesture. Drag the mouse or your finger to pan around the globe. Drag the right mouse button or your two fingers upward to tilt the globe.
 

@@ -4,7 +4,7 @@ date: 2017-07-10T23:14:25-04:00
 draft: false
 ---
 
-## Complete Guide to WorldWind Java Help Resources
+## Developer's Guide
 
 - [Get Started](/java/get-started/) shows you how to download and run WorldWind
 - [Features](/java/features/) describes WorldWind’s capabilities
@@ -13,7 +13,9 @@ draft: false
 - [Tutorials](/java/tutorials/) explains WorldWind Java in depth
 - [API Docs](https://nasaworldwind.github.io/WorldWindJava/) gives WorldWind details for developers
 
-## Other Important Links
+---
+
+## More Resources
 
 - [GitHub](https://github.com/NASAWorldWind/WorldWindJava/) contains the most up-to-date WorldWind source code
 - [GitHub Releases](https://github.com/NASAWorldWind/WorldWindJava/releases/) has the WorldWind SDK releases

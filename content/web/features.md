@@ -10,6 +10,8 @@ Web WorldWind is a free, open-source virtual globe for web pages. Written in Jav
 
 Web WorldWind provides a rich set of features for displaying and interacting with geographic information. Because Web WorldWind is completely open-source and designed to be extensible, extending the API and functionality is simple and easy to do.
 
+---
+
 ## General Features
 
 - Open-source, high-performance, 3D virtual globe (WGS84) for web pages and web applications
@@ -22,6 +24,8 @@ Web WorldWind provides a rich set of features for displaying and interacting wit
 - Navigation and Viewing, Picking
 - Display multiple globes and maps on the same page
 - Simple to use, extend and modify
+
+---
 
 ## Graphics Capabilities
 
