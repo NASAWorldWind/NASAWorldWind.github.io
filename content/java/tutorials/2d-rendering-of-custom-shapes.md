@@ -1,11 +1,11 @@
 ---
-title: "2D Rendering Of Custom Shapes"
+title: "2D Rendering of Custom Shapes"
 date: 2017-07-14T09:21:33-04:00
 draft: false
 listdescription: "This document describes how custom 3D renderables must be implemented to display correctly in 2D mode."
 ---
 
-## 2D Rendering Of Custom Shapes
+## 2D Rendering of Custom Shapes
 
 Custom shapes (Renderables) should display correctly in both 3D and 2D modes. This document describes how custom 3D renderables must be implemented to display correctly in 2D mode. It first describes the necessary background and requirements of 2D mode, then presents steps for achieving correct behavior. Before reading this document we strongly advise that you read the custom-shape tutorial and examine the example code for that tutorial.
 

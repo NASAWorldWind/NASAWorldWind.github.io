@@ -1,9 +1,8 @@
 ---
-title: "Build A Custom Renderable"
+title: "Build a Custom Renderable"
 date: 2017-07-14T01:37:13-04:00
 draft: false
 listdescription: "How to implement a custom renderable that draws a cube centered on a geographic position."
-listimage: "/img/java/custom-renderable.png"
 ---
 
 {{< fix-tables >}}
@@ -237,62 +236,62 @@ Here are the changes required to support ordered rendering:
 ```java
 protected class OrderedCube implements OrderedRenderable
 {
-    /** Cartesian position of the cube */
-    protected Vec4 placePoint;
-    /** Distance from the eye point to the cube. */
-    protected double eyeDistance;
-    /** The cube's Cartesian bounding extent. */
-    protected Extent extent;
+??? /** Cartesian position of the cube */
+??? protected Vec4 placePoint;
+??? /** Distance from the eye point to the cube. */
+??? protected double eyeDistance;
+??? /** The cube's Cartesian bounding extent. */
+??? protected Extent extent;
 
-    public double getDistanceFromEye()
-    {
-        return this.eyeDistance;
-    }
+??? public double getDistanceFromEye()
+??? {
+??????? return this.eyeDistance;
+??? }
 
-    public void pick(DrawContext dc, Point pickPoint)
-    {
-        // Use same code for rendering and picking.
-        this.render(dc);
-    }
+??? public void pick(DrawContext dc, Point pickPoint)
+??? {
+??????? // Use same code for rendering and picking.
+??????? this.render(dc);
+??? }
 
-    public void render(DrawContext dc)
-    {
-        Cube.this.drawOrderedRenderable(dc, Cube.this.pickSupport);
-    }
+??? public void render(DrawContext dc)
+??? {
+??????? Cube.this.drawOrderedRenderable(dc, Cube.this.pickSupport);
+??? }
 }
 
 public void render(DrawContext dc)
 {
-    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
-    // the ordered renderable queue.
+??? // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
+??? // the ordered renderable queue.
 
-    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
+??? OrderedCube orderedCube = this.makeOrderedRenderable(dc);
 
-    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
-    // distance, and then renders them back to front.
-    dc.addOrderedRenderable(orderedCube);
+??? // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
+??? // distance, and then renders them back to front.
+??? dc.addOrderedRenderable(orderedCube);
 }
 
 protected OrderedCube makeOrderedRenderable(DrawContext dc)
 {
-    OrderedCube orderedCube = new OrderedCube();
+??? OrderedCube orderedCube = new OrderedCube();
 
-    // Convert the cube's geographic position to a position in Cartesian coordinates. If drawing to a 2D
-    // globe ignore the shape's altitude.
-    if (dc.is2DGlobe())
-    {
-        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position.getLatitude(),
-            this.position.getLongitude(), 0);
-    }
-    else
-    {
-        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position);
-    }
+??? // Convert the cube's geographic position to a position in Cartesian coordinates. If drawing to a 2D
+??? // globe ignore the shape's altitude.
+??? if (dc.is2DGlobe())
+??? {
+??????? orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position.getLatitude(),
+??????????? this.position.getLongitude(), 0);
+??? }
+??? else
+??? {
+??????? orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position);
+??? }
 
-    // Compute the distance from the eye to the cube's position.
-    orderedCube.eyeDistance = dc.getView().getEyePoint().distanceTo3(orderedCube.placePoint);
+??? // Compute the distance from the eye to the cube's position.
+??? orderedCube.eyeDistance = dc.getView().getEyePoint().distanceTo3(orderedCube.placePoint);
 
-    return orderedCube;
+??? return orderedCube;
 }
 
 protected void drawOrderedRenderable(DrawContext dc, PickSupport pickCandidates)
@@ -357,24 +356,24 @@ Finally, we'll add checks to avoid drawing the cube if it is not visible, or if 
 ```java
 public void render(DrawContext dc)
 {
-    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
-    // the ordered renderable queue.
+??? // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
+??? // the ordered renderable queue.
 
-    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
+??? OrderedCube orderedCube = this.makeOrderedRenderable(dc);
 
-    if (orderedCube.extent != null)
-    {
-        if (!this.intersectsFrustum(dc, orderedCube))
-            return;
+??? if (orderedCube.extent != null)
+??? {
+??????? if (!this.intersectsFrustum(dc, orderedCube))
+??????????? return;
 
-        // If the shape is less that a pixel in size, don't render it.
-        if (dc.isSmall(orderedCube.extent, 1))
-            return;
-    }
+??????? // If the shape is less that a pixel in size, don't render it.
+??????? if (dc.isSmall(orderedCube.extent, 1))
+??????????? return;
+??? }
 
-    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
-    // distance, and then renders them back to front.
-    dc.addOrderedRenderable(orderedCube);
+??? // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
+??? // distance, and then renders them back to front.
+??? dc.addOrderedRenderable(orderedCube);
 }
 ```
 
