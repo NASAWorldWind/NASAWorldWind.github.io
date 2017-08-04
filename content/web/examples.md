@@ -1,10 +1,12 @@
 ---
-title: "Examples"
+title: "Web WorldWind Examples"
 date: 2017-07-25T16:24:36-05:00
 draft: false
 ---
 
 ## Examples
+
+---
 
 Web WorldWind includes many different examples in the source code. The examples are simple in order to make each feature easy to learn.
 
@@ -13,6 +15,8 @@ You can run the examples directly from this page by clicking on the HTML links h
 Most examples use jquery, Bootstrap and requireJS, but those technologies are not required to use Web WorldWind.
 
 All examples start out doing two things: Create a WorldWindow and create layers to display in that WorldWindow.  Here is typical code that does that:
+
+---
 
 ```javascript
 // Create the WorldWindow in a canvas named "canvasOne".
@@ -36,6 +40,7 @@ for (var l = 0; l < layers.length; l++) {
     wwd.addLayer(layers[l].layer);
 }
 ```
+---
 
 Subsequent code in the examples creates shapes or other features specific to the example. All that code is followed by a call to redraw the WorldWindow to make it up-to-date with the content that’s been added to it:
 
@@ -51,6 +56,7 @@ Most examples also include a Layer Manager (defined in [examples/LayerManager.js
 // Create a layer manager for controlling layer visibility.
 var layerManger = new LayerManager(wwd);
 ```
+---
 
 ## Basic Examples
 
@@ -59,6 +65,8 @@ var layerManger = new LayerManager(wwd);
 [BasicExample.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.html) and [BasicExample.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BasicExample.js) define the template for most Web WorldWind examples. This example performs only the operations described above. The result is a full-featured, interactive Web WorldWind globe with layer and projection control.
 
 [Configuration.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/Configuration.js) shows how to set Web WorldWind’s configuration properties, although that’s seldom necessary. Most configuration properties must be set before creating a WorldWindow or other Web WorldWind objects. Functionally this example behaves the same as BasicExample, above.
+
+---
 
 ## Shape Examples
 
@@ -80,6 +88,8 @@ var layerManger = new LayerManager(wwd);
 
 [GeographicMeshes.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GeographicMeshes.html) and [GeographicMeshes.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GeographicMeshes.js) displays two GeograhicMesh shapes, one with a custom image applied to it.
 
+---
+
 ## Picking Examples
 
 [PlacemarksAndPicking.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PlacemarksAndPicking.html) and [PlacemarksAndPicking.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PlacemarksAndPicking.js)  show how to monitor picking and highlight shapes in response to pick events.
@@ -94,17 +104,25 @@ var layerManger = new LayerManager(wwd);
 
 [GoToLocation.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GoToLocation.html) and [GoToLocation.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GoToLocation.js) show how to use terrain picking in conjunction with a GoToAnimator to implement a click-and-go capability. The user simply clicks on a geographic location to cause the view to move its center there. This example also shows how to use a click recognizer and a tap recognizer.
 
+---
+
 ## Event and Gesture Handling Examples
 
 [PlacemarksAndPicking.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PlacemarksAndPicking.html) and [PlacemarksAndPicking.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PlacemarksAndPicking.js) illustrate how to use a mouse event handler and a tap gesture recognizer to pick placemarks. GoToLocation.html and GoToLocation.js show how to use a tap gesture recognizer and a click recognizer to enable the user to click on a location to center in the view.
+
+---
 
 ## Navigation and Viewing Examples
 
 [GoToLocation.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GoToLocation.html) and [GoToLocation.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/GoToLocation.js) show how to smoothly move the view to a specific location using a GoToAnimator. LayerManager.js also shows how to use a GoToAnimator to move the view to a location corresponding to a named point of interest.
 
+---
+
 ## Time Series Examples
 
 [BlueMarbleTimeSeries.html](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BlueMarbleTimeSeries.html) and [BlueMarbleTimeSeries.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/BlueMarbleTimeSeries.js) display a time series animation of the 12 months (2004) of Blue Marble imagery. Be sure to read the source carefully as some data is required to be hosted locally for this example to work.
+
+---
 
 ## Other Examples
 

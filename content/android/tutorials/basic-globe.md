@@ -20,7 +20,7 @@ listimage: "/img/ww-android-basic-globe.png"
 It’s very easy to get started using WorldWind Android. You simply create and configure a WorldWindow View object and add it to a layout. This can be performed in an Activity or a Fragment. The following snippet shows the code that creates the WorldWindow and adds some imagery to the globe.
 
 ```java
-// Create a World Window (a GLSurfaceView)...
+// Create a WorldWindow (a GLSurfaceView)...
 WorldWindow wwd = new WorldWindow(getContext());
 // ... and add some map layers
 wwd.getLayers().addLayer(new BackgroundLayer());
@@ -51,9 +51,9 @@ public class BasicGlobeFragment extends Fragment {
      * Creates a new WorldWindow (GLSurfaceView) object.
      */
     public WorldWindow createWorldWindow() {
-        // Create the World Window (a GLSurfaceView) which displays the globe.
+        // Create the WorldWindow (a GLSurfaceView) which displays the globe.
         this.wwd = new WorldWindow(getContext());
-        // Setup the World Window's layers.
+        // Setup the WorldWindow's layers.
         this.wwd.getLayers().addLayer(new BackgroundLayer());
         this.wwd.getLayers().addLayer(new BlueMarbleLandsatLayer());
         return this.wwd;

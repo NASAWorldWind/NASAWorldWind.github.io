@@ -1,5 +1,5 @@
 ---
-title: "Features"
+title: "WorldWind Java Features"
 date: 2017-07-27T09:48:19-05:00
 draft: false
 ---
@@ -8,7 +8,9 @@ draft: false
 
 WorldWind Java provides a rich set of features for displaying and interacting with geographic data and representing a wide range of geometric objects.
 
-### General Features
+---
+
+## General Features
 - Open-source, high-performance 3D Virtual globe API and SDK
 - Adds 3D geographic visualization to any application
 - Runs on Windows, Mac OS X, Linux
@@ -21,7 +23,9 @@ WorldWind Java provides a rich set of features for displaying and interacting wi
 - Simple to extend and modify, designed to be extensible
 - Uses Java and OpenGL
 
-### Graphics Capabilities
+---
+
+## Graphics Capabilities
 - Point, Path, Polygon, Curtain
 - Volumes: Extruded Polygon, Ellipsoid, Sphere, Cylinder, Cone, Pyramid, Box, Airspaces (see below)
 - Terrain conforming shapes: Path, Polygons, Ellipse, Circle, Quadrilateral, Rectangle, Square, Text, Image, Icon
@@ -35,20 +39,26 @@ WorldWind Java provides a rich set of features for displaying and interacting wi
 - Interactive shape editors
 - 2525C Tactical Symbols and Tactical Graphics
 
-### Data Formats
+---
+
+## Data Formats
 - Imagery: JPG, PNG, GeoTIFF, JPEG2000 and many others
 - Government formats: NITF, MrSID, RPF (CADRG, CIB, etc.), DTED and many others
 - GIS formats: Shapefile, KML, VPF, GML, GeoJSON, GeoRSS, GPX, NMEA and many others
 - Coordinate Systems: Lat/Lon, UTM, MGRS.
 - Datums: WGS84, NAD27 and many others
 
-### Analysis Capabilities
+---
+
+## Analysis Capabilities
 - Measurement,  geometric and terrain following
 - Line of site with high-resolution terrain and shapes
 - Terrain intersection
 - Shape interactions
 
-### Miscellaneous Capabilities
+---
+
+## Miscellaneous Capabilities
 - Deploy as Java Application or Java Web Start Application
 - GIS web service protocols: WMS, WFS
 - Swing, AWT and JOGL integration

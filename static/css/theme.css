@@ -1,13 +1,8 @@
 .banner {
-    background-image: url("../img/banner-1400x320.png");
+    background-image: url("../img/banner-night.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-color: white;
-}
-
-.jumbotron h1 {
-    color: #000;
-    font-family: 'Lato', sans-serif;
+    background-size: cover;
+    background-position: center;
 }
 
 body {

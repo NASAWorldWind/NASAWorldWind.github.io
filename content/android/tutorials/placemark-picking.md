@@ -33,7 +33,7 @@ public class PlacemarksPickingFragment extends BasicGlobeFragment {
         // Let the super class (BasicGlobeFragment) do the creation
         WorldWindow wwd = super.createWorldWindow();
 
-        // Override the World Window's built-in navigation behavior by adding picking support.
+        // Override the WorldWindow's built-in navigation behavior by adding picking support.
         wwd.setWorldWindowController(new PickNavigateController());
 
         // Add a layer for placemarks to the WorldWindow

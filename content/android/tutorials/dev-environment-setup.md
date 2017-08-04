@@ -2,7 +2,7 @@
 title: "Development Environment Setup"
 date: 2017-07-06T12:51:19-04:00
 draft: false
-listdescription: "Describes the development environment the WorldWind team uses to work on WorldWind Android."
+listdescription: "Describes the development environment that the WorldWind team uses to work on WorldWind Android."
 listimage: "/img/ww-android-ide.png"
 ---
 

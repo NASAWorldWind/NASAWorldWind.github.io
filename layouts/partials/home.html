@@ -3,12 +3,7 @@
         <div class="jumbotron banner">
             <div class="container">
                 <div class="row">
-                    <h1>Welcome to NASA WorldWind</h1>
-                </div>
-                <div class="row">
-                    <p><a class="btn btn-primary btn-lg" href="http://explorer.worldwind.earth/" role="button">Web Demo</a>
-                    <a class="btn btn-primary btn-lg" href="https://github.com/NASAWorldWind/WorldWindAndroid/releases/download/v0.6.0/worldwind-examples-release.apk" role="button">Android Demo</a>
-                    <a class="btn btn-primary btn-lg" href="https://worldwind.arc.nasa.gov/java/latest/webstart/WMSLayerManager.jnlp" role="button">Java Example</a></p>
+                    <h1 id="bootstrap-override-h1">Welcome to NASA WorldWind</h1>
                 </div>
             </div>
         </div>
@@ -16,9 +11,17 @@
 
     <div class="container">
         <h2 class="text-center">What is WorldWind?</h2>
-        <p>WorldWind is a free, open source API for a virtual globe. WorldWind allows developers to quickly and easily create interactive visualizations of 3D globe, map and geographical information. Organizations across the world use WorldWind to monitor weather patterns, visualize cities and terrain, track the movement of planes, vehicles and ships, analyze geospatial data, and educate people about the Earth.</p>
-        <p>WorldWind's source code, official releases, engineering roadmap, issue tracking and more are hosted by GitHub and managed by the NASA WorldWind development team.</p>
-        <p class="text-center"><a href="https://github.com/NASAWorldWind/"><img src="./img/github-mark-32.png">  github.com/nasaworldwind</a></p>
+        <p>WorldWind is a free, open source API for a virtual globe. WorldWind allows developers to quickly and
+            easily create interactive visualizations of 3D globe, map and geographical information. Organizations
+            across the world use WorldWind to monitor weather patterns, visualize cities and terrain, track
+            vehicle movement, analyze geospatial data, and educate people about the Earth.</p>
+        <div class="row">
+            <div class="text-center">
+                <p><a class="btn btn-primary btn-lg" href="http://explorer.worldwind.earth/" role="button">See
+                the demo</a></p>
+            </div>
+        </div>
+        <br>
     </div>
 
     <hr>
@@ -28,7 +31,11 @@
         <div class="row">
             <div class="col-md-4">
                 <h3 class="text-center">It's open source</h3>
-                <p>Because WorldWind is completely open source, extending the API is simple and easy to do, creating a powerful platform for giving any application the means to express, manipulate and analyze spatial data. WorldWind technology can be incorporated into Windows, Mac and Linux applications, web pages and web applications, and mobile applications as well.</p>
+                <p>Because WorldWind is completely open source, extending the API is simple and easy to do. This
+                    creates a powerful platform for giving any application the means to express, manipulate and
+                    analyze spatial data. WorldWind technology can be incorporated into a wide range of
+                    applications, including Windows, Mac, Linux, web, and
+                    mobile devices.</p>
             </div>
             <div class="col-md-4">
                 <h3 class="text-center">Build what you want</h3>
@@ -36,7 +43,8 @@
             </div>
             <div class="col-md-4">
                 <h3 class="text-center">NASA does the heavy lifting</h3>
-                <p>With WorldWind taking care of the hard work of visualizing geographic data (generating terrain from elevation models, selecting and displaying images from imagery servers, etc), software engineers are free to focus on solving the problems specific to their own domains and quickly building whatever geospatial applications they choose.</p>
+                <p>With WorldWind handling the hard work of visualizing geographic data (generating terrain from
+                    elevation models, selecting and displaying images from imagery servers, etc), software engineers are free to focus on solving the problems specific to their own domains and quickly building whatever geospatial applications they choose.</p>
             </div>
         </div>
     </div>
@@ -47,18 +55,37 @@
         <h2 class="text-center">Get Started</h2>
         <div class="row">
             <div class="col-md-4">
-                <h3 class="text-center">WorldWind Android</h3>
-                <p>Develop a world-class WorldWind application for your Android phone or tablet. Complete instructions, tutorials and code are available on the Get Started page. The <a href="https://github.com/NASAWorldWind/WorldWindAndroid">WorldWindAndroid GitHub repository</a> contains the library, examples and tutorials.</p>
+                <h3 class="text-center">Web WorldWind</h3>
+                <p>Create a geo-browser web application or embed a globe in a web page. For more information see the
+                    project's <a href="/web">home page</a>. To get right into the code, check out the <a
+                            href="https://github.com/NASAWorldWind/WebWorldWind">WebWorldWind GitHub repository</a>.</p>
             </div>
             <div class="col-md-4">
-                <h3 class="text-center">Web WorldWind</h3>
-                <p>Create a geo-browser web application or embed a globe in a web page. For more information see the Developer Guide. To get right into the code, check out the <a href="https://github.com/NASAWorldWind/WebWorldWind">WebWorldWind GitHub repository</a>.</p>
-                <p>Web WorldWind is developed in partnership with the <a href="http://www.esa.int/ESA" target="_blank">European Space Agency</a>.</p>
-                <p style="text-align: center;"><img src="/img/logo-esa.png" width="179"></p>
+                <h3 class="text-center">WorldWind Android</h3>
+                <p>Develop a world-class WorldWind application for your Android phone or tablet. Instructions,
+                    tutorials, and examples are available on the project's <a href="/android">home page</a>. The <a
+                            href="https://github.com/NASAWorldWind/WorldWindAndroid">WorldWindAndroid GitHub
+                        repository</a> contains the library and code.</p>
             </div>
             <div class="col-md-4">
                 <h3 class="text-center">WorldWind Java</h3>
-                <p>Build a cross-platform geospatial desktop application in Java. For lots of examples and documentation see the Developer Guide. Or clone the <a href="https://github.com/NASAWorldWind/WorldWindJava">WorldWindJava GitHub repository</a> and start coding.</p>
+                <p>Build a cross-platform geospatial desktop application in Java. For lots of examples and
+                    documentation go to the project's <a href="/java">home page</a>. Or clone the <a
+                            href="https://github.com/NASAWorldWind/WorldWindJava">WorldWindJava GitHub repository</a> and start coding.</p>
             </div>
         </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <br>
+        <br>
+        <p class="container text-center">WorldWind's source code, official releases, engineering roadmap, issue
+            tracking and
+            more are
+        hosted by GitHub and managed by the NASA WorldWind development team.</p>
+        <p class="container text-center"><a href="https://github.com/NASAWorldWind/"><img
+                src="./img/github-mark-32.png">
+            github.com/nasaworldwind</a></p>
     </div>

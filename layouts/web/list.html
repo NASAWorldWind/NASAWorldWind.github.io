@@ -1,16 +1,5 @@
-{{ define "head-title" }}
-    {{ if isset .Params "uselisttemplate" }}
-        Web WorldWind
-    {{ else }}
-        Web WorldWind - {{ .Params.Title }}
-    {{ end }}
-{{ end }}
-
-{{ define "main-block" }}
-    <div class="container">
-        <h2>Web WorldWind</h2>
-    </div>
-    {{ partial "web-navigation.html" . }}
+{{ define "main" }}
+    {{ partial "web-header.html" . }}
     <div class="container">
         {{ .Content }}
 

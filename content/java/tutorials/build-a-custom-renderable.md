@@ -1,9 +1,8 @@
 ---
-title: "Build A Custom Renderable"
+title: "Build a Custom Renderable"
 date: 2017-07-14T01:37:13-04:00
 draft: false
-listdescription: "How to implement a custom renderable that draws a cube centered on a geographic position."
-listimage: "/img/java/custom-renderable.png"
+listdescription: "Describes how to implement a custom renderable that draws a cube centered on a geographic position."
 ---
 
 {{< fix-tables >}}
@@ -12,7 +11,7 @@ listimage: "/img/java/custom-renderable.png"
 
 This tutorial shows how to implement a custom renderable that draws a cube centered on a geographic position. It is intended for developers familiar with OpenGL, who would like to implement a custom WorldWind Renderable. It may be helpful to follow along with the completed tutorial on [GitHub](https://github.com/NASAWorldWind/WorldWindJava/blob/develop/src/gov/nasa/worldwindx/examples/tutorial/Cube.java).
 
-### Contents
+## Contents
 
 - [How WorldWind Draws a Scene](#how)
 - [Implementing Renderable](#implementing)
@@ -24,7 +23,7 @@ This tutorial shows how to implement a custom renderable that draws a cube cente
 - [Determining if the Cube is Visible](#visibility)
 - [Putting it all together](#together)
 
-### <a name="how"></a>How WorldWind Draws a Scene
+## <a name="how"></a>How WorldWind Draws a Scene
 
 When WorldWind renders a frame, the SceneController sets up the global drawing state, and then asks each Layer in the Model to render itself. Most WorldWind shapes implement the Renderable interface. Renderables can be placed on a RenderableLayer, and will be rendered when the layer is rendered.
 
@@ -36,7 +35,7 @@ Rendering the scene consists of several stages:
 
 See the [Concepts](/java/tutorials/concepts/) article of the Tutorial section for more information on the architecture of WorldWind.
 
-### <a name="implementing"></a>Implementing Renderable
+## <a name="implementing"></a>Implementing Renderable
 
 To draw a cube, we'll write a class that implements Renderable. This object can be added directly to a RenderableLayer.
 
@@ -62,7 +61,7 @@ class Cube implements Renderable
 }
 ```
 
-### <a name="drawstate"></a>Managing Drawing State
+## <a name="drawstate"></a>Managing Drawing State
 
 Before drawing the cube, we need to set up the OpenGL drawing state. We'll do this in a method called beginDrawing. Any state that we change from the WorldWind default must be restored after rendering the cube, or it will cause other objects to render incorrectly. DrawContext.getGL provides access to the OpenGL context that we'll use for drawing.
 
@@ -93,7 +92,7 @@ protected void endDrawing(DrawContext dc)
 }
 ```
 
-### <a name="orienting"></a>Orienting the Cube
+## <a name="orienting"></a>Orienting the Cube
 
 We need set up the OpenGL modelview matrix so that when we draw the cube, it will appear at the correct position on the globe.
 computeSurfaceOrientationAtPosition computes a transform matrix that will map the X axis to the vector tangent to the globe and pointing East. The Y axis is mapped to the vector tangent to the Globe and pointing to the North Pole. The Z axis is mapped to the globe normal at specified position.
@@ -115,7 +114,7 @@ matrix.toArray(matrixArray, 0, false);
 gl.glLoadMatrixd(matrixArray, 0);
 ```
 
-### <a name="draw"></a>Drawing the Cube
+## <a name="draw"></a>Drawing the Cube
 
 The method below that will draw a cube one unit on each side, centered on the origin. This method uses OpenGL immediate mode for simplicity, but real applications should use vertex arrays or vertex buffer objects for best performance.
 
@@ -176,7 +175,7 @@ public void render(DrawContext dc)
 
 ![Cube Oriented to the Surface](/img/java/cube-correct-orientation.png)
 
-### <a name="picking"></a>Picking
+## <a name="picking"></a>Picking
 
 We've implemented code to draw the cube during normal rendering, but we still need to handle selection, or picking. During picking, we need to draw the cube using a unique color, and tell WorldWind that if this color is under the cursor, then the cube is the selected object.
 
@@ -211,7 +210,7 @@ public void render(DrawContext dc)
 
 The image on the left shows a scene drawn in normal rendering mode. The image on the right shows the scene drawn for picking. Each object in the scene is drawn in a unique color. The SceneController looks at the color under the cursor to determine the selected object.
 
-### <a name="ordered"></a>Ordered Rendering
+## <a name="ordered"></a>Ordered Rendering
 
 Our code so far renders the cube at the correct position. However, it does not handle transparency or 2D mode correctly. Let's see what happens if we use our Cube class to draw two cubes. The red cube appears transparent, but you can't see the blue cube through the red cube. Instead you see the terrain behind the blue cube. In order to correct this problem, we need to implement the OrderedRenderable interface. An OrderedRenderable is a Renderable that can tell the SceneController how far it is from the eye point. The SceneController uses this information to draw ordered renderables in a back-to-front order, so that the objects blend correctly.
 
@@ -237,62 +236,62 @@ Here are the changes required to support ordered rendering:
 ```java
 protected class OrderedCube implements OrderedRenderable
 {
-    /** Cartesian position of the cube */
-    protected Vec4 placePoint;
-    /** Distance from the eye point to the cube. */
-    protected double eyeDistance;
-    /** The cube's Cartesian bounding extent. */
-    protected Extent extent;
+    /** Cartesian position of the cube */
+    protected Vec4 placePoint;
+    /** Distance from the eye point to the cube. */
+    protected double eyeDistance;
+    /** The cube's Cartesian bounding extent. */
+    protected Extent extent;
 
-    public double getDistanceFromEye()
-    {
-        return this.eyeDistance;
-    }
+    public double getDistanceFromEye()
+    {
+        return this.eyeDistance;
+    }
 
-    public void pick(DrawContext dc, Point pickPoint)
-    {
-        // Use same code for rendering and picking.
-        this.render(dc);
-    }
+    public void pick(DrawContext dc, Point pickPoint)
+    {
+        // Use same code for rendering and picking.
+        this.render(dc);
+    }
 
-    public void render(DrawContext dc)
-    {
-        Cube.this.drawOrderedRenderable(dc, Cube.this.pickSupport);
-    }
+    public void render(DrawContext dc)
+    {
+        Cube.this.drawOrderedRenderable(dc, Cube.this.pickSupport);
+    }
 }
 
 public void render(DrawContext dc)
 {
-    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
-    // the ordered renderable queue.
+    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
+    // the ordered renderable queue.
 
-    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
+    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
 
-    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
-    // distance, and then renders them back to front.
-    dc.addOrderedRenderable(orderedCube);
+    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
+    // distance, and then renders them back to front.
+    dc.addOrderedRenderable(orderedCube);
 }
 
 protected OrderedCube makeOrderedRenderable(DrawContext dc)
 {
-    OrderedCube orderedCube = new OrderedCube();
+    OrderedCube orderedCube = new OrderedCube();
 
-    // Convert the cube's geographic position to a position in Cartesian coordinates. If drawing to a 2D
-    // globe ignore the shape's altitude.
-    if (dc.is2DGlobe())
-    {
-        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position.getLatitude(),
-            this.position.getLongitude(), 0);
-    }
-    else
-    {
-        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position);
-    }
+    // Convert the cube's geographic position to a position in Cartesian coordinates. If drawing to a 2D
+    // globe ignore the shape's altitude.
+    if (dc.is2DGlobe())
+    {
+        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position.getLatitude(),
+            this.position.getLongitude(), 0);
+    }
+    else
+    {
+        orderedCube.placePoint = dc.getGlobe().computePointFromPosition(this.position);
+    }
 
-    // Compute the distance from the eye to the cube's position.
-    orderedCube.eyeDistance = dc.getView().getEyePoint().distanceTo3(orderedCube.placePoint);
+    // Compute the distance from the eye to the cube's position.
+    orderedCube.eyeDistance = dc.getView().getEyePoint().distanceTo3(orderedCube.placePoint);
 
-    return orderedCube;
+    return orderedCube;
 }
 
 protected void drawOrderedRenderable(DrawContext dc, PickSupport pickCandidates)
@@ -319,7 +318,7 @@ protected void drawOrderedRenderable(DrawContext dc, PickSupport pickCandidates)
 }
 ```
 
-### <a name="visibility"></a>Determining if the Cube is Visible
+## <a name="visibility"></a>Determining if the Cube is Visible
 
 What we've done so far is enough to draw the cube. But our implementation will draw the cube even if it is not visible in the active view. One of the most effective ways to boost performance is to not draw shapes that are not visible. We'll add some code that checks to make sure that the cube is visible in the active viewport, and that the cube will appear larger than a single pixel.
 
@@ -357,27 +356,27 @@ Finally, we'll add checks to avoid drawing the cube if it is not visible, or if 
 ```java
 public void render(DrawContext dc)
 {
-    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
-    // the ordered renderable queue.
+    // Render is called twice, once for picking and once for rendering. In both cases an OrderedCube is added to
+    // the ordered renderable queue.
 
-    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
+    OrderedCube orderedCube = this.makeOrderedRenderable(dc);
 
-    if (orderedCube.extent != null)
-    {
-        if (!this.intersectsFrustum(dc, orderedCube))
-            return;
+    if (orderedCube.extent != null)
+    {
+        if (!this.intersectsFrustum(dc, orderedCube))
+            return;
 
-        // If the shape is less that a pixel in size, don't render it.
-        if (dc.isSmall(orderedCube.extent, 1))
-            return;
-    }
+        // If the shape is less that a pixel in size, don't render it.
+        if (dc.isSmall(orderedCube.extent, 1))
+            return;
+    }
 
-    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
-    // distance, and then renders them back to front.
-    dc.addOrderedRenderable(orderedCube);
+    // Add the cube to the ordered renderable queue. The SceneController sorts the ordered renderables by eye
+    // distance, and then renders them back to front.
+    dc.addOrderedRenderable(orderedCube);
 }
 ```
 
-### <a name="together"></a>Putting it all Together
+## <a name="together"></a>Putting it all Together
 
 We've seen how to draw, position, and orient a cube in WorldWind. We've also seen how to implement the cube as an OrderedRenderable, how to handle picking, and how to determine if the cube is visible. The full cube class is available in the WorldWind distribution at gov.nasa.worldwindx.examples.tutorial.Cube.
