@@ -13,8 +13,6 @@ Android devices, the browser, or the desktop, provide developers a quick and eas
 globe, map and geographical information. Our server kit extends the functionality of GeoServer to provide an end to end
 geospatial solution.
 
-<img class="img-responsive" align="left" src="/img/ww-explorer.png" hspace="10" vspace="10">
-
 Organizations across the world use WorldWind to monitor weather patterns, visualize cities and terrain, track the
 movement of planes, vehicles and ships, analyze geospatial data, and educate people about the Earth.
 
@@ -27,8 +25,6 @@ project was ported to Java in 2006, and in November 2009 was awarded NASA Softwa
 developed a global community of users, from government, education, the non-profit sector, as well as private industry.
 HTML5 and Android versions have been added as well as the server kit for hosting data.
 
-<img class="img-responsive" align="right" src="/img/ww-android.png" hspace="10" vspace="10">
-
 WorldWind is different from a 3D globe like Google Earth because it is not an application.  Instead, it is an SDK
 (software development kit) that software engineers can use to build their own applications.  WorldWind provides a
 geographic rendering engine for powering a wide range of projects, from satellite tracking systems to flight simulators.
@@ -36,5 +32,3 @@ geographic rendering engine for powering a wide range of projects, from satellit
 With WorldWind taking care of the hard work of visualizing geographic data (generating terrain from elevation models,
 selecting and displaying images from imagery servers, etc), software engineers are free to focus on the solving the
 problems specific to their own domains and quickly building whatever geospatial applications they choose.
-
-<img class="img-responsive" src="/img/imagery_import.jpg" width="100%" vspace="10">
