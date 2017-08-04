@@ -8,7 +8,7 @@ uselisttemplate: true
 ## Tutorials
 
 WorldWind Android Tutorials are concise step-by-step procedures for implementing common features. The source and
-        sample applications for the tutorials documented here are provided in the worldwind-examples module of the
-        WorldWind Android project.
+sample applications for the tutorials documented here are provided in the worldwind-examples module of the
+WorldWind Android project.
 
 ---
