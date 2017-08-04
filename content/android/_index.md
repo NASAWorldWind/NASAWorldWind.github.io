@@ -9,13 +9,14 @@ draft: false
 - [Get Started](/android/get-started) shows you how to incorporate WorldWind in your Android app
 - [Tutorials](/android/tutorials) explains WorldWind Android in depth
 - [Examples](/android/examples) presents WorldWind Android example activities
-- [API Docs](/android/docs) describes the Web WorldWind API details
+- [API Docs](/android/docs) describes the WorldWind Android API details
 
 ---
 
 ## More Resources
 
-- [GitHub](https://github.com/NASAWorldWind/WorldWindAndroid/) contains the most up-to-date Web WorldWind source code
+- [GitHub](https://github.com/NASAWorldWind/WorldWindAndroid/) contains the most up-to-date WorldWind source code
 - [GitHub Releases](https://github.com/NASAWorldWind/WorldWindAndroid/releases/) has the WorldWind SDK releases
-- [GitHub Issues](https://github.com/NASAWorldWind/WorldWindAndroid/issues/) lists WorldWind bugs and issues and milestones
-- [Forum](https://forum.worldwindcentral.com) provides help from the Web WorldWind community
+- [GitHub Issues](https://github.com/NASAWorldWind/WorldWindAndroid/issues/) lists WorldWind bugs, issues, and
+        milestones
+- [Forum](https://forum.worldwindcentral.com) provides help from the WorldWind community

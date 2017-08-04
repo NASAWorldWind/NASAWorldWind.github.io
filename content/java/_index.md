@@ -6,12 +6,12 @@ draft: false
 
 ## Developer's Guide
 
-- [Get Started](/java/get-started/) shows you how to download and run WorldWind
-- [Features](/java/features/) describes WorldWind’s capabilities
-- [Demos](/java/demos/) showcases WorldWind applications and applets
-- [Examples](/java/examples) presents over 90 WorldWind example programs and applets
+- [Get Started](/java/get-started/) shows you how to download and run WorldWind Java
+- [Features](/java/features/) describes WorldWind Java's capabilities
+- [Demos](/java/demos/) showcases WorldWind Java applications and applets
+- [Examples](/java/examples) presents over 90 WorldWind Java example programs and applets
 - [Tutorials](/java/tutorials/) explains WorldWind Java in depth
-- [API Docs](https://nasaworldwind.github.io/WorldWindJava/) gives WorldWind details for developers
+- [API Docs](https://nasaworldwind.github.io/WorldWindJava/) gives WorldWind Java details for developers
 
 ---
 

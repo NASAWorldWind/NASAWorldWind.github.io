@@ -7,9 +7,9 @@ draft: false
 ## Get Started
 
 WorldWind Android is a 3D virtual globe API for Android, developed by NASA. It provides a geographic context with
-high-resolution terrain, for visualizing geographic or geo-located information in 3D and 2D. Developers can customize
-the globe’s terrain and imagery. Provides a collection of shapes for displaying and interacting with geographic data and
-representing a range of geometric objects.
+high-resolution terrain, used to visualize geographic or geo-located information in 3D and 2D. Developers can customize
+the globe’s terrain and imagery. WorldWind Android provides a collection of shapes for displaying and interacting
+with geographic data and representing a range of geometric objects.
 
 Compatible with Android 4.1 (Jelly Bean) and newer.
 

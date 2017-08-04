@@ -2,7 +2,8 @@
 title: "Tactical Graphic Status"
 date: 2017-07-14T00:55:10-04:00
 draft: false
-listdescription: "This page lists all of the tactical graphics defined in MIL-STD-2525C, and shows which graphics are supported in WorldWind."
+listdescription: "Lists all of the tactical graphics defined in MIL-STD-2525C, and shows which graphics are supported
+        in WorldWind."
 ---
 
 {{< fix-tables >}}

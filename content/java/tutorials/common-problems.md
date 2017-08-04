@@ -2,7 +2,7 @@
 title: "Common Problems"
 date: 2017-07-13T23:03:35-04:00
 draft: false
-listdescription: "Some of the common issues users face and ways to resolve them."
+listdescription: "Outlines some of the common issues users face and ways to resolve them."
 ---
 
 ## Common Problems

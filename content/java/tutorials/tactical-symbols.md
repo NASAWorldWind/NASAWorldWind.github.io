@@ -2,7 +2,7 @@
 title: "Tactical Symbols"
 date: 2017-07-13T23:25:56-04:00
 draft: false
-listdescription: "Display symbols for single-position objects."
+listdescription: "Describes how to display symbols for single-position objects."
 ---
 
 ## Tactical Symbols

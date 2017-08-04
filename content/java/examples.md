@@ -46,7 +46,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **WMSLayerManager** -  Demonstrates the use of multiple WMS layers, as displayed in a WMSLayersPanel.
 
-**LayerTreeUsage** -  Example of using BasicTree to display a list of layers.
+**LayerTreeUsage** -  Uses a BasicTree to display a list of layers.
 
 **Graticule** -  Displays the globe with a latitude and longitude graticule (latitude and longitude grid)
 
@@ -94,7 +94,8 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ExportImageOrElevations** -  Demonstrates how to use the SectorSelector utility to save selected image and/or elevations to a GeoTIFF file.
 
-**GetBestElevations** -  Retrieve the highest-resolution elevations available for the current elevation model, drawing them from the server if necessary.
+**GetBestElevations** -  Retrieves the highest-resolution elevations available for the current elevation model,
+        drawing them from the server if necessary.
 
 ---
 
@@ -128,7 +129,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ExtrudedPolygonBuilder** -  Shows how to build a tool for creating and editing ExtrudedPolygons on the surface of the globe.
 
-**LineBuilder** -  A utility class that allows the user to interactively build a polyline.
+**LineBuilder** -  Allows the user to interactively build a polyline.
 
 **LineBackground** -  Illustrates how to display lines that stand out from the background imagery.
 
@@ -180,7 +181,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **PlaceNames** -  Demonstrates how to customize which place names (names of countries, oceans, cities, etc) are displayed.
 
-**PathsWithLabels** -  Example of how to draw a path with a text annotation attached to the path.
+**PathsWithLabels** -  Demonstrates how to draw a path with a text annotation attached to the path.
 
 **AlarmIcons** -  Illustrates how to display an icon with an alarm state using a WorldWind WWIcon.
 

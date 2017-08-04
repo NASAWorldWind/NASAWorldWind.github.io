@@ -16,9 +16,9 @@ geospatial solution.
 Organizations across the world use WorldWind to monitor weather patterns, visualize cities and terrain, track the
 movement of planes, vehicles and ships, analyze geospatial data, and educate people about the Earth.
 
-Because WorldWind is completely open source, extending the API is simple and easy to do, creating a powerful platform
-for giving any application the means to express, manipulate and analyze spatial data.  WorldWind technology can be
-incorporated into Android, Windows, Mac and Linux applications, and web pages and web applications.
+Because WorldWind is completely open source, extending the API is simple and easy to do. This creates a powerful
+platform for giving any application the means to express, manipulate and analyze spatial data.  WorldWind technology
+can be incorporated into a wide range of applications, including, Windows, Mac, Linux, web, and mobile devices.
 
 Curated by NASA, work on WorldWind began in 2002 and was released under the NASA Open Source Agreement (NOSA).  The
 project was ported to Java in 2006, and in November 2009 was awarded NASA Software of the Year.  Since then, it has

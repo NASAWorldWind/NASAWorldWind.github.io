@@ -18,7 +18,9 @@ The applications here demonstrate some of WorldWind's rich capabilities. Also se
 ---
 
 {{% panel title="Application Template" link="https://worldwind.arc.nasa.gov/java/latest/webstart/ApplicationTemplate.jnlp" imgUrl="/img/java/applicationtemplate_01_250.jpg" %}}
-This is the most basic usage of the SDK. It displays the default globe with its default layers. It includes capabilities such as a compass and status bar that are common to most applications, and presents Earth within a star field and with an atmosphere. It requires only 6 lines of code to instantiate everything seen here.
+Displays the default globe with its default layers. Includes capabilities such as a compass and status bar that are
+common to most applications, and presents Earth within a star field and with an atmosphere. Only 6 lines
+of code are required to instantiate everything seen here.
 {{% /panel %}}
 
 ---
@@ -30,7 +32,8 @@ Demonstrates loading, displaying, and interacting with KML content in WorldWind.
 ---
 
 {{% panel title="WMS Layer Manager" link="https://worldwind.arc.nasa.gov/java/latest/webstart/WMSLayerManager.jnlp" imgUrl="/img/java/wmslayermanager_01_250.jpg" %}}
-This example application demonstrates the SDK WMS capabilities. It features a WMS layer panel that allows you to access any WMS server and layers.
+Features a WMS layer panel that allows you to access any WMS server and
+        layers.
 
 To add a server, click on the + tab and enter a url. After the WMS discovery process, the list of available layers is displayed. Select one to add it to the current globe layer list. Unselect it to remove it.
 {{% /panel %}}
@@ -38,7 +41,10 @@ To add a server, click on the + tab and enter a url. After the WMS discovery pro
 ---
 
 {{% panel title="Installing Images and Elevations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/InstallImageryAndElevationsDemo.jnlp" imgUrl="/img/java/rasterviewer.png" %}}
-The WorldWind Java Installing Imagery And Elevations Demo enables a user to install image data and elevation data from a file on the local hard drive. This data can be installed as a full pyramid of tiles or as a partial pyramid. Installing a full pyramid takes longer and consumes more space on the user's hard drive, but has the best runtime performance. Installing a partial pyramid takes less time and consumes less space on the user's hard drive, but requires that the original data not be moved or deleted.
+Enables a user to install image data and elevation data from a file on the local hard drive. Data can be installed as
+a full pyramid of tiles or as a partial pyramid.
+
+Installing a full pyramid takes longer and consumes more space on the user's hard drive, but has the best runtime performance. Installing a partial pyramid takes less time and consumes less space on the user's hard drive, but requires that the original data not be moved or deleted.
 {{% /panel %}}
 
 ---
@@ -106,7 +112,7 @@ Demonstrates use of WorldWind browser balloons to display HTML, JavaScript, and 
 ---
 
 {{% panel title="Annotations" link="https://worldwind.arc.nasa.gov/java/latest/webstart/Annotations.jnlp" imgUrl="/img/java/annotations_01_250.jpg" %}}
-This example allows you to experiment with the multiple options of WorldWind Java annotation feature.
+Allows you to experiment with the multiple options of WorldWind Java annotation feature.
 
 Annotations are text labels with support for multiline text, simple HTML and many styling attributes such as font face, size and colors, bubble shapes and background image.
 {{% /panel %}}
@@ -126,7 +132,8 @@ Shows visualization of the Military Grid Reference System (MGRS) as a graticule 
 ---
 
 {{% panel title="Terrain Profilier" link="https://worldwind.arc.nasa.gov/java/latest/webstart/TerrainProfiler.jnlp" imgUrl="/img/java/terrainprofiler_01_250.jpg" %}}
-This application shows the terrain profile layer in action with its various controls. It allows you to view a realtime section profile graph for any place on the planet, at any scale - continent, country or mountain range... just by moving the mouse.
+Shows the terrain profile layer in action with its various controls. Allows a view of a realtime section profile
+graph for any place on the planet, at any scale - continent, country or mountain range... just by moving the mouse.
 
 It proves particularly useful to explore the ocean floors where the bathymetry data reveals important geologic features.
 {{% /panel %}}
@@ -134,13 +141,15 @@ It proves particularly useful to explore the ocean floors where the bathymetry d
 ---
 
 {{% panel title="Flat World Earthquakes" link="https://worldwind.arc.nasa.gov/java/latest/webstart/FlatWorldEarthquakes.jnlp" imgUrl="/img/java/flatworld_02_250.jpg" %}}
-This example shows the latest earthquakes over a flat world projection. It allows you to see the whole globe at once while retaining the capability to zoom onto the surface and still experience 3D terrain.
+Shows the latest earthquakes over a flat world projection. Allows you to see the whole globe at once while
+retaining the capability to zoom onto the surface and still experience 3D terrain.
 {{% /panel %}}
 
 ---
 
 {{% panel title="Anaglyph Stereo" link="https://worldwind.arc.nasa.gov/java/latest/webstart/AnaglyphStereo.jnlp" imgUrl="/img/java/anaglyphstereo_01_250.jpg" %}}
-This is essentially the above application template but with anaglyph stereo viewing capability. It allows you to explore the world in 'real' 3D using red and cyan glasses with the red filter over the left eye.
+Shows anaglyph stereo viewing capability. It allows you to explore the world in 'real' 3D using red and cyan glasses
+        with the red filter over the left eye.
 
 To get a comfortable experience use the slider to adjust the interocular distance.
 {{% /panel %}}
@@ -160,7 +169,7 @@ Demonstrates how applications can keep a set of moving objects in view.
 ---
 
 {{% panel title="Line Builder" link="https://worldwind.arc.nasa.gov/java/latest/webstart/LineBuilder.jnlp" imgUrl="/img/java/linebuilder_01_250.jpg" %}}
-This simple example allows you to interactively draw a path over the terrain surface.
+Allows you to interactively draw a path over the terrain surface.
 
 It demonstrates how an application can use and consume mouse events before they get to the default view input handler.
 {{% /panel %}}

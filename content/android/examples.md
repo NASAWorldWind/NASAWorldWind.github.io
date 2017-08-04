@@ -4,9 +4,9 @@ date: 2017-07-07T11:59:41-04:00
 draft: false
 ---
 
-## Code Examples
+## Examples
 
-The full code for the examples below is available in the worlwind-examples module of the WorldWind Android project.
+The full code for the examples below is available in the worldwind-examples module of the WorldWind Android project.
 
 ---
 

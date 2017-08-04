@@ -2,7 +2,7 @@
 title: "Build a Custom Renderable"
 date: 2017-07-14T01:37:13-04:00
 draft: false
-listdescription: "How to implement a custom renderable that draws a cube centered on a geographic position."
+listdescription: "Describes how to implement a custom renderable that draws a cube centered on a geographic position."
 ---
 
 {{< fix-tables >}}

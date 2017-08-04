@@ -2,7 +2,7 @@
 title: "Tactical Graphics"
 date: 2017-07-14T00:11:33-04:00
 draft: false
-listdescription: "Display tactical graphic symbol sets."
+listdescription: "Describes how to display tactical graphic symbol sets."
 ---
 
 {{< fix-tables >}}
