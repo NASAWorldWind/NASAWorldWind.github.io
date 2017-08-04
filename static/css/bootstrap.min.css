@@ -5384,7 +5384,9 @@ a.badge:hover, a.badge:focus {
 }
 
 .jumbotron .container {
-    max-width: 100%
+    max-width: 100%;
+    padding-bottom: 120px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -7430,5 +7432,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 }
 
 #bootstrap-override-h1 {
+    color: #FFF;
+    text-shadow: 2px 2px #000;
     margin-left: 30px;
 }
