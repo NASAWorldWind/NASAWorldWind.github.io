@@ -7,12 +7,12 @@ listdescription: "WorldWind's primary content display container."
 
 ## Layers
 
-<img src="/img/web/layerlist.jpg" class="img-responsive" align="right">LayerListLayers hold all the information displayed by the World Window. Each World Window holds one layer list that contains all the layers to display in that World Window. Each layer contains either imagery, shapes or decorations such as a compass. During rendering, layers are displayed in the order they’re defined in the layer list. (3D shapes within layers, however, are displayed in far-to-near order, as described in the Shapes section.) The adjacent illustration depicts six layers. The first two are image layers. The second two hold shapes. And the bottom two hold decorations.
+<img src="/img/web/layerlist.jpg" class="img-responsive" align="right">LayerListLayers hold all the information displayed by the WorldWindow. Each WorldWindow holds one layer list that contains all the layers to display in that WorldWindow. Each layer contains either imagery, shapes or decorations such as a compass. During rendering, layers are displayed in the order they’re defined in the layer list. (3D shapes within layers, however, are displayed in far-to-near order, as described in the Shapes section.) The adjacent illustration depicts six layers. The first two are image layers. The second two hold shapes. And the bottom two hold decorations.
 
-The above layer list is defined and the layers added to the World Window by the following code:
+The above layer list is defined and the layers added to the WorldWindow by the following code:
 
 ```javascript
-// Create the World Window.
+// Create the WorldWindow.
 var wwd = new WorldWind.WorldWindow("canvasOne");
 
 // Create and add imagery layers.
@@ -31,7 +31,7 @@ wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 wwd.redraw();
 ```
 
-### Layer Properties
+## Layer Properties
 
 Layers have the following properties:
 
@@ -47,7 +47,7 @@ See the API doc for Layer for more details.
 
 There are several types of layers. Each defines additional properties that you can use to control the layer’s behavior. See the API doc for the particular layer to discover those properties. The layer type you’re likely to use most is RenderableLayer, which you use to hold shapes. It’s described below. Apps typically create several of these.
 
-### Image Layers
+## Image Layers
 
 Image layers hold imagery that is drawn on the surface of the globe. This is typically global-coverage imagery but need not be. Web WorldWind provides the following image layers:
 
@@ -60,7 +60,7 @@ Image layers hold imagery that is drawn on the surface of the globe. This is typ
 
 You can create your own image layers using TiledImageLayer. The imagery need not span the entire globe.
 
-### Renderable Layer
+## Renderable Layer
 
 You use the RenderableLayer class when you want to display shapes. The layer can hold any number of shapes. Apps typically use renderable layers to group shapes logically. To display a shape, you simply create it using its constructor and add it to a renderable layer:
 
@@ -73,7 +73,7 @@ placemarkLayer.addRenderable(placemark);
 
 Here the layer is given the display name “Placemarks”.
 
-You must also add the renderable layer to the World Window’s layer list:
+You must also add the renderable layer to the WorldWindow’s layer list:
 
 ```javascript
 wwd.addLayer(placemarkLayer);

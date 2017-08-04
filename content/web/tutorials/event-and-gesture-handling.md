@@ -7,11 +7,11 @@ listdescription: "How to manage cursor or tactile input."
 
 ## Event and Gesture Handling
 
-Applications can generally monitor and respond to JavaScript events as they normally would. But because the World Window’s navigator is monitoring mouse and touch events to enable the user to manipulate the globe, some coordination between the application’s event handling and the navigator’s event handling is necessary. Web WorldWind does not monitor keyboard events, so no coordination is necessary for those.
+Applications can generally monitor and respond to JavaScript events as they normally would. But because the WorldWindow’s navigator is monitoring mouse and touch events to enable the user to manipulate the globe, some coordination between the application’s event handling and the navigator’s event handling is necessary. Web WorldWind does not monitor keyboard events, so no coordination is necessary for those.
 
-If your application is to work on conventional and mobile devices, it should monitor both mouse events and gestures if it wants to respond to user input beyond what the World Window’s navigator already does. Web WorldWind examples such as PlacemarksAndPicking.js and GoToLocation.js do this.
+If your application is to work on conventional and mobile devices, it should monitor both mouse events and gestures if it wants to respond to user input beyond what the WorldWindow’s navigator already does. Web WorldWind examples such as PlacemarksAndPicking.js and GoToLocation.js do this.
 
-### Monitoring Mouse Events
+## Monitoring Mouse Events
 
 Applications wishing to monitor mouse events (other than click events, as described below) should register their event handlers using the addEventListener function on WorldWindow:
 
@@ -41,7 +41,7 @@ if (event.defaultPrevented) {
 }
 ```
 
-### Click Events
+## Click Events
 
 Click events are the exception to specifying event listeners, and should instead be handled using a ClickRecognizer rather than an event listener:
 
@@ -57,7 +57,7 @@ The click recognizer works in conjunction with the navigator’s event handlers 
 
 The example PickAllShapesInRegion.js illustrates event handling and how to register event handlers. The example GoToLocation.js shows how to use a click recognizer. See also the example fragment in the next section.
 
-### Monitoring Touch Events and Gestures
+## Monitoring Touch Events and Gestures
 
 Rather than monitoring touch events directly, applications should use Web WorldWind’s gesture recognizers. Of most use is the TapRecognizer, which recognizes tap gestures on touch screens. Below is how the GoToLocation.js example uses a tap recognizer to recognize a tap and determine a location to move to when the user taps on the globe. The tap gesture recognizer is created and the gesture handler specified in the emboldened lines:
 

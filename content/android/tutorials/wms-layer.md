@@ -39,7 +39,7 @@ public class WmsLayerFragment extends BasicGlobeFragment {
         config.layerNames = "MYD28M"; // Sea surface temperature (MODIS)
         WmsLayer layer = new WmsLayer(new Sector().setFullSphere(), 1e3, config); // 1km resolution
 
-        // Add the WMS layer to the World Window.
+        // Add the WMS layer to the WorldWindow.
         wwd.getLayers().addLayer(layer);
 
         return wwd;

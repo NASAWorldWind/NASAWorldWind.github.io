@@ -2,7 +2,7 @@
 title: "Importing Data"
 date: 2017-07-14T09:37:03-04:00
 draft: false
-listdescription: "Follow these instructions to import data to the WorldWind client."
+listdescription: "Describes how to import data to the WorldWind client."
 ---
 
 ## Importing Data

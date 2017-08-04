@@ -2,7 +2,7 @@
 title: "Tactical Symbols"
 date: 2017-07-13T23:25:56-04:00
 draft: false
-listdescription: "Display symbols for single-position objects."
+listdescription: "Describes how to display symbols for single-position objects."
 ---
 
 ## Tactical Symbols
@@ -13,7 +13,7 @@ A tactical symbol displays graphic and textual information about an object at a 
 
 Run the [Tactical Symbols Demo](https://worldwind.arc.nasa.gov/java/latest/webstart/TacticalSymbols.jnlp).
 
-### Overview
+## Overview
 
 This guide shows how to use WorldWind tactical symbols in your application, and is organized into five sections:
 
@@ -23,7 +23,7 @@ This guide shows how to use WorldWind tactical symbols in your application, and 
 4. [Display Options](#display-options)
 5. [Offline Use](#offline-use)
 
-### <a name="construction"></a>Construction
+## <a name="construction"></a>Construction
 
 Each symbology set defines a tactical symbol implementation that derives from the TacticalSymbol interface. TacticalSymbol provides an interface to common tactical symbol functionality, and extends the Renderable interface so you can add a TacticalSymbol directly to a RenderableLayer.
 
@@ -57,19 +57,25 @@ We've created and displayed a TacticalSymbol representing a friendly Special Ope
 
 MilStd2525TacticalSymbol's constructor accepts the following parameters:
 
+<br/>
+
 #### Symbol Identifier (required)
 
 A string identifier indicating the tactical symbol's appearance. The format of this identifier depends on the symbol set. In the case of MIL-STD-2525, the symbol identifier is a 15-character alphanumeric symbol identification code (SIDC). The symbol's shape, fill color, outline color, and icon are all defined by the symbol identifier. In the above example, "SFAPMFQM------A" defines a friendly Special Operations Forces drone aircraft.
+
+<br/>
 
 #### Position (required)
 
 The latitude, longitude, and altitude where the symbol is drawn on the globe. In the above example, (34.7327, -117.8347, 1000) places the symbol 1km above sea level and north of Los Angeles.
 
+<br/>
+
 #### Modifiers (optional)
 
 An optional list of key-value pairs specifying supplemental graphic and text attributes. This parameter may be null or omitted entirely. The modifiers list extends the symbol attributes already indicated by the symbol identifier. In the case where both the symbol identifier and the modifiers list indicate the same attribute, the modifiers list has priority. The above example omits the modifiers parameter, so the symbol contains only the attributes indicated by its symbol identifier. See [Modifiers](#modifiers) for more information.
 
-### <a name="position"></a>Position
+## <a name="position"></a>Position
 
 A TacticalSymbol's position indicates the latitude, longitude, and altitude where the symbol draws its graphic. To position a TacticalSymbol during construction, just specify the desired position parameter. To position a TacticalSymbol after construction, call setPosition with the desired position.
 
@@ -120,7 +126,7 @@ TacticalSymbol provides support for manually configuring the altitude mode. It i
 groundSymbol.setAltitudeMode(WorldWind.CLAMP_TO_GROUND);
 ```
 
-### <a name="modifiers"></a>Modifiers
+## <a name="modifiers"></a>Modifiers
 
 Modifiers are optional key-value attributes that cause a TacticalSymbol to display supplemental graphic and text around or over the symbol's graphic. See the MilStd2525TacticalSymbol documentation for a list of supported modifiers. The placement and display of modifiers for MilStd2525TacticalSymbol is defined in the MIL-STD-2525 specification.
 
@@ -161,7 +167,9 @@ groundSymbol.setModifier(SymbologyConstants.ECHELON, null);
 groundSymbol.setShowLocation(false);
 ```
 
-### <a name="display-options"></a>Display Options
+## <a name="display-options"></a>Display Options
+
+<br/>
 
 #### Size and Opacity
 TacticalSymbol provides control of its scale and opacity through the TacticalSymbolAttributes interface. The scale is a decimal number greater than 0.0: values less than 1.0 make the symbol smaller, while values greater than 1.0 make the symbol larger. The opacity is a decimal number between 0.0 and 1.0 (inclusive), where 0.0 is completely transparent and 1.0 is completely opaque. The scale and opacity apply to both the symbol graphic and the symbol modifiers.
@@ -179,6 +187,8 @@ attrs.setOpacity(0.5); // Make the symbol 50% transparent.
 symbol.setAttributes(attrs);
 ```
 
+<br/>
+
 #### Highlighting
 
 TacticalSymbol extends the Highlightable interface, and provides control of its highlighted display parameters through a highlight attribute bundle. This bundle is used to draw the symbol's graphic and modifiers when a TacticalSymbol's highlighted state is true.
@@ -195,6 +205,8 @@ highlightAttrs.setScale(2.0); // 200% of normal size when highlighted.
 highlightAttrs.setOpacity(1.0); // 100% opaque when highlighted.
 symbol.setHighlightAttributes(highlightAttrs);
 ```
+
+<br/>
 
 #### Decluttering
 
@@ -226,6 +238,8 @@ attrs.setScale(3.0); // Set the dot's diameter to 3.0 pixels.
 symbol.setAttributes(attrs);
 ```
 
+<br/>
+
 #### Modifier Attributes
 
 TacticalSymbol provides control of the font and color used to display text modifiers via the TacticalSymbolAttributes interface. To set the text modifier font or color (or both), call setModifierFont or setModifierMaterial, respectively.
@@ -242,9 +256,11 @@ attrs.setTextModifierMaterial(Material.RED);
 symbol.setAttributes(attrs);
 ```
 
-### <a name="offline-use"></a>Offline Use
+## <a name="offline-use"></a>Offline Use
 
 By default, the icons displayed by TacticalSymbol and TacticalPointGraphic are downloaded from an HTTP server at https://worldwind.arc.nasa.gov/milstd2525c/rev1/. When an application cannot access worldwind.arc.nasa.gov, it is necessary to configure these symbols to download their icons from another location. This can be accomplished by deploying an HTTPS server or by using a local ZIP archive.
+
+<br/>
 
 #### HTTPS Server
 
@@ -259,6 +275,8 @@ By default, the icons displayed by TacticalSymbol and TacticalPointGraphic are d
 ```xml
 <Property name="gov.nasa.worldwind.avkey.MilStd2525IconRetrieverPath" value="http://myserver.com/milstd2525/">
 ```
+
+<br/>
 
 #### Local ZIP Archive
 

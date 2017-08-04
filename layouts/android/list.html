@@ -1,16 +1,5 @@
-{{ define "head-title" }}
-    {{ if isset .Params "uselisttemplate" }}
-        WorldWind Android
-    {{ else }}
-        WorldWind Android - {{ .Params.Title }}
-    {{ end }}
-{{ end }}
-
-{{ define "main-block" }}
-    <div class="container">
-        <h2>WorldWind Android</h2>
-    </div>
-    {{ partial "android-navigation.html" . }}
+{{ define "main" }}
+    {{ partial "android-header.html" . }}
     <div class="container">
         {{ .Content }}
 

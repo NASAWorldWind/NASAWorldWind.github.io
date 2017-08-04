@@ -1,14 +1,16 @@
 ---
-title: "Examples"
+title: "WorldWind Java Examples"
 date: 2017-07-27T09:58:18-05:00
 draft: false
 ---
 
 ## Examples
 
+---
+
 The WorldWind API contains over 100 code examples that show how to perform all manner of tasks, from creating the most basic WorldWind application to using complex, advanced functionality.
 
-Below are brief descriptions of selected example programs.  All examples can be found in **gov.nasa.worldwindx.examples**
+Below are brief descriptions of selected example programs.  All examples can be found in the [WorldWind Java GitHub repository](https://github.com/NASAWorldWind/WorldWindJava/tree/develop/src/gov/nasa/worldwindx/examples).
 
 1. Basics
 2. Layers
@@ -24,7 +26,9 @@ Below are brief descriptions of selected example programs.  All examples can be 
 12. Tools
 13. Multiwindow
 
-### Basics
+---
+
+## Basics
 
 **SimplestPossibleExample** -  Demonstrates the simplest possible way to create a WorldWind application.
 
@@ -32,21 +36,25 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ApplicationTemplate** -  Provides a base application framework for simple WorldWind examples.
 
-**Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of World Wind.
+**Shutdown** -  Shows how to shut down a WorldWindow and how to shut down all of WorldWind.
 
-### Layers
+---
+
+## Layers
 
 **OnScreenLayerManager** -  Demonstrates an on-screen layer manager using LayerManagerLayer.
 
 **WMSLayerManager** -  Demonstrates the use of multiple WMS layers, as displayed in a WMSLayersPanel.
 
-**LayerTreeUsage** -  Example of using BasicTree to display a list of layers.
+**LayerTreeUsage** -  Uses a BasicTree to display a list of layers.
 
 **Graticule** -  Displays the globe with a latitude and longitude graticule (latitude and longitude grid)
 
 **MGRSGraticule** -  Displays the globe with a MGRS/UTM graticule
 
-### View
+---
+
+## View
 
 **ViewLookAround** -  Demonstrates how to ‘look around’ a scene by controlling the view’s pitch, heading, roll and field of view, in this case by using a simple set of sliders.
 
@@ -62,17 +70,19 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ViewControls** -  Shows the ViewControlsLayer and allows you to adjust its size, orientation, and the available controls.
 
-### Data
+---
+
+## Data
 
 **BulkDownload** -  Illustrates how to use WorldWind to retrieve data from layers and elevation models in bulk from a remote source.
 
 **DataInstallerAp** - Provides an interactive means to install data on the client.
 
-**Shapefiles** -  Illustrates how to import ESRI Shapefiles into World Wind.
+**Shapefiles** -  Illustrates how to import ESRI Shapefiles into WorldWind.
 
 **ExtrudedPolygonsFromShapefile** -  Shows how to load extruded shapes from Shapefiles.
 
-**VPFLayerDemo** -  Illustrates how to import data from a Vector Product Format (VPF) database into World Wind.
+**VPFLayerDemo** -  Illustrates how to import data from a Vector Product Format (VPF) database into WorldWind.
 
 **FlatWorldEartquakes** -  Demonstrates how to use the EarthFlat and FlatOrbitView to display USGS’ latest earthquakes RSS feed.
 
@@ -84,9 +94,12 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ExportImageOrElevations** -  Demonstrates how to use the SectorSelector utility to save selected image and/or elevations to a GeoTIFF file.
 
-**GetBestElevations** -  Retrieve the highest-resolution elevations available for the current elevation model, drawing them from the server if necessary.
+**GetBestElevations** -  Retrieves the highest-resolution elevations available for the current elevation model,
+        drawing them from the server if necessary.
 
-### Terrain
+---
+
+## Terrain
 
 **TerrainProfiler** -  Shows the TerrainProfileLayer in action with its various controls.
 
@@ -100,7 +113,9 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **DimGlobeSurfac** - Illustrates how to place a layer over the terrain in order to dim it.
 
-### Shapes
+---
+
+## Shapes
 
 **Shapes** -  Shows how to let the user create path and surface shapes on the globe and modify their parameters with a simple user interface.
 
@@ -114,7 +129,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ExtrudedPolygonBuilder** -  Shows how to build a tool for creating and editing ExtrudedPolygons on the surface of the globe.
 
-**LineBuilder** -  A utility class that allows the user to interactively build a polyline.
+**LineBuilder** -  Allows the user to interactively build a polyline.
 
 **LineBackground** -  Illustrates how to display lines that stand out from the background imagery.
 
@@ -142,7 +157,9 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **RotatedSector** -  Illustrates rotating a Sector-shaped SurfaceQuad from standard position.
 
-### Annotations
+---
+
+## Annotations
 
 **Annotations** -  Illustrates how to use a WorldWind Annotation to display on-screen information to the user in the form of a text label with an optional image.
 
@@ -152,7 +169,7 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **WebBrowserBalloons** -  Illustrates how to use WorldWind browser balloons to display HTML, JavaScript, and Flash content to the user in the form of a screen-aligned balloon.
 
-**TacticalGraphics and TacticalSymbol** - Shows examples of World Wind’s 2525C implementation.
+**TacticalGraphics and TacticalSymbol** - Shows examples of WorldWind’s 2525C implementation.
 
 **Markers** -  Displays Markers (small shapes) in different shapes and colors.
 
@@ -164,13 +181,15 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **PlaceNames** -  Demonstrates how to customize which place names (names of countries, oceans, cities, etc) are displayed.
 
-**PathsWithLabels** -  Example of how to draw a path with a text annotation attached to the path.
+**PathsWithLabels** -  Demonstrates how to draw a path with a text annotation attached to the path.
 
 **AlarmIcons** -  Illustrates how to display an icon with an alarm state using a WorldWind WWIcon.
 
 **GridOfPoints** -  Uses a PointGrid to draw a grid of points on the terrain, spacing them evenly throughout a region defined by a four sided polygon.
 
-### Images
+---
+
+## Images
 
 **SurfaceImages** -  Demonstrates how to use the SurfaceImage class to place images on the surface of the globe.
 
@@ -182,7 +201,9 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **ScreenImageDragging** -  Demonstrates the use of the ScreenImage class, and shows how to use it to create an image that can be dragged around the screen using the mouse.
 
-### User Interface
+---
+
+## User Interface
 
 **ContextMenusOnShapes** -  Illustrates how to attach context (popup) menus to shapes.
 
@@ -194,23 +215,29 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **TabbedPaneUsage** -  Demonstrates the use of tabbed panes.
 
-### Network
+---
+
+## Network
 
 **NetworkOfflineMode** -  Shows how to detach WorldWind from the network and reattach it.
 
 **LocalDataOnly** -  Shows how to operate WorldWind completely locally, drawing data only from local caches.
 
-### Configuration
+---
+
+## Configuration
 
 **FlatWorld** -  Demonstrates how to display a flat globe instead of a round globe.
 
-**ConfiguringGLRuntimeCapabilities** -  Illustrates how to configure World Wind’s OpenGL features using a GLRuntimeCapabilities.
+**ConfiguringGLRuntimeCapabilities** -  Illustrates how to configure WorldWind’s OpenGL features using a GLRuntimeCapabilities.
 
 **CustomElevationModel** -  Illustrates how to configure WorldWind with a custom ElevationModel from a configuration file.
 
 **Stereo** -  Shows how to configure WorldWind to display the globe in stereo.
 
-### Tools
+---
+
+## Tools
 
 **LoggingControl** -  Illustrates control and redirection of WorldWind logging.
 
@@ -238,13 +265,15 @@ Below are brief descriptions of selected example programs.  All examples can be 
 
 **MeasureToolUsage** -  Shows how to use the MeasureTool to draw a shape on the globe and measure length, area, etc.
 
-**GazeteerApp** -  Shows how to integrate a gazetteer search function into the World Window using the YahooGazetteer.
+**GazeteerApp** -  Shows how to integrate a gazetteer search function into the WorldWindow using the YahooGazetteer.
 
 **DataCacheViewer** -  Shows how to build a tool to allow the user to view and delete cached WorldWind files based on how old they are.
 
-### Multiwindow
+---
 
-**MultiFrame** -  Shows how to create two World Windows, each in its own JFrame. The World Windows share a globe and some layers.
+## Multiwindow
+
+**MultiFrame** -  Shows how to create two WorldWindows, each in its own JFrame. The WorldWindows share a globe and some layers.
 
 **CardLayoutUsage** -  Illustrates how to use multiple WorldWind windows with a CardLayout layer manager.
 
