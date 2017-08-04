@@ -11,7 +11,7 @@ draft: false
 - [Demos](/java/demos/) showcases WorldWind Java applications and applets
 - [Examples](/java/examples) presents over 90 WorldWind Java example programs and applets
 - [Tutorials](/java/tutorials/) explains WorldWind Java in depth
-- [API Docs](https://nasaworldwind.github.io/WorldWindJava/) gives WorldWind Java details for developers
+- [API Docs](/java/docs/) gives WorldWind Java details for developers
 
 ---
 
