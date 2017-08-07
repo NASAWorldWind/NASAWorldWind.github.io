@@ -12,7 +12,7 @@ draft: false
 
 Patrick Hogan - [patrick.hogan@nasa.gov](mailto://patrick.hogan@nasa.gov)
 
-The WorldWind project is managed from the NASA Ames Research Center at Moffett Field, CA.
+The WorldWind project is managed from the [NASA Ames Research Center](https://www.nasa.gov/ames) at Moffett Field, CA.
 
 ---
 
