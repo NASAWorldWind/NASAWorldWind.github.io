@@ -4,3 +4,13 @@
 # Build the site
 script:
   - ./hugow --verbose
+
+# Deploy the site to GitHub Pages after a push to the develop branch. Travis does not invoke this step for pull request builds.
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_API_KEY
+    local_dir: public
+    target_branch: master
+    on:
+      branch: develop
