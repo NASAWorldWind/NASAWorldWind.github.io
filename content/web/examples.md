@@ -10,9 +10,9 @@ draft: false
 
 Web WorldWind includes many different examples in the source code. The examples are simple in order to make each feature easy to learn.
 
-You can run the examples directly from this page by clicking on the HTML links here. It is not necessary to download Web WorldWind to run them. If you want to download and run them locally, see the Running Local section of the [Deployment](/web/tutorials/deployment/) tutorial.
+You can run the examples directly from this page by clicking on the HTML links. It is not necessary to download Web WorldWind to run them. If you want to download and run them locally, see the Running Local section of the [Deployment](/web/tutorials/deployment/) tutorial.
 
-Most examples use jquery, Bootstrap and requireJS, but those technologies are not required to use Web WorldWind.
+Most examples use jquery, Bootstrap, and requireJS, but those technologies are not required to use Web WorldWind.
 
 All examples start out doing two things: Create a WorldWindow and create layers to display in that WorldWindow.  Here is typical code that does that:
 
@@ -60,17 +60,17 @@ var layerManger = new LayerManager(wwd);
 
 ## Basic Examples
 
-<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/SimplestExample.html">SimplestExample.html</a> illustrates the most basic Web WorldWind program there is. Its six lines of JavaScript code create a fully functioning WorldWindow with a globe containing terrain and high-resolution imagery. The program also creates a compass, a layer that shows the current map coordinates, and a layer with view controls. (With the exception of the vertical exaggeration control, the view controls are redundant with mouse and gesture input.)
+<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/SimplestExample.html">SimplestExample.html</a> illustrates the most basic Web WorldWind program there is. Six lines of JavaScript code create a fully functioning WorldWindow with a globe containing terrain and high-resolution imagery. The program also creates a compass, a layer that shows the current map coordinates, and a layer with view controls. (With the exception of the vertical exaggeration control, the view controls are redundant with mouse and gesture input.)
 
-<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/BasicExample.html">BasicExample.html</a> and <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/BasicExample.js">BasicExample.js</a>] define the template for most Web WorldWind examples. This example performs only the operations described above. The result is a full-featured, interactive Web WorldWind globe with layer and projection control.
+<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/BasicExample.html">BasicExample.html</a> and <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/BasicExample.js">BasicExample.js</a> define the template for most Web WorldWind examples. This example performs only the operations described above. The result is a full-featured, interactive Web WorldWind globe with layer and projection control.
 
-<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/Configuration.js">Configuration.js</a> shows how to set Web WorldWind’s configuration properties, although that’s seldom necessary. Most configuration properties must be set before creating a WorldWindow or other Web WorldWind objects. Functionally this example behaves the same as BasicExample, above.
+<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/Configuration.js">Configuration.js</a> shows how to set Web WorldWind’s configuration properties, although that’s seldom necessary. Most configuration properties must be set before creating a WorldWindow or other Web WorldWind objects. Functionally, this example behaves the same as the BasicExample above.
 
 ---
 
 ## Shape Examples
 
-<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/GeographicText.html">GeographicText.html</a> and <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/GeographicText.js">GeographicText.js</a> illustrate the use of Web WorldWind’s GeographicText shape. The example defines a large number of the word’s mountain peaks and displays each peak’s name at its geographic location. A GeographicText shape is created for each peak, and each shape is assigned a common TextAttributes bundle. The shapes are all added to a single RenderableLayer, which is added to the WorldWindow’s layer list.
+<a target="_blank" href="http://worldwindserver.net/webworldwind/examples/GeographicText.html">GeographicText.html</a> and <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/GeographicText.js">GeographicText.js</a> illustrate the use of Web WorldWind’s GeographicText shape. The example defines a large number of the world’s mountain peaks and displays each peak’s name at its geographic location. A GeographicText shape is created for each peak, and each shape is assigned a common TextAttributes bundle. The shapes are all added to a single RenderableLayer, which is added to the WorldWindow’s layer list.
 
 <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/Paths.html">Paths.html</a> and <a target="_blank" href="http://worldwindserver.net/webworldwind/examples/Paths.js">Paths.js</a> show how to use Path and several of its unique features, including altitude mode, terrain following and extrusion. It also show how to assign separate appearance attributes for highlighting, and  instantiates a HighlightController to handle highlighting automatically.
 
