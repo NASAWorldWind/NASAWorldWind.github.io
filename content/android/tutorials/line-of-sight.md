@@ -8,7 +8,7 @@ listimage: "/img/ww-android-line-of-sight.png"
 
 ## Line Of Sight
 
-<video src="/img/ww-android-line-of-sight-vid.webm" type="video/webm" autoplay loop class="img-responsive"></video>
+{{< youtube id="A2jWwF15BVo" autoplay="true" >}}
 ###### *Video above from the Movable Line Of Sight Example*
 ---
 
