@@ -64,4 +64,4 @@ The OmnidirectionalSightlineFragment tutorial also adds a Placemark at the posit
 
 <br>
 
-The OmnidirectionalSightline object uses the available terrain to test for line of sight. As you zoom in or get closer to the terrain, refinement occurs and the visible terrain may change. Examine the WorldWind Example - Movable Line Of Sight for an additional code example working with the OmnidirectionalSightline class.
+The OmnidirectionalSightline object uses the available terrain to test for line of sight. As you zoom in or get closer to the terrain, refinement occurs and the visible terrain may change. This tutorial is the simplest demonstration for Line of Sight. Please see this [example](https://github.com/NASAWorldWind/WorldWindAndroid/blob/develop/worldwind-examples/src/main/java/gov/nasa/worldwindx/OmnidirectionalSightlineActivity.java) for more functionality.
