@@ -8,9 +8,8 @@ listimage: "/img/ww-android-line-of-sight.png"
 
 ## Line Of Sight
 ---
-
-<iframe width="1130" height="500" src="https://www.youtube.com/embed/A2jWwF15BVo?rel=0&amp;showinfo=0" frameborder="0" class="center-block"></iframe>
-<h6 class="text-center">*Video above from the Line Of Sight Example*</h6>
+{{< youtube id="A2jWwF15BVo?rel=0&amp;showinfo=0" autoplay="true" >}}
+###### *Video above from the Line Of Sight Example*
 
 ---
 
@@ -57,7 +56,7 @@ sightline.setOccludeAttributes(occludedAttributes);
 
 The OmnidirectionalSightlineFragment tutorial also adds a Placemark at the position specified for the OmnidirectionalSightline object. This isn't necessary and is only added to provide a visual context of the sightline origin and results.
 
-The code above should provide a view similar to this:
+<br>The code above should provide a view similar to this:
 
 <br>
 
