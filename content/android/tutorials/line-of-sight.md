@@ -8,7 +8,9 @@ listimage: "/img/ww-android-line-of-sight.png"
 
 ## Line Of Sight
 
-<img src="/img/ww-android-line-of-sight.png" class="img-responsive center-block">
+<img src="/img/ww-android-line-of-sight-top.gif" class="img-responsive center-block">
+###### *Image above from the Movable Line Of Sight Example*
+---
 
 This tutorial demonstrates the OmnidirectionalSightline class and how it can be used to display the line of sight visible portions of terrain given an origin.
 
