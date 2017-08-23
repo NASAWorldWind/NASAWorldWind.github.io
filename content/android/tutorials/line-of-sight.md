@@ -8,7 +8,7 @@ listimage: "/img/ww-android-line-of-sight.png"
 
 ## Line Of Sight
 ---
-{{< youtube id="A2jWwF15BVo?rel=0&amp;showinfo=0" autoplay="true" >}}
+{{< youtube "A2jWwF15BVo?rel=0&amp;showinfo=0;autoplay=true" >}}
 ###### *Video above from the Line Of Sight Example*
 
 ---
