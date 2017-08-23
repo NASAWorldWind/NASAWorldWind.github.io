@@ -20,6 +20,8 @@ The full code for the examples below is available in the worldwind-examples modu
 
 {{% panel-narrow title="MIL-STD-2525 Demonstration" link="https://github.com/NASAWorldWind/WorldWindAndroid/blob/master/worldwind-examples/src/main/java/gov/nasa/worldwindx/PlacemarksMilStd2525DemoActivity.java" imgUrl="/img/wwa-ex-milstd2525-demonstration.png" %}}
 
+{{% panel-narrow title="Line Of Sight" link="https://github.com/NASAWorldWind/WorldWindAndroid/blob/master/worldwind-examples/src/main/java/gov/nasa/worldwindx/OmnidirectionalSightlineActivity.java" imgUrl="/img/ww-android-movable-line-of-sight.png" %}}
+
 {{% panel-narrow title="Paths" link="https://github.com/NASAWorldWind/WorldWindAndroid/blob/master/worldwind-examples/src/main/java/gov/nasa/worldwindx/PathsExampleActivity.java" imgUrl="/img/wwa-ex-paths-example.png" %}}
 
 {{% panel-narrow title="Day Night Cycle" link="https://github.com/NASAWorldWind/WorldWindAndroid/blob/master/worldwind-examples/src/main/java/gov/nasa/worldwindx/DayNightCycleActivity.java" imgUrl="/img/wwa-ex-day-night-cycle.png" %}}
