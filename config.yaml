@@ -3,4 +3,3 @@ languageCode: "en-us"
 title: "NASA WorldWind"
 metaDataFormat: "yaml"
 cleanDestinationDir: true
-googleAnalytics: "UA-105294289-1"
