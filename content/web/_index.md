@@ -27,6 +27,4 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 
 ---
 
-Web WorldWind is developed in partnership with the [European Space Agency](http://www.esa.int/ESA).
-
-<img src="/img/logo-esa.png" width="179" hspace="130">
+Web WorldWind is developed in partnership with the [European Space Agency](http://www.esa.int/ESA). <img src="/img/logo-esa.png" width="179" hspace="50">
