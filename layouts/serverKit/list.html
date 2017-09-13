@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{ partial "java-header.html" . }}
+    <div class="container">
+        {{ .Content }}
+
+        {{ if isset .Params "uselisttemplate" }}
+            {{ partial "panel-list.html" . }}
+        {{ end }}
+    </div>
+{{ end }}
