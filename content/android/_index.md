@@ -20,3 +20,7 @@ draft: false
 - [GitHub Issues](https://github.com/NASAWorldWind/WorldWindAndroid/issues/) lists WorldWind bugs, issues, and
         milestones
 - [Forum](https://forum.worldwindcentral.com) provides help from the WorldWind community
+
+---
+
+<img src="/img/intellij-idea-logo.svg" alt="IntelliJ IDEA logo" height="60" width="60" hspace="20"> For maximum productivity, WorldWind Android is developed in [JetBrains' IntelliJ IDEA IDE](https://www.jetbrains.com/idea/).
