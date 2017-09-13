@@ -20,5 +20,3 @@ draft: false
 - [GitHub Issues](https://github.com/NASAWorldWind/WorldWindAndroid/issues/) lists WorldWind bugs, issues, and
         milestones
 - [Forum](https://forum.worldwindcentral.com) provides help from the WorldWind community
-
----
