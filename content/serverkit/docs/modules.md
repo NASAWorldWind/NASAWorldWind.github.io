@@ -9,14 +9,14 @@ listdescription: "Explore the modules that make up the WorldWind Server Kit."
 
 ---
 
-[WorldWind GeoServer Application](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver">WorldWind GeoServer Application</a>
 
-[WorldWind GeoServer Distribution](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver-dist)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver-dist">WorldWind GeoServer Distribution</a>
 
-[WorldWind GeoPackage Extension](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-geopkg)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-geopkg">WorldWind GeoPackage Extension</a>
 
-[WorldWind GeoPackage Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gt-geopkg)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gt-geopkg">WorldWind GeoPackage Module</a>
 
-[WorldWind GeoServer WMS Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms">WorldWind GeoServer WMS Module</a>
 
-[WorldWind GeoServer Viewer](https://github.com/NASAWorldWind/WorldWindServerKit/tree/feature/%23107-worldwind_viewer/worldwind-gs-viewer)
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/feature/%23107-worldwind_viewer/worldwind-gs-viewer">WorldWind GeoServer Viewer</a>
