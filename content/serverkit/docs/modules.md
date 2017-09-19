@@ -5,24 +5,16 @@ draft: false
 listdescription: "Explore the modules that make up the WorldWind Server Kit."
 ---
 
-## WWSK Modules
+## Modules
 
-- [WorldWind GeoServer Application](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver)
+---
 
-Builds the basic WWSK GeoServer Application.
+[WorldWind GeoServer Application](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver)
 
-- [WorldWind GeoServer Distribution](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver-dist)
+[WorldWind GeoServer Distribution](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-geoserver-dist)
 
-Builds multiple distributions of the WorldWind GeoServer Application.
+[WorldWind GeoPackage Extension](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-geopkg)
 
-- [WorldWind GeoPackage Extension](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-geopkg)
+[WorldWind GeoPackage Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gt-geopkg)
 
-Ingests and exports GeoPackages using an OGC compliant tiling sheme.
-
-- [WorldWind GeoPackage Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gt-geopkg)
-
-Replaces *GeoTools GeoPackage Plugin*.
-
-- [WorldWind GeoServer WMS Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms)
-
-Provides additional features to the GeoServer WMS Module.
+[WorldWind GeoServer WMS Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms)
