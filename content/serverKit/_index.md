@@ -14,6 +14,8 @@ users to stay out of the IT domain and remain close to their problem domain.
 
 Want to learn more? Let's [get started](/serverkit/get-started/)!
 
+---
+
 ### More Resources
 
 - [GitHub](https://github.com/NASAWorldWind/WorldWindServerKit) contains the most up-to-date source code for WWSK.
