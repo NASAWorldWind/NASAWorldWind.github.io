@@ -18,3 +18,5 @@ listdescription: "Explore the modules that make up the WorldWind Server Kit."
 [WorldWind GeoPackage Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gt-geopkg)
 
 [WorldWind GeoServer WMS Module](https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms)
+
+[WorldWind GeoServer Viewer](https://github.com/NASAWorldWind/WorldWindServerKit/tree/feature/%23107-worldwind_viewer/worldwind-gs-viewer)

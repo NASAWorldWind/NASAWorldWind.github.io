@@ -7,7 +7,7 @@ draft: false
 ### What is WWSK?
 
 WWSK *(pronounced whis-kee)* stands for WorldWind Server Kit. It is an open source Java project that assembles
-[GeoServer](http://geoserver.org/) for easy data distribution and implementation. It is designed with simplicity in mind.
+[GeoServer](http://geoserver.org/) for easy distribution and implementation. It is designed with simplicity in mind.
 WWSK is preconfigured to deal with common services and file formats, including GeoPackages. All you have to do is install
 WWSK and launch GeoServer to begin hosting, serving, and exploring your map data. The lightweight configuration allows
 users to stay out of the IT domain and remain close to their problem domain.
