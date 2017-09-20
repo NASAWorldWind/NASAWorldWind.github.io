@@ -4,7 +4,11 @@ date: 2017-09-13T12:21:14-07:00
 draft: false
 ---
 
-### To Build
+## Get Started
+
+---
+
+### Build
 
 WWSK uses [Apache Maven](http://maven.apache.org/) for a build system. To build WWSK and its dependencies, run maven
 from the root of the WWSK repository:
@@ -13,7 +17,7 @@ from the root of the WWSK repository:
 
 ---
 
-### To Run
+### Run
 
 Depending on your personal preference, there are several ways to run WWSK.
 
