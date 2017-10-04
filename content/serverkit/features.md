@@ -21,7 +21,7 @@ which lets you see your data in the context of Earth.
 
 ## WorldWind Viewer
 
-- Allows you to see your data in the contet of a globe
+- Allows you to see your data in the context of a globe
 - Visualizes all the layers and layer groups that you've defined on one terrain
 - Understands and leverages your GeoServer's capabilities and strengths--no configuration required
 
