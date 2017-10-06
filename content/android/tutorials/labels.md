@@ -1,5 +1,5 @@
 ---
-title: "Labels"
+title: "Labels-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:33:17-04:00
 draft: false
 listdescription: "Demonstrates how to display labels on a WorldWind globe."

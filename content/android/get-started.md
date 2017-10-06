@@ -1,5 +1,5 @@
 ---
-title: "WorldWind Android Get Started"
+title: "Get Started-WorldWind Android/NASA WorldWind"
 date: 2017-06-30T14:40:16-04:00
 draft: false
 ---
