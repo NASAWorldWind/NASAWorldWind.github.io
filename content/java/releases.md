@@ -1,5 +1,5 @@
 ---
-title: "WorldWind Java Releases"
+title: "Releases-WorldWind Java/NASA WorldWind"
 date: 2017-07-27T13:47:01-05:00
 draft: false
 ---

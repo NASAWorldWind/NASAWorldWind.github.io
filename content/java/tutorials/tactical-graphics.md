@@ -1,5 +1,5 @@
 ---
-title: "Tactical Graphics"
+title: "Tactical Graphics-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T00:11:33-04:00
 draft: false
 listdescription: "Describes how to display tactical graphic symbol sets."
