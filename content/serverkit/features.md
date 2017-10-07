@@ -19,7 +19,7 @@ which lets you see your data in the context of Earth.
 - Accesses data from remote services, acting as a proxy
 - Uses an integrated GeoWebCache for improved client performance
 
-## WorldWind Viewer
+## WorldWind Explorer
 
 - Allows you to see your data in the contet of a globe
 - Visualizes all the layers and layer groups that you've defined on one terrain
