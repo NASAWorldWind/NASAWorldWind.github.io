@@ -1,5 +1,5 @@
 ---
-title: "Layers"
+title: "Layers-Web WorldWind/NASA WorldWind"
 date: 2017-07-26T15:21:03-05:00
 draft: false
 listdescription: "WorldWind's primary content display container."
@@ -7,7 +7,7 @@ listdescription: "WorldWind's primary content display container."
 
 ## Layers
 
-<img src="/img/web/layerlist.jpg" class="img-responsive" align="right">LayerListLayers hold all the information displayed by the WorldWindow. Each WorldWindow holds one layer list that contains all the layers to display in that WorldWindow. Each layer contains either imagery, shapes or decorations such as a compass. During rendering, layers are displayed in the order they’re defined in the layer list. (3D shapes within layers, however, are displayed in far-to-near order, as described in the Shapes section.) The adjacent illustration depicts six layers. The first two are image layers. The second two hold shapes. And the bottom two hold decorations.
+<img src="/img/web/layerlist.jpg" class="img-responsive" alt="List of map layers to use on WorldWind globe" align="right">LayerListLayers hold all the information displayed by the WorldWindow. Each WorldWindow holds one layer list that contains all the layers to display in that WorldWindow. Each layer contains either imagery, shapes or decorations such as a compass. During rendering, layers are displayed in the order they’re defined in the layer list. (3D shapes within layers, however, are displayed in far-to-near order, as described in the Shapes section.) The adjacent illustration depicts six layers. The first two are image layers. The second two hold shapes. And the bottom two hold decorations.
 
 The above layer list is defined and the layers added to the WorldWindow by the following code:
 

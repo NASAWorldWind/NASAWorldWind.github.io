@@ -1,5 +1,5 @@
 ---
-title: "Navigator Events"
+title: "Navigator Events-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:15:50-04:00
 draft: false
 listdescription: "Demonstrates how to receive and consume navigator events."

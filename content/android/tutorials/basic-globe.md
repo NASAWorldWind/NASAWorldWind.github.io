@@ -1,5 +1,5 @@
 ---
-title: "Basic Globe"
+title: "Basic Globe-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T23:01:58-04:00
 draft: false
 listdescription: "Demonstrates how to construct a WorldWindow with a few layers."

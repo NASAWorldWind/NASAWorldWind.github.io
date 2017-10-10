@@ -1,5 +1,5 @@
 ---
-title: "Icon Retriever"
+title: "Icon Retriever-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T00:41:16-04:00
 draft: false
 listdescription: "Describes how to use the IconRetriever interface to retrieve icons for tactical symbols."

@@ -1,5 +1,5 @@
 ---
-title: "Tactical Graphic Status"
+title: "Tactical Graphic Status-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T00:55:10-04:00
 draft: false
 listdescription: "Lists all of the tactical graphics defined in MIL-STD-2525C, and shows which graphics are supported

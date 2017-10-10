@@ -1,5 +1,5 @@
 ---
-title: "Contact NASA WorldWind"
+title: "Contact/NASA WorldWind"
 date: 2017-07-03T14:28:34-04:00
 draft: false
 ---
@@ -27,3 +27,7 @@ WorldWind uses [GitHub](https://github.com/NASAWorldWind/) for source and issue 
 The [WorldWind Forum](https://forum.worldwindcentral.com/) is a great resource to learn more about the WorldWind
 projects. Many users are quick to help and share code snippets. Members of the NASA and ESA WorldWind development teams
 regularly visit the forum to answer questions and help with issues.
+
+
+<br></br>
+<br></br>

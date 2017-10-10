@@ -1,5 +1,5 @@
 ---
-title: "WorldWind Java Get Started"
+title: "Get Started-WorldWind Java/NASA WorldWind"
 date: 2017-07-27T09:50:17-05:00
 draft: false
 ---

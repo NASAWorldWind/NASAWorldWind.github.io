@@ -1,5 +1,5 @@
 ---
-title: "Paths"
+title: "Paths-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:26:01-04:00
 draft: false
 listdescription: "Demonstrates how to add Paths to a RenderableLayer."

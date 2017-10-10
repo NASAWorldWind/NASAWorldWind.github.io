@@ -1,5 +1,5 @@
 ---
-title: "Web WorldWind Examples"
+title: "Examples-Web WorldWind/NASA WorldWind"
 date: 2017-07-25T16:24:36-05:00
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 Web WorldWind includes many different examples in the source code. The examples are simple in order to make each feature easy to learn.
 
-You can run the examples directly from this page by clicking on the HTML links. It is not necessary to download Web WorldWind to run them. If you want to download and run them locally, see the Running Local section of the [Deployment](/web/tutorials/deployment/) tutorial.
+You can run the examples directly from this page by clicking on the HTML links. It is not necessary to download Web WorldWind to run them. If you want to download and run them locally, see the Running Local section of the [Deployment tutorial](/web/tutorials/deployment/).
 
 Most examples use jquery, Bootstrap, and requireJS, but those technologies are not required to use Web WorldWind.
 

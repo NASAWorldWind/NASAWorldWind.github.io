@@ -1,5 +1,5 @@
 ---
-title: "WorldWind Java Demos"
+title: "Demos-WorldWind Java/NASA WorldWind"
 date: 2017-07-13T00:02:06-04:00
 draft: false
 ---
