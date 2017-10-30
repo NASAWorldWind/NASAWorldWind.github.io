@@ -8,28 +8,26 @@ draft: false
 
 ---
 
-<form>
-    <h5>Reason for contact*</h5>
-    <div class="form-group">
-        <input type="text" class="form-control">
-    </div>
-    <br></br>
-    <h5>PERSONAL INFORMATION*</h5>
-    <div class="form-inline">
-        <label class="sr-only" for="inlineFormInput">FirstName</label>
-        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="First Name">
+#### Administrative Contact
 
-        <label class="sr-only" for="inlineFormInput">LastName</label>
-        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Last Name">
-    </div>
-    <br></br>
-    <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-    </div>
-    <br></br>
-    <h5>MESSAGE*</h5>
-    <div class="form-group">
-        <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+Patrick Hogan - [patrick.hogan@nasa.gov](mailto:patrick.hogan@nasa.gov)
+
+The WorldWind project is managed from [NASA Ames Research Center](https://www.nasa.gov/ames) at Moffett Field, CA.
+
+---
+
+#### Issue Reports and Source Code
+
+WorldWind uses [GitHub](https://github.com/NASAWorldWind/) for source and issue management.
+
+---
+
+#### Development Community
+
+The [WorldWind Forum](https://forum.worldwindcentral.com/) is a great resource to learn more about the WorldWind
+projects. Many users are quick to help and share code snippets. Members of the NASA and ESA WorldWind development teams
+regularly visit the forum to answer questions and help with issues.
+
+
+<br></br>
+<br></br>
