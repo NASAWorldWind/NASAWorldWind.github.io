@@ -1,5 +1,5 @@
 ---
-title: "Camera View"
+title: "Camera View-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:03:35-04:00
 draft: false
 listdescription: "Demonstrates how to use a Camera to view a position. Also shows how to configure the WorldWindow's

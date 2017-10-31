@@ -1,5 +1,5 @@
 ---
-title: "WorldWind Server Kit Features"
+title: "Features-WWSK/NASA WorldWind"
 date: 2017-09-13T12:21:37-07:00
 draft: false
 ---
@@ -19,9 +19,9 @@ which lets you see your data in the context of Earth.
 - Accesses data from remote services, acting as a proxy
 - Uses an integrated GeoWebCache for improved client performance
 
-## WorldWind Viewer
+## WorldWind Explorer
 
-- Allows you to see your data in the contet of a globe
+- Allows you to see your data in the context of a globe
 - Visualizes all the layers and layer groups that you've defined on one terrain
 - Understands and leverages your GeoServer's capabilities and strengths--no configuration required
 

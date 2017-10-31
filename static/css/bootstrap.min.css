@@ -4512,7 +4512,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 @media (min-width: 768px) {
     .navbar {
-        border-radius: 4px
+        border-radius: 0px
     }
 }
 
@@ -5901,7 +5901,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
 }
 
 .panel-footer {
-    padding: 10px 15px;
+    padding: 20px 15px 20px 15px;
     background-color: #ecf0f1;
     border-top: 1px solid #ecf0f1;
     border-bottom-right-radius: 3px;

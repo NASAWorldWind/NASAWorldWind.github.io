@@ -1,5 +1,5 @@
 ---
-title: "Shapes"
+title: "Shapes-Web WorldWind/NASA WorldWind"
 date: 2017-07-27T09:10:24-05:00
 draft: false
 listdescription: "Description of the properties of Shapes in Web WorldWind."
