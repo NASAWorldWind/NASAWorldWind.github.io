@@ -21,3 +21,8 @@ Want to learn more? Let's [get started](/serverkit/get-started/)!
 - [GitHub](https://github.com/NASAWorldWind/WorldWindServerKit) contains the most up-to-date source code for WWSK.
 - [GitHub Releases](https://github.com/NASAWorldWind/WorldWindServerKit/releases) has the WWSK releases.
 - [GitHub Issues](https://github.com/NASAWorldWind/WorldWindServerKit/issues) lists WWSK bugs, issues, and milestones.
+
+---
+
+<img src="/img/install4j_medium.png" alt="Electric blue logo for install4j" hspace="10"/>
+WWSK uses a <a href="https://www.ej-technologies.com/products/install4j/overview.html">multi-platform installer builder</a> to maximize productivity.
