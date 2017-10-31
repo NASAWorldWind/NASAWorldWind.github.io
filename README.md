@@ -1,4 +1,4 @@
-![NASA Meatball](https://nasaworldwind.github.io/img/nasa-logo.svg)
+<img src="https://worldwind.arc.nasa.gov/img/nasa-logo.svg" height="100"/>
 
 # NASAWorldWind.github.io
 
