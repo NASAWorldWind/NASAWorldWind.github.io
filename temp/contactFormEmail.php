@@ -1,12 +1,16 @@
 <?php
 
-$email = $_POST['email'];
+$to = "endiajanae@mail.fresnostate.edu";
+
+$user_email = $_POST['email'];
 $subject = $_POST['name'];
 $content = $_POST['content'];
 
 // use wordwrap() if lines are longer than 70 characters
 $msg = wordwrap($content,70);
 
+$headers .= "Reply-To: $user_email \r\n";
+
 // send email
-mail($email,$subject,$msg);
+mail($to,$subject,$msg,$headers);
 ?>
