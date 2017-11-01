@@ -5,14 +5,13 @@ draft: false
 ---
 
 <html>
-    <body>
+<body>
+<form action="contactFormEmail.php" method="post">
+    Name: <input type="text" id="name" name="name"><br></br>
+    E-mail: <input type="text" id= "email" name="email"><br></br>
+    Content: <input type="text" id="content" name="content"><br></br>
+<input type="submit"/>
+</form>
 
-        <form action="contactFormEmail.php" method="post">
-            Name: <input type="text" id="name" name="name"><br>
-            E-mail: <input type="text" id= "email" name="email"><br>
-            Content: <input type="text" id="content" name="content"><br>
-            <input type="submit">
-        </form>
-
-    </body>
+</body>
 </html>
