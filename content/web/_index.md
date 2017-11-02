@@ -19,7 +19,7 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 ## More Resources
 
 - [GitHub](https://github.com/NASAWorldWind/WebWorldWind/) contains the most up-to-date Web WorldWind source code
-- [GitHub Releases](https://github.com/NASAWorldWind/WebWorldWind/) contains the Web WorldWind source code
+- [GitHub Releases](https://github.com/NASAWorldWind/WebWorldWind/releases) contains the Web WorldWind source code
 - [GitHub Issues](https://github.com/NASAWorldWind/WebWorldWind/issues/) lists WorldWind bugs and issues and milestones
 - [Forum](https://forum.worldwindcentral.com/) provides help from the Web WorldWind community
 - [Europa Challenge](http://eurochallenge.como.polimi.it/) providing sustainable solutions for the world.
