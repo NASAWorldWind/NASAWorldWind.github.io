@@ -2,6 +2,7 @@
 title: "Basic WorldWind App-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T14:01:30-04:00
 draft: false
+header: Basic WorldWind App
 listdescription: "Describes how to setup an application to use the WorldWind Android library."
 listimage: "/img/ww-android-basic-app.png"
 ---

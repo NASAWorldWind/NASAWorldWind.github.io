@@ -2,6 +2,7 @@
 title: "Basic Globe-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T23:01:58-04:00
 draft: false
+header: Basic Globe
 listdescription: "Demonstrates how to construct a WorldWindow with a few layers."
 listimage: "/img/ww-android-basic-globe.png"
 ---
