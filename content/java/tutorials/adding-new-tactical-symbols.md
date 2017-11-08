@@ -2,6 +2,7 @@
 title: "Adding New Tactical Symbols-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T01:02:30-04:00
 draft: false
+header: Adding New Tactical Symbols
 listdescription: "Describes how custom symbols may be created."
 ---
 

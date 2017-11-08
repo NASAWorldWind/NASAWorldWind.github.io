@@ -2,6 +2,7 @@
 title: "Placemarks-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:19:26-04:00
 draft: false
+header: Placemarks
 listdescription: "Demonstrates how to add Placemarks to a RenderableLayer."
 listimage: "/img/ww-android-placemarks.png"
 ---

@@ -2,6 +2,7 @@
 title: "Build a Custom Renderable-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T01:37:13-04:00
 draft: false
+header: Build a Custom Renderable
 listdescription: "Describes how to implement a custom renderable that draws a cube centered on a geographic position."
 ---
 

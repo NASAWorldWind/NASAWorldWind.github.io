@@ -2,6 +2,7 @@
 title: "WMS Layer-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T23:21:29-04:00
 draft: false
+header: WMS Layer
 listdescription: "Demonstrates how to construct a WmsLayer with the LayerFactory."
 listimage: "/img/ww-android-wms-layer.png"
 ---

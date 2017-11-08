@@ -2,6 +2,7 @@
 title: "Paths-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:26:01-04:00
 draft: false
+header: Paths
 listdescription: "Demonstrates how to add Paths to a RenderableLayer."
 listimage: "/img/ww-android-paths.png"
 ---
