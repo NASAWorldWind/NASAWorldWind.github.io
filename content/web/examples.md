@@ -44,6 +44,10 @@ The full code for the examples below is available in the examples module of the 
 
 {{% panel-narrow title="KML Example" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/KmlExample.html" imgUrl="/img/web/ww-web-kmlExample.png" %}}
 
+{{% panel-narrow title="Measurements" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/Measurements.html" imgUrl="/img/web/ww-web-measurements.png" %}}
+
+{{% panel-narrow title="Moving SurfaceShapes Test" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/TestMovingSurfaceShapes.html" imgUrl="/img/web/ww-web-movingSurfaceShapesTest.png" %}}
+
 {{% panel-narrow title="Multi-Window" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/MultiWindow.html" imgUrl="/img/web/ww-web-multiWindow.png" %}}
 
 {{% panel-narrow title="NDVI Viewer" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/NDVIViewer.html" imgUrl="/img/web/ww-web-NDVIViewer.png" %}}
@@ -62,8 +66,16 @@ The full code for the examples below is available in the examples module of the 
 
 {{% panel-narrow title="Shapefiles" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/Shapefiles.html" imgUrl="/img/web/ww-web-shapefiles.png" %}}
 
+{{% panel-narrow title="StarField" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/StarField.html" imgUrl="/img/web/ww-web-starField.png" %}}
+
 {{% panel-narrow title="Surface Image" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SurfaceImage.html" imgUrl="/img/web/ww-web-surfaceImage.png" %}}
 
 {{% panel-narrow title="Surface Shapes" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SurfaceShapes.html" imgUrl="/img/web/ww-web-surfaceShapes.png" %}}
 
 {{% panel-narrow title="Triangle Mesh" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/TriangleMeshes.html" imgUrl="/img/web/ww-web-triangleMeshes.png" %}}
+
+{{% panel-narrow title="WKT" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/Wkt.html" imgUrl="/img/web/ww-web-wkt.png" %}}
+
+{{% panel-narrow title="WMS" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/WMS.html" imgUrl="/img/web/ww-web-wms.png" %}}
+
+{{% panel-narrow title="WMTS" link="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/WMTS.html" imgUrl="/img/web/ww-web-wmts.png" %}}
