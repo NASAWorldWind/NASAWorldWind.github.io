@@ -2,6 +2,8 @@
 title: "Simplest Example-Web WorldWind/NASA WorldWind"
 date: 2017-11-15T13:48:00-08:00
 draft: false
+header: Simplest Example
+listdescription: Shows the simplest way to get started with Web WorldWind.
 ---
 
 ## Simplest Example
