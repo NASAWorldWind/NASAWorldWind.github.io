@@ -9,48 +9,36 @@ listdescription: Illustrates the WorldWind configuration options and how to set 
 ## Configuration
 
 If you are just getting started with Web WorldWind, you might be interested in its configuration options. The script
-below illustrates some of these configurations. Please note that most of these configuration options must be set
+below shows you how to set some of these configurations. Please note that these options must be set
 before you create the WorldWindow or any other WorldWind object.
 
 ---
 
-```groovy
-requirejs(['../src/WorldWind',
-'./LayerManager'],
-function (ww,
-LayerManager) {
-"use strict";
+## Setting the Logging Level
 
-// Configure the logging level.
-WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
+    // Get detailed logging
+    WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
 
-// Configure the amount of GPU memory to use.
-WorldWind.configuration.gpuCacheSize = 500e6; // 500 MB
+    //Turn off logging
+    WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_NONE);
 
-// Create a World Window and some layers to display.
-var wwd = new WorldWind.WorldWindow("canvasOne");
+## Changing the GPU Cache Size
 
-var layers = [
-  {layer: new WorldWind.BMNGLayer(), enabled: true},
-  {layer: new WorldWind.BMNGLandsatLayer(), enabled: false},
-  {layer: new WorldWind.BingAerialWithLabelsLayer(null), enabled: true},
-  {layer: new WorldWind.BingRoadsLayer(null), enabled: false},
-  {layer: new WorldWind.CompassLayer(), enabled: true},
-  {layer: new WorldWind.CoordinatesDisplayLayer(wwd), enabled: true},
-  {layer: new WorldWind.ViewControlsLayer(wwd), enabled: true}
-  ];
+    // Custom GPU Cache Size
+    WorldWind.configuration.gpuCacheSize = 500e6; // 500 MB
 
-  for (var l = 0; l < layers.length; l++) {
-    layers[l].layer.enabled = layers[l].enabled;
-    wwd.addLayer(layers[l].layer);
-  }
+## Changing the Image Path
 
-  // Create a layer manager for controlling layer visibility.
-  var layerManger = new LayerManager(wwd);
+If your server looks like this:
 
-});
-```
+    https://YOUR_SERVER/dir/subdir/images/
+    https://YOUR_SERVER/worldwind.min.js
+
+Then the base URL should be:
+
+    WorldWind.configuration.baseUrl = "dir/subdir";
+
 ---
 
-You can copy/paste this script into your own file, or check it out in the [Web WorldWind examples](https://github.com/NASAWorldWind/WebWorldWind/tree/develop/examples)
+You can copy/paste these snippets into your own file, or check it out in the [Web WorldWind examples](https://github.com/NASAWorldWind/WebWorldWind/tree/develop/examples)
 on GitHub.
