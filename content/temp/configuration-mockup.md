@@ -9,35 +9,34 @@ listdescription: Illustrates the WorldWind configuration options and how to set 
 ## Configuration
 
 If you are just getting started with Web WorldWind, you might be interested in its configuration options. The script
-below illustrates some of these configurations. Please note that most of these configuration options must be set
+below shows you how to set some of these configurations. Please note that these options must be set
 before you create the WorldWindow or any other WorldWind object.
 
 ---
 
-## Setting WorldWind's Logging Level
+## Setting the Logging Level
 
-    // Get more detailed logging from WorldWind
+    // Get detailed logging
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
 
-    // turn off logging
+    //Turn off logging
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_NONE);
 
-## Changing WorldWind's GPU Cache Size
+## Changing the GPU Cache Size
 
-    // WorldWind defaults to a default GPU cache size of [the default size] MB. 
-    // This can be customized...
+    // Custom GPU Cache Size
     WorldWind.configuration.gpuCacheSize = 500e6; // 500 MB
 
-## Changing the path images are loaded from
+## Changing the Image Path
 
 If your server looks like this
 
-    https://YOUR_SERVER/some/stuff/images/
+    https://YOUR_SERVER/dir/subdir/images/
     https://YOUR_SERVER/worldwind.min.js
 
-    WorldWind.configuration.baseUrl = "some/stuff";
+    WorldWind.configuration.baseUrl = "dir/subdir";
 
 ---
 
-You can copy/paste this script into your own file, or check it out in the [Web WorldWind examples](https://github.com/NASAWorldWind/WebWorldWind/tree/develop/examples)
+You can copy/paste these snippets into your own file, or check it out in the [Web WorldWind examples](https://github.com/NASAWorldWind/WebWorldWind/tree/develop/examples)
 on GitHub.

@@ -8,25 +8,23 @@ listdescription: Shows the simplest way to get started with Web WorldWind.
 
 ## Simplest Example
 
-This tutorial illustrates the simplest way to get started with Web WorldWind. Simply include a short script
-in an HTML page, like this:
+This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file.
 
 ---
 
-## The Breakdown
+## Breakdown
 
-This example downloads the minified Web WorldWind library, worldwind.min.js
+First, in the head tag of your HTML, add a script element to include the Web WorldWind library.
 
-    <script src="http://worldwindserver.net/webworldwind/worldwindlib.min.js" type="text/javascript"></script>
+    <script src="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/worldwind.min.js" type="text/javascript"></script>
     
-the creates an HTML5 canvas, 
+Next, create an HTML5 canvas, defining its width and heighth.
 
     <canvas id="canvasOne" width="1024" height="768">
         Your browser does not support HTML5 Canvas.
     </canvas>
 
-then defines a script that creates the WorldWind and populates it with two image layers and three control layers. The
-result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SimplestExample.html).
+Finally, you will include a script between the body tags of your HTML, like this:
 
     // Create a WorldWindow for the canvas.
     var wwd = new WorldWind.WorldWindow("canvasOne");
@@ -39,7 +37,12 @@ result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/art
     wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
     wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 
+This script does two things. First, it creates a WorldWindow for your HTML5 canvas. Then it populates the WorldWindow
+with various image and control layers.
+
 ## Putting it All Together
+
+Here is what it looks like in a working example:
 
     <!DOCTYPE html>
     <!-- This is a very simple example of using Web WorldWind. -->
@@ -77,6 +80,8 @@ result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/art
             </script>
         </body>
     </html>
+
+If you run this example, the result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SimplestExample.html).
 
 ## Gestures
 
