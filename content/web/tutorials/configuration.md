@@ -19,7 +19,7 @@ before you create the WorldWindow or any other WorldWind object.
     // Get detailed logging
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
 
-    //Turn off logging
+    // Turn off logging
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_NONE);
 
 ## Changing the GPU Cache Size

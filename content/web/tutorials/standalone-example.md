@@ -12,7 +12,7 @@ listdescription: Describes the how to host Web WorldWind on your own HTTP server
 
 ### The Data
 
-Get the [latest release](https://github.com/NASAWorldWind/WebWorldWind/releases/tag/v0.9.0-RC2) on GitHub.
+Get the [latest release](https://github.com/NASAWorldWind/WebWorldWind/releases/latest) on GitHub.
 
 Host the WorldWind library and the images folder on your HTTP server:
 
@@ -24,20 +24,20 @@ Get some data and unpack to:
     https://YOUR_SEVER/standalone/
 
 You can also use this [example data](https://worldwind32.arc.nasa.gov/WebWorldWind-StandaloneData.tar.gz) from NASA.
-
+**The standalone folder is specific to the example data from NASA. With custom data, the folder could be named anything.**
 ---
 
 ### The Script
 
 Add the WorldWind library:
 
-    <script src="https://YOUR_SERVER/worldwind.min.js" type="text/javascript"></script>
+    <script src="https://YOUR_SERVER/worldwind.min.js" type="text/javascript"/>
 
 Create an HTML5 canvas:
 
     <canvas id="canvasOne" width="1024" height="768">
-Your browser does not support HTML5 Canvas.
-</canvas>
+        Your browser does not support HTML5 Canvas.
+    </canvas>
 
 Load the data in WorldWind:
 
@@ -55,7 +55,7 @@ Load the data in WorldWind:
 
 ---
 
-You can See this tutorial in action through the [Standalone Example](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/Standalone.html).
+You can see this tutorial in action through the [Standalone Example](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/Standalone.html).
 
 <br></br>
 <br></br>

@@ -16,13 +16,14 @@ This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file.
 
 First, in the head tag of your HTML, add a script element to include the Web WorldWind library.
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/worldwind.min.js" type="text/javascript"></script>
+    <script src="https://files.worldwind.arc.nasa.gov/artifactory/apps/web/worldwind.min.js" type="text/javascript"/>
 
-Next, create an HTML5 canvas, defining its width and heighth.
+Next, create an HTML5 canvas, defining its width and heighth. You will also want to include a message for browsers that
+do not support HTML5 Canvas.
 
     <canvas id="canvasOne" width="1024" height="768">
-Your browser does not support HTML5 Canvas.
-</canvas>
+        Your browser does not support HTML5 Canvas.
+    </canvas>
 
 Finally, you will include a script between the body tags of your HTML, like this:
 
@@ -47,13 +48,13 @@ with various image and control layers.
 Here is what it looks like in a working example:
 
     <!DOCTYPE html>
-        <!-- This is a very simple example of using Web WorldWind. -->
+    <!-- This is a very simple example of using Web WorldWind. -->
     <html>
     <head lang="en">
     <meta charset="UTF-8">
     <title>WorldWind Example</title>
     <!-- Include the Web WorldWind library. -->
-    <script src="http://worldwindserver.net/webworldwind/worldwindlib.min.js" type="text/javascript"></script>
+    <script src="http://worldwindserver.net/webworldwind/worldwindlib.min.js" type="text/javascript"/>
     </head>
     <body>
     <div style="position: absolute; top: 50px; left: 50px;">
@@ -83,13 +84,11 @@ Here is what it looks like in a working example:
     </body>
     </html>
 
-If you run this example, the result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SimplestExample.html).
-
 ---
 
-### Gestures
+### Runtime Example
 
-Try zooming in with your mouse wheel (or a pinch gesture for mobile devices). Drag the mouse or your finger to pan
+If you run this example, the result is a simple, interactive [globe](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SimplestExample.html).Try zooming in with your mouse wheel (or a pinch gesture for mobile devices). Drag the mouse or your finger to pan
 around the globe. Drag the right mouse button or your two fingers upward to tilt the globe.
 
 <br></br>
