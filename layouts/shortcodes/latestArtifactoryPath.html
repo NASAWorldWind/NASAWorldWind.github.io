@@ -1,0 +1,1 @@
+{{ $url := .Get "url" }}{{ $gistJ := getJSON $url }}{{ range last 1 $gistJ.children }}{{ .uri }}{{ end }}

@@ -20,7 +20,7 @@ Get the [latest release](https://www.npmjs.com/package/@nasaworldwind/worldwind/
 
     npm install @nasaworldwind/worldwind
 
-Then your JavaScript files add:
+Then to your JavaScript files add:
 
     require('@nasaworldwind/worldwind');
 
@@ -33,7 +33,7 @@ in your npm-based project's web root.
 
 Load the latest release library directly from WorldWind's servers.
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web {{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web""%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web {{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
 
 ---
 
