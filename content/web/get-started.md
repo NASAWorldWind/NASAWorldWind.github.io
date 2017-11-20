@@ -33,7 +33,7 @@ in your npm-based project's web root.
 
 Load the latest release library directly from WorldWind's servers.
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web {{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
 
 ---
 
@@ -41,6 +41,6 @@ Load the latest release library directly from WorldWind's servers.
 
 - The latest [GitHub release](https://github.com/NASAWorldWind/WebWorldWind/releases/latest) contains all the WorldWind libraries and code examples.
 
-- [Simplest Usage](/tutorials/simplest-example.md) tutorial
+- [Simplest Usage](/web/tutorials/simplest-example) tutorial
 
-- [Hosting Locally](/tutorials/standalone-example.md) tutorial
+- [Hosting Locally](/web/tutorials/standalone-example) tutorial
