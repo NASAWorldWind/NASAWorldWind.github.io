@@ -1,0 +1,23 @@
+<canvas id="worldWindow" style="width: 100%; height: auto; background-color: white;">
+    Your browser does not support HTML5 Canvas.
+</canvas>
+
+<script type="text/javascript">
+    // Register an event listener to be called when the page is loaded.
+    window.addEventListener("load", eventWindowLoaded, false);
+
+    // Define the event listener to initialize Web WorldWind.
+    function eventWindowLoaded() {
+        // Create a WorldWindow for the canvas.
+        var wwd = new WorldWind.WorldWindow("worldWindow");
+
+        // Add some image layers to the WorldWindow's globe.
+        wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+        wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+        // Add a compass, a coordinates display and some view controls to the WorldWindow.
+        wwd.addLayer(new WorldWind.CompassLayer());
+        wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+        wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+    }
+</script>

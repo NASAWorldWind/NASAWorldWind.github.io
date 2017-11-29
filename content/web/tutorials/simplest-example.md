@@ -8,7 +8,12 @@ listdescription: Shows the simplest way to get started with Web WorldWind.
 
 ## Simplest Example
 
-This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file.
+This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file. Zoom in with your mouse wheel (or a 
+pinch gesture for mobile devices). Drag the mouse or your finger to pan around the globe. Drag the right mouse button or 
+your two fingers upward to tilt the globe.
+
+{{% latestWorldWindScript url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}
+{{% simplestExample %}}
 
 ---
 
@@ -16,7 +21,7 @@ This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file.
 
 First, in the head tag of your HTML, add a script element to include the Web WorldWind library.
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}/worldwind.min.js" type="text/javascript"></script>
 
 Next, create an HTML5 canvas, defining its width and height. You will also want to include a message for browsers that
 do not support HTML5 Canvas.
@@ -32,7 +37,7 @@ Finally, you will include a script between the body tags of your HTML, like this
 
     // Add some image layers to the WorldWindow's globe.
     wwd.addLayer(new WorldWind.BMNGOneImageLayer());
-    wwd.addLayer(new WorldWind.BingAerialWithLabelsLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
 
     // Add a compass, a coordinates display and some view controls to the WorldWindow.
     wwd.addLayer(new WorldWind.CompassLayer());
@@ -55,7 +60,7 @@ Here is what it looks like in a working example:
     <meta charset="UTF-8">
     <title>WorldWind Example</title>
     <!-- Include the Web WorldWind library. -->
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web"%}}/worldwind.min.js" type="text/javascript"></script>
     </head>
     <body>
     <div style="position: absolute; top: 50px; left: 50px;">
@@ -75,7 +80,7 @@ Here is what it looks like in a working example:
 
             // Add some image layers to the WorldWindow's globe.
             wwd.addLayer(new WorldWind.BMNGOneImageLayer());
-            wwd.addLayer(new WorldWind.BingAerialWithLabelsLayer());
+            wwd.addLayer(new WorldWind.BMNGLandsatLayer());
 
             // Add a compass, a coordinates display and some view controls to the WorldWindow.
             wwd.addLayer(new WorldWind.CompassLayer());
@@ -85,14 +90,6 @@ Here is what it looks like in a working example:
     </script>
     </body>
     </html>
-
----
-
-### Runtime Example
-
-If you run this example, the result is a simple, [interactive globe](https://files.worldwind.arc.nasa.gov/artifactory/apps/web/examples/SimplestExample.html).
-Try zooming in with your mouse wheel (or a pinch gesture for mobile devices). Drag the mouse or your finger to pan 
-around the globe. Drag the right mouse button or your two fingers upward to tilt the globe.
 
 <br></br>
 <br></br>
