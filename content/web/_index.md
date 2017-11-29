@@ -5,7 +5,7 @@ draft: false
 ---
 
 {{% latestWorldWindScript url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}
-{{% demo %}}
+{{% worldWindDemo %}}
 
 #### Check back in early December for Web WorldWind's official release!
 
