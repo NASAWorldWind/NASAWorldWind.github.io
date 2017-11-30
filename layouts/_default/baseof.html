@@ -12,7 +12,7 @@
         <title>{{ block "title" . }}
             {{ .Title }}
         {{ end }}</title>
-        {{ template "_internal/google_analytics.html" . }}
+        {{ partial "google_analytics.html" . }}
     </head>
     <body>
         <!-- Navigation Bar -->     
