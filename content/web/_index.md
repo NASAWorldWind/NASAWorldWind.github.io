@@ -4,7 +4,9 @@ date: 2017-07-25T09:21:27-05:00
 draft: false
 ---
 
-#### Check back in early December for Web WorldWind's official release!
+## Announcements
+
+Web WorldWind release 0.9.0 is available now! [Get Started](/web/get-started/) with Web WorldWind 0.9.0.
 
 ## Developer's Guide
 
