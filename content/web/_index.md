@@ -22,11 +22,11 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 
 ## More Resources
 
-- [GitHub](https://github.com/NASAWorldWind/WebWorldWind/) contains the most up-to-date Web WorldWind source code
-- [GitHub Releases](https://github.com/NASAWorldWind/WebWorldWind/releases) contains the Web WorldWind source code
-- [GitHub Issues](https://github.com/NASAWorldWind/WebWorldWind/issues/) lists WorldWind bugs and issues and milestones
-- [Forum](https://forum.worldwindcentral.com/) provides help from the Web WorldWind community
-- [Europa Challenge](http://eurochallenge.como.polimi.it/) providing sustainable solutions for the world.
+- <a href="https://github.com/NASAWorldWind/WebWorldWind/" onclick="trackOutboundLink('https://github.com/NASAWorldWind/WebWorldWind/'); return false;"/>Github</a> contains the most up-to-date Web WorldWind source code
+- <a href="https://github.com/NASAWorldWind/WebWorldWind/releases" onclick="trackOutboundLink('https://github.com/NASAWorldWind/WebWorldWind/releases'); return false;"/>GitHub Releases</a> contains the Web WorldWind source code
+- <a href="https://github.com/NASAWorldWind/WebWorldWind/issues/" onclick="trackOutboundLink('https://github.com/NASAWorldWind/WebWorldWind/issues/'); return false;"/>GitHub Issues</a> lists WorldWind bugs and issues and milestones
+- <a href="https://forum.worldwindcentral.com/" onclick="trackOutboundLink('https://forum.worldwindcentral.com/'); return false;"/>Forum</a> provides help from the Web WorldWind community
+- <a href="http://eurochallenge.como.polimi.it/" onclick="trackOutboundLink('http://eurochallenge.como.polimi.it/'); return false;"/>Europa Challenge</a> providing sustainable solutions for the world.
 <br/><br/>
 
 ---
