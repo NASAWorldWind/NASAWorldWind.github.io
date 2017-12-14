@@ -11,12 +11,10 @@ for(var i = 0, len = elements.length; i < len; i++) {
             var findHref = function (element) {
                 if (element.href) {
                     return element.href;
+                } else if (element.parentElement) {
+                    return findHref(element.parentElement);
                 } else {
-                    if (element.parentElement) {
-                        return findHref(element.parentElement);
-                    } else {
-                        return null;
-                    }
+                    return null;
                 }
 
             };
