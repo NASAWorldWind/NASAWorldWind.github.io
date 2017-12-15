@@ -3,7 +3,7 @@
 var elements = document.getElementsByTagName('a');
 for(var i = 0, len = elements.length; i < len; i++) {
 
-    var internal = (elements[i].host === 'worldwind.arc.nasa.gov');
+    var internal = (elements[i].host === 'worldwind.arc.nasa.gov') || (elements[i].host === 'NASAWorldWind.github.io');
 
     if (!internal) {
         elements[i].onclick = function handleOutboundLinkClicks(event) {
