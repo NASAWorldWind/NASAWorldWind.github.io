@@ -16,7 +16,7 @@ and interaction. Web WorldWind runs on all major operating systems, desktop and 
 
 ## NPM Package
 
-Get the <a href="https://www.npmjs.com/package/@nasaworldwind/worldwind/" onclick="trackOutboundLink('https://www.npmjs.com/package/@nasaworldwind/worldwind/'); return false;">latest release</a> from npm.
+Get the [latest release](https://www.npmjs.com/package/@nasaworldwind/worldwind/) from npm.
 
     npm install @nasaworldwind/worldwind
 
@@ -39,7 +39,7 @@ Load the latest release library directly from WorldWind's servers.
 
 ## More Ways to Get Started
 
-- The latest <a href="https://github.com/NASAWorldWind/WebWorldWind/releases/latest" onclick="trackOutboundLink('https://github.com/NASAWorldWind/WebWorldWind/releases/latest'); return false;">GitHub release</a> contains all the WorldWind libraries and code examples.
+- The latest [GitHub release](https://github.com/NASAWorldWind/WebWorldWind/releases/latest) contains all the WorldWind libraries and code examples.
 
 - [Simplest Usage](/web/tutorials/simplest-example) tutorial
 
