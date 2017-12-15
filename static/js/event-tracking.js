@@ -3,23 +3,12 @@
 var elements = document.getElementsByTagName('a');
 for(var i = 0, len = elements.length; i < len; i++) {
 
-    var internal = (elements[i].host === 'worldwind.arc.nasa.gov'));
+    var internal = (elements[i].host === 'worldwind.arc.nasa.gov');
 
     if (!internal) {
         elements[i].onclick = function handleOutboundLinkClicks(event) {
 
-            var findHref = function (element) {
-                if (element.href) {
-                    return element.href;
-                } else if (element.parentElement) {
-                    return findHref(element.parentElement);
-                } else {
-                    return null;
-                }
-
-            };
-
-            var targetHref = findHref(event.target);
+            var targetHref = event.currentTarget.href;
 
             ga('send', 'event', {
                 eventCategory: 'Outbound Link',
