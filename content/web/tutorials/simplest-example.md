@@ -8,8 +8,8 @@ listdescription: Shows the simplest way to get started with Web WorldWind.
 
 ## Simplest Example
 
-This step-by-step tutorial illustrates how to use Web WorldWind in an HTML file. Zoom in with your mouse wheel (or a 
-pinch gesture for mobile devices). Drag the mouse or your finger to pan around the globe. Drag the right mouse button or 
+This tutorial illustrates how to build a simple WorldWind globe in an HTML file. Zoom in with your mouse wheel (pinch gesture for mobile devices).
+Drag the mouse or your finger to pan around the globe. Drag the right mouse button or
 your two fingers upward to tilt the globe.
 
 {{% latestWorldWindScript url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}

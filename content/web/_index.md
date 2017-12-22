@@ -4,11 +4,6 @@ date: 2017-07-25T09:21:27-05:00
 draft: false
 ---
 
-{{% latestWorldWindScript url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}
-{{% worldWindDemo %}}
-
-#### Check back in early December for Web WorldWind's official release!
-
 ## Developer's Guide
 
 Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages include Web WorldWind to provide one or more virtual globes on that page.
