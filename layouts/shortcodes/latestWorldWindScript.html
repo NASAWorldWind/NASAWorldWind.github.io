@@ -1,0 +1,8 @@
+{{ $artifactoryUrl := .Get "url" }}
+{{ $artifactoryRepo := .Get "repo" }}
+{{ $storageUrl := (printf "%s/api/storage/%s" $artifactoryUrl $artifactoryRepo) }}
+{{ $storageJson := getJSON $storageUrl }}
+{{ range last 1 $storageJson.children }}
+    {{ $latest := (printf "%s/%s%s" $artifactoryUrl $artifactoryRepo .uri) }}
+    <script src="{{ $latest }}/worldwind.min.js" type="text/javascript"></script>
+{{ end }}

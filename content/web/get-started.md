@@ -24,7 +24,7 @@ Then to your JavaScript files add:
 
     require('@nasaworldwind/worldwind');
 
-Finally, WorldWind's npm package requires that you publish the [images folder](https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web" %}}/images.zip)
+Finally, WorldWind's npm package requires that you publish the [images folder]({{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}/images.zip)
 in your npm-based project's web root.
 
 ---
@@ -33,7 +33,7 @@ in your npm-based project's web root.
 
 Load the latest release library directly from WorldWind's servers.
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}/worldwind.min.js" type="text/javascript"></script>
 
 ---
 
