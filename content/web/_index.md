@@ -4,6 +4,10 @@ date: 2017-07-25T09:21:27-05:00
 draft: false
 ---
 
+## Announcements
+
+[Web WorldWind release 0.9.0](/web/get-started/) is available now!
+
 ## Developer's Guide
 
 Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages include Web WorldWind to provide one or more virtual globes on that page.
