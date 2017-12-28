@@ -2,6 +2,7 @@
 title: "Modules-WWSK/NASA WorldWind"
 date: 2017-09-19T10:52:18-07:00
 draft: false
+header: Modules
 listdescription: "Explore the modules that make up the WorldWind Server Kit."
 ---
 
@@ -19,4 +20,4 @@ listdescription: "Explore the modules that make up the WorldWind Server Kit."
 
 <a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-wms">WorldWind GeoServer WMS Module</a>
 
-<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/feature/%23107-worldwind_viewer/worldwind-gs-viewer">WorldWind GeoServer Viewer</a>
+<a target="_blank" href="https://github.com/NASAWorldWind/WorldWindServerKit/tree/develop/worldwind-gs-explorer">WorldWind GeoServer Explorer</a>
