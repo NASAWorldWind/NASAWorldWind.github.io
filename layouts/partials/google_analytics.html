@@ -8,13 +8,5 @@
     ga('create', 'UA-105294289-1', 'auto');
     ga('send', 'pageview');
 
-    function handleOutboundLinkClicks(event) {
-        ga('send', 'event', {
-            eventCategory: 'Outbound Link',
-            eventAction: 'click',
-            eventLabel: event.target.href,
-            transport: 'beacon'
-        });
-    }
 </script>
 <!-- End Google Analytics -->

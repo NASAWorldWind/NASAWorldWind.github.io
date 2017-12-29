@@ -11,7 +11,7 @@ listdescription: "Methods for deploying Web WorldWind."
 Deploying Web WorldWind is easy. In fact, unless you want to run it from your own server there is no deployment 
 required. You simply include a script tag linking to it:
 
-    <script src="https://files.worldwind.arc.nasa.gov/artifactory/web{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory/api/storage/web"%}}/worldwind.min.js" type="text/javascript"/>
+    <script src="{{% latestArtifactoryPath url="https://files.worldwind.arc.nasa.gov/artifactory" repo="web" %}}/worldwind.min.js" type="text/javascript"></script>
 
 To deploy Web WorldWind on your own server, copy the library worldwind.min.js and the images directory from the Web 
 WorldWind release and place them on your web server. The images directory must be a sibling of the library, i.e., exist 
