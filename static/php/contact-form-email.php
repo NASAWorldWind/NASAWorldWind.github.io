@@ -1,6 +1,6 @@
 <?php
 
-$to = "endiajanae@mail.fresnostate.edu";
+$to = "endiairizarry@gmail.com";
 
 $user_email = $_POST['email'];
 $subject = $_POST['name'];
