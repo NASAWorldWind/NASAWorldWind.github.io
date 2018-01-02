@@ -6,7 +6,7 @@ draft: false
 
 ## Announcements
 
-[Web WorldWind release 0.9.0](/web/get-started/) is available now!
+Start using [Web WorldWind 0.9.0](/web/get-started/) now.
 
 ## Developer's Guide
 
