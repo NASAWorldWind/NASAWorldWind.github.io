@@ -6,9 +6,7 @@ draft: false
 
 ## Features
 
-Web WorldWind is a free, open-source virtual globe for web pages. Written in JavaScript, Web WorldWind enables web page and web application builders to quickly create interactive visualizations of geographic information on an interactive 3D globe or 2D map. Web WorldWind provides an API that enables JavaScript programs to control every detail of visualization and interaction. Web WorldWind runs on all major operating systems, desktop and mobile devices, and web browsers.
-
-Web WorldWind provides a rich set of features for displaying and interacting with geographic information. Because Web WorldWind is completely open-source and designed to be extensible, extending the API and functionality is simple and easy to do.
+Web WorldWind provides a rich set of features for displaying and interacting with geographic information.
 
 ---
 

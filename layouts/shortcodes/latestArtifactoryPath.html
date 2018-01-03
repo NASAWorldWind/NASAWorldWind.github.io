@@ -1,0 +1,1 @@
+{{ $artifactoryUrl := .Get "url" }}{{ $artifactoryRepo := .Get "repo" }}{{ $storageUrl := (printf "%s/api/storage/%s" $artifactoryUrl $artifactoryRepo) }}{{ $storageJson := getJSON $storageUrl }}{{ range last 1 $storageJson.children }}{{ printf "%s/%s%s" $artifactoryUrl $artifactoryRepo .uri }}{{ end }}

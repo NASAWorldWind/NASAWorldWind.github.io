@@ -2,6 +2,7 @@
 title: "WCS Elevation Coverage-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T23:45:17-04:00
 draft: false
+header: WCS Elevation Coverage
 listdescription: "Demonstrates how to add an OGC Web Coverage Service (WCS) elevation coverage."
 listimage: "/img/ww-android-wcs-elevation.png"
 ---

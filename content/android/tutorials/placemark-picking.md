@@ -2,6 +2,7 @@
 title: "Placemark Picking-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:22:32-04:00
 draft: false
+header: Placemark Picking
 listdescription: "Demonstrates how to pick and highlight Placemarks."
 listimage: "/img/ww-android-placemark-picking.png"
 ---

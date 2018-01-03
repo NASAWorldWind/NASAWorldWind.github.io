@@ -2,6 +2,7 @@
 title: "Show Tessellation-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:47:30-04:00
 draft: false
+header: Show Tessellation
 listdescription: "Demonstrates the globe's Tessellator."
 listimage: "/img/ww-android-show-tessellation.png"
 ---

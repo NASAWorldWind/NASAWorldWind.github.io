@@ -2,6 +2,7 @@
 title: "Tactical Symbols-WorldWind Java/NASA WorldWind"
 date: 2017-07-13T23:25:56-04:00
 draft: false
+header: Tactical Symbols
 listdescription: "Describes how to display symbols for single-position objects."
 ---
 
