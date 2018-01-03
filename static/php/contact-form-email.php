@@ -1,16 +1,9 @@
 <?php
-
 $to = "endiairizarry@gmail.com";
+$subject = $_POST["name"];
+$msg = $_POST["message"];
 
-$user_email = $_POST['email'];
-$subject = $_POST['name'];
-$content = $_POST['content'];
+mail($to,$subject,$msg);
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($content,70);
-
-$headers .= "Reply-To: $user_email \r\n";
-
-// send email
-mail($to,$subject,$msg,$headers);
+echo "Your message has been sent!";
 ?>

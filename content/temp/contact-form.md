@@ -6,12 +6,20 @@ draft: false
 
 <html>
 <body>
+
 <form action="/php/contact-form-email.php" method="post">
-    Name: <input type="text" id="name" name="name"><br></br>
-    E-mail: <input type="text" id= "email" name="email"><br></br>
-    Content: <input type="text" id="content" name="content"><br></br>
-<input type="submit"/>
+  Name:<br>
+  <input type="text" name="name">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br>
+  Message:<br>
+  <input type="text" name="message">
+  <br><br>
+  <input type="submit" value="Submit">
 </form>
+
 
 </body>
 </html>
