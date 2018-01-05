@@ -17,7 +17,7 @@ draft: false
     <div class="col-md-6">
       <div class="form-group">
         <h4>Name *</h4>
-          <input type="text" name="name" class="form-control">
+          <input type="text" name="name" class="form-control" required>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@ draft: false
     <div class="col-md-6">
       <div class="form-group">
         <h4>Email *</h4>
-          <input type="text" name="email" class="form-control">
+          <input type="text" name="email" class="form-control" required>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@ draft: false
     <div class="col-md-12">
       <div class="form-group">
         <h4>Message *</h4>
-          <input type="text" name="message" class="form-control">
+          <input type="text" name="message" class="form-control" required>
       </div>
     </div>
   </div>
