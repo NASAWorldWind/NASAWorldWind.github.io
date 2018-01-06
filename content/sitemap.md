@@ -14,6 +14,7 @@ draft: false
 - [Features](/web/features)
 - [Examples](/web/examples)
 - [Tutorials](/web/tutorials)
+- [JSBin Demo](/web/demo)
 - [Docs](/web/docs)
 
 #### Android

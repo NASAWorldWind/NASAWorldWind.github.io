@@ -16,6 +16,7 @@ Web WorldWind is a 3D virtual globe API for HTML5 and JavaScript. Web pages incl
 - [Features](/web/features/) describes Web WorldWind’s capabilities
 - [Examples](/web/examples/) presents Web WorldWind’s example code
 - [Tutorials](/web/tutorials/) explains Web WorldWind in depth
+- [JSBin Demo](/web/demo/) presents a live demo with a JS/HMTL sandbox
 - [API Docs](/web/docs/) describes the Web WorldWind API details
 
 ---
