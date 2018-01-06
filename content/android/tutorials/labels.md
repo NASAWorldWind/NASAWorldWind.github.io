@@ -2,6 +2,7 @@
 title: "Labels-WorldWind Android/NASA WorldWind"
 date: 2017-07-07T00:33:17-04:00
 draft: false
+header: Labels
 listdescription: "Demonstrates how to display labels on a WorldWind globe."
 listimage: "/img/ww-android-labels.png"
 ---

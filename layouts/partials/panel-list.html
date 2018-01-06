@@ -1,7 +1,7 @@
 {{ range .Data.Pages.ByTitle }}
     <div class="panel panel-default">
         <div class="panel-heading">
-            <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.title }}</h3></a>
+            <a href="{{ .Permalink }}"><h3 class="panel-title">{{ .Params.header}}</h3></a>
         </div>
         <div class="panel-body">
             {{ if isset .Params "listimage" }}

@@ -2,6 +2,7 @@
 title: "Surface Image-WorldWind Android/NASA WorldWind"
 date: 2017-07-06T23:56:43-04:00
 draft: false
+header: Surface Image
 listdescription: "Demonstrates how to add SurfaceImages to a RenderableLayer."
 listimage: "/img/ww-android-surface-image.png"
 ---
@@ -37,7 +38,7 @@ public class SurfaceImageFragment extends BasicGlobeFragment {
 
         // Configure a Surface Image to display a remote image showing Mount Etna erupting on July 13th, 2001.
         sector = new Sector(37.46543388598137, 14.60128369746704, 0.45360804083528, 0.75704283995502);
-        String urlString = "http://worldwindserver.net/android/images/etna.jpg";
+        String urlString = "https://worldwind.arc.nasa.gov/android/tutorials/data/etna.jpg";
         SurfaceImage surfaceImageUrl = new SurfaceImage(sector, ImageSource.fromUrl(urlString));
 
         // Add a WorldWindow layer that displays the Surface Image, just before the Atmosphere layer.

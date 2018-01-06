@@ -2,6 +2,7 @@
 title: "2D Rendering of Custom Shapes-WorldWind Java/NASA WorldWind"
 date: 2017-07-14T09:21:33-04:00
 draft: false
+header: 2D Rendering of Custom Shapes
 listdescription: "Describes how custom 3D renderables must be implemented to display correctly in 2D mode."
 ---
 

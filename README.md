@@ -2,7 +2,7 @@
 
 # NASAWorldWind.github.io
 
-This repository is home to the NASA WorldWind website which is hosted on GitHub Pages [https://nasaworldwind.github.io/](https://nasaworldwind.github.io/) and at [https://worldwind.arc.nasa.gov/](https://worldwind.arc.nasa.gov). The site should provide helpful information for users interested in WorldWind's different projects.
+This repository is home to the NASA WorldWind website which is hosted at [https://worldwind.arc.nasa.gov/](https://worldwind.arc.nasa.gov). The site should provide helpful information for users interested in WorldWind's different projects.
 
 The site itself is generated with [Hugo](https://gohugo.io/) from the markdown and html templates found within the repository. Hugo transforms the markdown formatting to plain html and injects the content into the templates to form the final html files. Producing content in markdown provides a similar experience to creating and commenting on issues in GitHub while still providing enough formatting to facilitate communication of a topic.
 

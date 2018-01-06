@@ -2,6 +2,7 @@
 title: "Line Of Sight-WorldWind Android-NASA WorldWind"
 date: 2017-08-22T17:25:39-05:00
 draft: false
+header: Line of Sight
 listdescription: "Details the use of the OmnidirectionalSightline object for displaying line of sight with terrain."
 listimage: "/img/ww-android-line-of-sight.png"
 ---
