@@ -1,0 +1,22 @@
+{{ $title := .Get "title" }}
+{{ $link := .Get "link" }}
+{{ $imgUrl := .Get "imgUrl" }}
+{{ $jsSource := .Get "jsSource" }}
+{{ $htmlSource := .Get "htmlSource" }}
+{{ $jsLink := .Get "jsLink" }}
+{{ $htmlLink := .Get "htmlLink" }}
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a href="{{ $link }}"><h3 class="panel-title">{{ $title }}</h3></a>
+        </div>
+        <div class="panel-body">
+            <a href="{{ $link }}">
+                <img src="{{ $imgUrl }}" class="img-responsive center-block">
+            </a>
+            <h5>Source:</h5>
+            <a href="{{ $jsLink }}">{{ $jsSource }}</a><br/>
+            <a href="{{ $htmlLink }}">{{ $htmlSource }}</a>
+        </div>
+    </div>
+</div>
