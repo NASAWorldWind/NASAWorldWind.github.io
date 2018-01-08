@@ -10,10 +10,10 @@ listdescription: "Picking capabilities and setup."
 
 Picking is performed by the WorldWindow. There are four flavors of picking:
 
-- Normal picking returns the visible object or terrain at a specified pick point. See PlacemarksAndPicking.js for an example.
-- Deep picking returns all objects at a specified pick point. See DeepPicking.js for an example.
-- Region picking returns all visible objects within a specified pick region. See PickAllShapesInRegion.js for an example.
-- Terrain picking returns the geographic coordinates of the terrain at a specified pick point. See CoordinatesDisplayLayer.js for an example.
+- Normal picking returns the visible object or terrain at a specified pick point. See [PlacemarksAndPicking.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PlacemarksAndPicking.js) for an example.
+- Deep picking returns all objects at a specified pick point. See [DeepPicking.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/DeepPicking.js) for an example.
+- Region picking returns all visible objects within a specified pick region. See [PickAllShapesInRegion.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/examples/PickAllShapesInRegion.js) for an example.
+- Terrain picking returns the geographic coordinates of the terrain at a specified pick point. See [CoordinatesDisplayLayer.js](https://github.com/NASAWorldWind/WebWorldWind/blob/develop/src/layer/CoordinatesDisplayLayer.js) for an example.
 
 The sections below provide the details of each flavor.
 
