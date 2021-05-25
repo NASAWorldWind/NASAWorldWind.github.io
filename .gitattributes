@@ -1,6 +1,6 @@
 # Documentation about this file can be located here:
 # https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git/configuring-git-to-handle-line-endings
-* text=auto
+* text=input
 
 *.js text
 *.css text
